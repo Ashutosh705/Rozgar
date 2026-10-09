@@ -1,0 +1,75 @@
+# ============================================================
+# Rozgar — .gitignore
+# ============================================================
+
+# --- Binaries & Executables ---
+*.exe
+cloudflared.exe
+
+# --- Temporary / Helper scripts ---
+install_mingit.py
+apply_index_update.py
+generate_vacancies.py
+update_vacancies.py
+
+# --- Node / NPM ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- Build outputs ---
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.vite/
+
+# --- OS generated ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# --- Environment / secrets ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Android / Mobile ---
+android/
+ios/
+.capacitor/
+platforms/
+
+# --- Logs & Temp ---
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig

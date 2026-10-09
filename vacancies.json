@@ -1,0 +1,2310 @@
+[
+  {
+    "id": "RRB_NTPC_GRAD_2026",
+    "category": "jobs",
+    "title": "Railway RRB NTPC Graduate Level (CEN 06/2026)",
+    "title_hi": "रेलवे आरआरबी एनटीपीसी स्नातक स्तर (CEN 06/2026)",
+    "title_hinglish": "Railway RRB NTPC Graduate Level (CEN 06/2026)",
+    "org": "Railway Recruitment Board (RRB)",
+    "org_hi": "रेलवे भर्ती बोर्ड",
+    "org_hinglish": "Railway Recruitment Board (RRB)",
+    "vacancies": "8,113 Posts",
+    "vacancies_hi": "8,113 पद",
+    "vacancies_hinglish": "8,113 Posts",
+    "startDate": "2026-09-14",
+    "lastDate": "2026-11-06",
+    "cutoffDate": "2026-07-01",
+    "fee": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female/EWS)",
+    "fee_hi": "₹500 (सामान्य/ओबीसी) / ₹250 (अजा/अजजा/महिला/ईडब्ल्यूएस)",
+    "fee_hinglish": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female/EWS)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 36,
+      "GENERAL_FEMALE": 36,
+      "EWS_MALE": 36,
+      "EWS_FEMALE": 36,
+      "BC_OBC2_MALE": 39,
+      "BC_OBC2_FEMALE": 39,
+      "EBC_OBC1_MALE": 39,
+      "EBC_OBC1_FEMALE": 39,
+      "SC_MALE": 41,
+      "SC_FEMALE": 41,
+      "ST_MALE": 41,
+      "ST_FEMALE": 41
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Bachelor's Degree in Any Stream",
+    "minEduLabel_hi": "किसी भी मान्यता प्राप्त विश्वविद्यालय से स्नातक डिग्री",
+    "minEduLabel_hinglish": "Kissi bhi stream mein Bachelor's Degree",
+    "isCentral": true,
+    "categoryTag": "graduate",
+    "presetKey": "RRB_PHOTO",
+    "officialApplyUrl": "https://www.rrbapply.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet (Matriculation)",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "m12",
+        "name": "12th Intermediate Certificate",
+        "name_hi": "12वीं प्रमाण पत्र",
+        "name_hinglish": "12th Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "Graduation Degree / Provisional",
+        "name_hi": "स्नातक उपाधि या प्रोविजनल",
+        "name_hinglish": "Graduation Degree",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste / Category Certificate",
+        "name_hi": "जाति या आरक्षण प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card (Photo ID)",
+        "name_hi": "आधार कार्ड (पहचान पत्र)",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "14 Sep – 06 Nov 2026",
+        "dateHi": "14 सितंबर – 06 नवंबर 2026",
+        "dateHinglish": "14 Sep – 06 Nov 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "15–28 Dec 2026",
+        "dateHi": "15–28 दिसंबर 2026",
+        "dateHinglish": "15–28 Dec 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "February 2027",
+        "dateHi": "फ़रवरी 2027",
+        "dateHinglish": "February 2027"
+      }
+    ],
+    "examName": "रेलवे आरआरबी एनटीपीसी स्नातक स्तर (CEN 06/2026)",
+    "examNameEn": "Railway RRB NTPC Graduate Level (CEN 06/2026)",
+    "recruitingBody": "रेलवे भर्ती बोर्ड",
+    "recruitingBodyEn": "Railway Recruitment Board (RRB)",
+    "totalPosts": "8,113 पद",
+    "totalPostsEn": "8,113 Posts",
+    "applicationDeadline": "2026-11-06",
+    "minEduLabelEn": "Bachelor's Degree in Any Stream",
+    "feeEn": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female/EWS)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "active",
+        "date": "14 सितंबर – 06 नवंबर 2026",
+        "dateEn": "14 Sep – 06 Nov 2026",
+        "dateHinglish": "14 Sep – 06 Nov 2026",
+        "badge": "Live"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "upcoming",
+        "date": "दिसंबर 2026",
+        "dateEn": "December 2026",
+        "dateHinglish": "December 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "15–28 दिसंबर 2026",
+        "dateEn": "15–28 Dec 2026",
+        "dateHinglish": "15–28 Dec 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "जनवरी 2027",
+        "dateEn": "January 2027",
+        "dateHinglish": "January 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "फ़रवरी 2027",
+        "dateEn": "February 2027",
+        "dateHinglish": "February 2027",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "RRB_NTPC_12TH_2026",
+    "category": "jobs",
+    "title": "Railway RRB NTPC 12th Undergraduate Posts",
+    "title_hi": "रेलवे आरआरबी एनटीपीसी 12वीं स्तर भर्ती",
+    "title_hinglish": "Railway RRB NTPC 12th Undergraduate Posts",
+    "org": "Railway Recruitment Board (RRB)",
+    "org_hi": "रेलवे भर्ती बोर्ड",
+    "org_hinglish": "Railway Recruitment Board (RRB)",
+    "vacancies": "3,445 Posts",
+    "vacancies_hi": "3,445 पद",
+    "vacancies_hinglish": "3,445 Posts",
+    "startDate": "2026-09-21",
+    "lastDate": "2026-10-27",
+    "cutoffDate": "2026-07-01",
+    "fee": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female/EWS)",
+    "fee_hi": "₹500 (सामान्य/ओबीसी) / ₹250 (अजा/अजजा/महिला/ईडब्ल्यूएस)",
+    "fee_hinglish": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female/EWS)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 33,
+      "GENERAL_FEMALE": 33,
+      "EWS_MALE": 33,
+      "EWS_FEMALE": 33,
+      "BC_OBC2_MALE": 36,
+      "BC_OBC2_FEMALE": 36,
+      "EBC_OBC1_MALE": 36,
+      "EBC_OBC1_FEMALE": 36,
+      "SC_MALE": 38,
+      "SC_FEMALE": 38,
+      "ST_MALE": 38,
+      "ST_FEMALE": 38
+    },
+    "minEducation": "12TH",
+    "minEduLabel": "12th Intermediate Passed",
+    "minEduLabel_hi": "12वीं इंटरमीडिएट परीक्षा उत्तीर्ण",
+    "minEduLabel_hinglish": "12th Intermediate Pass",
+    "isCentral": true,
+    "categoryTag": "12th",
+    "presetKey": "RRB_PHOTO",
+    "officialApplyUrl": "https://www.rrbapply.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "m12",
+        "name": "12th Marksheet",
+        "name_hi": "12वीं अंकतालिका",
+        "name_hinglish": "12th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "21 Sep – 27 Oct 2026",
+        "dateHi": "21 सितंबर – 27 अक्टूबर 2026",
+        "dateHinglish": "21 Sep – 27 Oct 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "February 2027",
+        "dateHi": "फ़रवरी 2027",
+        "dateHinglish": "February 2027"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "March 2027",
+        "dateHi": "मार्च 2027",
+        "dateHinglish": "March 2027"
+      }
+    ],
+    "examName": "रेलवे आरआरबी एनटीपीसी 12वीं स्तर भर्ती",
+    "examNameEn": "Railway RRB NTPC 12th Undergraduate Posts",
+    "recruitingBody": "रेलवे भर्ती बोर्ड",
+    "recruitingBodyEn": "Railway Recruitment Board (RRB)",
+    "totalPosts": "3,445 पद",
+    "totalPostsEn": "3,445 Posts",
+    "applicationDeadline": "2026-10-27",
+    "minEduLabelEn": "12th Intermediate Passed",
+    "feeEn": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female/EWS)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "active",
+        "date": "21 सितंबर – 27 अक्टूबर 2026",
+        "dateEn": "21 Sep – 27 Oct 2026",
+        "dateHinglish": "21 Sep – 27 Oct 2026",
+        "badge": "Live"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "upcoming",
+        "date": "दिसंबर 2026",
+        "dateEn": "December 2026",
+        "dateHinglish": "December 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "जनवरी 2027",
+        "dateEn": "January 2027",
+        "dateHinglish": "January 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "फ़रवरी 2027",
+        "dateEn": "February 2027",
+        "dateHinglish": "February 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "मार्च 2027",
+        "dateEn": "March 2027",
+        "dateHinglish": "March 2027",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "SSC_GD_2026",
+    "category": "jobs",
+    "title": "SSC GD Constable (CAPF BSF/CISF/CRPF/ITBP)",
+    "title_hi": "कर्मचारी चयन आयोग जीडी कांस्टेबल भर्ती",
+    "title_hinglish": "SSC GD Constable (CAPF BSF/CISF/CRPF/ITBP)",
+    "org": "Staff Selection Commission (SSC)",
+    "org_hi": "कर्मचारी चयन आयोग",
+    "org_hinglish": "Staff Selection Commission (SSC)",
+    "vacancies": "39,481 Posts",
+    "vacancies_hi": "39,481 पद",
+    "vacancies_hinglish": "39,481 Posts",
+    "startDate": "2026-09-05",
+    "lastDate": "2026-10-25",
+    "cutoffDate": "2026-01-01",
+    "fee": "₹100 (Gen/OBC) / Free (SC/ST/Female)",
+    "fee_hi": "₹100 (सामान्य/ओबीसी) / निःशुल्क (अजा/अजजा/महिला)",
+    "fee_hinglish": "₹100 (Gen/OBC) / Free (SC/ST/Female)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 23,
+      "GENERAL_FEMALE": 23,
+      "EWS_MALE": 23,
+      "EWS_FEMALE": 23,
+      "BC_OBC2_MALE": 26,
+      "BC_OBC2_FEMALE": 26,
+      "EBC_OBC1_MALE": 26,
+      "EBC_OBC1_FEMALE": 26,
+      "SC_MALE": 28,
+      "SC_FEMALE": 28,
+      "ST_MALE": 28,
+      "ST_FEMALE": 28
+    },
+    "minEducation": "10TH",
+    "minEduLabel": "10th Matriculation Pass",
+    "minEduLabel_hi": "10वीं मैट्रिक परीक्षा उत्तीर्ण",
+    "minEduLabel_hinglish": "10th Matriculation Pass",
+    "isCentral": true,
+    "categoryTag": "10th",
+    "presetKey": "SSC_PHOTO",
+    "officialApplyUrl": "https://ssc.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "05 Sep – 25 Oct 2026",
+        "dateHi": "05 सितंबर – 25 अक्टूबर 2026",
+        "dateHinglish": "05 Sep – 25 Oct 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "04–25 Feb 2027",
+        "dateHi": "04–25 फ़रवरी 2027",
+        "dateHinglish": "04–25 Feb 2027"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "March 2027",
+        "dateHi": "मार्च 2027",
+        "dateHinglish": "March 2027"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "April 2027",
+        "dateHi": "अप्रैल 2027",
+        "dateHinglish": "April 2027"
+      }
+    ],
+    "examName": "कर्मचारी चयन आयोग जीडी कांस्टेबल भर्ती",
+    "examNameEn": "SSC GD Constable (CAPF BSF/CISF/CRPF/ITBP)",
+    "recruitingBody": "कर्मचारी चयन आयोग",
+    "recruitingBodyEn": "Staff Selection Commission (SSC)",
+    "totalPosts": "39,481 पद",
+    "totalPostsEn": "39,481 Posts",
+    "applicationDeadline": "2026-10-25",
+    "minEduLabelEn": "10th Matriculation Pass",
+    "feeEn": "₹100 (Gen/OBC) / Free (SC/ST/Female)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "active",
+        "date": "05 सितंबर – 25 अक्टूबर 2026",
+        "dateEn": "05 Sep – 25 Oct 2026",
+        "dateHinglish": "05 Sep – 25 Oct 2026",
+        "badge": "Live"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "upcoming",
+        "date": "जनवरी 2027",
+        "dateEn": "January 2027",
+        "dateHinglish": "January 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "04–25 फ़रवरी 2027",
+        "dateEn": "04–25 Feb 2027",
+        "dateHinglish": "04–25 Feb 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "मार्च 2027",
+        "dateEn": "March 2027",
+        "dateHinglish": "March 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "अप्रैल 2027",
+        "dateEn": "April 2027",
+        "dateHinglish": "April 2027",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "COAST_GUARD_2026",
+    "category": "jobs",
+    "title": "Indian Coast Guard Navik (GD/DB) & Yantrik",
+    "title_hi": "भारतीय तटरक्षक नाविक व यांत्रिक भर्ती",
+    "title_hinglish": "Indian Coast Guard Navik (GD/DB) & Yantrik",
+    "org": "Indian Coast Guard (Ministry of Defence)",
+    "org_hi": "भारतीय तटरक्षक (रक्षा मंत्रालय)",
+    "org_hinglish": "Indian Coast Guard (Ministry of Defence)",
+    "vacancies": "320 Posts",
+    "vacancies_hi": "320 पद",
+    "vacancies_hinglish": "320 Posts",
+    "startDate": "2026-09-28",
+    "lastDate": "2026-10-31",
+    "cutoffDate": "2026-09-01",
+    "fee": "₹300 (Gen/OBC/EWS) / Free (SC/ST)",
+    "fee_hi": "₹300 (सामान्य/ओबीसी/ईडब्ल्यूएस) / निःशुल्क (अजा/अजजा)",
+    "fee_hinglish": "₹300 (Gen/OBC/EWS) / Free (SC/ST)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 22,
+      "GENERAL_FEMALE": 22,
+      "EWS_MALE": 22,
+      "EWS_FEMALE": 22,
+      "BC_OBC2_MALE": 25,
+      "BC_OBC2_FEMALE": 25,
+      "EBC_OBC1_MALE": 25,
+      "EBC_OBC1_FEMALE": 25,
+      "SC_MALE": 27,
+      "SC_FEMALE": 27,
+      "ST_MALE": 27,
+      "ST_FEMALE": 27
+    },
+    "minEducation": "12TH",
+    "minEduLabel": "12th Pass with Maths & Physics",
+    "minEduLabel_hi": "12वीं कक्षा गणित व भौतिकी विषय सहित उत्तीर्ण",
+    "minEduLabel_hinglish": "12th Pass Maths & Physics ke saath",
+    "isCentral": true,
+    "categoryTag": "12th",
+    "presetKey": "SSC_PHOTO",
+    "officialApplyUrl": "https://joinindiancoastguard.cdac.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "m12",
+        "name": "12th Science Marksheet",
+        "name_hi": "12वीं विज्ञान अंकतालिका",
+        "name_hinglish": "12th Science Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Central Caste Certificate",
+        "name_hi": "केंद्रीय जाति प्रमाण पत्र",
+        "name_hinglish": "Central Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "28 Sep – 31 Oct 2026",
+        "dateHi": "28 सितंबर – 31 अक्टूबर 2026",
+        "dateHinglish": "28 Sep – 31 Oct 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "November 2026",
+        "dateHi": "नवंबर 2026",
+        "dateHinglish": "November 2026"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "February 2027",
+        "dateHi": "फ़रवरी 2027",
+        "dateHinglish": "February 2027"
+      }
+    ],
+    "examName": "भारतीय तटरक्षक नाविक व यांत्रिक भर्ती",
+    "examNameEn": "Indian Coast Guard Navik (GD/DB) & Yantrik",
+    "recruitingBody": "भारतीय तटरक्षक (रक्षा मंत्रालय)",
+    "recruitingBodyEn": "Indian Coast Guard (Ministry of Defence)",
+    "totalPosts": "320 पद",
+    "totalPostsEn": "320 Posts",
+    "applicationDeadline": "2026-10-31",
+    "minEduLabelEn": "12th Pass with Maths & Physics",
+    "feeEn": "₹300 (Gen/OBC/EWS) / Free (SC/ST)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "active",
+        "date": "28 सितंबर – 31 अक्टूबर 2026",
+        "dateEn": "28 Sep – 31 Oct 2026",
+        "dateHinglish": "28 Sep – 31 Oct 2026",
+        "badge": "Live"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "upcoming",
+        "date": "नवंबर 2026",
+        "dateEn": "November 2026",
+        "dateHinglish": "November 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "दिसंबर 2026",
+        "dateEn": "December 2026",
+        "dateHinglish": "December 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "जनवरी 2027",
+        "dateEn": "January 2027",
+        "dateHinglish": "January 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "फ़रवरी 2027",
+        "dateEn": "February 2027",
+        "dateHinglish": "February 2027",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "NICL_AO_2026",
+    "category": "jobs",
+    "title": "National Insurance Administrative Officer (AO)",
+    "title_hi": "नेशनल इंश्योरेंस प्रशासनिक अधिकारी भर्ती",
+    "title_hinglish": "National Insurance Administrative Officer (AO)",
+    "org": "National Insurance Company Limited",
+    "org_hi": "नेशनल इंश्योरेंस कंपनी लिमिटेड",
+    "org_hinglish": "National Insurance Company Limited",
+    "vacancies": "500 Posts",
+    "vacancies_hi": "500 पद",
+    "vacancies_hinglish": "500 Posts",
+    "startDate": "2026-10-01",
+    "lastDate": "2026-11-15",
+    "cutoffDate": "2026-10-01",
+    "fee": "₹1,000 (Gen/OBC/EWS) / ₹250 (SC/ST/PwD)",
+    "fee_hi": "₹1,000 (सामान्य/ओबीसी/ईडब्ल्यूएस) / ₹250 (अजा/अजजा)",
+    "fee_hinglish": "₹1,000 (Gen/OBC/EWS) / ₹250 (SC/ST)",
+    "minAge": 21,
+    "maxAge": {
+      "GENERAL_MALE": 30,
+      "GENERAL_FEMALE": 30,
+      "EWS_MALE": 30,
+      "EWS_FEMALE": 30,
+      "BC_OBC2_MALE": 33,
+      "BC_OBC2_FEMALE": 33,
+      "EBC_OBC1_MALE": 33,
+      "EBC_OBC1_FEMALE": 33,
+      "SC_MALE": 35,
+      "SC_FEMALE": 35,
+      "ST_MALE": 35,
+      "ST_FEMALE": 35
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Graduate Degree in Any Discipline",
+    "minEduLabel_hi": "किसी भी विषय में स्नातक डिग्री (60% अंक)",
+    "minEduLabel_hinglish": "Graduate Degree kisi bhi discipline mein",
+    "isCentral": true,
+    "categoryTag": "graduate",
+    "presetKey": "SSC_PHOTO",
+    "officialApplyUrl": "https://nationalinsurance.nic.co.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "Graduation Marksheets",
+        "name_hi": "स्नातक अंकतालिका",
+        "name_hinglish": "Graduation Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Photo ID Proof",
+        "name_hi": "पहचान पत्र",
+        "name_hinglish": "Photo ID Proof",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "01 Oct – 15 Nov 2026",
+        "dateHi": "01 अक्टूबर – 15 नवंबर 2026",
+        "dateHinglish": "01 Oct – 15 Nov 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "February 2027",
+        "dateHi": "फ़रवरी 2027",
+        "dateHinglish": "February 2027"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "March 2027",
+        "dateHi": "मार्च 2027",
+        "dateHinglish": "March 2027"
+      }
+    ],
+    "examName": "नेशनल इंश्योरेंस प्रशासनिक अधिकारी भर्ती",
+    "examNameEn": "National Insurance Administrative Officer (AO)",
+    "recruitingBody": "नेशनल इंश्योरेंस कंपनी लिमिटेड",
+    "recruitingBodyEn": "National Insurance Company Limited",
+    "totalPosts": "500 पद",
+    "totalPostsEn": "500 Posts",
+    "applicationDeadline": "2026-11-15",
+    "minEduLabelEn": "Graduate Degree in Any Discipline",
+    "feeEn": "₹1,000 (Gen/OBC/EWS) / ₹250 (SC/ST/PwD)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "active",
+        "date": "01 अक्टूबर – 15 नवंबर 2026",
+        "dateEn": "01 Oct – 15 Nov 2026",
+        "dateHinglish": "01 Oct – 15 Nov 2026",
+        "badge": "Live"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "upcoming",
+        "date": "दिसंबर 2026",
+        "dateEn": "December 2026",
+        "dateHinglish": "December 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "जनवरी 2027",
+        "dateEn": "January 2027",
+        "dateHinglish": "January 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "फ़रवरी 2027",
+        "dateEn": "February 2027",
+        "dateHinglish": "February 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "मार्च 2027",
+        "dateEn": "March 2027",
+        "dateHinglish": "March 2027",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "SCI_JCA_2026",
+    "category": "jobs",
+    "title": "Supreme Court Junior Court Assistant (JCA)",
+    "title_hi": "सर्वोच्च न्यायालय कनिष्ठ न्यायालय सहायक भर्ती",
+    "title_hinglish": "Supreme Court Junior Court Assistant (JCA)",
+    "org": "Supreme Court of India",
+    "org_hi": "भारत का सर्वोच्च न्यायालय",
+    "org_hinglish": "Supreme Court of India",
+    "vacancies": "210 Posts",
+    "vacancies_hi": "210 पद",
+    "vacancies_hinglish": "210 Posts",
+    "startDate": "2026-09-18",
+    "lastDate": "2026-10-22",
+    "cutoffDate": "2026-07-01",
+    "fee": "₹500 (Gen/OBC) / ₹250 (SC/ST/PwD)",
+    "fee_hi": "₹500 (सामान्य/ओबीसी) / ₹250 (अजा/अजजा)",
+    "fee_hinglish": "₹500 (Gen/OBC) / ₹250 (SC/ST)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 30,
+      "GENERAL_FEMALE": 30,
+      "EWS_MALE": 30,
+      "EWS_FEMALE": 30,
+      "BC_OBC2_MALE": 33,
+      "BC_OBC2_FEMALE": 33,
+      "EBC_OBC1_MALE": 33,
+      "EBC_OBC1_FEMALE": 33,
+      "SC_MALE": 35,
+      "SC_FEMALE": 35,
+      "ST_MALE": 35,
+      "ST_FEMALE": 35
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Bachelor's Degree + English Typing (35 wpm)",
+    "minEduLabel_hi": "स्नातक उपाधि व अंग्रेज़ी टंकण ज्ञान (35 शब्द/मिनट)",
+    "minEduLabel_hinglish": "Bachelor's Degree + English Typing (35 wpm)",
+    "isCentral": true,
+    "categoryTag": "graduate",
+    "presetKey": "SSC_PHOTO",
+    "officialApplyUrl": "https://main.sci.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "Bachelor Degree",
+        "name_hi": "स्नातक डिग्री",
+        "name_hinglish": "Bachelor Degree",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "18 Sep – 22 Oct 2026",
+        "dateHi": "18 सितंबर – 22 अक्टूबर 2026",
+        "dateHinglish": "18 Sep – 22 Oct 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "November 2026",
+        "dateHi": "नवंबर 2026",
+        "dateHinglish": "November 2026"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "February 2027",
+        "dateHi": "फ़रवरी 2027",
+        "dateHinglish": "February 2027"
+      }
+    ],
+    "examName": "सर्वोच्च न्यायालय कनिष्ठ न्यायालय सहायक भर्ती",
+    "examNameEn": "Supreme Court Junior Court Assistant (JCA)",
+    "recruitingBody": "भारत का सर्वोच्च न्यायालय",
+    "recruitingBodyEn": "Supreme Court of India",
+    "totalPosts": "210 पद",
+    "totalPostsEn": "210 Posts",
+    "applicationDeadline": "2026-10-22",
+    "minEduLabelEn": "Bachelor's Degree + English Typing (35 wpm)",
+    "feeEn": "₹500 (Gen/OBC) / ₹250 (SC/ST/PwD)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "active",
+        "date": "18 सितंबर – 22 अक्टूबर 2026",
+        "dateEn": "18 Sep – 22 Oct 2026",
+        "dateHinglish": "18 Sep – 22 Oct 2026",
+        "badge": "Live"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "upcoming",
+        "date": "नवंबर 2026",
+        "dateEn": "November 2026",
+        "dateHinglish": "November 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "दिसंबर 2026",
+        "dateEn": "December 2026",
+        "dateHinglish": "December 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "जनवरी 2027",
+        "dateEn": "January 2027",
+        "dateHinglish": "January 2027",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "फ़रवरी 2027",
+        "dateEn": "February 2027",
+        "dateHinglish": "February 2027",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "BPSC_70TH_CCE",
+    "category": "admit-card",
+    "title": "BPSC 70th Integrated Combined Civil Services",
+    "title_hi": "बिहार लोक सेवा आयोग 70वीं संयुक्त सिविल सेवा परीक्षा",
+    "title_hinglish": "BPSC 70th Integrated Combined Civil Services",
+    "org": "Bihar Public Service Commission (BPSC)",
+    "org_hi": "बिहार लोक सेवा आयोग",
+    "org_hinglish": "Bihar Public Service Commission (BPSC)",
+    "vacancies": "1,957 Posts",
+    "vacancies_hi": "1,957 पद",
+    "vacancies_hinglish": "1,957 Posts",
+    "startDate": "2026-07-15",
+    "lastDate": "2026-08-30",
+    "cutoffDate": "2026-08-01",
+    "fee": "₹600 (Gen/BC) / ₹150 (SC/ST/Female/Bihar Res)",
+    "fee_hi": "₹600 (सामान्य/पिछड़ा वर्ग) / ₹150 (अजा/अजजा/महिला)",
+    "fee_hinglish": "₹600 (Gen/BC) / ₹150 (SC/ST/Female)",
+    "minAge": 20,
+    "maxAge": {
+      "GENERAL_MALE": 37,
+      "GENERAL_FEMALE": 40,
+      "EWS_MALE": 37,
+      "EWS_FEMALE": 40,
+      "BC_OBC2_MALE": 40,
+      "BC_OBC2_FEMALE": 40,
+      "EBC_OBC1_MALE": 40,
+      "EBC_OBC1_FEMALE": 40,
+      "SC_MALE": 42,
+      "SC_FEMALE": 42,
+      "ST_MALE": 42,
+      "ST_FEMALE": 42
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Bachelor's Degree in Any Stream",
+    "minEduLabel_hi": "किसी भी संकाय में स्नातक उपाधि",
+    "minEduLabel_hinglish": "Bachelor's Degree kisi bhi stream mein",
+    "isCentral": false,
+    "categoryTag": "graduate",
+    "presetKey": "BSSC_PHOTO",
+    "officialApplyUrl": "https://www.bpsc.bih.nic.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "Graduation Degree",
+        "name_hi": "स्नातक उपाधि",
+        "name_hinglish": "Graduation Degree",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Bihar Domicile Certificate",
+        "name_hi": "बिहार निवास प्रमाण पत्र",
+        "name_hinglish": "Bihar Domicile",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste / NCL Certificate",
+        "name_hi": "जाति व क्रीमीलेयर रहित प्रमाण पत्र",
+        "name_hinglish": "Caste / NCL Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed (15 Jul – 30 Aug 2026)",
+        "dateHi": "पूर्ण (15 जुलाई – 30 अगस्त 2026)",
+        "dateHinglish": "Closed (15 Jul – 30 Aug 2026)"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "Live Now (Released 08 Oct 2026)",
+        "dateHi": "जारी हो चुका है (08 अक्टूबर 2026)",
+        "dateHinglish": "Live Now (08 Oct 2026)"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "13 Dec 2026",
+        "dateHi": "13 दिसंबर 2026",
+        "dateHinglish": "13 Dec 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "20 Dec 2026",
+        "dateHi": "20 दिसंबर 2026",
+        "dateHinglish": "20 Dec 2026"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      }
+    ],
+    "examName": "बिहार लोक सेवा आयोग 70वीं संयुक्त सिविल सेवा परीक्षा",
+    "examNameEn": "BPSC 70th Integrated Combined Civil Services",
+    "recruitingBody": "बिहार लोक सेवा आयोग",
+    "recruitingBodyEn": "Bihar Public Service Commission (BPSC)",
+    "totalPosts": "1,957 पद",
+    "totalPostsEn": "1,957 Posts",
+    "applicationDeadline": "2026-08-30",
+    "minEduLabelEn": "Bachelor's Degree in Any Stream",
+    "feeEn": "₹600 (Gen/BC) / ₹150 (SC/ST/Female/Bihar Res)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "completed",
+        "date": "पूर्ण (15 जुलाई – 30 अगस्त 2026)",
+        "dateEn": "Closed (15 Jul – 30 Aug 2026)",
+        "dateHinglish": "Closed (15 Jul – 30 Aug 2026)",
+        "badge": "Closed"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "active",
+        "date": "जारी हो चुका है (08 अक्टूबर 2026)",
+        "dateEn": "Live Now (Released 08 Oct 2026)",
+        "dateHinglish": "Live Now (08 Oct 2026)",
+        "badge": "Live"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "13 दिसंबर 2026",
+        "dateEn": "13 Dec 2026",
+        "dateHinglish": "13 Dec 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "20 दिसंबर 2026",
+        "dateEn": "20 Dec 2026",
+        "dateHinglish": "20 Dec 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "जनवरी 2027",
+        "dateEn": "January 2027",
+        "dateHinglish": "January 2027",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "RRB_TECHNICIAN_2026",
+    "category": "admit-card",
+    "title": "Railway RRB Technician Recruitment (Gr I & III)",
+    "title_hi": "रेलवे आरआरबी तकनीशियन भर्ती (ग्रेड 1 व 3)",
+    "title_hinglish": "Railway RRB Technician Recruitment (Gr I & III)",
+    "org": "Railway Recruitment Board (RRB)",
+    "org_hi": "रेलवे भर्ती बोर्ड",
+    "org_hinglish": "Railway Recruitment Board (RRB)",
+    "vacancies": "9,144 Posts",
+    "vacancies_hi": "9,144 पद",
+    "vacancies_hinglish": "9,144 Posts",
+    "startDate": "2026-06-10",
+    "lastDate": "2026-07-28",
+    "cutoffDate": "2026-07-01",
+    "fee": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female)",
+    "fee_hi": "₹500 (सामान्य/ओबीसी) / ₹250 (अजा/अजजा/महिला)",
+    "fee_hinglish": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 36,
+      "GENERAL_FEMALE": 36,
+      "EWS_MALE": 36,
+      "EWS_FEMALE": 36,
+      "BC_OBC2_MALE": 39,
+      "BC_OBC2_FEMALE": 39,
+      "EBC_OBC1_MALE": 39,
+      "EBC_OBC1_FEMALE": 39,
+      "SC_MALE": 41,
+      "SC_FEMALE": 41,
+      "ST_MALE": 41,
+      "ST_FEMALE": 41
+    },
+    "minEducation": "10TH",
+    "minEduLabel": "10th Matriculation + ITI / Engineering Diploma",
+    "minEduLabel_hi": "10वीं कक्षा व संबंधित ट्रेड में आईटीआई या डिप्लोमा",
+    "minEduLabel_hinglish": "10th Pass + ITI / Diploma",
+    "isCentral": true,
+    "categoryTag": "10th",
+    "presetKey": "RRB_PHOTO",
+    "officialApplyUrl": "https://www.rrbapply.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "iti",
+        "name": "ITI / Polytechnic Diploma",
+        "name_hi": "आईटीआई या डिप्लोमा प्रमाण पत्र",
+        "name_hinglish": "ITI / Diploma Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed (10 Jun – 28 Jul 2026)",
+        "dateHi": "पूर्ण (10 जून – 28 जुलाई 2026)",
+        "dateHinglish": "Closed (10 Jun – 28 Jul 2026)"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "Live Now (Exam City Slip Out)",
+        "dateHi": "जारी हो चुका है (परीक्षा शहर पर्ची उपलब्ध)",
+        "dateHinglish": "Live Now (City Slip Out)"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "22 Oct – 05 Nov 2026",
+        "dateHi": "22 अक्टूबर – 05 नवंबर 2026",
+        "dateHinglish": "22 Oct – 05 Nov 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "12 Nov 2026",
+        "dateHi": "12 नवंबर 2026",
+        "dateHinglish": "12 Nov 2026"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      }
+    ],
+    "examName": "रेलवे आरआरबी तकनीशियन भर्ती (ग्रेड 1 व 3)",
+    "examNameEn": "Railway RRB Technician Recruitment (Gr I & III)",
+    "recruitingBody": "रेलवे भर्ती बोर्ड",
+    "recruitingBodyEn": "Railway Recruitment Board (RRB)",
+    "totalPosts": "9,144 पद",
+    "totalPostsEn": "9,144 Posts",
+    "applicationDeadline": "2026-07-28",
+    "minEduLabelEn": "10th Matriculation + ITI / Engineering Diploma",
+    "feeEn": "₹500 (Gen/OBC) / ₹250 (SC/ST/Female)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "completed",
+        "date": "पूर्ण (10 जून – 28 जुलाई 2026)",
+        "dateEn": "Closed (10 Jun – 28 Jul 2026)",
+        "dateHinglish": "Closed (10 Jun – 28 Jul 2026)",
+        "badge": "Closed"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "active",
+        "date": "जारी हो चुका है (परीक्षा शहर पर्ची उपलब्ध)",
+        "dateEn": "Live Now (Exam City Slip Out)",
+        "dateHinglish": "Live Now (City Slip Out)",
+        "badge": "Live"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "22 अक्टूबर – 05 नवंबर 2026",
+        "dateEn": "22 Oct – 05 Nov 2026",
+        "dateHinglish": "22 Oct – 05 Nov 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "12 नवंबर 2026",
+        "dateEn": "12 Nov 2026",
+        "dateHinglish": "12 Nov 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "दिसंबर 2026",
+        "dateEn": "December 2026",
+        "dateHinglish": "December 2026",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "ASSAM_RIFLES_2026",
+    "category": "admit-card",
+    "title": "Assam Rifles Technical & Tradesman Rally",
+    "title_hi": "असम राइफल्स तकनीकी व ट्रेडमैन भर्ती रैली",
+    "title_hinglish": "Assam Rifles Technical & Tradesman Rally",
+    "org": "Assam Rifles (Ministry of Home Affairs)",
+    "org_hi": "असम राइफल्स (गृह मंत्रालय)",
+    "org_hinglish": "Assam Rifles (Ministry of Home Affairs)",
+    "vacancies": "742 Posts",
+    "vacancies_hi": "742 पद",
+    "vacancies_hinglish": "742 Posts",
+    "startDate": "2026-07-01",
+    "lastDate": "2026-08-15",
+    "cutoffDate": "2026-01-01",
+    "fee": "₹100 (Gen/OBC) / Free (SC/ST)",
+    "fee_hi": "₹100 (सामान्य/ओबीसी) / निःशुल्क (अजा/अजजा)",
+    "fee_hinglish": "₹100 (Gen/OBC) / Free (SC/ST)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 23,
+      "GENERAL_FEMALE": 23,
+      "EWS_MALE": 23,
+      "EWS_FEMALE": 23,
+      "BC_OBC2_MALE": 26,
+      "BC_OBC2_FEMALE": 26,
+      "EBC_OBC1_MALE": 26,
+      "EBC_OBC1_FEMALE": 26,
+      "SC_MALE": 28,
+      "SC_FEMALE": 28,
+      "ST_MALE": 28,
+      "ST_FEMALE": 28
+    },
+    "minEducation": "10TH",
+    "minEduLabel": "10th Matriculation Pass",
+    "minEduLabel_hi": "10वीं मैट्रिक परीक्षा उत्तीर्ण",
+    "minEduLabel_hinglish": "10th Matriculation Pass",
+    "isCentral": true,
+    "categoryTag": "10th",
+    "presetKey": "SSC_PHOTO",
+    "officialApplyUrl": "https://www.assamrifles.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Permanent Domicile",
+        "name_hi": "स्थायी निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed (01 Jul – 15 Aug 2026)",
+        "dateHi": "पूर्ण (01 जुलाई – 15 अगस्त 2026)",
+        "dateHinglish": "Closed (01 Jul – 15 Aug 2026)"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "Live Now (Rally Call Letter Available)",
+        "dateHi": "जारी हो चुका है (रैली प्रवेश पत्र उपलब्ध)",
+        "dateHinglish": "Live Now (Call Letter Out)"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "18–30 Oct 2026",
+        "dateHi": "18–30 अक्टूबर 2026",
+        "dateHinglish": "18–30 Oct 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "November 2026",
+        "dateHi": "नवंबर 2026",
+        "dateHinglish": "November 2026"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      }
+    ],
+    "examName": "असम राइफल्स तकनीकी व ट्रेडमैन भर्ती रैली",
+    "examNameEn": "Assam Rifles Technical & Tradesman Rally",
+    "recruitingBody": "असम राइफल्स (गृह मंत्रालय)",
+    "recruitingBodyEn": "Assam Rifles (Ministry of Home Affairs)",
+    "totalPosts": "742 पद",
+    "totalPostsEn": "742 Posts",
+    "applicationDeadline": "2026-08-15",
+    "minEduLabelEn": "10th Matriculation Pass",
+    "feeEn": "₹100 (Gen/OBC) / Free (SC/ST)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "completed",
+        "date": "पूर्ण (01 जुलाई – 15 अगस्त 2026)",
+        "dateEn": "Closed (01 Jul – 15 Aug 2026)",
+        "dateHinglish": "Closed (01 Jul – 15 Aug 2026)",
+        "badge": "Closed"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "active",
+        "date": "जारी हो चुका है (रैली प्रवेश पत्र उपलब्ध)",
+        "dateEn": "Live Now (Rally Call Letter Available)",
+        "dateHinglish": "Live Now (Call Letter Out)",
+        "badge": "Live"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "upcoming",
+        "date": "18–30 अक्टूबर 2026",
+        "dateEn": "18–30 Oct 2026",
+        "dateHinglish": "18–30 Oct 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "pending",
+        "date": "नवंबर 2026",
+        "dateEn": "November 2026",
+        "dateHinglish": "November 2026",
+        "badge": "Upcoming"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "pending",
+        "date": "दिसंबर 2026",
+        "dateEn": "December 2026",
+        "dateHinglish": "December 2026",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "BIHAR_DAROGA_2026",
+    "category": "results",
+    "title": "Bihar Police Sub-Inspector (Daroga Advt 02/2025)",
+    "title_hi": "बिहार पुलिस अवर निरीक्षक (दारोगा विज्ञापन 02/2025)",
+    "title_hinglish": "Bihar Police Sub-Inspector (Daroga SI)",
+    "org": "Bihar Police Subordinate Services Commission (BPSSC)",
+    "org_hi": "बिहार पुलिस अवर सेवा आयोग",
+    "org_hinglish": "Bihar Police Subordinate Services Commission",
+    "vacancies": "1,275 Posts",
+    "vacancies_hi": "1,275 पद",
+    "vacancies_hinglish": "1,275 Posts",
+    "startDate": "2025-10-05",
+    "lastDate": "2025-11-05",
+    "cutoffDate": "2025-08-01",
+    "fee": "₹700 (Gen/BC) / ₹400 (SC/ST)",
+    "fee_hi": "₹700 (सामान्य/पिछड़ा वर्ग) / ₹400 (अजा/अजजा)",
+    "fee_hinglish": "₹700 (Gen/BC) / ₹400 (SC/ST)",
+    "minAge": 20,
+    "maxAge": {
+      "GENERAL_MALE": 37,
+      "GENERAL_FEMALE": 40,
+      "EWS_MALE": 37,
+      "EWS_FEMALE": 40,
+      "BC_OBC2_MALE": 40,
+      "BC_OBC2_FEMALE": 40,
+      "EBC_OBC1_MALE": 40,
+      "EBC_OBC1_FEMALE": 40,
+      "SC_MALE": 42,
+      "SC_FEMALE": 42,
+      "ST_MALE": 42,
+      "ST_FEMALE": 42
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Bachelor's Degree in Any Discipline",
+    "minEduLabel_hi": "किसी भी मान्यता प्राप्त विश्वविद्यालय से स्नातक उपाधि",
+    "minEduLabel_hinglish": "Bachelor's Degree in Any Discipline",
+    "isCentral": false,
+    "categoryTag": "graduate",
+    "presetKey": "BSSC_PHOTO",
+    "officialApplyUrl": "https://bpssc.bih.nic.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "Graduation Degree",
+        "name_hi": "स्नातक उपाधि",
+        "name_hinglish": "Graduation Degree",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Bihar Domicile",
+        "name_hi": "बिहार निवास प्रमाण पत्र",
+        "name_hinglish": "Bihar Domicile",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed (05 Nov 2025)",
+        "dateHi": "पूर्ण (05 नवंबर 2025)",
+        "dateHinglish": "Closed (05 Nov 2025)"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "Completed",
+        "dateHi": "पूर्ण हो चुका",
+        "dateHinglish": "Completed"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "Completed (Main & PET Over)",
+        "dateHi": "सम्पन्न (मुख्य परीक्षा व शारीरिक जाँच)",
+        "dateHinglish": "Completed"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Released",
+        "dateHi": "जारी हो चुकी",
+        "dateHinglish": "Released"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared (Final Selection Merit List Out)",
+        "dateHi": "घोषित (अंतिम चयन मेधा सूची उपलब्ध)",
+        "dateHinglish": "Declared (Final Merit List Out)"
+      }
+    ],
+    "examName": "बिहार पुलिस अवर निरीक्षक (दारोगा विज्ञापन 02/2025)",
+    "examNameEn": "Bihar Police Sub-Inspector (Daroga Advt 02/2025)",
+    "recruitingBody": "बिहार पुलिस अवर सेवा आयोग",
+    "recruitingBodyEn": "Bihar Police Subordinate Services Commission (BPSSC)",
+    "totalPosts": "1,275 पद",
+    "totalPostsEn": "1,275 Posts",
+    "applicationDeadline": "2025-11-05",
+    "minEduLabelEn": "Bachelor's Degree in Any Discipline",
+    "feeEn": "₹700 (Gen/BC) / ₹400 (SC/ST)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "completed",
+        "date": "पूर्ण (05 नवंबर 2025)",
+        "dateEn": "Closed (05 Nov 2025)",
+        "dateHinglish": "Closed (05 Nov 2025)",
+        "badge": "Closed"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "completed",
+        "date": "पूर्ण हो चुका",
+        "dateEn": "Completed",
+        "dateHinglish": "Completed",
+        "badge": "Closed"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "completed",
+        "date": "सम्पन्न (मुख्य परीक्षा व शारीरिक जाँच)",
+        "dateEn": "Completed (Main & PET Over)",
+        "dateHinglish": "Completed",
+        "badge": "Closed"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "completed",
+        "date": "जारी हो चुकी",
+        "dateEn": "Released",
+        "dateHinglish": "Released",
+        "badge": "Closed"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "active",
+        "date": "घोषित (अंतिम चयन मेधा सूची उपलब्ध)",
+        "dateEn": "Declared (Final Selection Merit List Out)",
+        "dateHinglish": "Declared (Final Merit List Out)",
+        "badge": "Live"
+      }
+    ]
+  },
+  {
+    "id": "BSSC_INTER_LEVEL_2026",
+    "category": "results",
+    "title": "BSSC 2nd Inter Level Combined Exam (Advt 06/23)",
+    "title_hi": "बिहार कर्मचारी चयन आयोग द्वितीय इंटर स्तरीय परीक्षा",
+    "title_hinglish": "BSSC 2nd Inter Level Combined Exam (Advt 06/23)",
+    "org": "Bihar Staff Selection Commission (BSSC)",
+    "org_hi": "बिहार कर्मचारी चयन आयोग",
+    "org_hinglish": "Bihar Staff Selection Commission (BSSC)",
+    "vacancies": "12,199 Posts",
+    "vacancies_hi": "12,199 पद",
+    "vacancies_hinglish": "12,199 Posts",
+    "startDate": "2025-09-27",
+    "lastDate": "2025-12-11",
+    "cutoffDate": "2025-08-01",
+    "fee": "₹540 (Gen/BC) / ₹135 (SC/ST/Female)",
+    "fee_hi": "₹540 (सामान्य/पिछड़ा वर्ग) / ₹135 (अजा/अजजा/महिला)",
+    "fee_hinglish": "₹540 (Gen/BC) / ₹135 (SC/ST/Female)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 37,
+      "GENERAL_FEMALE": 40,
+      "EWS_MALE": 37,
+      "EWS_FEMALE": 40,
+      "BC_OBC2_MALE": 40,
+      "BC_OBC2_FEMALE": 40,
+      "EBC_OBC1_MALE": 40,
+      "EBC_OBC1_FEMALE": 40,
+      "SC_MALE": 42,
+      "SC_FEMALE": 42,
+      "ST_MALE": 42,
+      "ST_FEMALE": 42
+    },
+    "minEducation": "12TH",
+    "minEduLabel": "12th Intermediate Passed in Any Stream",
+    "minEduLabel_hi": "12वीं इंटरमीडिएट परीक्षा उत्तीर्ण",
+    "minEduLabel_hinglish": "12th Intermediate Passed",
+    "isCentral": false,
+    "categoryTag": "12th",
+    "presetKey": "BSSC_PHOTO",
+    "officialApplyUrl": "https://bssc.bihar.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "m12",
+        "name": "12th Marksheet",
+        "name_hi": "12वीं अंकतालिका",
+        "name_hinglish": "12th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Bihar Domicile",
+        "name_hi": "बिहार निवास प्रमाण पत्र",
+        "name_hinglish": "Bihar Domicile",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste / NCL Certificate",
+        "name_hi": "जाति व क्रीमीलेयर रहित प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed (11 Dec 2025)",
+        "dateHi": "पूर्ण (11 दिसंबर 2025)",
+        "dateHinglish": "Closed (11 Dec 2025)"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "Completed",
+        "dateHi": "पूर्ण हो चुका",
+        "dateHinglish": "Completed"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "Completed (Stage-1 Over)",
+        "dateHi": "सम्पन्न (प्रथम चरण आयोजित)",
+        "dateHinglish": "Completed"
+      },
+      {
+        "stage": "anskey",
+        "status": "active",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Live (Provisional Key & Objections Open)",
+        "dateHi": "उपलब्ध है (अनंतिम उत्तर कुंजी व आपत्ति दर्ज करें)",
+        "dateHinglish": "Live (Answer Key Out)"
+      },
+      {
+        "stage": "result",
+        "status": "upcoming",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "Expected November 2026",
+        "dateHi": "नवंबर 2026 (संभावित)",
+        "dateHinglish": "Expected Nov 2026"
+      }
+    ],
+    "examName": "बिहार कर्मचारी चयन आयोग द्वितीय इंटर स्तरीय परीक्षा",
+    "examNameEn": "BSSC 2nd Inter Level Combined Exam (Advt 06/23)",
+    "recruitingBody": "बिहार कर्मचारी चयन आयोग",
+    "recruitingBodyEn": "Bihar Staff Selection Commission (BSSC)",
+    "totalPosts": "12,199 पद",
+    "totalPostsEn": "12,199 Posts",
+    "applicationDeadline": "2025-12-11",
+    "minEduLabelEn": "12th Intermediate Passed in Any Stream",
+    "feeEn": "₹540 (Gen/BC) / ₹135 (SC/ST/Female)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "completed",
+        "date": "पूर्ण (11 दिसंबर 2025)",
+        "dateEn": "Closed (11 Dec 2025)",
+        "dateHinglish": "Closed (11 Dec 2025)",
+        "badge": "Closed"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "completed",
+        "date": "पूर्ण हो चुका",
+        "dateEn": "Completed",
+        "dateHinglish": "Completed",
+        "badge": "Closed"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "completed",
+        "date": "सम्पन्न (प्रथम चरण आयोजित)",
+        "dateEn": "Completed (Stage-1 Over)",
+        "dateHinglish": "Completed",
+        "badge": "Closed"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "active",
+        "date": "उपलब्ध है (अनंतिम उत्तर कुंजी व आपत्ति दर्ज करें)",
+        "dateEn": "Live (Provisional Key & Objections Open)",
+        "dateHinglish": "Live (Answer Key Out)",
+        "badge": "Live"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "upcoming",
+        "date": "नवंबर 2026 (संभावित)",
+        "dateEn": "Expected November 2026",
+        "dateHinglish": "Expected Nov 2026",
+        "badge": "Upcoming"
+      }
+    ]
+  },
+  {
+    "id": "SSC_CHSL_2026",
+    "category": "results",
+    "title": "SSC Combined Higher Secondary Level (CHSL 10+2)",
+    "title_hi": "कर्मचारी चयन आयोग कंबाइंड हायर सेकेंडरी लेवल (10+2)",
+    "title_hinglish": "SSC Combined Higher Secondary Level (CHSL 10+2)",
+    "org": "Staff Selection Commission (SSC)",
+    "org_hi": "कर्मचारी चयन आयोग",
+    "org_hinglish": "Staff Selection Commission (SSC)",
+    "vacancies": "3,712 Posts",
+    "vacancies_hi": "3,712 पद",
+    "vacancies_hinglish": "3,712 Posts",
+    "startDate": "2026-04-08",
+    "lastDate": "2026-05-07",
+    "cutoffDate": "2026-08-01",
+    "fee": "₹100 (Gen/OBC) / Free (SC/ST/Female)",
+    "fee_hi": "₹100 (सामान्य/ओबीसी) / निःशुल्क (अजा/अजजा/महिला)",
+    "fee_hinglish": "₹100 (Gen/OBC) / Free (SC/ST/Female)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 27,
+      "GENERAL_FEMALE": 27,
+      "EWS_MALE": 27,
+      "EWS_FEMALE": 27,
+      "BC_OBC2_MALE": 30,
+      "BC_OBC2_FEMALE": 30,
+      "EBC_OBC1_MALE": 30,
+      "EBC_OBC1_FEMALE": 30,
+      "SC_MALE": 32,
+      "SC_FEMALE": 32,
+      "ST_MALE": 32,
+      "ST_FEMALE": 32
+    },
+    "minEducation": "12TH",
+    "minEduLabel": "12th Standard or Equivalent",
+    "minEduLabel_hi": "12वीं कक्षा या समकक्ष परीक्षा उत्तीर्ण",
+    "minEduLabel_hinglish": "12th Standard ya Barabar Pass",
+    "isCentral": true,
+    "categoryTag": "12th",
+    "presetKey": "SSC_PHOTO",
+    "officialApplyUrl": "https://ssc.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "m12",
+        "name": "12th Marksheet",
+        "name_hi": "12वीं अंकतालिका",
+        "name_hinglish": "12th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed (07 May 2026)",
+        "dateHi": "पूर्ण (07 मई 2026)",
+        "dateHinglish": "Closed (07 May 2026)"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Release",
+        "dateEn": "Completed",
+        "dateHi": "पूर्ण हो चुका",
+        "dateHinglish": "Completed"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "Completed (Tier-1 Over)",
+        "dateHi": "सम्पन्न (टियर-1 परीक्षा आयोजित)",
+        "dateHinglish": "Completed"
+      },
+      {
+        "stage": "anskey",
+        "status": "active",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Declared (Final Key Released)",
+        "dateHi": "जारी (अंतिम उत्तर कुंजी उपलब्ध)",
+        "dateHinglish": "Declared (Final Key Released)"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "Live (Tier-1 Cutoff & Scorecard Out)",
+        "dateHi": "जारी हो चुका है (टियर-1 कट-ऑफ व प्राप्तांक उपलब्ध)",
+        "dateHinglish": "Live (Tier-1 Cutoff & Marks Out)"
+      }
+    ],
+    "examName": "कर्मचारी चयन आयोग कंबाइंड हायर सेकेंडरी लेवल (10+2)",
+    "examNameEn": "SSC Combined Higher Secondary Level (CHSL 10+2)",
+    "recruitingBody": "कर्मचारी चयन आयोग",
+    "recruitingBodyEn": "Staff Selection Commission (SSC)",
+    "totalPosts": "3,712 पद",
+    "totalPostsEn": "3,712 Posts",
+    "applicationDeadline": "2026-05-07",
+    "minEduLabelEn": "12th Standard or Equivalent",
+    "feeEn": "₹100 (Gen/OBC) / Free (SC/ST/Female)",
+    "stages": [
+      {
+        "id": "apply",
+        "name": "आवेदन प्रक्रिया",
+        "nameEn": "Application Window",
+        "nameHinglish": "Application Window",
+        "status": "completed",
+        "date": "पूर्ण (07 मई 2026)",
+        "dateEn": "Closed (07 May 2026)",
+        "dateHinglish": "Closed (07 May 2026)",
+        "badge": "Closed"
+      },
+      {
+        "id": "admit",
+        "name": "प्रवेश पत्र जारी",
+        "nameEn": "Admit Card Release",
+        "nameHinglish": "Admit Card Release",
+        "status": "completed",
+        "date": "पूर्ण हो चुका",
+        "dateEn": "Completed",
+        "dateHinglish": "Completed",
+        "badge": "Closed"
+      },
+      {
+        "id": "exam",
+        "name": "परीक्षा तिथि",
+        "nameEn": "Exam Date",
+        "nameHinglish": "Exam Date",
+        "status": "completed",
+        "date": "सम्पन्न (टियर-1 परीक्षा आयोजित)",
+        "dateEn": "Completed (Tier-1 Over)",
+        "dateHinglish": "Completed",
+        "badge": "Closed"
+      },
+      {
+        "id": "anskey",
+        "name": "उत्तर कुंजी",
+        "nameEn": "Answer Key",
+        "nameHinglish": "Answer Key",
+        "status": "active",
+        "date": "जारी (अंतिम उत्तर कुंजी उपलब्ध)",
+        "dateEn": "Declared (Final Key Released)",
+        "dateHinglish": "Declared (Final Key Released)",
+        "badge": "Live"
+      },
+      {
+        "id": "result",
+        "name": "अंतिम परिणाम",
+        "nameEn": "Final Result",
+        "nameHinglish": "Final Result",
+        "status": "active",
+        "date": "जारी हो चुका है (टियर-1 कट-ऑफ व प्राप्तांक उपलब्ध)",
+        "dateEn": "Live (Tier-1 Cutoff & Scorecard Out)",
+        "dateHinglish": "Live (Tier-1 Cutoff & Marks Out)",
+        "badge": "Live"
+      }
+    ]
+  }
+]
