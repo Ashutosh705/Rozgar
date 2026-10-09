@@ -13,6 +13,7 @@ generate_vacancies.py
 update_vacancies.py
 update_app.py
 apply_full_refactor.py
+update_frontend_integration.py
 
 # --- Node / NPM ---
 node_modules/

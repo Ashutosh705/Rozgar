@@ -99,13 +99,26 @@ Open `http://localhost:8000` in your web browser.
 Rozgar/
 ├── .github/
 │   └── workflows/
-│       └── sync-jobs.yml    # GitHub Actions cron workflow (every 6 hours)
-├── index.html               # Main Web Application (Studio, Vault, Hub, i18n)
-├── vacancies.json           # Live All-India & State Vacancy Dataset
-├── scraper.py               # Automated Python Exam Feed Scraper
-├── eligibility.html         # Route redirect helper
-├── .gitignore               # Staging exclusions
-└── README.md                # Project documentation
+│       └── sync_jobs.yml        # GitHub Actions cron workflow (every 6 hours)
+├── data/
+│   └── vacancies.json           # Central normalized JSON vacancy feed
+├── scrapers/
+│   ├── __init__.py
+│   ├── base_scraper.py          # Base scraper with HTTP, SSL, retries & schema normalizer
+│   ├── ssc_scraper.py           # SSC Board scraper (CGL, CHSL, GD, MTS, CPO)
+│   ├── upsc_scraper.py          # UPSC Portal scraper (Civil Services, NDA, CDS)
+│   ├── rrb_scraper.py           # Railway RRB scraper (NTPC, ALP, Tech, RPF)
+│   ├── ibps_scraper.py          # Banking & IBPS scraper (PO, Clerk, SO, RRB)
+│   └── state_psc_scraper.py     # State PSCs & Police scraper (BPSC, UPPSC, DSSSB, etc.)
+├── scripts/
+│   └── fetch_all.py             # Master orchestrator & deduplication engine
+├── fetch_all.py                 # Root CLI runner delegating to scripts/fetch_all.py
+├── requirements.txt             # Pipeline Python dependencies
+├── index.html                   # Main Web Application (Studio, Vault, Hub, i18n, Feed)
+├── vacancies.json               # Root alias dataset (synced with data/vacancies.json)
+├── eligibility.html             # Route redirect helper
+├── .gitignore                   # Staging exclusions
+└── README.md                    # Project documentation & architecture guide
 ```
 
 ---
