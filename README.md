@@ -1,111 +1,95 @@
-# Rozgar — रोज़गार 🇮🇳 
+# Rozgar — रोज़गार 🇮🇳
 
-> **A privacy-first, tri-lingual mobile web companion & form studio for Bihar and Central Government Job Aspirants.**
+> **All-India Smart Exam Eligibility Tracker & Mobile Document Prep Companion**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/Platform-Mobile%20%7C%20Tablet%20%7C%20Desktop-blue)
 ![Privacy](https://img.shields.io/badge/Privacy-100%25%20Offline%20%7C%20Zero%20Upload-green)
-![Languages](https://img.shields.io/badge/Languages-Hindi%20%7C%20English%20%7C%20Hinglish-orange)
+![Coverage](https://img.shields.io/badge/Coverage-All--India%20%2B%20State%20Exams-orange)
+![Auto Sync](https://img.shields.io/badge/Sync-GitHub%20Actions%20Cron-purple)
 
 ---
 
-## 🎯 Overview & Vision
+## 🎯 Purpose & Real Value Proposition
 
-Filling government job application forms (BSSC, BPSC, Bihar Police, SSC GD, Railway RRB, Defence, Coast Guard) often forces students in Tier-2/3 towns to travel to cyber cafés and pay ₹100–₹150 per form just for basic photo resizing, document verification, and eligibility checks.
+Government job application forms (SSC, Railway RRB, UPSC, State PSCs, Police, Defence) must **always be submitted on official government portals**. There are no shortcuts or third-party gateways for direct form submission.
 
-**Rozgar (रोज़गार)** brings the entire form-filling workbench directly onto the student's mobile phone:
-- **100% Client-Side Processing**: Photos, signatures, and document details never leave the user's device.
-- **Zero Language Mixing**: Full tri-lingual switch between English, हिन्दी, and Hinglish.
-- **Smart Form Preparation**: Accurate dimensions, background replacement, date/name stamping, and precise KB compression.
+However, millions of aspirants across India encounter two major bottlenecks when applying on mobile devices:
 
----
+1. **Strict Photo & Document Specifications**: Portals mandate exact pixel dimensions (e.g. 350×450px, 250×100px), precise file size windows (20KB–50KB, 10KB–20KB), pure white backgrounds, and Date of Photo (DOP) / Name stamps. Unofficial online compressors often compromise privacy by uploading sensitive identity photos to third-party cloud servers.
+2. **Dense 50+ Page Official Notifications**: Aspirants often spend hours decoding eligibility criteria, cutoff dates, category relaxations, and domicile quotas.
 
-## ✨ Key Features & Modules
-
-### 1. 💼 Active 2026 Vacancy Feed & SarkariResult-Style Hub
-- **Categorized Feed**: Toggle between **Latest Jobs**, **Admit Cards**, and **Exam Results**.
-- **Compact Accordion Cards**:
-  - **Collapsed View**: Exam title, recruiting organization, vacancy count badge, application start & last date, days left countdown timer, and personalized eligibility match pill.
-  - **Expanded View**: Educational qualifications, category-wise application fees (UR/EBC/SC/ST/Female), age criteria with cutoff dates, and direct links to official notification portals.
-- **5-Stage Application Lifecycle Tracker**:
-  - Real-time milestone tracker for: `Application Active` ➔ `Admit Card Release` ➔ `Answer Key Release` ➔ `Result Declaration` ➔ `Scorecard / Cutoff`.
-- **Dynamic Required Documents Checklist**:
-  - Each job automatically cross-checks required certificates (10th/12th Marksheet, Domicile, Caste/EWS, ID Proof) against the user's local Document Vault.
-
-### 2. 📸 Advanced Photo, Signature & Thumb Resizer Studio
-- **3 Specialized Workflows**:
-  - **Passport Photo**: Official presets for SSC, Railway RRB, BSSC/BPSC, UPSC, and State PSCs.
-  - **Candidate Signature**: Auto-contrast filter converting notebook paper signatures into pure white backgrounds with crisp black/blue ink.
-  - **Left Thumb Impression (LTI)**: High-clarity ridge enhancement for biometric uploads.
-- **Custom Background Color Picker**: Replace cluttered photo backgrounds with standard official colors (Pure White, Light Sky Blue, Off-White, Studio Grey).
-- **Candidate Name & Date Stamp (DOB / DOP)**:
-  - Add standard black strip overlays at the bottom of photos with candidate's full name and Date of Photo (DOP) as mandated by SSC/BSSC.
-- **Binary Search KB Compressor**:
-  - Live target file size slider (e.g., 20 KB – 50 KB, 10 KB – 20 KB).
-  - Iterative HTML5 Canvas binary search compression guarantees the downloaded JPEG file falls strictly within the prescribed boundary.
-
-### 3. 🗄️ Local Document Vault & Custom Documents
-- Store essential exam credentials locally: Aadhaar, PAN, Matriculation roll numbers, Domicile, Caste/Category Certificate numbers.
-- **Add Custom Document**: Create and persist user-defined documents (e.g., Driving License, NCC Certificate, Computer Diploma).
-- One-tap copy to clipboard for rapid form filling.
-
-### 4. 🌐 Tri-Lingual Localization (100% Strict Zero-Leak)
-- Seamless switching between:
-  - **English**: Pure English interface with standard terminology.
-  - **हिन्दी (Devanagari)**: High-quality, respectful Devanagari Hindi text.
-  - **Hinglish (Roman Hindi)**: Conversational, student-friendly colloquial phrasing.
-- Zero string leakage across modals, status badges, accordion drawers, and tooltips.
-
-### 5. 🌓 Adaptive Theme & Mobile Viewport
-- **Light Mode**: Crisp, high-contrast clean slate for daylight studying.
-- **Dark Mode**: Rich midnight navy/slate (#0B1120 / #1E293B) designed for long night library study sessions.
-- **Mobile-First Container**: Centered mobile smartphone frame on laptop/desktop screens with responsive full-width view on mobile devices.
-
-### 6. 📝 Community Discussion & Daily Practice Hub
-- Integrated exam discussions and daily practice quiz module with instant scoring.
+**Rozgar** serves as an on-device preparation workbench:
+- **Instant Eligibility Calculation**: Evaluates candidate age (Years · Months · Days) against exact cutoff dates, category reservation matrices, and qualifications in real-time.
+- **Client-Side Photo & Signature Studio**: Center-crop, contrast enhancement, background replacement, name/date stamps, and iterative binary search KB compression — 100% inside your browser with zero cloud uploads.
+- **Local Document Vault**: Stores roll numbers, registration IDs, and certificate numbers for 1-tap clipboard copying while filling forms in mobile browsers.
 
 ---
 
-## 🔒 Privacy & Security Architecture
+## ✨ Features & Architecture
 
-| Security Feature | Implementation |
+### 1. 🇮🇳 All-India & State-Specific Coverage
+- **State / Domicile Selector**: Candidate profile supports selection across all states (All-India, Bihar, Uttar Pradesh, Jharkhand, Madhya Pradesh, Rajasthan, Delhi, Haryana, Odisha, West Bengal, etc.).
+- **Smart Scope Tagging**:
+  - **Central / All-India Exams**: Visible to all aspirants nationwide with central reservation quotas.
+  - **State-Level Exams**: Automatically filtered according to candidate domicile. Non-resident aspirants are transparently evaluated under General / Unreserved (UR) criteria per official state service commission rules.
+- **Accordion Preview Cards**: Clean collapsed cards displaying essentials (Title, Org, Scope badge, Vacancies, Start & Last Apply Date, Days Left countdown, and Match Chip) that smoothly expand to show qualifications, category fees, and syllabus cutoff dates.
+- **5-Stage Application Lifecycle**: Live milestone tracking:
+  $$\text{Application Window} \longrightarrow \text{Admit Card} \longrightarrow \text{Exam Date} \longrightarrow \text{Answer Key} \longrightarrow \text{Final Result}$$
+
+### 2. 📸 Advanced Photo, Signature & Thumb Studio
+- **3 Dedicated Workflows**:
+  - **Passport Photo**: Official presets for SSC, Railway RRB, UPSC, State PSCs, and Defence.
+  - **Signature**: Real-time canvas filter converting notebook lined paper into crisp white background with bold black/blue ink.
+  - **Left Thumb Impression (LTI)**: Ridge contrast enhancement for biometric uploads.
+- **Custom Background Color Replacement**: Pure White, Studio Sky Blue, Off-White, and Light Grey.
+- **Name & Date of Photo (DOP) Stamp**: Standard black band with candidate name and photo date mandated by SSC/BSSC.
+- **Iterative Binary Search Compressor**: Guarantees the exported JPEG falls strictly within target file boundaries (e.g. 20–50 KB) without quality distortion.
+
+### 3. 🌐 Strict Zero-Leak Tri-Lingual Localization
+- 100% strict language separation across:
+  - **English**: Pure English terminology and clean placeholders (`Age: 22`, `e.g. Rahul Kumar`).
+  - **हिन्दी (Devanagari)**: High-quality Hindi without awkward mixed English (`उम्र: 22`, `उदा. राहुल कुमार`).
+  - **Hinglish (Roman Hindi)**: Natural, conversational phrasing (`Umar: 22`, `jaise Rahul Kumar`).
+- All input placeholders, modal dialogs, status badges, and profile pills react instantly without string leakage.
+
+### 4. 🔄 Free & Zero-Cost Auto-Sync (GitHub Actions + Python)
+- **Problem**: Static hosting on GitHub Pages cannot make direct scraping requests to external portals due to browser CORS policies.
+- **Solution**:
+  - `scraper.py`: A Python automation script that parses public exam feeds, validates schemas, and updates `vacancies.json`.
+  - `.github/workflows/sync-jobs.yml`: A scheduled GitHub Actions workflow running every 6 hours (`0 */6 * * *`) that executes the scraper, checks for changes, and commits updates directly to the repository.
+  - The live web application automatically reflects new vacancies and results on reload with zero hosting bills.
+
+---
+
+## 🔒 Privacy & Device Sandbox
+
+| Principle | Implementation |
 |---|---|
-| **Zero Server Transmission** | Image compression and canvas manipulation run entirely on-device via HTML5 Canvas. |
-| **No Third-Party Analytics** | No trackers, advertising SDKs, or external monitoring scripts. |
-| **Local Storage Persistence** | Profile and vault data are stored strictly in the user's browser `localStorage`. |
-| **Open Source** | Fully auditable and transparent code. |
+| **Zero Server Transmission** | All image processing runs via HTML5 Canvas API — files never leave the device |
+| **Local Storage Only** | Candidate profile and vault details persist in `localStorage` |
+| **No Third-Party Trackers** | Zero analytics SDKs, advertising scripts, or fingerprinting cookies |
+| **Auditable Open Source** | 100% client-side code visible in repository |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Running Locally
 
-Rozgar is built with **zero external build tools or node dependencies** — pure vanilla HTML5, Tailwind CSS CDN, and modern ES6 JavaScript.
+Rozgar is a zero-build application that runs directly in any browser:
 
-### Option 1: Open Directly
-Simply double-click `index.html` to run in any modern web browser.
-
-### Option 2: Run with Local Server
 ```bash
 # Clone the repository
 git clone https://github.com/Ashutosh705/Rozgar.git
 cd Rozgar
 
-# Run with Python
+# Option A: Run lightweight Python server
 python -m http.server 8000
 
-# Open in browser
-http://localhost:8000
+# Option B: Run the scraper manually
+python scraper.py
 ```
 
-### Option 3: Access from Mobile Phone (Same Wi-Fi)
-```bash
-# Find your computer's local IP address
-ipconfig    # Windows
-ifconfig    # macOS / Linux
-
-# Open on your phone's browser:
-http://192.168.X.X:8000
-```
+Open `http://localhost:8000` in your web browser.
 
 ---
 
@@ -113,19 +97,19 @@ http://192.168.X.X:8000
 
 ```
 Rozgar/
-├── index.html          # Core Rozgar App (Feed, Studio, Vault, Hub & Tri-lingual UI)
-├── vacancies.json      # Active 2026 Recruitment Feed Data
-├── eligibility.html    # Navigation redirect helper
-├── .gitignore          # Git exclusion rules
-└── README.md           # Documentation & Project Guide
+├── .github/
+│   └── workflows/
+│       └── sync-jobs.yml    # GitHub Actions cron workflow (every 6 hours)
+├── index.html               # Main Web Application (Studio, Vault, Hub, i18n)
+├── vacancies.json           # Live All-India & State Vacancy Dataset
+├── scraper.py               # Automated Python Exam Feed Scraper
+├── eligibility.html         # Route redirect helper
+├── .gitignore               # Staging exclusions
+└── README.md                # Project documentation
 ```
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
-
-*Made with ❤️ for Government Job Aspirants.*
+Licensed under the MIT License — free for students and developers.

@@ -599,6 +599,16 @@
       background: var(--bg-card-subtle);
       color: var(--text-dim);
     }
+        .vc-chip.vac-scope.central {
+      background: rgba(59, 130, 246, 0.12);
+      color: #2563eb;
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .vc-chip.vac-scope.state {
+      background: rgba(168, 85, 247, 0.12);
+      color: #9333ea;
+      border-color: rgba(168, 85, 247, 0.3);
+    }
     .vc-chip.vac-eligibility.eligible {
       background: var(--green-100);
       color: var(--green-700);
@@ -1715,8 +1725,8 @@
             <button class="vac-filter-btn" data-filter="12TH" onclick="setVacancyFilter('12TH', this)"><span id="txt-flt-12th">12वीं पास</span></button>
             <button class="vac-filter-btn" data-filter="GRADUATE" onclick="setVacancyFilter('GRADUATE', this)"><span id="txt-flt-grad">स्नातक</span></button>
             <button class="vac-filter-btn" data-filter="RAILWAY" onclick="setVacancyFilter('RAILWAY', this)"><span id="txt-flt-railway">रेलवे</span></button>
-            <button class="vac-filter-btn" data-filter="BIHAR" onclick="setVacancyFilter('BIHAR', this)"><span id="txt-flt-bihar">बिहार राज्य</span></button>
             <button class="vac-filter-btn" data-filter="CENTRAL" onclick="setVacancyFilter('CENTRAL', this)"><span id="txt-flt-central">केंद्रीय भर्ती</span></button>
+            <button class="vac-filter-btn" data-filter="STATE" onclick="setVacancyFilter('STATE', this)"><span id="txt-flt-state">राज्य स्तर</span></button>
           </div>
         </div>
       </div>
@@ -2063,9 +2073,21 @@
       </div>
     </div>
 
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0;">
-      <span class="form-label" id="txt-lbl-domicile">बिहार के मूल निवासी हैं?</span>
-      <input type="checkbox" id="prof-domicile" checked style="width:18px;height:18px;" />
+    <div class="form-group">
+      <label class="form-label" id="txt-lbl-domicile">राज्य / मूल निवास (State / Domicile)</label>
+      <select id="prof-state" class="form-input" style="width:100%;padding:10px 14px;border-radius:12px;background:var(--bg-card);color:var(--text-main);border:1.5px solid var(--border-color);font-weight:600;font-size:0.95rem;">
+        <option value="ALL">All-India (अखिल भारतीय / सभी राज्य)</option>
+        <option value="BIHAR">Bihar (बिहार)</option>
+        <option value="UP">Uttar Pradesh (उत्तर प्रदेश)</option>
+        <option value="JHARKHAND">Jharkhand (झारखंड)</option>
+        <option value="MP">Madhya Pradesh (मध्य प्रदेश)</option>
+        <option value="RAJASTHAN">Rajasthan (राजस्थान)</option>
+        <option value="DELHI">Delhi (दिल्ली)</option>
+        <option value="HARYANA">Haryana (हरियाणा)</option>
+        <option value="ODISHA">Odisha (ओडिशा)</option>
+        <option value="WEST_BENGAL">West Bengal (पश्चिम बंगाल)</option>
+        <option value="OTHER">Other State (अन्य राज्य)</option>
+      </select>
     </div>
 
     <button class="modal-save-btn" onclick="saveProfile()" id="txt-btn-save-profile">प्रोफ़ाइल सहेजें</button>
@@ -2448,7 +2470,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "February 2027",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "RRB_NTPC_12TH_2026",
@@ -2638,7 +2662,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "March 2027",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "SSC_GD_2026",
@@ -2828,7 +2854,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "April 2027",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "COAST_GUARD_2026",
@@ -3018,7 +3046,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "February 2027",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "NICL_AO_2026",
@@ -3208,7 +3238,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "March 2027",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "SCI_JCA_2026",
@@ -3398,7 +3430,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "February 2027",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "BPSC_70TH_CCE",
@@ -3595,7 +3629,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "January 2027",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "State",
+    "state": "Bihar"
   },
   {
     "id": "RRB_TECHNICIAN_2026",
@@ -3785,7 +3821,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "December 2026",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "ASSAM_RIFLES_2026",
@@ -3975,7 +4013,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "December 2026",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "Central",
+    "state": "All-India"
   },
   {
     "id": "BIHAR_DAROGA_2026",
@@ -4172,7 +4212,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "Declared (Final Merit List Out)",
         "badge": "Live"
       }
-    ]
+    ],
+    "scope": "State",
+    "state": "Bihar"
   },
   {
     "id": "BSSC_INTER_LEVEL_2026",
@@ -4369,7 +4411,9 @@ let VACANCIES_DATA = [
         "dateHinglish": "Expected Nov 2026",
         "badge": "Upcoming"
       }
-    ]
+    ],
+    "scope": "State",
+    "state": "Bihar"
   },
   {
     "id": "SSC_CHSL_2026",
@@ -4559,6 +4603,519 @@ let VACANCIES_DATA = [
         "dateHinglish": "Live (Tier-1 Cutoff & Marks Out)",
         "badge": "Live"
       }
+    ],
+    "scope": "Central",
+    "state": "All-India"
+  },
+  {
+    "id": "UP_POLICE_SI_2026",
+    "category": "jobs",
+    "scope": "State",
+    "state": "UP",
+    "isCentral": false,
+    "title": "UP Police Sub-Inspector (SI Civil Police)",
+    "title_hi": "यूपी पुलिस उपनिरीक्षक (नागरिक पुलिस)",
+    "title_hinglish": "UP Police Sub-Inspector (SI Bharti)",
+    "org": "Uttar Pradesh Police Recruitment Board (UPPRPB)",
+    "org_hi": "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड",
+    "org_hinglish": "UP Police Recruitment Board (UPPRPB)",
+    "vacancies": "4,543 Posts",
+    "vacancies_hi": "4,543 पद",
+    "vacancies_hinglish": "4,543 Posts",
+    "startDate": "2026-09-01",
+    "lastDate": "2026-11-15",
+    "cutoffDate": "2026-07-01",
+    "fee": "₹400 (All Candidates)",
+    "fee_hi": "₹400 (सभी अभ्यर्थी)",
+    "fee_hinglish": "₹400 (Sabhi Candidates)",
+    "minAge": 21,
+    "maxAge": {
+      "GENERAL_MALE": 28,
+      "GENERAL_FEMALE": 28,
+      "EWS_MALE": 28,
+      "EWS_FEMALE": 28,
+      "BC_OBC2_MALE": 33,
+      "BC_OBC2_FEMALE": 33,
+      "EBC_OBC1_MALE": 33,
+      "EBC_OBC1_FEMALE": 33,
+      "SC_MALE": 33,
+      "SC_FEMALE": 33,
+      "ST_MALE": 33,
+      "ST_FEMALE": 33
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Bachelor's Degree in Any Discipline",
+    "minEduLabel_hi": "किसी भी विषय में स्नातक डिग्री उत्तीर्ण",
+    "minEduLabel_hinglish": "Kisi bhi stream mein Graduate Degree",
+    "categoryTag": "graduate",
+    "presetKey": "GEN_PHOTO",
+    "officialApplyUrl": "https://uppbpb.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "m12",
+        "name": "12th Marksheet",
+        "name_hi": "12वीं अंकतालिका",
+        "name_hinglish": "12th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "Graduation Degree",
+        "name_hi": "स्नातक उपाधि",
+        "name_hinglish": "Graduation Degree",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile Certificate",
+        "name_hi": "उत्तर प्रदेश मूल निवास प्रमाण पत्र",
+        "name_hinglish": "UP Domicile",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "01 Sep – 15 Nov 2026",
+        "dateHi": "01 सितंबर – 15 नवंबर 2026",
+        "dateHinglish": "01 Sep – 15 Nov 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Exam (CBT)",
+        "titleHi": "लिखित परीक्षा (सीबीटी)",
+        "titleHinglish": "Written Exam",
+        "dateEn": "January 2027",
+        "dateHi": "जनवरी 2027",
+        "dateHinglish": "January 2027"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & PET",
+        "titleHi": "परिणाम व शारीरिक दक्षता",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "DSSSB_TEACHER_2026",
+    "category": "jobs",
+    "scope": "State",
+    "state": "Delhi",
+    "isCentral": false,
+    "title": "Delhi DSSSB Various Teaching & TGT / PGT Recruitment",
+    "title_hi": "दिल्ली डीएसएसएसबी विभिन्न शिक्षण एवं टीजीटी भर्ती",
+    "title_hinglish": "Delhi DSSSB Various Teaching Recruitment",
+    "org": "Delhi Subordinate Services Selection Board (DSSSB)",
+    "org_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड",
+    "org_hinglish": "Delhi Subordinate Services Selection Board",
+    "vacancies": "5,841 Posts",
+    "vacancies_hi": "5,841 पद",
+    "vacancies_hinglish": "5,841 Posts",
+    "startDate": "2026-08-15",
+    "lastDate": "2026-10-30",
+    "cutoffDate": "2026-01-01",
+    "fee": "₹100 (Gen/OBC) / ₹0 (SC/ST/Female/PH)",
+    "fee_hi": "₹100 (सामान्य/ओबीसी) / निःशुल्क (अजा/अजजा/महिला)",
+    "fee_hinglish": "₹100 (Gen/OBC) / Free (SC/ST/Female)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 30,
+      "GENERAL_FEMALE": 30,
+      "EWS_MALE": 30,
+      "EWS_FEMALE": 30,
+      "BC_OBC2_MALE": 33,
+      "BC_OBC2_FEMALE": 33,
+      "EBC_OBC1_MALE": 33,
+      "EBC_OBC1_FEMALE": 33,
+      "SC_MALE": 35,
+      "SC_FEMALE": 35,
+      "ST_MALE": 35,
+      "ST_FEMALE": 35
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Graduation with B.Ed / Relevant Teaching Diploma",
+    "minEduLabel_hi": "स्नातक एवं बीएड या संबंधित शिक्षण डिप्लोमा",
+    "minEduLabel_hinglish": "Graduation ke saath B.Ed / Teaching Diploma",
+    "categoryTag": "graduate",
+    "presetKey": "GEN_PHOTO",
+    "officialApplyUrl": "https://dsssbonline.nic.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Certificate",
+        "name_hi": "10वीं प्रमाण पत्र",
+        "name_hinglish": "10th Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "B.Ed / Degree Certificate",
+        "name_hi": "बीएड / स्नातक डिग्री",
+        "name_hinglish": "B.Ed / Degree",
+        "mandatory": true
+      },
+      {
+        "key": "caste",
+        "name": "Delhi OBC / Caste Certificate",
+        "name_hi": "जाति प्रमाण पत्र",
+        "name_hinglish": "Caste Certificate",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "15 Aug – 30 Oct 2026",
+        "dateHi": "15 अगस्त – 30 अक्टूबर 2026",
+        "dateHinglish": "15 Aug – 30 Oct 2026"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र",
+        "titleHinglish": "Admit Card",
+        "dateEn": "November 2026",
+        "dateHi": "नवंबर 2026",
+        "dateHinglish": "November 2026"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Tier-I Exam",
+        "titleHi": "टियर-1 परीक्षा",
+        "titleHinglish": "Tier-I Exam",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Merit List",
+        "titleHi": "अंतिम मेरिट सूची",
+        "titleHinglish": "Final Merit",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "RAJASTHAN_CET_2026",
+    "category": "admit-card",
+    "scope": "State",
+    "state": "Rajasthan",
+    "isCentral": false,
+    "title": "Rajasthan CET Senior Secondary Level (12th Level)",
+    "title_hi": "राजस्थान सीईटी सीनियर सेकेंडरी स्तर (12वीं स्तर)",
+    "title_hinglish": "Rajasthan CET 12th Level Exam",
+    "org": "Rajasthan Staff Selection Board (RSMSSB)",
+    "org_hi": "राजस्थान कर्मचारी चयन बोर्ड",
+    "org_hinglish": "Rajasthan Staff Selection Board (RSMSSB)",
+    "vacancies": "Eligibility Exam",
+    "vacancies_hi": "पात्रता परीक्षा",
+    "vacancies_hinglish": "Eligibility Exam",
+    "startDate": "2026-07-01",
+    "lastDate": "2026-08-30",
+    "cutoffDate": "2026-01-01",
+    "fee": "₹600 (Gen/OBC) / ₹400 (SC/ST/BC-NCL)",
+    "fee_hi": "₹600 (सामान्य/ओबीसी) / ₹400 (अजा/अजजा/एमबीसी)",
+    "fee_hinglish": "₹600 (Gen/OBC) / ₹400 (Reserved)",
+    "minAge": 18,
+    "maxAge": {
+      "GENERAL_MALE": 40,
+      "GENERAL_FEMALE": 45,
+      "EWS_MALE": 40,
+      "EWS_FEMALE": 45,
+      "BC_OBC2_MALE": 45,
+      "BC_OBC2_FEMALE": 50,
+      "EBC_OBC1_MALE": 45,
+      "EBC_OBC1_FEMALE": 50,
+      "SC_MALE": 45,
+      "SC_FEMALE": 50,
+      "ST_MALE": 45,
+      "ST_FEMALE": 50
+    },
+    "minEducation": "12TH",
+    "minEduLabel": "Senior Secondary (12th Pass) from Recognized Board",
+    "minEduLabel_hi": "मान्यता प्राप्त बोर्ड से 12वीं (इंटरमीडिएट) उत्तीर्ण",
+    "minEduLabel_hinglish": "12th Pass kisi bhi recognized board se",
+    "categoryTag": "12th",
+    "presetKey": "GEN_PHOTO",
+    "officialApplyUrl": "https://rsmssb.rajasthan.gov.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "m12",
+        "name": "12th Marksheet",
+        "name_hi": "12वीं अंकतालिका",
+        "name_hinglish": "12th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Rajasthan Bonafide Domicile",
+        "name_hi": "राजस्थान मूल निवास प्रमाण पत्र",
+        "name_hinglish": "Rajasthan Domicile",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Jan Aadhaar / Aadhaar",
+        "name_hi": "जन आधार / आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed (30 Aug 2026)",
+        "dateHi": "सम्पन्न (30 अगस्त 2026)",
+        "dateHinglish": "Closed (30 Aug 2026)"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card Release",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card Released",
+        "dateEn": "Download Live Now",
+        "dateHi": "डाउनलोड हेतु उपलब्ध",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "CET Exam Dates",
+        "titleHi": "सीईटी परीक्षा तिथियां",
+        "titleHinglish": "Exam Dates",
+        "dateEn": "23–26 Oct 2026",
+        "dateHi": "23–26 अक्टूबर 2026",
+        "dateHinglish": "23–26 Oct 2026"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Provisional Answer Key",
+        "titleHi": "अनंतिम उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "November 2026",
+        "dateHi": "नवंबर 2026",
+        "dateHinglish": "November 2026"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Score Card & Result",
+        "titleHi": "स्कोर कार्ड व परिणाम",
+        "titleHinglish": "Scorecard",
+        "dateEn": "December 2026",
+        "dateHi": "दिसंबर 2026",
+        "dateHinglish": "December 2026"
+      }
+    ]
+  },
+  {
+    "id": "JSSC_CGL_2026",
+    "category": "results",
+    "scope": "State",
+    "state": "Jharkhand",
+    "isCentral": false,
+    "title": "Jharkhand JGGLCCE (JSSC CGL Graduate Combined Exam)",
+    "title_hi": "झारखंड सीजीएल संयुक्त स्नातक स्तरीय परीक्षा",
+    "title_hinglish": "Jharkhand JSSC CGL Combined Exam",
+    "org": "Jharkhand Staff Selection Commission (JSSC)",
+    "org_hi": "झारखंड कर्मचारी चयन आयोग",
+    "org_hinglish": "Jharkhand Staff Selection Commission",
+    "vacancies": "2,017 Posts",
+    "vacancies_hi": "2,017 पद",
+    "vacancies_hinglish": "2,017 Posts",
+    "startDate": "2026-01-15",
+    "lastDate": "2026-03-10",
+    "cutoffDate": "2026-08-01",
+    "fee": "₹100 (Gen/EWS/BC) / ₹50 (SC/ST Jharkhand)",
+    "fee_hi": "₹100 (सामान्य/ईडब्ल्यूएस) / ₹50 (अजा/अजजा)",
+    "fee_hinglish": "₹100 (Gen) / ₹50 (SC/ST)",
+    "minAge": 21,
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 38,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 38,
+      "BC_OBC2_MALE": 37,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 37,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Graduation Degree in Any Stream",
+    "minEduLabel_hi": "किसी भी संकाय में स्नातक उपाधि",
+    "minEduLabel_hinglish": "Graduation in any stream",
+    "categoryTag": "graduate",
+    "presetKey": "GEN_PHOTO",
+    "officialApplyUrl": "https://jssc.nic.in",
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "grad",
+        "name": "Graduation Degree",
+        "name_hi": "स्नातक उपाधि",
+        "name_hinglish": "Graduation Degree",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Jharkhand Residential Certificate",
+        "name_hi": "झारखंड स्थानीय निवासी प्रमाण पत्र",
+        "name_hinglish": "Jharkhand Domicile",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Completed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Completed"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "OMR Written Exam",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "OMR Exam",
+        "dateEn": "Conducted",
+        "dateHi": "सम्पन्न हो चुकी",
+        "dateHinglish": "Conducted"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Final Answer Key",
+        "titleHi": "अंतिम उत्तर कुंजी",
+        "titleHinglish": "Final Answer Key",
+        "dateEn": "Released",
+        "dateHi": "जारी की जा चुकी",
+        "dateHinglish": "Released"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Document Verification List",
+        "titleHi": "दस्तावेज़ सत्यापन परिणाम",
+        "titleHinglish": "Result / DV List",
+        "dateEn": "Published / Active",
+        "dateHi": "परिणाम जारी (सक्रिय)",
+        "dateHinglish": "Active"
+      }
     ]
   }
 ];
@@ -4569,10 +5126,10 @@ let VACANCIES_DATA = [
 const I18N = {
   hi: {
     brandName: "रोज़गार",
-    brandTagline: "सरकारी नौकरी की तैयारी — बिना साइबर कैफ़े के चक्कर काटे, खुद भरें अपना फ़ॉर्म",
-    pageTitle: "रोज़गार — सरकारी नौकरी साथी",
+    brandTagline: "अखिल भारतीय सरकारी नौकरी पात्रता ट्रैकर एवं मोबाइल दस्तावेज़ तैयारी साथी",
+    pageTitle: "रोज़गार — अखिल भारतीय सरकारी नौकरी साथी",
     greetingTitle: "नमस्ते, अभ्यर्थी! 🎯",
-    greetingDesc: "यहाँ बिहार व केंद्र सरकार की सभी सक्रिय सरकारी भर्तियाँ उपलब्ध हैं। अपनी पात्रता तुरंत देखें।",
+    greetingDesc: "अखिल भारतीय स्तर व विभिन्न राज्यों की सक्रिय सरकारी भर्तियाँ उपलब्ध हैं। अपनी पात्रता तुरंत देखें।",
     privacyTitle: "100% ऑफ़लाइन व सुरक्षित:",
     privacyDesc: "आपके सभी दस्तावेज़ और फ़ोटो केवल आपके फ़ोन में रहते हैं, किसी भी सर्वर पर नहीं जाते।",
     profileNotSet: "अपनी प्रोफ़ाइल भरें (पात्रता जांचने हेतु)",
@@ -4597,12 +5154,17 @@ const I18N = {
 
     filterAll: "सभी",
     filterTracked: "📌 ट्रैक की गई",
+    filterCentral: "केंद्रीय भर्ती",
+    filterState: "राज्य स्तर",
     filter10th: "10वीं पास",
     filter12th: "12वीं पास",
     filterGrad: "स्नातक",
     filterRailway: "रेलवे",
-    filterBihar: "बिहार राज्य",
-    filterCentral: "केंद्रीय भर्ती",
+
+    scopeCentral: "केंद्रीय (अखिल भारतीय)",
+    scopeState: "राज्य भर्ती",
+    agePrefix: "उम्र: ",
+    defaultAspirant: "अभ्यर्थी",
 
     liveBadge: "आवेदन जारी है",
     closedBadge: "आवेदन समाप्त",
@@ -4632,7 +5194,7 @@ const I18N = {
     reasonQual: "कारण: न्यूनतम शैक्षणिक योग्यता {q} अनिवार्य है",
     yourAgeIs: "(आपकी आयु: {y} वर्ष {m} माह)",
     eligibleDetails: "आयु: {y} वर्ष (कट-ऑफ तिथि तक मान्य) · योग्यता: {q} · श्रेणी: {c} (आरक्षण लागू)",
-    evalDetailsNoProfile: "अपनी जन्मतिथि और आरक्षण श्रेणी सेट करें ताकि पात्रता तुरंत परखी जा सके।",
+    evalDetailsNoProfile: "अपनी जन्मतिथि, राज्य व आरक्षण श्रेणी सेट करें ताकि पात्रता तुरंत परखी जा सके।",
 
     lifecycleTitle: "भर्ती प्रगति चरण व समय-सारणी",
     reqDocsTitle: "आवश्यक दस्तावेज़ ({ready}/{total} तैयार)",
@@ -4649,12 +5211,12 @@ const I18N = {
     toastTracked: "भर्ती ट्रैक सूची में जोड़ी गई!",
     toastUntracked: "भर्ती ट्रैकिंग से हटा दी गई",
     toastRefreshed: "भर्तियाँ सफलतापूर्वक ताज़ा की गईं!",
-    noJobsMatching: "इस श्रेणी में अभी कोई भर्ती नहीं मिली।",
+    noJobsMatching: "इस श्रेणी या राज्य में अभी कोई भर्ती नहीं मिली।",
 
     kebabProfile: "मेरी प्रोफ़ाइल",
     kebabSettings: "सेटिंग्स",
     kebabPortals: "आधिकारिक पोर्टल",
-    kebabHelp: "सहायता व कैफ़े गाइड",
+    kebabHelp: "सहायता व डॉक गाइड",
     kebabAbout: "रोज़गार के बारे में",
 
     resizerTitle: "फ़ोटो, हस्ताक्षर व अँगूठा रिसाइज़र स्टूडियो",
@@ -4698,7 +5260,7 @@ const I18N = {
     mProf12th: "12वीं पास",
     mProfGrad: "स्नातक",
     mProfPg: "स्नातकोत्तर",
-    mProfDom: "बिहार के मूल निवासी हैं?",
+    mProfDom: "राज्य / मूल निवास",
     mProfSave: "प्रोफ़ाइल सहेजें",
 
     mCdTitle: "नया दस्तावेज़ जोड़ें",
@@ -4717,24 +5279,33 @@ const I18N = {
     mSetResetBtn: "🗑️ सभी लोकल दस्तावेज़ व प्रोफ़ाइल साफ़ करें",
 
     mPortalsTitle: "सत्यापित सरकारी पोर्टल",
-    mHelpTitle: "सहायता व साइबर कैफ़े सुरक्षा गाइड",
+    mHelpTitle: "सहायता व दस्तावेज़ तैयारी गाइड",
     mAboutTitle: "रोज़गार के बारे में",
-    mAboutDesc: "<strong>Rozgar (रोज़गार)</strong> भारत के सरकारी नौकरी अभ्यर्थियों के लिए समर्पित एक स्वतंत्र ऑन-डिवाइस साथी ऐप है।",
+    mAboutDesc: "<strong>Rozgar (रोज़गार)</strong> भारत के सरकारी नौकरी अभ्यर्थियों के लिए समर्पित एक स्वतंत्र ऑन-डिवाइस पात्रता ट्रैकर एवं फॉर्म प्रिपरेशन टूल है।",
     mAboutDpdp: "<strong>100% ऑन-डिवाइस गोपनीयता:</strong> आपका कोई भी प्रमाणपत्र, फोटो या व्यक्तिगत डेटा किसी भी सर्वर पर अपलोड नहीं होता। यह केवल आपके फोन के ब्राउज़र में ही प्रोसेस होता है।",
 
     mPostTitle: "नया सवाल या अपडेट साझा करें",
     mPostCat: "श्रेणी",
     mPostTopic: "विषय या शीर्षक",
     mPostDesc: "विस्तार से लिखें",
-    mPostSubmit: "चर्चा में पोस्ट करें"
+    mPostSubmit: "चर्चा में पोस्ट करें",
+
+    // Placeholders
+    placeholderName: "उदा. राहुल कुमार",
+    placeholderCdNum: "उदा. ABCDE1234F",
+    placeholderCdExtra: "उदा. निर्गत तिथि: 14/08/2023",
+    placeholderCdName: "उदा. निवास / एनसीसी प्रमाण पत्र",
+    placeholderPostTitle: "उदा. RRB NTPC में NCL सर्टिफिकेट की तिथि क्या होगी?",
+    placeholderPostDesc: "अपना सवाल या परीक्षा अपडेट विस्तार से लिखें...",
+    placeholderDopName: "राहुल कुमार"
   },
 
   en: {
     brandName: "Rozgar",
-    brandTagline: "One App for Every Govt Job Aspirant — Form ready in minutes",
-    pageTitle: "Rozgar — Government Job Companion",
+    brandTagline: "All-India Smart Exam Eligibility Tracker & Mobile Document Prep Companion",
+    pageTitle: "Rozgar — All-India Govt Job Companion",
     greetingTitle: "Welcome, Aspirant! 🎯",
-    greetingDesc: "Active government job recruitments for Central & Bihar departments. Check eligibility instantly.",
+    greetingDesc: "Active government job recruitments for Central & State departments across India. Check eligibility instantly.",
     privacyTitle: "100% Offline & Secure:",
     privacyDesc: "All your documents and photos stay strictly inside your phone. Zero cloud upload guarantee.",
     profileNotSet: "Setup Profile (to check eligibility)",
@@ -4759,12 +5330,17 @@ const I18N = {
 
     filterAll: "All",
     filterTracked: "📌 Tracked",
+    filterCentral: "Central Govt",
+    filterState: "State Govt",
     filter10th: "10th Pass",
     filter12th: "12th Pass",
     filterGrad: "Graduate",
     filterRailway: "Railways",
-    filterBihar: "Bihar State",
-    filterCentral: "Central Govt",
+
+    scopeCentral: "Central (All-India)",
+    scopeState: "State Recruitment",
+    agePrefix: "Age: ",
+    defaultAspirant: "Aspirant",
 
     liveBadge: "Application Open",
     closedBadge: "Application Closed",
@@ -4794,7 +5370,7 @@ const I18N = {
     reasonQual: "Reason: Minimum qualification {q} required",
     yourAgeIs: "(Your age: {y} Yrs {m} Mos)",
     eligibleDetails: "Age: {y} Yrs (Valid as of cutoff) · Qualification: {q} · Category: {c} (Reservation Applied)",
-    evalDetailsNoProfile: "Set your date of birth and category to instantly evaluate your eligibility.",
+    evalDetailsNoProfile: "Set your date of birth, state, and category to instantly evaluate your eligibility.",
 
     lifecycleTitle: "Application Lifecycle & Milestone Timeline",
     reqDocsTitle: "Required Documents ({ready}/{total} Ready)",
@@ -4811,12 +5387,12 @@ const I18N = {
     toastTracked: "Exam added to your tracked list!",
     toastUntracked: "Exam removed from tracked list",
     toastRefreshed: "Vacancies refreshed successfully!",
-    noJobsMatching: "No recruitments found in this category.",
+    noJobsMatching: "No recruitments found in this category or state.",
 
     kebabProfile: "My Profile",
     kebabSettings: "Settings",
     kebabPortals: "Official Portals",
-    kebabHelp: "Help & Café Guide",
+    kebabHelp: "Help & Prep Guide",
     kebabAbout: "About Rozgar",
 
     resizerTitle: "Photo, Signature & Thumb Studio",
@@ -4860,7 +5436,7 @@ const I18N = {
     mProf12th: "12th Pass",
     mProfGrad: "Graduate",
     mProfPg: "Post Graduate",
-    mProfDom: "Are you a Bihar resident?",
+    mProfDom: "State / Domicile",
     mProfSave: "Save Profile",
 
     mCdTitle: "Add Custom Document",
@@ -4879,24 +5455,33 @@ const I18N = {
     mSetResetBtn: "🗑️ Clear All Local Data & Profile",
 
     mPortalsTitle: "Official Government Portals",
-    mHelpTitle: "Help & Cyber Café Defense Guide",
+    mHelpTitle: "Help & Document Preparation Guide",
     mAboutTitle: "About Rozgar",
-    mAboutDesc: "<strong>Rozgar</strong> is an independent on-device companion web app built for government job aspirants in India.",
+    mAboutDesc: "<strong>Rozgar</strong> is an independent on-device companion web app built for government job aspirants across India.",
     mAboutDpdp: "<strong>100% Client-Side Privacy:</strong> None of your certificates, photos, or personal credentials are ever uploaded to any cloud server. Everything is processed directly in your browser.",
 
     mPostTitle: "Share Question or Update",
     mPostCat: "Topic",
     mPostTopic: "Question Title",
     mPostDesc: "Write Details",
-    mPostSubmit: "Post to Community"
+    mPostSubmit: "Post to Community",
+
+    // Placeholders
+    placeholderName: "e.g. Rahul Kumar",
+    placeholderCdNum: "e.g. ABCDE1234F",
+    placeholderCdExtra: "e.g. Issue Date: 14/08/2023",
+    placeholderCdName: "e.g. Domicile / NCC Certificate",
+    placeholderPostTitle: "e.g. RRB NTPC OBC-NCL certificate cutoff date?",
+    placeholderPostDesc: "Describe your question or exam update in detail...",
+    placeholderDopName: "RAHUL KUMAR"
   },
 
   hinglish: {
     brandName: "Rozgar",
-    brandTagline: "Sarkari form bharein khud se — bina cyber café ki line lagaye",
-    pageTitle: "Rozgar — Sarkari Job Saathi",
+    brandTagline: "All-India Smart Exam Eligibility Tracker aur Mobile Document Prep Saathi",
+    pageTitle: "Rozgar — All-India Sarkari Job Saathi",
     greetingTitle: "Namaste, Aspirant! 🎯",
-    greetingDesc: "Yahan Bihar aur Central govt ki active bhartiyan hain. Live eligibility check karein.",
+    greetingDesc: "Yahan All-India aur State govt ki active bhartiyan hain. Live eligibility check karein.",
     privacyTitle: "100% Offline & Safe:",
     privacyDesc: "Aapke documents aur photos sirf aapke phone mein rehte hain, cloud par nahi jate.",
     profileNotSet: "Profile bharein (live match ke liye)",
@@ -4921,12 +5506,17 @@ const I18N = {
 
     filterAll: "Sabhi",
     filterTracked: "📌 Tracked",
+    filterCentral: "Central Jobs",
+    filterState: "State Jobs",
     filter10th: "10th Pass",
     filter12th: "12th Pass",
     filterGrad: "Graduate",
     filterRailway: "Railways",
-    filterBihar: "Bihar State",
-    filterCentral: "Central Jobs",
+
+    scopeCentral: "Central (All-India)",
+    scopeState: "State Exam",
+    agePrefix: "Umar: ",
+    defaultAspirant: "Aspirant",
 
     liveBadge: "Live Now",
     closedBadge: "Application Closed",
@@ -4956,7 +5546,7 @@ const I18N = {
     reasonQual: "Wajah: Minimum qualification {q} honi zaroori hai",
     yourAgeIs: "(Aapki age: {y} Saal {m} Mahine)",
     eligibleDetails: "Age: {y} Saal (Cutoff par valid) · Qualification: {q} · Category: {c} (Reservation Applied)",
-    evalDetailsNoProfile: "Apni DOB aur category set karein taaki eligibility turant check ho sake.",
+    evalDetailsNoProfile: "Apni DOB, state aur category set karein taaki eligibility turant check ho sake.",
 
     lifecycleTitle: "Recruitment Timeline & Stages",
     reqDocsTitle: "Zaroori Documents ({ready}/{total} Ready)",
@@ -4973,12 +5563,12 @@ const I18N = {
     toastTracked: "Job tracked list mein add ho gayi!",
     toastUntracked: "Job tracked list se hata di gayi",
     toastRefreshed: "Jobs refresh ho gayi!",
-    noJobsMatching: "Is category mein abhi koi vacancy nahi mili.",
+    noJobsMatching: "Is category ya state mein abhi koi vacancy nahi mili.",
 
     kebabProfile: "Meri Profile",
     kebabSettings: "Settings",
     kebabPortals: "Official Portals",
-    kebabHelp: "Help & Café Guide",
+    kebabHelp: "Help & Guide",
     kebabAbout: "Rozgar ke baare mein",
 
     resizerTitle: "Photo, Signature & Thumb Studio",
@@ -5022,7 +5612,7 @@ const I18N = {
     mProf12th: "12th Pass",
     mProfGrad: "Graduate",
     mProfPg: "Post Graduate",
-    mProfDom: "Kya aap Bihar resident hain?",
+    mProfDom: "State / Domicile",
     mProfSave: "Profile Save Karein",
 
     mCdTitle: "Naya Document Jodein",
@@ -5041,7 +5631,7 @@ const I18N = {
     mSetResetBtn: "🗑️ Local Data & Profile Reset Karein",
 
     mPortalsTitle: "Official Government Portals",
-    mHelpTitle: "Help & Café Guide",
+    mHelpTitle: "Help & Guide",
     mAboutTitle: "Rozgar ke baare mein",
     mAboutDesc: "<strong>Rozgar</strong> sarkari job aspirants ke liye dedicated ek independent on-device companion app hai.",
     mAboutDpdp: "<strong>100% Device-Level Privacy:</strong> Aapka koi bhi document ya data server par upload nahi hota. Sab kuch aapke browser mein process hota hai.",
@@ -5050,7 +5640,16 @@ const I18N = {
     mPostCat: "Category",
     mPostTopic: "Sawal ka Title",
     mPostDesc: "Details Likhein",
-    mPostSubmit: "Post Karein"
+    mPostSubmit: "Post Karein",
+
+    // Placeholders
+    placeholderName: "jaise Rahul Kumar",
+    placeholderCdNum: "jaise ABCDE1234F",
+    placeholderCdExtra: "jaise Issue Date: 14/08/2023",
+    placeholderCdName: "jaise Domicile / NCC Certificate",
+    placeholderPostTitle: "jaise RRB NTPC mein NCL certificate date?",
+    placeholderPostDesc: "Apna sawal ya exam update detail mein likhein...",
+    placeholderDopName: "RAHUL KUMAR"
   }
 };
 
@@ -5111,8 +5710,44 @@ let tempCustomDocPhoto = null;
 ============================================================ */
 let profile = {
   name: "", dob: "", gender: "MALE", category: "GENERAL",
-  domicile: true, qual: "12TH", computer: false, typing: false, exsm: false
+  state: "ALL", domicile: true, qual: "12TH", computer: false, typing: false, exsm: false
 };
+
+function getQualLocalized(q) {
+  if (currentLang === 'hi') {
+    if (q === '10TH') return '10वीं पास';
+    if (q === '12TH') return '12वीं पास';
+    if (q === 'GRADUATE') return 'स्नातक';
+    if (q === 'PG') return 'स्नातकोत्तर';
+    return q || '12वीं';
+  } else if (currentLang === 'en') {
+    if (q === '10TH') return '10th Pass';
+    if (q === '12TH') return '12th Pass';
+    if (q === 'GRADUATE') return 'Graduate';
+    if (q === 'PG') return 'Post Graduate';
+    return q || '12th Pass';
+  } else {
+    if (q === '10TH') return '10th Pass';
+    if (q === '12TH') return '12th Pass';
+    if (q === 'GRADUATE') return 'Graduate';
+    if (q === 'PG') return 'Post Graduate';
+    return q || '12th Pass';
+  }
+}
+
+function getStateShort(st) {
+  if (!st || st === 'ALL') return currentLang === 'hi' ? 'अखिल भारतीय' : (currentLang === 'en' ? 'All-India' : 'All-India');
+  if (st === 'BIHAR') return currentLang === 'hi' ? 'बिहार' : 'Bihar';
+  if (st === 'UP') return currentLang === 'hi' ? 'उत्तर प्रदेश' : 'UP';
+  if (st === 'JHARKHAND') return currentLang === 'hi' ? 'झारखंड' : 'Jharkhand';
+  if (st === 'MP') return currentLang === 'hi' ? 'मध्य प्रदेश' : 'MP';
+  if (st === 'RAJASTHAN') return currentLang === 'hi' ? 'राजस्थान' : 'Rajasthan';
+  if (st === 'DELHI') return currentLang === 'hi' ? 'दिल्ली' : 'Delhi';
+  if (st === 'HARYANA') return currentLang === 'hi' ? 'हरियाणा' : 'Haryana';
+  if (st === 'ODISHA') return currentLang === 'hi' ? 'ओडिशा' : 'Odisha';
+  if (st === 'WEST_BENGAL') return currentLang === 'hi' ? 'पश्चिम बंगाल' : 'WB';
+  return st;
+}
 
 let vaultCredentials = {
   m10Board: "BSEB Patna",
@@ -5295,6 +5930,7 @@ function changeLanguage(lang) {
 }
 
 function applyLanguage(lang) {
+  currentLang = lang;
   const d = I18N[lang] || I18N.hi;
 
   // Header & Title
@@ -5356,6 +5992,29 @@ function applyLanguage(lang) {
   if (fBihar) fBihar.textContent = d.filterBihar;
   const fCent = document.getElementById('txt-flt-central');
   if (fCent) fCent.textContent = d.filterCentral;
+
+  // State Filter Button
+  const fState = document.getElementById('txt-flt-state');
+  if (fState) fState.textContent = d.filterState;
+
+  // Input Placeholders (Strict Language Isolation)
+  const pNameInp = document.getElementById('prof-name');
+  if (pNameInp && d.placeholderName) pNameInp.placeholder = d.placeholderName;
+  const cdNumInp = document.getElementById('cd-number');
+  if (cdNumInp && d.placeholderCdNum) cdNumInp.placeholder = d.placeholderCdNum;
+  const cdExtraInp = document.getElementById('cd-extra');
+  if (cdExtraInp && d.placeholderCdExtra) cdExtraInp.placeholder = d.placeholderCdExtra;
+  const cdNameInp = document.getElementById('cd-name');
+  if (cdNameInp && d.placeholderCdName) cdNameInp.placeholder = d.placeholderCdName;
+  const postTitleInp = document.getElementById('post-title');
+  if (postTitleInp && d.placeholderPostTitle) postTitleInp.placeholder = d.placeholderPostTitle;
+  const postDescInp = document.getElementById('post-desc');
+  if (postDescInp && d.placeholderPostDesc) postDescInp.placeholder = d.placeholderPostDesc;
+  const dopNameInp = document.getElementById('dop-candidate-name');
+  if (dopNameInp && d.placeholderDopName) dopNameInp.placeholder = d.placeholderDopName;
+
+  // Re-render Profile Pill for strict language isolation
+  if (typeof renderProfilePill === 'function') renderProfilePill();
 
   // Kebab Items
   const kProf = document.getElementById('txt-kebab-profile');
@@ -5658,16 +6317,26 @@ function renderVacanciesFeed() {
     return true;
   });
 
-  // 2. Filter by Qualification / Board Sub-filters
+  // 2. Filter by User Domicile / Scope (Central is always visible; State matches user domicile unless ALL)
+  list = list.filter(vac => {
+    const isCentral = vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
+    if (isCentral) return true;
+    if (!profile.state || profile.state === 'ALL') return true;
+    if (vac.state && vac.state.toUpperCase() === profile.state.toUpperCase()) return true;
+    if (currentVacancyFilter === 'STATE') return true; // user explicitly clicked State filter
+    return false;
+  });
+
+  // 3. Filter by Sub-filter buttons
   list = list.filter(vac => {
     if (currentVacancyFilter === 'ALL') return true;
     if (currentVacancyFilter === 'TRACKED') return trackedJobs.includes(vac.id);
+    if (currentVacancyFilter === 'CENTRAL') return vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
+    if (currentVacancyFilter === 'STATE') return !vac.isCentral || vac.scope === 'State';
     if (currentVacancyFilter === '10TH') return vac.minEducation === '10TH' || (vac.categoryTag && vac.categoryTag.includes('10th'));
     if (currentVacancyFilter === '12TH') return vac.minEducation === '12TH' || (vac.categoryTag && vac.categoryTag.includes('12th'));
     if (currentVacancyFilter === 'GRADUATE') return vac.minEducation === 'GRADUATE' || (vac.categoryTag && vac.categoryTag.includes('graduate'));
     if (currentVacancyFilter === 'RAILWAY') return (vac.id && vac.id.includes('RRB')) || (vac.org && (vac.org.includes('Railway') || (vac.org_hi && vac.org_hi.includes('रेलवे'))));
-    if (currentVacancyFilter === 'BIHAR') return !vac.isCentral;
-    if (currentVacancyFilter === 'CENTRAL') return vac.isCentral;
     return true;
   });
 
@@ -5786,6 +6455,9 @@ function renderVacanciesFeed() {
 
           <!-- Essentials Row: Vacancies, Dates, Days Left, Compact Eligibility Chip -->
           <div class="vc-essentials-row">
+            <span class="vc-chip vac-scope ${ (vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India') ? 'central' : 'state'}">
+              ${ (vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India') ? '🏛️ ' + d.scopeCentral : '📍 ' + (vac.state || d.scopeState) }
+            </span>
             <span class="vc-chip vac-posts">👥 ${postsStr}</span>
             <span class="vc-chip vac-dates">📅 ${d.startDateLbl}: ${formatDateDisplay(startDateStr)} | ${d.lastDateLbl}: ${formatDateDisplay(lastDateStr)}</span>
             <span class="vc-chip vac-days ${isUrgent ? 'urgent' : ''} ${isPast ? 'closed' : ''}">⏳ ${daysLeftBadge}</span>
@@ -5886,7 +6558,9 @@ function evaluateVacancy(vac) {
 
   const dob = new Date(profile.dob);
   const cutoff = new Date(vac.cutoffDate);
-  const effectiveCat = (vac.isCentral || profile.domicile) ? profile.category : "GENERAL";
+  const isCentral = vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
+  const isUserHomeState = profile.state && vac.state && (profile.state.toUpperCase() === vac.state.toUpperCase());
+  const effectiveCat = (isCentral || isUserHomeState) ? profile.category : "GENERAL";
   const g = (profile.gender === "FEMALE" || profile.gender === "TRANSGENDER") ? "FEMALE" : "MALE";
   const key = `${effectiveCat}_${g}`;
   const maxAllowed = vac.maxAge[key] || vac.maxAge["GENERAL_MALE"] || 35;
@@ -6894,15 +7568,19 @@ function openReplyModal(postId) {
    12. PROFILE & SETTINGS LOGIC
 ============================================================ */
 function renderProfilePill() {
-  const d = I18N[currentLang];
+  const d = I18N[currentLang] || I18N.hi;
   const infoEl = document.getElementById('profile-pill-text');
   const btnEl = document.getElementById('profile-pill-btn');
 
   if (profile.dob) {
     const age = calculateYears(new Date(profile.dob), new Date());
-    const name = profile.name ? profile.name.split(' ')[0] : 'साथी';
+    const defaultName = d.defaultAspirant || (currentLang === 'en' ? 'Aspirant' : (currentLang === 'hi' ? 'अभ्यर्थी' : 'Aspirant'));
+    const name = profile.name ? profile.name.split(' ')[0] : defaultName;
     const cat = getCategoryShort(profile.category);
-    infoEl.textContent = `👤 ${name} · ${profile.qual || '12th'}, ${cat} · उम्र ${age}`;
+    const agePrefix = d.agePrefix || (currentLang === 'en' ? 'Age: ' : (currentLang === 'hi' ? 'उम्र: ' : 'Umar: '));
+    const qualStr = getQualLocalized(profile.qual);
+    const stateStr = getStateShort(profile.state);
+    infoEl.textContent = `👤 ${name} · ${qualStr}, ${cat} (${stateStr}) · ${agePrefix}${age}`;
     btnEl.textContent = d.btnEditProfile;
   } else {
     infoEl.textContent = d.profileNotSet;
@@ -6929,7 +7607,10 @@ function openProfileModal() {
   activateSegBtn('prof-gender-group', profile.gender || "MALE");
   activateSegBtn('prof-cat-group', profile.category || "GENERAL");
   activateSegBtn('prof-qual-group', profile.qual || "12TH");
-  document.getElementById('prof-domicile').checked = profile.domicile !== false;
+  const stateSel = document.getElementById('prof-state');
+  if (stateSel) {
+    stateSel.value = profile.state || (profile.domicile === false ? 'ALL' : 'BIHAR');
+  }
   document.getElementById('profile-modal').classList.add('show');
 }
 
@@ -6959,7 +7640,9 @@ function activateSegBtn(groupId, val) {
 function saveProfile() {
   profile.name = document.getElementById('prof-name').value.trim();
   profile.dob  = document.getElementById('prof-dob').value;
-  profile.domicile = document.getElementById('prof-domicile').checked;
+  const stateSel = document.getElementById('prof-state');
+  profile.state = stateSel ? stateSel.value : 'ALL';
+  profile.domicile = (profile.state === 'BIHAR');
 
   localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
   closeProfileModal();
