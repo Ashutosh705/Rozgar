@@ -30,9 +30,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Recruitment Scrapers Pipeline
+      - name: Execute Recruitment Scrapers & Aggregator Pipeline
         run: |
-          python scripts/fetch_all.py
+          python scripts/fetch_all.py || true
+          python scripts/aggregator.py
 
       - name: Check Diff & Commit Updates
         run: |
