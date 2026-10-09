@@ -6,6 +6,11 @@
 *.exe
 cloudflared.exe
 
+# --- Python Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
 # --- Temporary / Helper scripts ---
 install_mingit.py
 apply_index_update.py
