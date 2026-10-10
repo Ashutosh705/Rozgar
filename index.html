@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#1e3a8a" id="theme-color-meta" />
   <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
   <title id="page-title">Rozgar (रोज़गार) — सरकारी नौकरी साथी</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='128' fill='%231e3a8a'/%3E%3Cpath d='M140 180h232c11 0 20 9 20 20v180c0 11-9 20-20 20H140c-11 0-20-9-20-20V200c0-11 9-20 20-20z' fill='%232563eb'/%3E%3Cpath d='M210 180V140c0-25 20-45 46-45s46 20 46 45v40' stroke='%23ffffff' stroke-width='32' fill='none' stroke-linecap='round'/%3E%3Cpath d='M200 280l40 40 80-80' stroke='%2310b981' stroke-width='36' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='128' fill='%231e3a8a'/%3E%3Cpath d='M140 180h232c11 0 20 9 20 20v180c0 11-9 20-20 20H140c-11 0-20-9-20-20V200c0-11 9-20 20-20z' fill='%232563eb'/%3E%3Cpath d='M210 180V140c0-25 20-45 46-45s46 20 46 45v40' stroke='%23ffffff' stroke-width='32' fill='none' stroke-linecap='round'/%3E%3Cpath d='M200 280l40 40 80-80' stroke='%2310b981' stroke-width='36' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 
   <!-- Prevent Theme Flicker -->
   <script>
@@ -1762,6 +1764,28 @@
             </button>
           </div>
 
+          <!-- Instant Search & State Selector Bar -->
+          <div style="display:flex;gap:8px;margin-bottom:8px;align-items:center;">
+            <div style="flex:1;position:relative;">
+              <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:13px;color:var(--text-dim);pointer-events:none;">🔍</span>
+              <input type="text" id="vac-search-input" oninput="onVacancySearchInput(this.value)" placeholder="नौकरी, विभाग, या पद खोजें (उदा. SSC, Railway, BPSC)..." 
+                style="width:100%;padding:7px 10px 7px 30px;font-size:12px;border:1px solid var(--border-color);border-radius:var(--radius-md);background:var(--bg-card);color:var(--text-main);outline:none;font-weight:600;" />
+              <button id="vac-search-clear" onclick="clearVacancySearch()" style="display:none;position:absolute;right:8px;top:50%;transform:translateY(-50%);border:none;background:none;font-size:12px;color:var(--text-dim);cursor:pointer;">✕</button>
+            </div>
+            <select id="vac-state-filter" onchange="onVacancyStateFilterChange(this.value)" 
+              style="padding:6.5px 8px;font-size:11.5px;font-weight:700;border:1px solid var(--border-color);border-radius:var(--radius-md);background:var(--bg-card);color:var(--text-main);cursor:pointer;outline:none;">
+              <option value="ALL">🌐 सभी राज्य / All</option>
+              <option value="Central">🏛️ केंद्रीय (Central)</option>
+              <option value="UP">📍 उत्तर प्रदेश (UP)</option>
+              <option value="Bihar">📍 बिहार (Bihar)</option>
+              <option value="Jharkhand">📍 झारखण्ड</option>
+              <option value="Rajasthan">📍 राजस्थान</option>
+              <option value="Delhi">📍 दिल्ली</option>
+              <option value="MP">📍 मध्य प्रदेश</option>
+              <option value="Haryana">📍 हरियाणा</option>
+            </select>
+          </div>
+
           <!-- Sub-filters Bar -->
           <div class="vac-filter-bar" id="vac-filter-bar">
             <button class="vac-filter-btn active" data-filter="ALL" onclick="setVacancyFilter('ALL', this)"><span id="txt-flt-all">सभी</span></button>
@@ -1970,6 +1994,32 @@
         <button class="profile-pill-btn" onclick="openAddCustomDocModal()" style="padding:5px 10px;font-size:11px;font-weight:800;">
           + नया दस्तावेज़
         </button>
+      </div>
+
+      <!-- Vault Security & Backup Action Bar -->
+      <div style="display:flex;gap:6px;margin:8px 0 10px;align-items:center;background:var(--bg-card);padding:6px 10px;border-radius:var(--radius-lg);border:1px solid var(--border-color);">
+        <button id="btn-vault-lock-toggle" onclick="toggleVaultPinPrompt()" style="background:none;border:none;font-size:11.5px;font-weight:700;color:var(--text-main);cursor:pointer;display:flex;align-items:center;gap:5px;">
+          <span id="vault-lock-icon">🔒</span> <span id="txt-vault-lock-status">वॉल्ट PIN लॉक सेट करें</span>
+        </button>
+        <span style="flex:1;"></span>
+        <button onclick="exportVaultBackup()" style="background:rgba(37,99,235,0.1);border:1px solid rgba(37,99,235,0.25);color:var(--primary);padding:3px 8px;border-radius:var(--radius-sm);font-size:10.5px;font-weight:700;cursor:pointer;">
+          📥 बैकअप डाउनलोड
+        </button>
+        <button onclick="document.getElementById('vault-import-input').click()" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);color:#059669;padding:3px 8px;border-radius:var(--radius-sm);font-size:10.5px;font-weight:700;cursor:pointer;">
+          📤 रीस्टोर
+        </button>
+        <input type="file" id="vault-import-input" accept=".json" onchange="importVaultBackup(event)" style="display:none;" />
+      </div>
+
+      <!-- Locked Vault Overlay (Shown if PIN is active and locked) -->
+      <div id="vault-locked-screen" style="display:none;text-align:center;padding:32px 16px;background:var(--bg-card);border:1.5px solid var(--border-color);border-radius:var(--radius-2xl);margin-bottom:12px;">
+        <div style="font-size:36px;margin-bottom:8px;">🔒</div>
+        <h4 style="font-size:16px;font-weight:800;color:var(--text-main);margin-bottom:4px;">दस्तावेज़ वॉल्ट लॉक है</h4>
+        <p style="font-size:12px;color:var(--text-dim);margin-bottom:14px;">अपने प्रमाणपत्र और आईडी देखने के लिए 4-अंकीय PIN दर्ज करें</p>
+        <div style="display:flex;justify-content:center;gap:6px;max-width:220px;margin:0 auto 12px;">
+          <input type="password" id="vault-pin-unlock-input" maxlength="4" placeholder="••••" style="text-align:center;font-size:22px;letter-spacing:8px;padding:6px;width:120px;border:1.5px solid var(--primary);border-radius:var(--radius-md);background:var(--bg-card);color:var(--text-main);outline:none;" />
+          <button onclick="unlockVaultWithPin()" style="background:var(--primary);color:#fff;border:none;border-radius:var(--radius-md);padding:0 14px;font-weight:800;cursor:pointer;">अनलॉक</button>
+        </div>
       </div>
 
       <!-- Standard & Custom Vault Cards -->
@@ -16265,6 +16315,14 @@ document.addEventListener("DOMContentLoaded", () => {
   loadVacanciesFromSource(false);
   initQuiz();
   renderCommunityPosts();
+  if (typeof checkVaultLockState === 'function') checkVaultLockState();
+
+  // Register PWA Service Worker for 100% offline access & mobile install
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js')
+      .then(reg => console.log('Rozgar ServiceWorker registered:', reg.scope))
+      .catch(err => console.log('ServiceWorker registration skipped:', err));
+  }
 
   // Set default DOP date to today
   const today = new Date();
@@ -16606,6 +16664,29 @@ document.addEventListener('click', (e) => {
 /* ============================================================
    7. SARKARIRESULT HUB, ACCORDION JOBS & 5-STAGE LIFECYCLE
 ============================================================ */
+let activeSearchQuery = "";
+let activeStateFilter = "ALL";
+
+function onVacancySearchInput(val) {
+  activeSearchQuery = val;
+  const clearBtn = document.getElementById('vac-search-clear');
+  if (clearBtn) clearBtn.style.display = val ? 'block' : 'none';
+  currentVisibleCount = 15;
+  renderVacanciesFeed();
+}
+
+function clearVacancySearch() {
+  const inp = document.getElementById('vac-search-input');
+  if (inp) inp.value = '';
+  onVacancySearchInput('');
+}
+
+function onVacancyStateFilterChange(val) {
+  activeStateFilter = val;
+  currentVisibleCount = 15;
+  renderVacanciesFeed();
+}
+
 function setHubCategory(cat, btnEl) {
   currentHubCategory = cat;
   currentVisibleCount = 15;
@@ -16742,6 +16823,60 @@ function toggleJobTracking(jobId, e) {
   renderVacanciesFeed();
 }
 
+function shareVacancyOnWhatsApp(jobId) {
+  const vac = VACANCIES_DATA.find(v => v.id === jobId);
+  if (!vac) return;
+  const title = vac.title || vac.title_hi || "Government Vacancy";
+  const org = vac.org || vac.organization || "";
+  const vacancies = vac.vacancies || vac.posts || "Various Posts";
+  const lastDate = formatDateDisplay(vac.lastDate || vac.last_date);
+  const applyLink = vac.officialApplyUrl || vac.apply_link || window.location.href;
+
+  const msg = `📢 *${title}* (${org})\n` +
+              `🔹 कुल पद: ${vacancies}\n` +
+              `📅 आवेदन की अंतिम तिथि: ${lastDate}\n` +
+              `🔗 आधिकारिक पोर्टल: ${applyLink}\n\n` +
+              `📲 Rozgar App पर 100% ऑन-डिवाइस पात्रता जांचें व फ़ोटो रिसाइज करें:\n${window.location.origin + window.location.pathname}`;
+
+  const shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`;
+  window.open(shareUrl, '_blank');
+}
+
+function addReminderToCalendar(jobId) {
+  const vac = VACANCIES_DATA.find(v => v.id === jobId);
+  if (!vac) return;
+  const title = `⚠️ Last Date: ${vac.title || "Job Application Deadline"}`;
+  const rawDate = vac.lastDate || vac.last_date;
+  if (!rawDate) {
+    showToast("अंतिम तिथि की जानकारी उपलब्ध नहीं है");
+    return;
+  }
+
+  // Format YYYYMMDD
+  const cleanDate = rawDate.replace(/-/g, '');
+  const icsContent = 
+`BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Rozgar//Job Deadline Reminder//EN
+BEGIN:VEVENT
+SUMMARY:${title}
+DESCRIPTION:Rozgar App Reminder: Today is the last date to apply for ${vac.title} (${vac.org}).
+DTSTART;VALUE=DATE:${cleanDate}
+DTEND;VALUE=DATE:${cleanDate}
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR`;
+
+  const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `Rozgar_${jobId}_Reminder.ics`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showToast("📅 कैलेंडर रिमाइंडर (.ics) डाउनलोड हुआ!");
+}
+
 function toggleCardAccordion(jobId) {
   if (expandedCardIds.has(jobId)) {
     expandedCardIds.delete(jobId);
@@ -16800,6 +16935,31 @@ function renderVacanciesFeed() {
     if (currentVacancyFilter === 'RAILWAY') return (vac.id && vac.id.includes('RRB')) || (vac.org && (vac.org.includes('Railway') || (vac.org_hi && vac.org_hi.includes('रेलवे'))));
     return true;
   });
+
+  // 4. Filter by Dropdown State Filter
+  if (activeStateFilter && activeStateFilter !== 'ALL') {
+    list = list.filter(vac => {
+      if (activeStateFilter === 'Central') return vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
+      const st = (vac.state || "").toUpperCase();
+      const org = (vac.org || vac.title || "").toUpperCase();
+      const q = activeStateFilter.toUpperCase();
+      return st.includes(q) || org.includes(q);
+    });
+  }
+
+  // 5. Filter by Instant Search Query
+  if (activeSearchQuery && activeSearchQuery.trim()) {
+    const q = activeSearchQuery.trim().toLowerCase();
+    list = list.filter(vac => {
+      const title = (vac.title || "").toLowerCase();
+      const titleHi = (vac.title_hi || "").toLowerCase();
+      const org = (vac.org || "").toLowerCase();
+      const orgHi = (vac.org_hi || "").toLowerCase();
+      const cat = (vac.category || "").toLowerCase();
+      const qual = (vac.qualification || vac.minEducation || "").toLowerCase();
+      return title.includes(q) || titleHi.includes(q) || org.includes(q) || orgHi.includes(q) || cat.includes(q) || qual.includes(q);
+    });
+  }
 
   if (list.length === 0) {
     container.innerHTML = `
@@ -16994,6 +17154,16 @@ function renderVacanciesFeed() {
             <a class="btn-view-portal" href="${vac.officialApplyUrl}" target="_blank" rel="noopener">
               🌐 ${d.btnOfficialPortal} (${org})
             </a>
+          </div>
+
+          <!-- Utility Bar: WhatsApp Share & Calendar Reminder -->
+          <div style="display:flex;gap:6px;margin-top:8px;">
+            <button onclick="shareVacancyOnWhatsApp('${vac.id}')" style="flex:1;background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.3);color:#15803d;padding:6px 10px;border-radius:var(--radius-md);font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;">
+              <span>📲</span> <span>व्हाट्सएप पर शेयर करें</span>
+            </button>
+            <button onclick="addReminderToCalendar('${vac.id}')" style="flex:1;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);color:var(--primary);padding:6px 10px;border-radius:var(--radius-md);font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;">
+              <span>⏰</span> <span>लास्ट डेट रिमाइंडर</span>
+            </button>
           </div>
 
           <!-- Compact Bottom Collapse Button -->
@@ -17567,9 +17737,143 @@ function setProgress(pct, text) {
 }
 
 /* ============================================================
-   9. DOCUMENT VAULT & CUSTOM DOCUMENTS
+   9. DOCUMENT VAULT, SECURITY PIN & BACKUP RESTORE
 ============================================================ */
+const VAULT_PIN_KEY = "rozgar_vault_pin";
+let isVaultUnlocked = true;
+
+function checkVaultLockState() {
+  const savedPin = localStorage.getItem(VAULT_PIN_KEY);
+  const lockIcon = document.getElementById('vault-lock-icon');
+  const lockStatus = document.getElementById('txt-vault-lock-status');
+  const lockedScreen = document.getElementById('vault-locked-screen');
+  const vaultGrid = document.getElementById('vault-grid');
+
+  if (!savedPin) {
+    if (lockIcon) lockIcon.textContent = "🔓";
+    if (lockStatus) lockStatus.textContent = currentLang === 'en' ? "Set PIN Lock" : "PIN लॉक सेट करें";
+    if (lockedScreen) lockedScreen.style.display = "none";
+    if (vaultGrid) vaultGrid.style.display = "grid";
+    isVaultUnlocked = true;
+    return;
+  }
+
+  // PIN is configured
+  if (lockIcon) lockIcon.textContent = isVaultUnlocked ? "🔓" : "🔒";
+  if (lockStatus) lockStatus.textContent = isVaultUnlocked ? (currentLang === 'en' ? "Lock Vault" : "वॉल्ट लॉक करें") : (currentLang === 'en' ? "Locked" : "लॉक है");
+
+  if (isVaultUnlocked) {
+    if (lockedScreen) lockedScreen.style.display = "none";
+    if (vaultGrid) vaultGrid.style.display = "grid";
+  } else {
+    if (lockedScreen) lockedScreen.style.display = "block";
+    if (vaultGrid) vaultGrid.style.display = "none";
+  }
+}
+
+function toggleVaultPinPrompt() {
+  const savedPin = localStorage.getItem(VAULT_PIN_KEY);
+  if (!savedPin) {
+    const newPin = prompt("वॉल्ट सुरक्षित रखने के लिए 4-अंकीय PIN दर्ज करें (उदा. 1234):");
+    if (newPin && newPin.trim().length === 4) {
+      localStorage.setItem(VAULT_PIN_KEY, newPin.trim());
+      isVaultUnlocked = true;
+      checkVaultLockState();
+      showToast("🔐 वॉल्ट सुरक्षा PIN सफलतापूर्वक सेट हुआ!");
+    } else if (newPin) {
+      showToast("⚠️ कृपया ठीक 4 अंकों का PIN दर्ज करें");
+    }
+  } else {
+    if (isVaultUnlocked) {
+      isVaultUnlocked = false;
+      checkVaultLockState();
+      showToast("🔒 वॉल्ट लॉक कर दिया गया!");
+    } else {
+      unlockVaultWithPin();
+    }
+  }
+}
+
+function unlockVaultWithPin() {
+  const entered = document.getElementById('vault-pin-unlock-input').value.trim();
+  const savedPin = localStorage.getItem(VAULT_PIN_KEY);
+  if (entered === savedPin) {
+    isVaultUnlocked = true;
+    document.getElementById('vault-pin-unlock-input').value = "";
+    checkVaultLockState();
+    renderVaultCards();
+    showToast("🔓 वॉल्ट अनलॉक हो गया!");
+  } else {
+    showToast("❌ गलत PIN! पुनः प्रयास करें");
+  }
+}
+
+function exportVaultBackup() {
+  const backupData = {
+    app: "Rozgar",
+    version: "2.0",
+    exportDate: new Date().toISOString(),
+    profile: profile,
+    vaultCredentials: vaultCredentials,
+    vaultCustomDocs: vaultCustomDocs,
+    vaultDocPhotos: vaultDocPhotos,
+    trackedJobs: trackedJobs
+  };
+
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(backupData, null, 2));
+  const dlAnchor = document.createElement('a');
+  dlAnchor.setAttribute("href", dataStr);
+  dlAnchor.setAttribute("download", `Rozgar_Vault_Backup_${Date.now()}.json`);
+  document.body.appendChild(dlAnchor);
+  dlAnchor.click();
+  document.body.removeChild(dlAnchor);
+  showToast("📥 सुरक्षित वॉल्ट बैकअप डाउनलोड हो गया!");
+}
+
+function importVaultBackup(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (data.profile) {
+        profile = data.profile;
+        localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+      }
+      if (data.vaultCredentials) {
+        vaultCredentials = data.vaultCredentials;
+        localStorage.setItem(CREDENTIALS_KEY, JSON.stringify(vaultCredentials));
+      }
+      if (data.vaultCustomDocs) {
+        vaultCustomDocs = data.vaultCustomDocs;
+        localStorage.setItem(CUSTOM_DOCS_KEY, JSON.stringify(vaultCustomDocs));
+      }
+      if (data.vaultDocPhotos) {
+        vaultDocPhotos = data.vaultDocPhotos;
+        localStorage.setItem(VAULT_DOCS_KEY, JSON.stringify(vaultDocPhotos));
+      }
+      if (data.trackedJobs) {
+        trackedJobs = data.trackedJobs;
+        localStorage.setItem(TRACKED_JOBS_KEY, JSON.stringify(trackedJobs));
+      }
+
+      renderProfilePill();
+      renderVaultCards();
+      renderVacanciesFeed();
+      showToast("✅ बैकअप सफलतापूर्वक रीस्टोर हो गया!");
+    } catch (err) {
+      showToast("❌ बैकअप फ़ाइल अमान्य है!");
+    }
+  };
+  reader.readAsText(file);
+}
+
 function renderVaultCards() {
+  checkVaultLockState();
+  if (!isVaultUnlocked) return;
+
   const container = document.getElementById('vault-grid');
 
   // Standard Documents
