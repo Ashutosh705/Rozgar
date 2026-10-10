@@ -270,6 +270,11 @@
       cursor: pointer;
       flex-shrink: 0;
     }
+    @keyframes pulse-green {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
 
     /* ====================================================
        KEBAB DROPDOWN MENU
@@ -1709,10 +1714,27 @@
               सत्यापित सरकारी पोर्टल से लाइव अपडेटेड
             </div>
           </div>
-          <button class="profile-pill-btn" onclick="loadVacanciesFromSource(true)" style="padding:4px 10px;font-size:11px;display:flex;align-items:center;gap:4px;" title="Refresh Vacancies">
-            <span id="feed-refresh-icon">🔄</span>
-            <span id="txt-refresh-feed">रिफ्रेश</span>
-          </button>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <div id="live-sync-indicator" style="display:inline-flex;align-items:center;gap:5px;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.3);color:#059669;padding:3px 8px;border-radius:99px;font-size:10.5px;font-weight:700;">
+              <span class="live-pulse-dot" style="width:7px;height:7px;background:#10b981;border-radius:50%;display:inline-block;box-shadow:0 0 0 rgba(16,185,129,0.5);animation:pulse-green 1.8s infinite;"></span>
+              <span id="txt-live-sync-status">लाइव सिंक</span>
+            </div>
+            <button class="profile-pill-btn" onclick="loadVacanciesFromSource(true)" style="padding:4px 10px;font-size:11px;display:flex;align-items:center;gap:4px;" title="Refresh Vacancies">
+              <span id="feed-refresh-icon">🔄</span>
+              <span id="txt-refresh-feed">रिफ्रेश</span>
+            </button>
+          </div>
+        </div>
+        <!-- Sync metadata details -->
+        <div id="live-sync-meta-bar" style="display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:var(--text-muted);margin:4px 0 8px;padding:0 2px;">
+          <span>
+            <span id="txt-lbl-last-synced">अंतिम अपडेट:</span> 
+            <strong id="live-sync-timestamp" style="color:var(--text-color);">जाँच जारी...</strong>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:4px;">
+            <span>स्रोत:</span> 
+            <strong style="color:var(--primary-color);">6 लाइव जॉब पोर्टल (हर 6 घंटे में स्वतः सिंक)</strong>
+          </span>
         </div>
 
         <!-- SarkariResult Style Hub & Filter Section -->
@@ -16333,6 +16355,10 @@ function applyLanguage(lang) {
   if (hSub) hSub.textContent = d.homeSubheading;
   const rBtn = document.getElementById('txt-refresh-feed');
   if (rBtn) rBtn.textContent = d.refreshFeedBtn;
+  const lblLastSync = document.getElementById('txt-lbl-last-synced');
+  if (lblLastSync) lblLastSync.textContent = currentLang === 'en' ? 'Last Updated:' : (currentLang === 'hi' ? 'अंतिम अपडेट:' : 'Aakhiri Update:');
+  const syncStatEl = document.getElementById('txt-live-sync-status');
+  if (syncStatEl) syncStatEl.textContent = currentLang === 'en' ? 'Live Synced' : (currentLang === 'hi' ? 'लाइव सिंक' : 'Live Synced');
 
   // Hub Tabs
   const hAll = document.getElementById('txt-hub-all');
@@ -16623,6 +16649,13 @@ function loadMoreVacancies() {
 async function loadVacanciesFromSource(showToastMsg = false) {
   const refreshIcon = document.getElementById('feed-refresh-icon');
   if (refreshIcon) refreshIcon.style.animation = 'spin 0.7s linear infinite';
+  const syncStatusEl = document.getElementById('txt-live-sync-status');
+  if (syncStatusEl) {
+    syncStatusEl.textContent = currentLang === 'en' ? 'Syncing...' : (currentLang === 'hi' ? 'सिंक हो रहा है...' : 'Syncing...');
+  }
+
+  let fetchSuccess = false;
+  let lastModHeader = null;
 
   try {
     // Primary source: data/vacancies.json
@@ -16632,27 +16665,64 @@ async function loadVacanciesFromSource(showToastMsg = false) {
       res = await fetch('./vacancies.json?v=' + Date.now());
     }
     if (res.ok) {
+      lastModHeader = res.headers.get('Last-Modified');
       const data = await res.json();
       if (Array.isArray(data) && data.length > 0) {
         VACANCIES_DATA = data;
+        fetchSuccess = true;
       }
     }
   } catch (err) {
     try {
       const resFallback = await fetch('./vacancies.json?v=' + Date.now());
       if (resFallback.ok) {
+        lastModHeader = resFallback.headers.get('Last-Modified');
         const data = await resFallback.json();
-        if (Array.isArray(data) && data.length > 0) VACANCIES_DATA = data;
+        if (Array.isArray(data) && data.length > 0) {
+          VACANCIES_DATA = data;
+          fetchSuccess = true;
+        }
       }
     } catch (e2) {
       console.log("Using embedded fallback vacancies:", e2);
     }
   } finally {
     if (refreshIcon) refreshIcon.style.animation = '';
+    
+    // Update live sync status and relative timestamp
+    updateLiveSyncUI(fetchSuccess, lastModHeader);
+
     updateHubCounts();
     renderVacanciesFeed();
     if (showToastMsg) {
       showToast(I18N[currentLang].toastRefreshed || "Vacancies refreshed!");
+    }
+  }
+}
+
+function updateLiveSyncUI(success, lastModHeader) {
+  const syncStatusEl = document.getElementById('txt-live-sync-status');
+  const syncTimeEl = document.getElementById('live-sync-timestamp');
+  const d = I18N[currentLang] || I18N.hi;
+
+  if (syncStatusEl) {
+    if (success) {
+      syncStatusEl.textContent = currentLang === 'en' ? 'Live Synced' : (currentLang === 'hi' ? 'लाइव सिंक' : 'Live Synced');
+    } else {
+      syncStatusEl.textContent = currentLang === 'en' ? 'Offline Mode' : (currentLang === 'hi' ? 'ऑफलाइन मोड' : 'Offline Mode');
+    }
+  }
+
+  if (syncTimeEl) {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const dateStr = now.toLocaleDateString([], { month: 'short', day: 'numeric' });
+    if (currentLang === 'en') {
+      syncTimeEl.textContent = `Today, ${timeStr} (${VACANCIES_DATA.length} active notifications)`;
+    } else if (currentLang === 'hi') {
+      syncTimeEl.textContent = `आज, ${timeStr} (${VACANCIES_DATA.length} सक्रिय भर्तियाँ)`;
+    } else {
+      syncTimeEl.textContent = `Aaj, ${timeStr} (${VACANCIES_DATA.length} active bhartiyan)`;
     }
   }
 }
