@@ -1734,8 +1734,8 @@
             <strong id="live-sync-timestamp" style="color:var(--text-color);">जाँच जारी...</strong>
           </span>
           <span style="display:inline-flex;align-items:center;gap:4px;">
-            <span>स्रोत:</span> 
-            <strong style="color:var(--primary-color);">6 लाइव जॉब पोर्टल (हर 6 घंटे में स्वतः सिंक)</strong>
+            <span id="txt-lbl-source">स्रोत:</span> 
+            <strong id="txt-val-source" style="color:var(--primary-color);">6 लाइव जॉब पोर्टल (हर 6 घंटे में स्वतः सिंक)</strong>
           </span>
         </div>
 
@@ -16417,6 +16417,52 @@ function applyLanguage(lang) {
   if (lblLastSync) lblLastSync.textContent = currentLang === 'en' ? 'Last Updated:' : (currentLang === 'hi' ? 'अंतिम अपडेट:' : 'Aakhiri Update:');
   const syncStatEl = document.getElementById('txt-live-sync-status');
   if (syncStatEl) syncStatEl.textContent = currentLang === 'en' ? 'Live Synced' : (currentLang === 'hi' ? 'लाइव सिंक' : 'Live Synced');
+  const lblSrc = document.getElementById('txt-lbl-source');
+  if (lblSrc) lblSrc.textContent = currentLang === 'en' ? 'Source:' : (currentLang === 'hi' ? 'स्रोत:' : 'Source:');
+  const valSrc = document.getElementById('txt-val-source');
+  if (valSrc) valSrc.textContent = currentLang === 'en' ? '6 Live Job Portals (Auto-synced every 6 hrs)' : (currentLang === 'hi' ? '6 लाइव जॉब पोर्टल (हर 6 घंटे में स्वतः सिंक)' : '6 Live Job Portals (Har 6 ghante auto-sync)');
+
+  // Instant Search & State Filter Localization
+  const searchInp = document.getElementById('vac-search-input');
+  if (searchInp) {
+    searchInp.placeholder = currentLang === 'en' 
+      ? 'Search jobs, organization, or posts (e.g. SSC, Railway, BPSC)...' 
+      : (currentLang === 'hi' ? 'नौकरी, विभाग, या पद खोजें (उदा. SSC, Railway, BPSC)...' : 'Naukri, vibhag ya post khojein (jaise SSC, Railway)...');
+  }
+  const stateSel = document.getElementById('vac-state-filter');
+  if (stateSel) {
+    if (currentLang === 'en') {
+      stateSel.options[0].text = '🌐 All States / Central';
+      stateSel.options[1].text = '🏛️ Central (All-India)';
+      stateSel.options[2].text = '📍 Uttar Pradesh (UP)';
+      stateSel.options[3].text = '📍 Bihar';
+      stateSel.options[4].text = '📍 Jharkhand';
+      stateSel.options[5].text = '📍 Rajasthan';
+      stateSel.options[6].text = '📍 Delhi';
+      stateSel.options[7].text = '📍 Madhya Pradesh';
+      stateSel.options[8].text = '📍 Haryana';
+    } else if (currentLang === 'hi') {
+      stateSel.options[0].text = '🌐 सभी राज्य व केंद्र';
+      stateSel.options[1].text = '🏛️ केंद्रीय भर्ती';
+      stateSel.options[2].text = '📍 उत्तर प्रदेश';
+      stateSel.options[3].text = '📍 बिहार';
+      stateSel.options[4].text = '📍 झारखण्ड';
+      stateSel.options[5].text = '📍 राजस्थान';
+      stateSel.options[6].text = '📍 दिल्ली';
+      stateSel.options[7].text = '📍 मध्य प्रदेश';
+      stateSel.options[8].text = '📍 हरियाणा';
+    } else {
+      stateSel.options[0].text = '🌐 Sabhi States / Central';
+      stateSel.options[1].text = '🏛️ Central Govt';
+      stateSel.options[2].text = '📍 Uttar Pradesh';
+      stateSel.options[3].text = '📍 Bihar';
+      stateSel.options[4].text = '📍 Jharkhand';
+      stateSel.options[5].text = '📍 Rajasthan';
+      stateSel.options[6].text = '📍 Delhi';
+      stateSel.options[7].text = '📍 Madhya Pradesh';
+      stateSel.options[8].text = '📍 Haryana';
+    }
+  }
 
   // Hub Tabs
   const hAll = document.getElementById('txt-hub-all');
@@ -17159,10 +17205,10 @@ function renderVacanciesFeed() {
           <!-- Utility Bar: WhatsApp Share & Calendar Reminder -->
           <div style="display:flex;gap:6px;margin-top:8px;">
             <button onclick="shareVacancyOnWhatsApp('${vac.id}')" style="flex:1;background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.3);color:#15803d;padding:6px 10px;border-radius:var(--radius-md);font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;">
-              <span>📲</span> <span>व्हाट्सएप पर शेयर करें</span>
+              <span>📲</span> <span>${currentLang === 'en' ? 'Share on WhatsApp' : (currentLang === 'hi' ? 'व्हाट्सएप पर शेयर करें' : 'WhatsApp par share karein')}</span>
             </button>
             <button onclick="addReminderToCalendar('${vac.id}')" style="flex:1;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);color:var(--primary);padding:6px 10px;border-radius:var(--radius-md);font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;">
-              <span>⏰</span> <span>लास्ट डेट रिमाइंडर</span>
+              <span>⏰</span> <span>${currentLang === 'en' ? 'Last Date Reminder' : (currentLang === 'hi' ? 'लास्ट डेट रिमाइंडर' : 'Last Date Reminder')}</span>
             </button>
           </div>
 
