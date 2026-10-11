@@ -1839,18 +1839,18 @@
           <div class="bg-color-bar" style="margin-top:6px;">
             <div class="bg-chip active" data-bg="white" onclick="selectBgColor('white', this)">
               <span class="bg-swatch" style="background:#ffffff;"></span>
-              <span>सफ़ेद (Pure White)</span>
+              <span id="txt-bg-opt-white">सफ़ेद (Pure White)</span>
             </div>
             <div class="bg-chip" data-bg="blue" onclick="selectBgColor('blue', this)">
               <span class="bg-swatch" style="background:#93c5fd;"></span>
-              <span>हल्का नीला (RRB Blue)</span>
+              <span id="txt-bg-opt-blue">हल्का नीला (RRB Blue)</span>
             </div>
             <div class="bg-chip" data-bg="grey" onclick="selectBgColor('grey', this)">
               <span class="bg-swatch" style="background:#e2e8f0;"></span>
-              <span>स्लेटी (Grey)</span>
+              <span id="txt-bg-opt-grey">स्लेटी (Grey)</span>
             </div>
             <div class="bg-chip" data-bg="original" onclick="selectBgColor('original', this)">
-              <span>मूल (Original)</span>
+              <span id="txt-bg-opt-orig">मूल (Original)</span>
             </div>
           </div>
         </div>
@@ -1876,18 +1876,18 @@
             <span id="txt-size-compressor-title">फ़ाइल साइज़ सीमा (Target Size Boundary)</span>
           </div>
           <div class="size-quick-chips" style="margin-top:6px;">
-            <button class="sq-chip active" data-range="20-50" onclick="selectSizeRange(20, 50, this)">20–50 KB (मानक)</button>
-            <button class="sq-chip" data-range="10-20" onclick="selectSizeRange(10, 20, this)">10–20 KB (हस्ताक्षर/LTI)</button>
-            <button class="sq-chip" data-range="50-100" onclick="selectSizeRange(50, 100, this)">50–100 KB (दस्तावेज़)</button>
-            <button class="sq-chip" data-range="custom" onclick="selectCustomSize(this)">कस्टम सीमा ✎</button>
+            <button class="sq-chip active" id="btn-size-std" data-range="20-50" onclick="selectSizeRange(20, 50, this)">20–50 KB (मानक)</button>
+            <button class="sq-chip" id="btn-size-sig" data-range="10-20" onclick="selectSizeRange(10, 20, this)">10–20 KB (हस्ताक्षर/LTI)</button>
+            <button class="sq-chip" id="btn-size-doc" data-range="50-100" onclick="selectSizeRange(50, 100, this)">50–100 KB (दस्तावेज़)</button>
+            <button class="sq-chip" id="btn-size-custom" data-range="custom" onclick="selectCustomSize(this)">कस्टम सीमा ✎</button>
           </div>
           <div class="custom-size-box" id="custom-size-box" style="display:none;margin-top:6px;">
             <div>
-              <div style="font-size:10.5px;font-weight:700;color:var(--text-dim);">Min (KB)</div>
+              <div style="font-size:10.5px;font-weight:700;color:var(--text-dim);" id="txt-lbl-min-kb">Min (KB)</div>
               <input type="number" id="inp-min-kb" class="form-input-sm" value="20" min="5" max="500" onchange="onCustomKBChange()" />
             </div>
             <div>
-              <div style="font-size:10.5px;font-weight:700;color:var(--text-dim);">Max (KB)</div>
+              <div style="font-size:10.5px;font-weight:700;color:var(--text-dim);" id="txt-lbl-max-kb">Max (KB)</div>
               <input type="number" id="inp-max-kb" class="form-input-sm" value="50" min="10" max="1000" onchange="onCustomKBChange()" />
             </div>
           </div>
@@ -1992,7 +1992,7 @@
           </div>
         </div>
         <button class="profile-pill-btn" onclick="openAddCustomDocModal()" style="padding:5px 10px;font-size:11px;font-weight:800;">
-          + नया दस्तावेज़
+          <span id="txt-btn-add-custom-doc">+ नया दस्तावेज़</span>
         </button>
       </div>
 
@@ -2003,10 +2003,10 @@
         </button>
         <span style="flex:1;"></span>
         <button onclick="exportVaultBackup()" style="background:rgba(37,99,235,0.1);border:1px solid rgba(37,99,235,0.25);color:var(--primary);padding:3px 8px;border-radius:var(--radius-sm);font-size:10.5px;font-weight:700;cursor:pointer;">
-          📥 बैकअप डाउनलोड
+          <span id="txt-btn-vault-backup">📥 बैकअप डाउनलोड</span>
         </button>
         <button onclick="document.getElementById('vault-import-input').click()" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);color:#059669;padding:3px 8px;border-radius:var(--radius-sm);font-size:10.5px;font-weight:700;cursor:pointer;">
-          📤 रीस्टोर
+          <span id="txt-btn-vault-restore">📤 रीस्टोर</span>
         </button>
         <input type="file" id="vault-import-input" accept=".json" onchange="importVaultBackup(event)" style="display:none;" />
       </div>
@@ -2014,11 +2014,11 @@
       <!-- Locked Vault Overlay (Shown if PIN is active and locked) -->
       <div id="vault-locked-screen" style="display:none;text-align:center;padding:32px 16px;background:var(--bg-card);border:1.5px solid var(--border-color);border-radius:var(--radius-2xl);margin-bottom:12px;">
         <div style="font-size:36px;margin-bottom:8px;">🔒</div>
-        <h4 style="font-size:16px;font-weight:800;color:var(--text-main);margin-bottom:4px;">दस्तावेज़ वॉल्ट लॉक है</h4>
-        <p style="font-size:12px;color:var(--text-dim);margin-bottom:14px;">अपने प्रमाणपत्र और आईडी देखने के लिए 4-अंकीय PIN दर्ज करें</p>
+        <h4 style="font-size:16px;font-weight:800;color:var(--text-main);margin-bottom:4px;" id="txt-vault-locked-title">दस्तावेज़ वॉल्ट लॉक है</h4>
+        <p style="font-size:12px;color:var(--text-dim);margin-bottom:14px;" id="txt-vault-locked-desc">अपने प्रमाणपत्र और आईडी देखने के लिए 4-अंकीय PIN दर्ज करें</p>
         <div style="display:flex;justify-content:center;gap:6px;max-width:220px;margin:0 auto 12px;">
           <input type="password" id="vault-pin-unlock-input" maxlength="4" placeholder="••••" style="text-align:center;font-size:22px;letter-spacing:8px;padding:6px;width:120px;border:1.5px solid var(--primary);border-radius:var(--radius-md);background:var(--bg-card);color:var(--text-main);outline:none;" />
-          <button onclick="unlockVaultWithPin()" style="background:var(--primary);color:#fff;border:none;border-radius:var(--radius-md);padding:0 14px;font-weight:800;cursor:pointer;">अनलॉक</button>
+          <button onclick="unlockVaultWithPin()" style="background:var(--primary);color:#fff;border:none;border-radius:var(--radius-md);padding:0 14px;font-weight:800;cursor:pointer;" id="txt-btn-vault-unlock">अनलॉक</button>
         </div>
       </div>
 
@@ -2058,10 +2058,10 @@
 
         <div style="display:flex;gap:8px;margin-top:4px;">
           <button class="btn-apply-prepare" style="flex:1;padding:10px;" onclick="nextQuizQuestion()">
-            <span>अगला प्रश्न →</span>
+            <span id="txt-btn-next-q">अगला प्रश्न →</span>
           </button>
           <button class="btn-view-portal" style="width:auto;padding:10px 14px;" onclick="resetQuiz()">
-            <span>🔄 रीसेट</span>
+            <span id="txt-btn-reset-quiz">🔄 रीसेट</span>
           </button>
         </div>
       </div>
@@ -2080,7 +2080,7 @@
           </div>
         </div>
         <button class="profile-pill-btn" onclick="openNewPostModal()" style="padding:5px 10px;font-size:11px;font-weight:800;">
-          ✍️ सवाल पूछें
+          <span id="txt-btn-ask-question">✍️ सवाल पूछें</span>
         </button>
       </div>
 
@@ -15727,6 +15727,91 @@ const I18N = {
     mPostDesc: "विस्तार से लिखें",
     mPostSubmit: "चर्चा में पोस्ट करें",
 
+    // Studio Additional Controls
+    bgPickerTitle: "बैकग्राउंड रंग बदलें (Background Color)",
+    bgOptWhite: "सफ़ेद (Pure White)",
+    bgOptBlue: "हल्का नीला (RRB Blue)",
+    bgOptGrey: "स्लेटी (Grey)",
+    bgOptOrig: "मूल (Original)",
+    sizeCompressorTitle: "फ़ाइल साइज़ सीमा (Target Size Boundary)",
+    sizeChipStd: "20–50 KB (मानक)",
+    sizeChipSig: "10–20 KB (हस्ताक्षर/LTI)",
+    sizeChipDoc: "50–100 KB (दस्तावेज़)",
+    sizeChipCustom: "कस्टम सीमा ✎",
+    sizeLblMin: "न्यूनतम (KB)",
+    sizeLblMax: "अधिकतम (KB)",
+    gaugeExact: "✅ बिल्कुल सही सरकारी साइज़",
+    gaugeNear: "⚠️ लक्ष्य सीमा के पास",
+    stepLoading: "1/4 फ़ोटो लोड हो रही है...",
+    stepCrop: "2/4 सरकारी आयाम में क्रॉप हो रहा है...",
+    stepBg: "बैकग्राउंड रंग बदला जा रहा है...",
+    stepDop: "Name & Date of Photo (DOP) पट्टी लगाई जा रही है...",
+    stepSig: "कागज़ का बैकग्राउंड सफ़ेद व स्याही गाढ़ी की जा रही है...",
+    stepThumb: "अँगूठे की रेखाएँ (Ridges) व स्टैम्प कंट्रास्ट स्पष्ट किया जा रहा है...",
+    stepIter: "फ़ाइल साइज़ संपीड़न (Iterative Compression)...",
+    stepCycle: "चक्र {iter}: साइज़ {size} KB",
+    stepDone: "पूर्ण!",
+
+    // Vault Additional Keys
+    btnVaultLockSet: "वॉल्ट PIN लॉक सेट करें",
+    btnVaultLockActive: "वॉल्ट लॉक करें",
+    btnVaultLocked: "लॉक है",
+    btnVaultBackup: "📥 बैकअप डाउनलोड",
+    btnVaultRestore: "📤 रीस्टोर",
+    vaultLockedTitle: "दस्तावेज़ वॉल्ट लॉक है",
+    vaultLockedDesc: "अपने प्रमाणपत्र और आईडी देखने के लिए 4-अंकीय PIN दर्ज करें",
+    btnVaultUnlock: "अनलॉक",
+    toastVaultPinSet: "🔐 वॉल्ट सुरक्षा PIN सफलतापूर्वक सेट हुआ!",
+    toastVaultPinExact4: "⚠️ कृपया ठीक 4 अंकों का PIN दर्ज करें",
+    toastVaultLockedNow: "🔒 वॉल्ट लॉक कर दिया गया!",
+    toastVaultUnlockedNow: "🔓 वॉल्ट अनलॉक हो गया!",
+    toastVaultWrongPin: "❌ गलत PIN! पुनः प्रयास करें",
+    toastVaultBackupDl: "📥 सुरक्षित वॉल्ट बैकअप डाउनलोड हो गया!",
+    toastVaultRestored: "✅ बैकअप सफलतापूर्वक रीस्टोर हो गया!",
+    toastVaultInvalidBackup: "❌ बैकअप फ़ाइल अमान्य है!",
+    toastVaultDocSaved: "✅ दस्तावेज़ वॉल्ट में सहेज लिया गया!",
+    toastVaultDocDeleted: "दस्तावेज़ हटा दिया गया",
+    toastVaultPhotoSaved: "प्रमाणपत्र फ़ोटो सुरक्षित सहेजी गई!",
+    promptSetVaultPin: "वॉल्ट सुरक्षित रखने के लिए 4-अंकीय PIN दर्ज करें (उदा. 1234):",
+    confirmDeleteDoc: "क्या आप इस दस्तावेज़ को हटाना चाहते हैं?",
+    confirmClearAllData: "क्या आप सच में ऐप का सारा डेटा (प्रोफ़ाइल, वॉल्ट, कस्टम डॉक) साफ़ करना चाहते हैं?",
+    toastEnterDocNumber: "कृपया दस्तावेज़ या ID नंबर दर्ज करें",
+    customDocsHeading: "कस्टम दस्तावेज़ (Custom Added)",
+    btnCopy: "कॉपी",
+    btnViewPhoto: "📄 फ़ोटो देखें",
+    btnChangePhoto: "🔄 बदलें",
+    btnAddPhoto: "📷 प्रमाणपत्र फ़ोटो जोड़ें",
+    docRollAndNo: "रोल कोड व नंबर",
+    docTotalPct: "कुल अंक %",
+    docBoard: "बोर्ड",
+    docCertNo: "प्रमाण पत्र संख्या",
+    docIssueDate: "निर्गत तिथि",
+    docAadhaarLast4: "आधार अंतिम 4 अंक",
+    docDetailsLbl: "विवरण",
+
+    // Practice & Quiz Keys
+    practiceTitle: "डेली क्विज़ व पिछले वर्षों के प्रश्न (PYQs)",
+    practiceSub: "BSSC, Railway, SSC GD व BPSC के महत्वपूर्ण प्रश्न अभ्यास",
+    btnNextQuestion: "अगला प्रश्न →",
+    btnResetQuiz: "🔄 रीसेट",
+    quizScoreBadge: "स्कोर: {score}/{total}",
+    quizQuestionLoading: "प्रश्न लोड हो रहा है...",
+    quizExplainTitle: "💡 व्याख्या (Explanation):",
+    toastQuizReset: "क्विज़ रीसेट हो गया!",
+
+    // Community Keys
+    communityTitle: "छात्र संवाद व चर्चा (Community)",
+    communitySub: "सवाल पूछें, कट-ऑफ चर्चा करें व परीक्षा अपडेट साझा करें",
+    btnAskQuestion: "✍️ सवाल पूछें",
+    emptyCommunity: "कोई चर्चा उपलब्ध नहीं है। पहला प्रश्न पूछें!",
+    lblLikes: "लाइक",
+    lblReplies: "जवाब",
+    lblRecentReply: "ताज़ा जवाब",
+    promptWriteReply: "इस सवाल पर अपना जवाब लिखें:",
+    toastReplyPosted: "जवाब पोस्ट हो गया!",
+    toastEnterQuestionTitle: "कृपया प्रश्न का शीर्षक लिखें",
+    toastQuestionPosted: "✅ आपका सवाल समुदाय में पोस्ट हो गया!",
+
     // Placeholders
     placeholderName: "उदा. राहुल कुमार",
     placeholderCdNum: "उदा. ABCDE1234F",
@@ -15904,6 +15989,91 @@ const I18N = {
     mPostTopic: "Question Title",
     mPostDesc: "Write Details",
     mPostSubmit: "Post to Community",
+
+    // Studio Additional Controls
+    bgPickerTitle: "Change Background Color",
+    bgOptWhite: "Pure White",
+    bgOptBlue: "Light Blue (RRB Blue)",
+    bgOptGrey: "Grey",
+    bgOptOrig: "Original",
+    sizeCompressorTitle: "Target File Size Boundary",
+    sizeChipStd: "20–50 KB (Standard)",
+    sizeChipSig: "10–20 KB (Signature/LTI)",
+    sizeChipDoc: "50–100 KB (Documents)",
+    sizeChipCustom: "Custom Boundary ✎",
+    sizeLblMin: "Min (KB)",
+    sizeLblMax: "Max (KB)",
+    gaugeExact: "✅ Exact Official Size Limit",
+    gaugeNear: "⚠️ Close to Target Range",
+    stepLoading: "1/4 Loading photo...",
+    stepCrop: "2/4 Cropping to official dimensions...",
+    stepBg: "Replacing background color...",
+    stepDop: "Adding Name & Date of Photo (DOP) stamp...",
+    stepSig: "Enhancing white paper & deep black ink...",
+    stepThumb: "Sharpening thumb ridges and stamp contrast...",
+    stepIter: "Iterative compression in progress...",
+    stepCycle: "Cycle {iter}: Size {size} KB",
+    stepDone: "Completed!",
+
+    // Vault Additional Keys
+    btnVaultLockSet: "Set PIN Lock",
+    btnVaultLockActive: "Lock Vault",
+    btnVaultLocked: "Locked",
+    btnVaultBackup: "📥 Download Backup",
+    btnVaultRestore: "📤 Restore",
+    vaultLockedTitle: "Document Vault is Locked",
+    vaultLockedDesc: "Enter 4-digit PIN to access certificates and IDs",
+    btnVaultUnlock: "Unlock",
+    toastVaultPinSet: "🔐 Vault security PIN set successfully!",
+    toastVaultPinExact4: "⚠️ Please enter an exact 4-digit PIN",
+    toastVaultLockedNow: "🔒 Vault locked!",
+    toastVaultUnlockedNow: "🔓 Vault unlocked!",
+    toastVaultWrongPin: "❌ Incorrect PIN! Try again",
+    toastVaultBackupDl: "📥 Secure vault backup downloaded!",
+    toastVaultRestored: "✅ Backup restored successfully!",
+    toastVaultInvalidBackup: "❌ Invalid backup file!",
+    toastVaultDocSaved: "✅ Document saved to vault!",
+    toastVaultDocDeleted: "Document removed",
+    toastVaultPhotoSaved: "Certificate photo saved securely!",
+    promptSetVaultPin: "Enter 4-digit PIN to secure vault (e.g. 1234):",
+    confirmDeleteDoc: "Are you sure you want to remove this document?",
+    confirmClearAllData: "Are you sure you want to reset all app data (profile, vault, custom docs)?",
+    toastEnterDocNumber: "Please enter document or ID number",
+    customDocsHeading: "Custom Documents (User Added)",
+    btnCopy: "Copy",
+    btnViewPhoto: "📄 View Photo",
+    btnChangePhoto: "🔄 Change",
+    btnAddPhoto: "📷 Add Photo",
+    docRollAndNo: "Roll Code & Number",
+    docTotalPct: "Total Marks %",
+    docBoard: "Board",
+    docCertNo: "Certificate Number",
+    docIssueDate: "Issue Date",
+    docAadhaarLast4: "Aadhaar Last 4 Digits",
+    docDetailsLbl: "Details",
+
+    // Practice & Quiz Keys
+    practiceTitle: "Daily Quiz & Previous Years Questions (PYQs)",
+    practiceSub: "High-yield practice for BSSC, Railway, SSC GD & BPSC",
+    btnNextQuestion: "Next Question →",
+    btnResetQuiz: "🔄 Reset",
+    quizScoreBadge: "Score: {score}/{total}",
+    quizQuestionLoading: "Loading question...",
+    quizExplainTitle: "💡 Explanation:",
+    toastQuizReset: "Quiz reset!",
+
+    // Community Keys
+    communityTitle: "Aspirant Discussion & Community",
+    communitySub: "Ask doubts, discuss cutoffs, and share latest exam notices",
+    btnAskQuestion: "✍️ Ask Question",
+    emptyCommunity: "No discussions yet. Be the first to ask!",
+    lblLikes: "Likes",
+    lblReplies: "Replies",
+    lblRecentReply: "Latest Reply",
+    promptWriteReply: "Write your reply to this question:",
+    toastReplyPosted: "Reply posted!",
+    toastEnterQuestionTitle: "Please enter question title",
+    toastQuestionPosted: "✅ Your question has been posted to community!",
 
     // Placeholders
     placeholderName: "e.g. Rahul Kumar",
@@ -16083,6 +16253,91 @@ const I18N = {
     mPostDesc: "Details Likhein",
     mPostSubmit: "Post Karein",
 
+    // Studio Additional Controls
+    bgPickerTitle: "Background Color Badlein",
+    bgOptWhite: "Safed (Pure White)",
+    bgOptBlue: "Halka Neela (RRB Blue)",
+    bgOptGrey: "Sleti (Grey)",
+    bgOptOrig: "Original",
+    sizeCompressorTitle: "Target File Size Boundary",
+    sizeChipStd: "20–50 KB (Standard)",
+    sizeChipSig: "10–20 KB (Signature/LTI)",
+    sizeChipDoc: "50–100 KB (Documents)",
+    sizeChipCustom: "Custom Boundary ✎",
+    sizeLblMin: "Min (KB)",
+    sizeLblMax: "Max (KB)",
+    gaugeExact: "✅ Exact Govt Size Boundary",
+    gaugeNear: "⚠️ Target Range ke Kareeb",
+    stepLoading: "1/4 Photo load ho rahi hai...",
+    stepCrop: "2/4 Govt dimensions mein crop ho rahi hai...",
+    stepBg: "Background color badla ja raha hai...",
+    stepDop: "Name & Date of Photo (DOP) stamp lagaya ja raha hai...",
+    stepSig: "White paper & dark ink clear ki ja rahi hai...",
+    stepThumb: "Thumb ridges & stamp contrast sharp kiya ja raha hai...",
+    stepIter: "Iterative compression chalu hai...",
+    stepCycle: "Cycle {iter}: Size {size} KB",
+    stepDone: "Complete!",
+
+    // Vault Additional Keys
+    btnVaultLockSet: "Vault PIN Lock Set Karein",
+    btnVaultLockActive: "Vault Lock Karein",
+    btnVaultLocked: "Locked Hai",
+    btnVaultBackup: "📥 Backup Download",
+    btnVaultRestore: "📤 Restore",
+    vaultLockedTitle: "Document Vault Locked Hai",
+    vaultLockedDesc: "Apne certificates aur IDs dekhne ke liye 4-digit PIN enter karein",
+    btnVaultUnlock: "Unlock",
+    toastVaultPinSet: "🔐 Vault PIN lock set ho gaya!",
+    toastVaultPinExact4: "⚠️ Kripya theek 4 digits ka PIN enter karein",
+    toastVaultLockedNow: "🔒 Vault lock kar diya gaya!",
+    toastVaultUnlockedNow: "🔓 Vault unlock ho gaya!",
+    toastVaultWrongPin: "❌ Galat PIN! Dobara try karein",
+    toastVaultBackupDl: "📥 Safe vault backup download ho gaya!",
+    toastVaultRestored: "✅ Backup successfully restore ho gaya!",
+    toastVaultInvalidBackup: "❌ Backup file invalid hai!",
+    toastVaultDocSaved: "✅ Document vault mein save ho gaya!",
+    toastVaultDocDeleted: "Document hata diya gaya",
+    toastVaultPhotoSaved: "Certificate photo save ho gayi!",
+    promptSetVaultPin: "Vault safe rakhne ke liye 4-digit PIN enter karein (jaise 1234):",
+    confirmDeleteDoc: "Kya aap is document ko delete karna chahte hain?",
+    confirmClearAllData: "Kya aap sach mein app ka saara data (profile, vault, custom docs) reset karna chahte hain?",
+    toastEnterDocNumber: "Kripya document ya ID number enter karein",
+    customDocsHeading: "Custom Documents (User Added)",
+    btnCopy: "Copy",
+    btnViewPhoto: "📄 Photo Dekhein",
+    btnChangePhoto: "🔄 Badlein",
+    btnAddPhoto: "📷 Photo Jodein",
+    docRollAndNo: "Roll Code & Number",
+    docTotalPct: "Total Marks %",
+    docBoard: "Board",
+    docCertNo: "Certificate Number",
+    docIssueDate: "Issue Date",
+    docAadhaarLast4: "Aadhaar Last 4 Digits",
+    docDetailsLbl: "Details",
+
+    // Practice & Quiz Keys
+    practiceTitle: "Daily Quiz & Previous Years Questions (PYQs)",
+    practiceSub: "BSSC, Railway, SSC GD & BPSC ke imp questions practice",
+    btnNextQuestion: "Agla Sawal →",
+    btnResetQuiz: "🔄 Reset",
+    quizScoreBadge: "Score: {score}/{total}",
+    quizQuestionLoading: "Question load ho raha hai...",
+    quizExplainTitle: "💡 Explanation:",
+    toastQuizReset: "Quiz reset ho gaya!",
+
+    // Community Keys
+    communityTitle: "Aspirant Discussion & Community",
+    communitySub: "Sawal poochein, cutoff discuss karein & alerts share karein",
+    btnAskQuestion: "✍️ Sawal Poochein",
+    emptyCommunity: "Abhi koi discussion nahi hai. Pehla sawal poochein!",
+    lblLikes: "Likes",
+    lblReplies: "Jawab",
+    lblRecentReply: "Taza Jawab",
+    promptWriteReply: "Is sawal par apna jawab likhein:",
+    toastReplyPosted: "Jawab post ho gaya!",
+    toastEnterQuestionTitle: "Kripya question title likhein",
+    toastQuestionPosted: "✅ Aapka sawal community mein post ho gaya!",
+
     // Placeholders
     placeholderName: "jaise Rahul Kumar",
     placeholderCdNum: "jaise ABCDE1234F",
@@ -16224,9 +16479,26 @@ const SEEDED_COMMUNITY_POSTS = [
     category: "❓ फ़ॉर्म डाउट",
     title: "RRB NTPC Form में OBC-NCL सर्टिफिकेट किस तिथि का मान्य होगा?",
     desc: "नमस्ते साथियों, मेरा NCL सर्टिफिकेट 8 महीने पुराना है। क्या रेलवे फॉर्म भरते समय नया बनवाना अनिवार्य है या DV के समय नया चाहिए?",
+
+    author_en: "Rohit Kumar (Patna)",
+    time_en: "2 hours ago",
+    category_en: "❓ Form Doubt",
+    title_en: "What is the acceptable cutoff date for OBC-NCL Certificate in RRB NTPC?",
+    desc_en: "Hello friends, my NCL certificate is 8 months old. Is it mandatory to issue a new one while filling the form or during Document Verification?",
+
+    author_hinglish: "Rohit Kumar (Patna)",
+    time_hinglish: "2 ghante pehle",
+    category_hinglish: "❓ Form Doubt",
+    title_hinglish: "RRB NTPC Form mein OBC-NCL Certificate kis date ka valid hoga?",
+    desc_hinglish: "Hello dosto, mera NCL certificate 8 mahine purana hai. Kya form bharte waqt naya banwana zaroori hai ya DV ke time?",
+
     likes: 42,
     replies: [
-      { author: "अमन वर्मा", text: "फॉर्म में पुराना नंबर चल जाएगा, लेकिन DV के समय चालू वित्तीय वर्ष (1 साल के अंदर) का होना चाहिए।" }
+      { 
+        author: "अमन वर्मा", text: "फॉर्म में पुराना नंबर चल जाएगा, लेकिन DV के समय चालू वित्तीय वर्ष (1 साल के अंदर) का होना चाहिए।",
+        author_en: "Aman Verma", text_en: "Old certificate number works for application, but during DV it must be from current financial year (within 1 yr).",
+        author_hinglish: "Aman Verma", text_hinglish: "Form mein purana number chal jayega, lekin DV ke time current financial year ka hona chahiye."
+      }
     ]
   },
   {
@@ -16236,6 +16508,19 @@ const SEEDED_COMMUNITY_POSTS = [
     category: "📢 परीक्षा अपडेट",
     title: "SSC GD Constable 2025 में स्टेट डोमिसाइल वेरिफिकेशन",
     desc: "जो भी अभ्यर्थी SSC GD भर रहे हैं, ध्यान रखें कि जिस राज्य का डोमिसाइल डालेंगे उसी राज्य की कट-ऑफ लगेगी।",
+
+    author_en: "Anjali Kumari (Gaya)",
+    time_en: "4 hours ago",
+    category_en: "📢 Exam Update",
+    title_en: "SSC GD Constable 2025 State Domicile Verification Alert",
+    desc_en: "All candidates applying for SSC GD, please ensure that cutoff will strictly apply for the state whose domicile certificate you upload.",
+
+    author_hinglish: "Anjali Kumari (Gaya)",
+    time_hinglish: "4 ghante pehle",
+    category_hinglish: "📢 Exam Update",
+    title_hinglish: "SSC GD Constable 2025 mein State Domicile Verification",
+    desc_hinglish: "Jo bhi aspirants SSC GD bhar rahe hain, dhyan rakhein ki jis state ka domicile daalenge usi state ki cutoff lagegi.",
+
     likes: 67,
     replies: []
   },
@@ -16246,52 +16531,105 @@ const SEEDED_COMMUNITY_POSTS = [
     category: "📚 तैयारी व रणनीति",
     title: "BPSC 70th CCE: बिहार स्पेशल करंट अफेयर्स कहाँ से करें?",
     desc: "प्रीलिम्स के लिए बिहार आर्थिक सर्वेक्षण 2023-24 और बजट के डेटा को अच्छे से रट लें, 12-15 सवाल सीधे यहीं से रहते हैं।",
+
+    author_en: "Vivek Jha (Muzaffarpur)",
+    time_en: "Yesterday",
+    category_en: "📚 Prep Strategy",
+    title_en: "BPSC 70th CCE: Best source for Bihar Special Current Affairs?",
+    desc_en: "For prelims, thoroughly memorize Bihar Economic Survey and state budget data; 12-15 direct questions come from here.",
+
+    author_hinglish: "Vivek Jha (Muzaffarpur)",
+    time_hinglish: "Kal",
+    category_hinglish: "📚 Prep Strategy",
+    title_hinglish: "BPSC 70th CCE: Bihar Special Current Affairs kahan se karein?",
+    desc_hinglish: "Prelims ke liye Bihar Economic Survey aur Budget data acche se revise karein, 12-15 questions direct aate hain.",
+
     likes: 89,
     replies: []
   }
 ];
 
-/* Practice PYQ Question Bank */
+/* Practice PYQ Question Bank (Tri-lingual: Hi, En, Hinglish) */
 const QUIZ_QUESTIONS = [
   {
     id: 1,
     exam: "BSSC Inter Level PYQ",
     question: "बिहार के किस जिले में प्राचीन 'विक्रमशिला विश्वविद्यालय' के अवशेष स्थित हैं?",
     options: ["नालंदा", "भागलपुर", "गया", "वैशाली"],
-    answerIndex: 1,
-    explain: "विक्रमशिला विश्वविद्यालय की स्थापना पाल वंश के शासक धर्मपाल ने भागलपुर जिले के अंतीचक में की थी।"
+    explain: "विक्रमशिला विश्वविद्यालय की स्थापना पाल वंश के शासक धर्मपाल ने भागलपुर जिले के अंतीचक में की थी।",
+
+    question_en: "In which district of Bihar are the ruins of the ancient 'Vikramshila University' situated?",
+    options_en: ["Nalanda", "Bhagalpur", "Gaya", "Vaishali"],
+    explain_en: "Vikramshila University was established by the Pala King Dharampala at Antichak in Bhagalpur district.",
+
+    question_hinglish: "Bihar ke kis district mein ancient 'Vikramshila University' ke ruins situated hain?",
+    options_hinglish: ["Nalanda", "Bhagalpur", "Gaya", "Vaishali"],
+    explain_hinglish: "Vikramshila University ko Pala dynasty ke King Dharampala ne Bhagalpur ke Antichak mein establish kiya tha.",
+    answerIndex: 1
   },
   {
     id: 2,
     exam: "Railway RRB NTPC PYQ",
     question: "भारतीय रेलवे की प्रथम यात्री ट्रेन 1853 में किन दो स्टेशनों के बीच चली थी?",
     options: ["हावड़ा से हुगली", "बॉम्बे (बोरीबंदर) से ठाणे", "मद्रास से अर्कोट", "दिल्ली से आगरा"],
-    answerIndex: 1,
-    explain: "16 अप्रैल 1853 को 34 किलोमीटर की दूरी पर बॉम्बे (बोरीबंदर) से ठाणे के बीच भारत की पहली रेल चली थी।"
+    explain: "16 अप्रैल 1853 को 34 किलोमीटर की दूरी पर बॉम्बे (बोरीबंदर) से ठाणे के बीच भारत की पहली रेल चली थी।",
+
+    question_en: "Between which two stations did India's first passenger train run in 1853?",
+    options_en: ["Howrah to Hooghly", "Bombay (Bori Bunder) to Thane", "Madras to Arcot", "Delhi to Agra"],
+    explain_en: "India's first passenger train ran on 16 April 1853 covering 34 km between Bombay (Bori Bunder) and Thane.",
+
+    question_hinglish: "Indian Railways ki first passenger train 1853 mein kin do stations ke beech chali thi?",
+    options_hinglish: ["Howrah se Hooghly", "Bombay (Bori Bunder) se Thane", "Madras se Arcot", "Delhi se Agra"],
+    explain_hinglish: "16 April 1853 ko 34 km ki distance par Bombay (Bori Bunder) se Thane ke beech India ki first train chali thi.",
+    answerIndex: 1
   },
   {
     id: 3,
     exam: "BPSC 69th CCE PYQ",
     question: "भारतीय संविधान के किस अनुच्छेद के अंतर्गत 'राज्य लोक सेवा आयोग' (BPSC) का गठन होता है?",
     options: ["अनुच्छेद 280", "अनुच्छेद 315", "अनुच्छेद 324", "अनुच्छेद 356"],
-    answerIndex: 1,
-    explain: "अनुच्छेद 315 संघ और राज्यों के लिए लोक सेवा आयोगों के गठन का प्रावधान करता है।"
+    explain: "अनुच्छेद 315 संघ और राज्यों के लिए लोक सेवा आयोगों के गठन का प्रावधान करता है।",
+
+    question_en: "Under which Article of the Indian Constitution is the 'State Public Service Commission' (BPSC) established?",
+    options_en: ["Article 280", "Article 315", "Article 324", "Article 356"],
+    explain_en: "Article 315 of the Constitution provides for the establishment of Public Service Commissions for the Union and States.",
+
+    question_hinglish: "Indian Constitution ke kis Article ke under 'State Public Service Commission' (BPSC) establish hota hai?",
+    options_hinglish: ["Article 280", "Article 315", "Article 324", "Article 356"],
+    explain_hinglish: "Article 315 Union aur States ke liye Public Service Commissions ke establishment ka provision deta hai.",
+    answerIndex: 1
   },
   {
     id: 4,
     exam: "SSC GD Science PYQ",
     question: "मानव रक्त का सामान्य pH मान (pH Value) लगभग कितना होता है?",
     options: ["6.2", "7.4", "8.5", "5.0"],
-    answerIndex: 1,
-    explain: "मानव रक्त थोड़ा क्षारीय (mildly alkaline) होता है और इसका सामान्य pH मान लगभग 7.35 से 7.45 होता है।"
+    explain: "मानव रक्त थोड़ा क्षारीय (mildly alkaline) होता है और इसका सामान्य pH मान लगभग 7.35 से 7.45 होता है।",
+
+    question_en: "What is the normal pH value of human blood approximately?",
+    options_en: ["6.2", "7.4", "8.5", "5.0"],
+    explain_en: "Human blood is slightly alkaline with a normal physiological pH range of approximately 7.35 to 7.45 (around 7.4).",
+
+    question_hinglish: "Human blood ka normal pH value approximately kitna hota hai?",
+    options_hinglish: ["6.2", "7.4", "8.5", "5.0"],
+    explain_hinglish: "Human blood slightly alkaline hota hai aur iska normal pH value approximately 7.35 se 7.45 hota hai.",
+    answerIndex: 1
   },
   {
     id: 5,
     exam: "Bihar Police Constable PYQ",
     question: "बिहार में 1857 की क्रांति का नेतृत्व जगदीशपुर से किसने किया था?",
     options: ["पीर अली", "बाबू कुंवर सिंह", "अमर सिंह", "हरे कृष्ण सिंह"],
-    answerIndex: 1,
-    explain: "बाबू वीर कुंवर सिंह ने 80 वर्ष की उम्र में जगदीशपुर (भोजपुर) से 1857 के संग्राम का अमर नेतृत्व किया था।"
+    explain: "बाबू वीर कुंवर सिंह ने 80 वर्ष की उम्र में जगदीशपुर (भोजपुर) से 1857 के संग्राम का अमर नेतृत्व किया था।",
+
+    question_en: "Who led the Revolt of 1857 in Bihar from Jagdishpur?",
+    options_en: ["Peer Ali", "Babu Kunwar Singh", "Amar Singh", "Hare Krishna Singh"],
+    explain_en: "Babu Veer Kunwar Singh heroically led the Indian Rebellion of 1857 from Jagdishpur (Bhojpur) at the age of nearly 80.",
+
+    question_hinglish: "Bihar mein 1857 Revolt ka leadership Jagdishpur se kisne kiya tha?",
+    options_hinglish: ["Peer Ali", "Babu Kunwar Singh", "Amar Singh", "Hare Krishna Singh"],
+    explain_hinglish: "Babu Veer Kunwar Singh ne 80 saal ki age mein Jagdishpur (Bhojpur) se 1857 ke movement ko lead kiya tha.",
+    answerIndex: 1
   }
 ];
 let currentQuizIndex = 0;
@@ -16509,7 +16847,7 @@ function applyLanguage(lang) {
   if (postTitleInp && d.placeholderPostTitle) postTitleInp.placeholder = d.placeholderPostTitle;
   const postDescInp = document.getElementById('post-desc');
   if (postDescInp && d.placeholderPostDesc) postDescInp.placeholder = d.placeholderPostDesc;
-  const dopNameInp = document.getElementById('dop-candidate-name');
+  const dopNameInp = document.getElementById('dop-name') || document.getElementById('dop-candidate-name');
   if (dopNameInp && d.placeholderDopName) dopNameInp.placeholder = d.placeholderDopName;
 
   // Re-render Profile Pill for strict language isolation
@@ -16645,17 +16983,77 @@ function applyLanguage(lang) {
   const rDown = document.getElementById('txt-btn-download');
   if (rDown) rDown.textContent = d.btnDownload;
 
-  // Vault
+  // Studio Advanced Controls
+  const bgTitle = document.getElementById('txt-bg-picker-title');
+  if (bgTitle) bgTitle.textContent = d.bgPickerTitle || "Change Background Color";
+  const bgW = document.getElementById('txt-bg-opt-white');
+  if (bgW) bgW.textContent = d.bgOptWhite || "Pure White";
+  const bgB = document.getElementById('txt-bg-opt-blue');
+  if (bgB) bgB.textContent = d.bgOptBlue || "Light Blue (RRB Blue)";
+  const bgG = document.getElementById('txt-bg-opt-grey');
+  if (bgG) bgG.textContent = d.bgOptGrey || "Grey";
+  const bgO = document.getElementById('txt-bg-opt-orig');
+  if (bgO) bgO.textContent = d.bgOptOrig || "Original";
+
+  const sizeTitle = document.getElementById('txt-size-compressor-title');
+  if (sizeTitle) sizeTitle.textContent = d.sizeCompressorTitle || "Target File Size Boundary";
+  const bSizeStd = document.getElementById('btn-size-std');
+  if (bSizeStd) bSizeStd.textContent = d.sizeChipStd || "20–50 KB (Standard)";
+  const bSizeSig = document.getElementById('btn-size-sig');
+  if (bSizeSig) bSizeSig.textContent = d.sizeChipSig || "10–20 KB (Signature/LTI)";
+  const bSizeDoc = document.getElementById('btn-size-doc');
+  if (bSizeDoc) bSizeDoc.textContent = d.sizeChipDoc || "50–100 KB (Documents)";
+  const bSizeCus = document.getElementById('btn-size-custom');
+  if (bSizeCus) bSizeCus.textContent = d.sizeChipCustom || "Custom Boundary ✎";
+  const lblMinKb = document.getElementById('txt-lbl-min-kb');
+  if (lblMinKb) lblMinKb.textContent = d.sizeLblMin || "Min (KB)";
+  const lblMaxKb = document.getElementById('txt-lbl-max-kb');
+  if (lblMaxKb) lblMaxKb.textContent = d.sizeLblMax || "Max (KB)";
+
+  // Vault Tab
   const vTitle = document.getElementById('txt-vault-title');
   if (vTitle) vTitle.textContent = d.vaultTitle;
   const vSub = document.getElementById('txt-vault-sub');
   if (vSub) vSub.textContent = d.vaultSub;
+  const btnAddCd = document.getElementById('txt-btn-add-custom-doc');
+  if (btnAddCd) btnAddCd.textContent = d.btnAddCustomDoc;
+  const btnVBackup = document.getElementById('txt-btn-vault-backup');
+  if (btnVBackup) btnVBackup.textContent = d.btnVaultBackup;
+  const btnVRestore = document.getElementById('txt-btn-vault-restore');
+  if (btnVRestore) btnVRestore.textContent = d.btnVaultRestore;
+  const vLockedTitle = document.getElementById('txt-vault-locked-title');
+  if (vLockedTitle) vLockedTitle.textContent = d.vaultLockedTitle;
+  const vLockedDesc = document.getElementById('txt-vault-locked-desc');
+  if (vLockedDesc) vLockedDesc.textContent = d.vaultLockedDesc;
+  const btnVUnlock = document.getElementById('txt-btn-vault-unlock');
+  if (btnVUnlock) btnVUnlock.textContent = d.btnVaultUnlock;
+
+  // Practice Tab
+  const pTitle = document.getElementById('txt-practice-title');
+  if (pTitle) pTitle.textContent = d.practiceTitle;
+  const pSub = document.getElementById('txt-practice-sub');
+  if (pSub) pSub.textContent = d.practiceSub;
+  const btnNextQ = document.getElementById('txt-btn-next-q');
+  if (btnNextQ) btnNextQ.textContent = d.btnNextQuestion;
+  const btnResetQ = document.getElementById('txt-btn-reset-quiz');
+  if (btnResetQ) btnResetQ.textContent = d.btnResetQuiz;
+
+  // Community Tab
+  const cTitle = document.getElementById('txt-community-title');
+  if (cTitle) cTitle.textContent = d.communityTitle;
+  const cSub = document.getElementById('txt-community-sub');
+  if (cSub) cSub.textContent = d.communitySub;
+  const btnAskQ = document.getElementById('txt-btn-ask-question');
+  if (btnAskQ) btnAskQ.textContent = d.btnAskQuestion;
 
   renderProfilePill();
   renderVacanciesFeed();
   updateHubCounts();
   renderPresetSelectorGrid();
   renderVaultCards();
+  if (typeof checkVaultLockState === 'function') checkVaultLockState();
+  if (typeof loadQuizQuestion === 'function') loadQuizQuestion(currentQuizIndex);
+  if (typeof renderCommunityPosts === 'function') renderCommunityPosts();
 }
 
 /* ============================================================
@@ -17362,12 +17760,45 @@ function openResizerWithPreset(presetKey) {
 
 function renderPresetSelectorGrid() {
   const container = document.getElementById('preset-grid');
+  const isEn = currentLang === 'en';
+  const isHinglish = currentLang === 'hinglish';
+
   const presets = [
-    { key: "BSSC_PHOTO", name: "BSSC / BPSC फ़ोटो", type: "फ़ोटो", spec: "350×450px · 20–50 KB", cls: "pb-photo" },
-    { key: "SSC_PHOTO",  name: "SSC केंद्रीय फ़ोटो", type: "फ़ोटो", spec: "350×450px · 20–50 KB", cls: "pb-photo" },
-    { key: "RRB_PHOTO",  name: "रेलवे RRB फ़ोटो", type: "फ़ोटो", spec: "350×450px · 15–40 KB", cls: "pb-photo" },
-    { key: "SIGNATURE_GEN", name: "हस्ताक्षर (सफ़ेद BG)", type: "हस्ताक्षर", spec: "250×100px · 10–20 KB", cls: "pb-sig" },
-    { key: "THUMB_IMPRESSION", name: "बायाँ अँगूठा (LTI)", type: "अँगूठा", spec: "250×150px · 10–20 KB", cls: "pb-thumb" }
+    { 
+      key: "BSSC_PHOTO", 
+      name: isEn ? "BSSC / BPSC Photo" : (isHinglish ? "BSSC / BPSC Photo" : "BSSC / BPSC फ़ोटो"), 
+      type: isEn ? "PHOTO" : (isHinglish ? "PHOTO" : "फ़ोटो"), 
+      spec: "350×450px · 20–50 KB", 
+      cls: "pb-photo" 
+    },
+    { 
+      key: "SSC_PHOTO",  
+      name: isEn ? "SSC Central Photo" : (isHinglish ? "SSC Central Photo" : "SSC केंद्रीय फ़ोटो"), 
+      type: isEn ? "PHOTO" : (isHinglish ? "PHOTO" : "फ़ोटो"), 
+      spec: "350×450px · 20–50 KB", 
+      cls: "pb-photo" 
+    },
+    { 
+      key: "RRB_PHOTO",  
+      name: isEn ? "Railway RRB Photo" : (isHinglish ? "Railway RRB Photo" : "रेलवे RRB फ़ोटो"), 
+      type: isEn ? "PHOTO" : (isHinglish ? "PHOTO" : "फ़ोटो"), 
+      spec: "350×450px · 15–40 KB", 
+      cls: "pb-photo" 
+    },
+    { 
+      key: "SIGNATURE_GEN", 
+      name: isEn ? "Signature (White BG)" : (isHinglish ? "Signature (White BG)" : "हस्ताक्षर (सफ़ेद BG)"), 
+      type: isEn ? "SIGNATURE" : (isHinglish ? "SIGNATURE" : "हस्ताक्षर"), 
+      spec: "250×100px · 10–20 KB", 
+      cls: "pb-sig" 
+    },
+    { 
+      key: "THUMB_IMPRESSION", 
+      name: isEn ? "Left Thumb (LTI)" : (isHinglish ? "Left Thumb (LTI)" : "बायाँ अँगूठा (LTI)"), 
+      type: isEn ? "THUMB" : (isHinglish ? "THUMB" : "अँगूठा"), 
+      spec: "250×150px · 10–20 KB", 
+      cls: "pb-thumb" 
+    }
   ];
 
   let html = '';
@@ -17509,10 +17940,10 @@ async function processImage() {
   document.getElementById("result-card").style.display = "none";
 
   try {
-    setProgress(15, "1/4 फ़ोटो लोड हो रही है...");
+    setProgress(15, d.stepLoading || "1/4 Loading photo...");
     const sourceImage = await loadImageFromFile(sourceFile);
 
-    setProgress(35, "2/4 सरकारी आयाम में क्रॉप हो रहा है...");
+    setProgress(35, d.stepCrop || "2/4 Cropping to official dimensions...");
     const canvas = document.getElementById("processing-canvas");
     canvas.width  = preset.w;
     canvas.height = preset.h;
@@ -17523,23 +17954,23 @@ async function processImage() {
     if (preset.assetType === "PHOTO") {
       // 1. Background color replacement if requested
       if (currentBgColor !== "original") {
-        setProgress(45, "बैकग्राउंड रंग बदला जा रहा है...");
+        setProgress(45, d.stepBg || "Replacing background color...");
         applyCanvasBackgroundColor(ctx, currentBgColor, preset.w, preset.h);
       }
       // 2. Name & DOP overlay if requested
       const dopEnabled = document.getElementById('dop-toggle').checked;
       if (dopEnabled) {
-        setProgress(50, "Name & Date of Photo (DOP) पट्टी लगाई जा रही है...");
+        setProgress(50, d.stepDop || "Adding Name & Date of Photo (DOP) stamp...");
         const dopName = document.getElementById('dop-name').value.trim();
         const dopDate = document.getElementById('dop-date').value.trim();
         drawNameAndDOP(ctx, dopName, dopDate, preset.w, preset.h);
       }
     } else if (preset.assetType === "SIGNATURE") {
-      setProgress(50, "कागज़ का बैकग्राउंड सफ़ेद व स्याही गाढ़ी की जा रही है...");
+      setProgress(50, d.stepSig || "Enhancing white paper & deep black ink...");
       await sleep(40);
       enhanceSignatureContrast(ctx, preset.w, preset.h);
     } else if (preset.assetType === "THUMB") {
-      setProgress(50, "अँगूठे की रेखाएँ (Ridges) व स्टैम्प कंट्रास्ट स्पष्ट किया जा रहा है...");
+      setProgress(50, d.stepThumb || "Sharpening thumb ridges and stamp contrast...");
       await sleep(40);
       enhanceThumbImpression(ctx, preset.w, preset.h);
     }
@@ -17554,19 +17985,22 @@ async function processImage() {
     const minBytes = customMinKB * 1024;
     const maxBytes = customMaxKB * 1024;
 
-    setProgress(70, "फ़ाइल साइज़ संपीड़न (Iterative Compression)...");
+    setProgress(70, d.stepIter || "Iterative compression in progress...");
     await sleep(40);
 
     const { blob, iterations, finalSizeBytes } = await binarySearchCompress(
       canvas, minBytes, maxBytes,
       (iter, q, size) => {
         const pct = 70 + Math.round((iter / 8) * 25);
-        setProgress(pct, `चक्र ${iter}: साइज़ ${(size/1024).toFixed(1)} KB`);
+        const cycleStr = (d.stepCycle || "Cycle {iter}: Size {size} KB")
+          .replace("{iter}", iter)
+          .replace("{size}", (size/1024).toFixed(1));
+        setProgress(pct, cycleStr);
       }
     );
 
     resultBlob = blob;
-    setProgress(100, "पूर्ण!");
+    setProgress(100, d.stepDone || "Completed!");
     renderResult(finalSizeBytes, iterations, minBytes, maxBytes, preset.filename);
 
   } catch (err) {
@@ -17753,6 +18187,7 @@ function renderResult(finalSizeBytes, iterations, minBytes, maxBytes, filename) 
   const minKB = minBytes / 1024;
   const maxKB = maxBytes / 1024;
   const inRange = finalSizeBytes >= minBytes && finalSizeBytes <= maxBytes;
+  const d = I18N[currentLang];
 
   const trackMax = maxKB * 1.4;
   const zoneLeft  = (minKB / trackMax * 100).toFixed(1);
@@ -17765,7 +18200,9 @@ function renderResult(finalSizeBytes, iterations, minBytes, maxBytes, filename) 
   document.getElementById("si-zone").style.left     = `${zoneLeft}%`;
   document.getElementById("si-zone").style.width    = `${(zoneRight - zoneLeft).toFixed(1)}%`;
   document.getElementById("si-needle").style.left   = `${needlePos}%`;
-  document.getElementById("si-label").textContent   = inRange ? "✅ बिल्कुल सही सरकारी साइज़" : "⚠️ लक्ष्य सीमा के पास";
+  document.getElementById("si-label").textContent   = inRange 
+    ? (d.gaugeExact || "✅ Exact Official Size Limit") 
+    : (d.gaugeNear || "⚠️ Close to Target Range");
 
   const url = URL.createObjectURL(resultBlob);
   const dlLink = document.getElementById("download-link");
@@ -17789,6 +18226,7 @@ const VAULT_PIN_KEY = "rozgar_vault_pin";
 let isVaultUnlocked = true;
 
 function checkVaultLockState() {
+  const d = I18N[currentLang];
   const savedPin = localStorage.getItem(VAULT_PIN_KEY);
   const lockIcon = document.getElementById('vault-lock-icon');
   const lockStatus = document.getElementById('txt-vault-lock-status');
@@ -17797,7 +18235,7 @@ function checkVaultLockState() {
 
   if (!savedPin) {
     if (lockIcon) lockIcon.textContent = "🔓";
-    if (lockStatus) lockStatus.textContent = currentLang === 'en' ? "Set PIN Lock" : "PIN लॉक सेट करें";
+    if (lockStatus) lockStatus.textContent = d.btnVaultLockSet || "Set PIN Lock";
     if (lockedScreen) lockedScreen.style.display = "none";
     if (vaultGrid) vaultGrid.style.display = "grid";
     isVaultUnlocked = true;
@@ -17806,7 +18244,9 @@ function checkVaultLockState() {
 
   // PIN is configured
   if (lockIcon) lockIcon.textContent = isVaultUnlocked ? "🔓" : "🔒";
-  if (lockStatus) lockStatus.textContent = isVaultUnlocked ? (currentLang === 'en' ? "Lock Vault" : "वॉल्ट लॉक करें") : (currentLang === 'en' ? "Locked" : "लॉक है");
+  if (lockStatus) lockStatus.textContent = isVaultUnlocked 
+    ? (d.btnVaultLockActive || "Lock Vault") 
+    : (d.btnVaultLocked || "Locked");
 
   if (isVaultUnlocked) {
     if (lockedScreen) lockedScreen.style.display = "none";
@@ -17818,22 +18258,23 @@ function checkVaultLockState() {
 }
 
 function toggleVaultPinPrompt() {
+  const d = I18N[currentLang];
   const savedPin = localStorage.getItem(VAULT_PIN_KEY);
   if (!savedPin) {
-    const newPin = prompt("वॉल्ट सुरक्षित रखने के लिए 4-अंकीय PIN दर्ज करें (उदा. 1234):");
+    const newPin = prompt(d.promptSetVaultPin || "Enter 4-digit PIN to secure vault (e.g. 1234):");
     if (newPin && newPin.trim().length === 4) {
       localStorage.setItem(VAULT_PIN_KEY, newPin.trim());
       isVaultUnlocked = true;
       checkVaultLockState();
-      showToast("🔐 वॉल्ट सुरक्षा PIN सफलतापूर्वक सेट हुआ!");
+      showToast(d.toastVaultPinSet || "Vault security PIN set!");
     } else if (newPin) {
-      showToast("⚠️ कृपया ठीक 4 अंकों का PIN दर्ज करें");
+      showToast(d.toastVaultPinExact4 || "Please enter an exact 4-digit PIN");
     }
   } else {
     if (isVaultUnlocked) {
       isVaultUnlocked = false;
       checkVaultLockState();
-      showToast("🔒 वॉल्ट लॉक कर दिया गया!");
+      showToast(d.toastVaultLockedNow || "Vault locked!");
     } else {
       unlockVaultWithPin();
     }
@@ -17841,6 +18282,7 @@ function toggleVaultPinPrompt() {
 }
 
 function unlockVaultWithPin() {
+  const d = I18N[currentLang];
   const entered = document.getElementById('vault-pin-unlock-input').value.trim();
   const savedPin = localStorage.getItem(VAULT_PIN_KEY);
   if (entered === savedPin) {
@@ -17848,13 +18290,14 @@ function unlockVaultWithPin() {
     document.getElementById('vault-pin-unlock-input').value = "";
     checkVaultLockState();
     renderVaultCards();
-    showToast("🔓 वॉल्ट अनलॉक हो गया!");
+    showToast(d.toastVaultUnlockedNow || "Vault unlocked!");
   } else {
-    showToast("❌ गलत PIN! पुनः प्रयास करें");
+    showToast(d.toastVaultWrongPin || "Incorrect PIN! Try again");
   }
 }
 
 function exportVaultBackup() {
+  const d = I18N[currentLang];
   const backupData = {
     app: "Rozgar",
     version: "2.0",
@@ -17873,10 +18316,11 @@ function exportVaultBackup() {
   document.body.appendChild(dlAnchor);
   dlAnchor.click();
   document.body.removeChild(dlAnchor);
-  showToast("📥 सुरक्षित वॉल्ट बैकअप डाउनलोड हो गया!");
+  showToast(d.toastVaultBackupDl || "Vault backup downloaded!");
 }
 
 function importVaultBackup(event) {
+  const d = I18N[currentLang];
   const file = event.target.files[0];
   if (!file) return;
 
@@ -17908,9 +18352,9 @@ function importVaultBackup(event) {
       renderProfilePill();
       renderVaultCards();
       renderVacanciesFeed();
-      showToast("✅ बैकअप सफलतापूर्वक रीस्टोर हो गया!");
+      showToast(d.toastVaultRestored || "Backup restored successfully!");
     } catch (err) {
-      showToast("❌ बैकअप फ़ाइल अमान्य है!");
+      showToast(d.toastVaultInvalidBackup || "Invalid backup file!");
     }
   };
   reader.readAsText(file);
@@ -17920,52 +18364,55 @@ function renderVaultCards() {
   checkVaultLockState();
   if (!isVaultUnlocked) return;
 
+  const d = I18N[currentLang];
   const container = document.getElementById('vault-grid');
+  const isEn = currentLang === 'en';
+  const isHinglish = currentLang === 'hinglish';
 
-  // Standard Documents
+  // Standard Documents (Tri-lingual)
   const standardCards = [
     {
       key: "m10",
-      name: "10वीं कक्षा (Matriculation)",
+      name: isEn ? "Class 10th (Matriculation)" : (isHinglish ? "10th Class (Matriculation)" : "10वीं कक्षा (Matriculation)"),
       icon: "📜",
       fields: [
-        { lbl: "बोर्ड", val: vaultCredentials.m10Board || "BSEB Patna" },
-        { lbl: "रोल कोड व नंबर", val: vaultCredentials.m10Roll || "31045 - 20010294" },
-        { lbl: "कुल अंक %", val: vaultCredentials.m10Pct || "74.6%" }
+        { lbl: d.docBoard || "Board", val: vaultCredentials.m10Board || "BSEB Patna" },
+        { lbl: d.docRollAndNo || "Roll Code & Number", val: vaultCredentials.m10Roll || "31045 - 20010294" },
+        { lbl: d.docTotalPct || "Total Marks %", val: vaultCredentials.m10Pct || "74.6%" }
       ]
     },
     {
       key: "m12",
-      name: "12वीं कक्षा (Intermediate)",
+      name: isEn ? "Class 12th (Intermediate)" : (isHinglish ? "12th Class (Intermediate)" : "12वीं कक्षा (Intermediate)"),
       icon: "🎓",
       fields: [
-        { lbl: "रोल कोड व नंबर", val: vaultCredentials.m12Roll || "31045 - 22010812" },
-        { lbl: "कुल अंक %", val: vaultCredentials.m12Pct || "78.2%" }
+        { lbl: d.docRollAndNo || "Roll Code & Number", val: vaultCredentials.m12Roll || "31045 - 22010812" },
+        { lbl: d.docTotalPct || "Total Marks %", val: vaultCredentials.m12Pct || "78.2%" }
       ]
     },
     {
       key: "dom",
-      name: "निवास प्रमाण पत्र (Domicile)",
+      name: isEn ? "Domicile Certificate" : (isHinglish ? "Domicile Certificate (Niwas)" : "निवास प्रमाण पत्र (Domicile)"),
       icon: "🏠",
       fields: [
-        { lbl: "प्रमाण पत्र संख्या", val: vaultCredentials.domCert || "BRCO/2023/849201" },
-        { lbl: "निर्गत तिथि", val: formatDateDisplay(vaultCredentials.domDate) || "14/08/2023" }
+        { lbl: d.docCertNo || "Certificate Number", val: vaultCredentials.domCert || "BRCO/2023/849201" },
+        { lbl: d.docIssueDate || "Issue Date", val: formatDateDisplay(vaultCredentials.domDate) || "14/08/2023" }
       ]
     },
     {
       key: "caste",
-      name: "जाति / क्रीमीलेयर रहित (NCL)",
+      name: isEn ? "Caste / Non-Creamy Layer (NCL)" : (isHinglish ? "Jaati / Non-Creamy Layer (NCL)" : "जाति / क्रीमीलेयर रहित (NCL)"),
       icon: "📑",
       fields: [
-        { lbl: "प्रमाण पत्र संख्या", val: vaultCredentials.casteCert || "BICC/2023/129481" }
+        { lbl: d.docCertNo || "Certificate Number", val: vaultCredentials.casteCert || "BICC/2023/129481" }
       ]
     },
     {
       key: "id",
-      name: "पहचान पत्र (आधार कार्ड)",
+      name: isEn ? "Identity Card (Aadhaar Card)" : (isHinglish ? "Identity Card (Aadhaar Card)" : "पहचान पत्र (आधार कार्ड)"),
       icon: "🆔",
       fields: [
-        { lbl: "आधार अंतिम 4 अंक", val: `XXXX-XXXX-${vaultCredentials.aadhLast4 || '9842'}` }
+        { lbl: d.docAadhaarLast4 || "Aadhaar Last 4 Digits", val: `XXXX-XXXX-${vaultCredentials.aadhLast4 || '9842'}` }
       ]
     }
   ];
@@ -17989,22 +18436,22 @@ function renderVaultCards() {
             <div class="vc-meta-item">
               <div class="vc-meta-lbl">${f.lbl}</div>
               <div class="vc-meta-val">${f.val}</div>
-              <button class="vc-copy-btn" onclick="copyToClipboard('${f.val.replace(/'/g, "\\'")}')">कॉपी</button>
+              <button class="vc-copy-btn" onclick="copyToClipboard('${f.val.replace(/'/g, "\\'")}')">${d.btnCopy || "Copy"}</button>
             </div>
           `).join('')}
         </div>
 
         <div class="vc-photo-strip">
           ${hasPhoto ? `
-            <button class="vc-photo-btn" onclick="viewDocPhoto('${c.key}', '${c.name}')">
-              📄 फ़ोटो देखें
+            <button class="vc-photo-btn" onclick="viewDocPhoto('${c.key}', '${c.name.replace(/'/g, "\\'")}')">
+              ${d.btnViewPhoto || "📄 View Photo"}
             </button>
             <button class="vc-photo-btn" style="background:transparent;border-color:var(--border-color);color:var(--text-dim);" onclick="triggerVaultDocUpload('${c.key}')">
-              🔄 बदलें
+              ${d.btnChangePhoto || "🔄 Change"}
             </button>
           ` : `
             <button class="vc-photo-btn" onclick="triggerVaultDocUpload('${c.key}')">
-              📷 प्रमाणपत्र फ़ोटो जोड़ें
+              ${d.btnAddPhoto || "📷 Add Photo"}
             </button>
           `}
         </div>
@@ -18014,7 +18461,7 @@ function renderVaultCards() {
 
   // Render Custom Documents
   if (vaultCustomDocs.length > 0) {
-    html += `<div style="font-size:12px;font-weight:800;color:var(--text-dim);margin-top:6px;">कस्टम दस्तावेज़ (Custom Added)</div>`;
+    html += `<div style="font-size:12px;font-weight:800;color:var(--text-dim);margin-top:6px;">${d.customDocsHeading || "Custom Documents"}</div>`;
     vaultCustomDocs.forEach(cd => {
       const hasPhoto = !!vaultDocPhotos[cd.id];
       html += `
@@ -18031,13 +18478,13 @@ function renderVaultCards() {
 
           <div class="vc-meta-grid">
             <div class="vc-meta-item" style="grid-column: span 2;">
-              <div class="vc-meta-lbl">प्रमाणपत्र / ID नंबर</div>
+              <div class="vc-meta-lbl">${d.docCertNo || "Certificate / ID Number"}</div>
               <div class="vc-meta-val">${cd.docNumber}</div>
-              <button class="vc-copy-btn" onclick="copyToClipboard('${cd.docNumber.replace(/'/g, "\\'")}')">कॉपी</button>
+              <button class="vc-copy-btn" onclick="copyToClipboard('${cd.docNumber.replace(/'/g, "\\'")}')">${d.btnCopy || "Copy"}</button>
             </div>
             ${cd.extra ? `
               <div class="vc-meta-item" style="grid-column: span 2;">
-                <div class="vc-meta-lbl">विवरण</div>
+                <div class="vc-meta-lbl">${d.docDetailsLbl || "Details"}</div>
                 <div class="vc-meta-val" style="font-size:11.5px;">${cd.extra}</div>
               </div>
             ` : ''}
@@ -18045,15 +18492,15 @@ function renderVaultCards() {
 
           <div class="vc-photo-strip">
             ${hasPhoto ? `
-              <button class="vc-photo-btn" onclick="viewDocPhoto('${cd.id}', '${cd.title}')">
-                📄 फ़ोटो देखें
+              <button class="vc-photo-btn" onclick="viewDocPhoto('${cd.id}', '${cd.title.replace(/'/g, "\\'")}')">
+                ${d.btnViewPhoto || "📄 View Photo"}
               </button>
               <button class="vc-photo-btn" style="background:transparent;border-color:var(--border-color);color:var(--text-dim);" onclick="triggerVaultDocUpload('${cd.id}')">
-                🔄 बदलें
+                ${d.btnChangePhoto || "🔄 Change"}
               </button>
             ` : `
               <button class="vc-photo-btn" onclick="triggerVaultDocUpload('${cd.id}')">
-                📷 प्रमाणपत्र फ़ोटो जोड़ें
+                ${d.btnAddPhoto || "📷 Add Photo"}
               </button>
             `}
           </div>
@@ -18113,16 +18560,17 @@ function handleCustomDocUpload(evt) {
 }
 
 function saveCustomDocument() {
+  const d = I18N[currentLang];
   const selectVal = document.getElementById('cd-preset-select').value;
   let title = selectVal;
   if (selectVal === 'Other') {
-    title = document.getElementById('cd-custom-title').value.trim() || "अन्य दस्तावेज़";
+    title = document.getElementById('cd-custom-title').value.trim() || (currentLang === 'en' ? "Other Document" : (currentLang === 'hi' ? "अन्य दस्तावेज़" : "Other Document"));
   }
   const docNumber = document.getElementById('cd-number').value.trim();
   const extra = document.getElementById('cd-extra').value.trim();
 
   if (!docNumber) {
-    showToast("कृपया दस्तावेज़ या ID नंबर दर्ज करें");
+    showToast(d.toastEnterDocNumber || "Please enter document or ID number");
     return;
   }
 
@@ -18140,18 +18588,19 @@ function saveCustomDocument() {
   closeAddCustomDocModal();
   renderVaultCards();
   renderVacanciesFeed(); // update checklist in vacancies
-  showToast("✅ दस्तावेज़ वॉल्ट में सहेज लिया गया!");
+  showToast(d.toastVaultDocSaved || "Document saved to vault!");
 }
 
 function deleteCustomDoc(docId) {
-  if (confirm("क्या आप इस दस्तावेज़ को हटाना चाहते हैं?")) {
+  const d = I18N[currentLang];
+  if (confirm(d.confirmDeleteDoc || "Are you sure you want to remove this document?")) {
     vaultCustomDocs = vaultCustomDocs.filter(d => d.id !== docId);
     delete vaultDocPhotos[docId];
     localStorage.setItem(CUSTOM_DOCS_KEY, JSON.stringify(vaultCustomDocs));
     localStorage.setItem(VAULT_DOCS_KEY, JSON.stringify(vaultDocPhotos));
     renderVaultCards();
     renderVacanciesFeed();
-    showToast("दस्तावेज़ हटा दिया गया");
+    showToast(d.toastVaultDocDeleted || "Document removed");
   }
 }
 
@@ -18175,6 +18624,7 @@ function triggerVaultDocUpload(docKey) {
 }
 
 function handleVaultDocUpload(evt) {
+  const d = I18N[currentLang];
   const file = evt.target.files[0];
   if (!file || !targetDocKeyForUpload) return;
 
@@ -18194,7 +18644,7 @@ function handleVaultDocUpload(evt) {
       vaultDocPhotos[targetDocKeyForUpload] = canvas.toDataURL('image/jpeg', 0.75);
       localStorage.setItem(VAULT_DOCS_KEY, JSON.stringify(vaultDocPhotos));
       renderVaultCards();
-      showToast("प्रमाणपत्र फ़ोटो सुरक्षित सहेजी गई!");
+      showToast(d.toastVaultPhotoSaved || "Certificate photo saved!");
     };
     img.src = e.target.result;
   };
@@ -18230,13 +18680,17 @@ function initQuiz() {
 
 function loadQuizQuestion(index) {
   quizAnswered = false;
+  const d = I18N[currentLang] || I18N.hi;
   const q = QUIZ_QUESTIONS[index % QUIZ_QUESTIONS.length];
+  const qText = (currentLang === 'en' && q.question_en) ? q.question_en : ((currentLang === 'hinglish' && q.question_hinglish) ? q.question_hinglish : q.question);
+  const opts = (currentLang === 'en' && q.options_en) ? q.options_en : ((currentLang === 'hinglish' && q.options_hinglish) ? q.options_hinglish : q.options);
+
   document.getElementById('quiz-exam-tag').textContent = q.exam;
-  document.getElementById('quiz-score-badge').textContent = `स्कोर: ${quizScore}/${QUIZ_QUESTIONS.length}`;
-  document.getElementById('quiz-q-text').textContent = `Q${index + 1}. ${q.question}`;
+  document.getElementById('quiz-score-badge').textContent = (d.quizScoreBadge || "Score: {score}/{total}").replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
+  document.getElementById('quiz-q-text').textContent = `Q${index + 1}. ${qText}`;
 
   const optContainer = document.getElementById('quiz-options');
-  optContainer.innerHTML = q.options.map((opt, i) => `
+  optContainer.innerHTML = opts.map((opt, i) => `
     <button class="quiz-opt-btn" onclick="handleQuizAnswer(${i}, ${q.answerIndex})">
       <span>${String.fromCharCode(65 + i)}.</span>
       <span>${opt}</span>
@@ -18251,6 +18705,7 @@ function loadQuizQuestion(index) {
 function handleQuizAnswer(selectedIdx, correctIdx) {
   if (quizAnswered) return;
   quizAnswered = true;
+  const d = I18N[currentLang] || I18N.hi;
 
   const btns = document.querySelectorAll('.quiz-opt-btn');
   btns.forEach((btn, i) => {
@@ -18260,12 +18715,13 @@ function handleQuizAnswer(selectedIdx, correctIdx) {
 
   if (selectedIdx === correctIdx) {
     quizScore++;
-    document.getElementById('quiz-score-badge').textContent = `स्कोर: ${quizScore}/${QUIZ_QUESTIONS.length}`;
+    document.getElementById('quiz-score-badge').textContent = (d.quizScoreBadge || "Score: {score}/{total}").replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
   }
 
   const q = QUIZ_QUESTIONS[currentQuizIndex % QUIZ_QUESTIONS.length];
+  const exp = (currentLang === 'en' && q.explain_en) ? q.explain_en : ((currentLang === 'hinglish' && q.explain_hinglish) ? q.explain_hinglish : q.explain);
   const expBox = document.getElementById('quiz-explain-box');
-  expBox.innerHTML = `<strong>💡 व्याख्या (Explanation):</strong> ${q.explain}`;
+  expBox.innerHTML = `<strong>${d.quizExplainTitle || "💡 Explanation:"}</strong> ${exp}`;
   expBox.classList.add('show');
 }
 
@@ -18276,54 +18732,70 @@ function nextQuizQuestion() {
 
 function resetQuiz() {
   initQuiz();
-  showToast("क्विज़ रीसेट हो गया!");
+  showToast(I18N[currentLang].toastQuizReset || "Quiz reset!");
 }
 
 /* ============================================================
    11. ASPIRANT COMMUNITY HUB
 ============================================================ */
 function renderCommunityPosts() {
+  const d = I18N[currentLang] || I18N.hi;
   const container = document.getElementById('community-feed');
   if (communityPosts.length === 0) {
-    container.innerHTML = `<div style="text-align:center;padding:20px;color:var(--text-dim);">कोई चर्चा उपलब्ध नहीं है। पहला प्रश्न पूछें!</div>`;
+    container.innerHTML = `<div style="text-align:center;padding:20px;color:var(--text-dim);">${d.emptyCommunity || "No discussions available. Ask the first question!"}</div>`;
     return;
   }
 
-  container.innerHTML = communityPosts.map(p => `
+  container.innerHTML = communityPosts.map(p => {
+    const title = (currentLang === 'en' && p.title_en) ? p.title_en : ((currentLang === 'hinglish' && p.title_hinglish) ? p.title_hinglish : p.title);
+    const desc = (currentLang === 'en' && p.desc_en) ? p.desc_en : ((currentLang === 'hinglish' && p.desc_hinglish) ? p.desc_hinglish : p.desc);
+    const author = (currentLang === 'en' && p.author_en) ? p.author_en : ((currentLang === 'hinglish' && p.author_hinglish) ? p.author_hinglish : p.author);
+    const cat = (currentLang === 'en' && p.category_en) ? p.category_en : ((currentLang === 'hinglish' && p.category_hinglish) ? p.category_hinglish : p.category);
+    const time = (currentLang === 'en' ? 'Just now' : (currentLang === 'hi' ? 'अभी-अभी' : 'Abhi-abhi'));
+    const displayTime = p.time === "अभी-अभी" ? time : p.time;
+
+    let recentReplyHtml = '';
+    if (p.replies && p.replies.length > 0) {
+      const rep = p.replies[0];
+      const repAuthor = (currentLang === 'en' && rep.author === 'अभ्यर्थी') ? 'Aspirant' : rep.author;
+      recentReplyHtml = `
+        <div style="background:var(--bg-card-subtle);border-radius:var(--radius-md);padding:8px 10px;margin-top:4px;font-size:11.5px;">
+          <div style="font-weight:800;color:var(--text-dim);margin-bottom:3px;">${d.lblRecentReply || 'Latest Reply'} (${repAuthor}):</div>
+          <div>${rep.text}</div>
+        </div>
+      `;
+    }
+
+    return `
     <div class="post-card">
       <div class="post-author-row">
         <div class="post-author">
-          <div class="post-avatar">${p.author.charAt(0)}</div>
+          <div class="post-avatar">${author.charAt(0)}</div>
           <div>
-            <div class="post-author-name">${p.author}</div>
-            <div class="post-time">${p.time}</div>
+            <div class="post-author-name">${author}</div>
+            <div class="post-time">${displayTime}</div>
           </div>
         </div>
-        <span class="post-cat-badge">${p.category}</span>
+        <span class="post-cat-badge">${cat}</span>
       </div>
 
-      <div class="post-title">${p.title}</div>
-      <div class="post-desc">${p.desc}</div>
+      <div class="post-title">${title}</div>
+      <div class="post-desc">${desc}</div>
 
       <div class="post-actions">
         <button class="post-act-btn ${p._liked ? 'liked' : ''}" onclick="likeCommunityPost('${p.id}')">
           <span>❤️</span>
-          <span>${p.likes} लाइक</span>
+          <span>${p.likes} ${d.lblLikes || 'Likes'}</span>
         </button>
         <button class="post-act-btn" onclick="openReplyModal('${p.id}')">
           <span>💬</span>
-          <span>${p.replies ? p.replies.length : 0} जवाब</span>
+          <span>${p.replies ? p.replies.length : 0} ${d.lblReplies || 'Replies'}</span>
         </button>
       </div>
 
-      ${p.replies && p.replies.length > 0 ? `
-        <div style="background:var(--bg-card-subtle);border-radius:var(--radius-md);padding:8px 10px;margin-top:4px;font-size:11.5px;">
-          <div style="font-weight:800;color:var(--text-dim);margin-bottom:3px;">ताज़ा जवाब (${p.replies[0].author}):</div>
-          <div>${p.replies[0].text}</div>
-        </div>
-      ` : ''}
+      ${recentReplyHtml}
     </div>
-  `).join('');
+  `}).join('');
 }
 
 function openNewPostModal() {
@@ -18337,20 +18809,23 @@ function closeNewPostModal() {
 }
 
 function submitCommunityPost() {
+  const d = I18N[currentLang] || I18N.hi;
   const cat = document.getElementById('post-cat').value;
   const title = document.getElementById('post-title').value.trim();
   const desc = document.getElementById('post-desc').value.trim();
 
   if (!title) {
-    showToast("कृपया प्रश्न का शीर्षक लिखें");
+    showToast(d.toastEnterQuestionTitle || "Please enter question title");
     return;
   }
 
-  const author = profile.name ? `${profile.name} (अभ्यर्थी)` : "साथी अभ्यर्थी";
+  const defaultAuthor = currentLang === 'en' ? 'Fellow Aspirant' : (currentLang === 'hi' ? 'साथी अभ्यर्थी' : 'Saathi Aspirant');
+  const aspirantBadge = currentLang === 'en' ? '(Aspirant)' : (currentLang === 'hi' ? '(अभ्यर्थी)' : '(Aspirant)');
+  const author = profile.name ? `${profile.name} ${aspirantBadge}` : defaultAuthor;
   const newPost = {
     id: "p_" + Date.now(),
     author,
-    time: "अभी-अभी",
+    time: currentLang === 'en' ? "Just now" : (currentLang === 'hi' ? "अभी-अभी" : "Abhi-abhi"),
     category: cat,
     title,
     desc,
@@ -18362,7 +18837,7 @@ function submitCommunityPost() {
   localStorage.setItem(COMMUNITY_KEY, JSON.stringify(communityPosts));
   closeNewPostModal();
   renderCommunityPosts();
-  showToast("✅ आपका सवाल समुदाय में पोस्ट हो गया!");
+  showToast(d.toastQuestionPosted || "✅ Question posted!");
 }
 
 function likeCommunityPost(postId) {
@@ -18376,18 +18851,21 @@ function likeCommunityPost(postId) {
 }
 
 function openReplyModal(postId) {
-  const replyText = prompt("इस सवाल पर अपना जवाब लिखें:");
+  const d = I18N[currentLang] || I18N.hi;
+  const replyPromptText = d.promptWriteReply || "Write your reply:";
+  const replyText = prompt(replyPromptText);
   if (replyText && replyText.trim()) {
     const post = communityPosts.find(p => p.id === postId);
     if (post) {
       if (!post.replies) post.replies = [];
+      const defaultName = currentLang === 'en' ? "Aspirant" : (currentLang === 'hi' ? "अभ्यर्थी" : "Aspirant");
       post.replies.unshift({
-        author: profile.name || "अभ्यर्थी",
+        author: profile.name || defaultName,
         text: replyText.trim()
       });
       localStorage.setItem(COMMUNITY_KEY, JSON.stringify(communityPosts));
       renderCommunityPosts();
-      showToast("जवाब पोस्ट हो गया!");
+      showToast(d.toastReplyPosted || "Reply posted!");
     }
   }
 }
@@ -18489,7 +18967,8 @@ function openAboutModal() { document.getElementById('about-modal').classList.add
 function closeAboutModal() { document.getElementById('about-modal').classList.remove('show'); }
 
 function clearAllData() {
-  if (confirm("क्या आप सच में ऐप का सारा डेटा (प्रोफ़ाइल, वॉल्ट, कस्टम डॉक) साफ़ करना चाहते हैं?")) {
+  const d = I18N[currentLang] || I18N.hi;
+  if (confirm(d.confirmClearAllData || "Are you sure you want to reset all app data (profile, vault, custom docs)?")) {
     localStorage.clear();
     location.reload();
   }
