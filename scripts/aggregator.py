@@ -461,6 +461,25 @@ def atomic_save(data):
         f.write(json_str)
     os.replace(tmp2, ROOT_FILE)
 
+    # 3. Sync embedded fallback in index.html
+    index_html = os.path.join(REPO_ROOT, "index.html")
+    if os.path.exists(index_html):
+        try:
+            with open(index_html, "r", encoding="utf-8") as f:
+                content = f.read()
+            s_token = "let VACANCIES_DATA = ["
+            s_idx = content.find(s_token)
+            if s_idx != -1:
+                e_token = "];"
+                e_idx = content.find(e_token, s_idx)
+                if e_idx != -1:
+                    min_json = json.dumps(data, ensure_ascii=False)
+                    new_content = content[:s_idx] + f"let VACANCIES_DATA = {min_json};" + content[e_idx + len(e_token):]
+                    with open(index_html, "w", encoding="utf-8") as f:
+                        f.write(new_content)
+        except Exception as e:
+            print(f"[AGGREGATOR] Note: index.html fallback update skipped: {e}")
+
 def main():
     print("=" * 70)
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Rozgar Multi-Source Aggregator Pipeline Starting...")
