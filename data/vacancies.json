@@ -240364,5 +240364,173 @@
         "dateHinglish": "Declared"
       }
     ]
+  },
+  {
+    "id": "PHHC_CHOWKIDAR_RECRUITMENT_PHHC_CHOWKIDAR_22__2026",
+    "title": "PHHC Chowkidar (22 Vacancy)",
+    "organization": "PHHC Chowkidar Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "22 Posts",
+    "last_date": "2026-11-20",
+    "apply_link": "https://www.freejobalert.com/articles/phhc-chowkidar-recruitment-2026-3077637",
+    "source": "FreeJobAlert",
+    "org": "PHHC Chowkidar Recruitment",
+    "org_hi": "PHHC Chowkidar Recruitment",
+    "org_hinglish": "PHHC Chowkidar Recruitment",
+    "title_hi": "PHHC Chowkidar (22 Vacancy)",
+    "title_hinglish": "PHHC Chowkidar (22 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "22 Posts",
+    "vacancies": "22 Posts",
+    "vacancies_hi": "22 Posts",
+    "vacancies_hinglish": "22 Posts",
+    "start_date": "2026-10-21",
+    "startDate": "2026-10-21",
+    "lastDate": "2026-11-20",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/phhc-chowkidar-recruitment-2026-3077637",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
   }
 ]
