@@ -19,6 +19,8 @@ update_vacancies.py
 update_app.py
 apply_full_refactor.py
 update_frontend_integration.py
+update_ui_fixes.py
+backend/
 
 # --- Node / NPM ---
 node_modules/

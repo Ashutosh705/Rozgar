@@ -1,18 +1,17 @@
 // Rozgar Offline & Cache Service Worker
-const CACHE_NAME = 'rozgar-cache-v3';
+const CACHE_NAME = 'rozgar-v4';
 const STATIC_ASSETS = [
-  './',
-  './index.html',
   './manifest.json',
   './data/vacancies.json',
   './vacancies.json'
 ];
 
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(STATIC_ASSETS);
-    }).then(() => self.skipWaiting())
+    })
   );
 });
 
@@ -20,44 +19,66 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
-        keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
+        keys.map((key) => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key);
+          }
+        })
       );
     }).then(() => self.clients.claim())
   );
 });
 
-// Network-first for dynamic JSON feeds, Cache-first for static markup
+// Network-first for HTML pages and dynamic JSON feeds; cache fallback when offline
 self.addEventListener('fetch', (event) => {
-  const url = new URL(event.request.url);
+  const req = event.request;
+  const url = new URL(req.url);
 
-  if (url.pathname.endsWith('vacancies.json')) {
-    // Network first with cache fallback for live vacancy updates
+  // 1. Navigation & HTML requests: Network-First (always fresh online)
+  if (req.mode === 'navigate' || req.destination === 'document' || url.pathname.endsWith('.html') || url.pathname.endsWith('/')) {
     event.respondWith(
-      fetch(event.request)
+      fetch(req)
         .then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
             const clone = networkResponse.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+            caches.open(CACHE_NAME).then((cache) => cache.put(req, clone));
           }
           return networkResponse;
         })
-        .catch(() => caches.match(event.request))
+        .catch(() => caches.match(req).then((cached) => cached || caches.match('./index.html')))
     );
-  } else {
-    // Stale-while-revalidate for html, assets, styles
-    event.respondWith(
-      caches.match(event.request).then((cached) => {
-        const fetchPromise = fetch(event.request)
-          .then((networkResponse) => {
-            if (networkResponse && networkResponse.status === 200) {
-              const clone = networkResponse.clone();
-              caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-            }
-            return networkResponse;
-          })
-          .catch(() => cached);
-        return cached || fetchPromise;
-      })
-    );
+    return;
   }
+
+  // 2. Vacancies JSON feeds: Network-First with cache fallback
+  if (url.pathname.endsWith('vacancies.json')) {
+    event.respondWith(
+      fetch(req)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const clone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(req, clone));
+          }
+          return networkResponse;
+        })
+        .catch(() => caches.match(req).then((cached) => cached || caches.match('./data/vacancies.json')))
+    );
+    return;
+  }
+
+  // 3. Static assets: Stale-while-revalidate
+  event.respondWith(
+    caches.match(req).then((cached) => {
+      const fetchPromise = fetch(req)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const clone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(req, clone));
+          }
+          return networkResponse;
+        })
+        .catch(() => cached);
+      return cached || fetchPromise;
+    })
+  );
 });

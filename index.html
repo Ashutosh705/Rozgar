@@ -2,7 +2,7 @@
 <html lang="hi" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1e3a8a" id="theme-color-meta" />
   <meta name="mobile-web-app-capable" content="yes" />
   <title id="page-title">Rozgar (रोज़गार) — सरकारी नौकरी साथी</title>
@@ -137,7 +137,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: stretch;
       line-height: 1.5;
       -webkit-tap-highlight-color: transparent;
       user-select: none;
@@ -149,7 +149,6 @@
     /* Universal Responsive Frame (Mobile, Tablet, Laptop, Desktop) */
     .app-wrapper {
       width: 100%;
-      max-width: 100%;
       min-height: 100vh;
       background-color: var(--bg-app);
       position: relative;
@@ -161,16 +160,7 @@
 
     @media (min-width: 768px) {
       .app-wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-bottom: 36px;
-        box-shadow: none;
-      }
-    }
-
-    @media (min-width: 1280px) {
-      .app-wrapper {
-        max-width: 1360px;
+        padding-bottom: 32px;
       }
     }
 
@@ -339,6 +329,9 @@
     ==================================================== */
     .main-content {
       flex: 1;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
       padding: 12px;
       display: flex;
       flex-direction: column;
@@ -1978,22 +1971,22 @@
             <button class="hub-tab active" id="hub-tab-all" data-cat="ALL" onclick="setHubCategory('ALL', this)">
               <span class="hub-tab-icon">🌐</span>
               <span class="hub-tab-label" id="txt-hub-all">सभी</span>
-              <span class="hub-tab-badge" id="badge-count-all">12</span>
+              <span class="hub-tab-badge" id="badge-count-all">946</span>
             </button>
             <button class="hub-tab" id="hub-tab-jobs" data-cat="JOBS" onclick="setHubCategory('JOBS', this)">
               <span class="hub-tab-icon">📋</span>
               <span class="hub-tab-label" id="txt-hub-jobs">ताज़ा नौकरियाँ</span>
-              <span class="hub-tab-badge" id="badge-count-jobs">6</span>
+              <span class="hub-tab-badge" id="badge-count-jobs">275</span>
             </button>
             <button class="hub-tab" id="hub-tab-admit" data-cat="ADMIT_CARD" onclick="setHubCategory('ADMIT_CARD', this)">
               <span class="hub-tab-icon">🎫</span>
               <span class="hub-tab-label" id="txt-hub-admit">प्रवेश पत्र</span>
-              <span class="hub-tab-badge" id="badge-count-admit">3</span>
+              <span class="hub-tab-badge" id="badge-count-admit">119</span>
             </button>
             <button class="hub-tab" id="hub-tab-results" data-cat="RESULTS" onclick="setHubCategory('RESULTS', this)">
               <span class="hub-tab-icon">🏆</span>
               <span class="hub-tab-label" id="txt-hub-results">परिणाम व उत्तर कुंजी</span>
-              <span class="hub-tab-badge" id="badge-count-results">3</span>
+              <span class="hub-tab-badge" id="badge-count-results">550</span>
             </button>
           </div>
 
@@ -3229,11 +3222,29 @@ function setVacancyFilter(filterKey, btnEl) {
   renderVacanciesFeed();
 }
 
+function isJobCategory(cat) {
+  if (!cat) return false;
+  const c = String(cat).toLowerCase().trim();
+  return c === 'jobs' || c === 'latest jobs' || c.includes('job') || c.includes('recruitment');
+}
+
+function isAdmitCardCategory(cat) {
+  if (!cat) return false;
+  const c = String(cat).toLowerCase().trim();
+  return c === 'admit-card' || c === 'admit card' || c === 'admit cards' || c.includes('admit');
+}
+
+function isResultCategory(cat) {
+  if (!cat) return false;
+  const c = String(cat).toLowerCase().trim();
+  return c === 'results' || c === 'result' || c === 'results & keys' || c.includes('result') || c.includes('key') || c.includes('answer');
+}
+
 function updateHubCounts() {
   const total = VACANCIES_DATA.length;
-  const jobs = VACANCIES_DATA.filter(v => v.category === 'jobs').length;
-  const admit = VACANCIES_DATA.filter(v => v.category === 'admit-card').length;
-  const results = VACANCIES_DATA.filter(v => v.category === 'results').length;
+  const jobs = VACANCIES_DATA.filter(v => isJobCategory(v.category)).length;
+  const admit = VACANCIES_DATA.filter(v => isAdmitCardCategory(v.category)).length;
+  const results = VACANCIES_DATA.filter(v => isResultCategory(v.category)).length;
 
   const bAll = document.getElementById('badge-count-all');
   const bJobs = document.getElementById('badge-count-jobs');
@@ -3430,12 +3441,12 @@ function renderVacanciesFeed() {
   let html = '';
   const now = new Date();
 
-  // 1. Filter by SarkariResult Category Hub
+  // 1. Filter by Category Hub
   let list = VACANCIES_DATA.filter(vac => {
     if (currentHubCategory === 'ALL') return true;
-    if (currentHubCategory === 'JOBS') return vac.category === 'jobs';
-    if (currentHubCategory === 'ADMIT_CARD') return vac.category === 'admit-card';
-    if (currentHubCategory === 'RESULTS') return vac.category === 'results';
+    if (currentHubCategory === 'JOBS') return isJobCategory(vac.category);
+    if (currentHubCategory === 'ADMIT_CARD') return isAdmitCardCategory(vac.category);
+    if (currentHubCategory === 'RESULTS') return isResultCategory(vac.category);
     return true;
   });
 
@@ -3502,19 +3513,19 @@ function renderVacanciesFeed() {
   visibleList.forEach(vac => {
     // Multilingual Title, Org, Posts, Edu, Fee
     const title = currentLang === 'en' ? (vac.title || vac.examNameEn) : (currentLang === 'hi' ? (vac.title_hi || vac.examName) : (vac.title_hinglish || vac.title || vac.examNameEn));
-    const org = currentLang === 'en' ? (vac.org || vac.recruitingBodyEn) : (currentLang === 'hi' ? (vac.org_hi || vac.recruitingBody) : (vac.org_hinglish || vac.org || vac.recruitingBodyEn));
-    const postsStr = currentLang === 'en' ? (vac.vacancies || vac.totalPostsEn) : (currentLang === 'hi' ? (vac.vacancies_hi || vac.totalPosts) : (vac.vacancies_hinglish || vac.vacancies || vac.totalPostsEn));
-    const eduStr = currentLang === 'en' ? (vac.minEduLabel || vac.minEduLabelEn) : (currentLang === 'hi' ? (vac.minEduLabel_hi || vac.minEduLabel) : (vac.minEduLabel_hinglish || vac.minEduLabel || vac.minEduLabelEn));
-    const feeStr = currentLang === 'en' ? (vac.fee || vac.feeEn) : (currentLang === 'hi' ? (vac.fee_hi || vac.fee) : (vac.fee_hinglish || vac.fee || vac.feeEn));
+    const org = currentLang === 'en' ? (vac.org || vac.recruitingBodyEn || vac.organization) : (currentLang === 'hi' ? (vac.org_hi || vac.recruitingBody || vac.organization) : (vac.org_hinglish || vac.org || vac.recruitingBodyEn || vac.organization));
+    const postsStr = currentLang === 'en' ? (vac.vacancies || vac.totalPostsEn || vac.posts || "Various Posts") : (currentLang === 'hi' ? (vac.vacancies_hi || vac.totalPosts || vac.posts || "विभिन्न पद") : (vac.vacancies_hinglish || vac.vacancies || vac.totalPostsEn || vac.posts || "Various Posts"));
+    const eduStr = currentLang === 'en' ? (vac.minEduLabel || vac.minEduLabelEn || vac.qualification || "Educational Qualification") : (currentLang === 'hi' ? (vac.minEduLabel_hi || vac.minEduLabel || vac.qualification || "शैक्षणिक योग्यता") : (vac.minEduLabel_hinglish || vac.minEduLabel || vac.minEduLabelEn || vac.qualification || "Educational Qualification"));
+    const feeStr = currentLang === 'en' ? (vac.fee || vac.feeEn || "As per notification") : (currentLang === 'hi' ? (vac.fee_hi || vac.fee || "अधिसूचना अनुसार") : (vac.fee_hinglish || vac.fee || vac.feeEn || "As per notification"));
 
     // Dates & Deadline calculation
-    const lastDateStr = vac.lastDate || vac.applicationDeadline;
-    const startDateStr = vac.startDate || "";
-    const deadline = new Date(lastDateStr);
-    const diffDays = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24));
-    const isPast = diffDays < 0;
-    const isUrgent = diffDays >= 0 && diffDays <= 7;
-    const daysLeftBadge = (isPast || vac.category === 'results') ? d.closedBadge : d.daysLeftText.replace('{d}', Math.max(1, diffDays));
+    const lastDateStr = vac.lastDate || vac.applicationDeadline || vac.last_date || "";
+    const startDateStr = vac.startDate || vac.start_date || "";
+    const deadline = lastDateStr ? new Date(lastDateStr) : null;
+    const diffDays = (deadline && !isNaN(deadline)) ? Math.ceil((deadline - now) / (1000 * 60 * 60 * 24)) : null;
+    const isPast = diffDays !== null && diffDays < 0;
+    const isUrgent = diffDays !== null && diffDays >= 0 && diffDays <= 7;
+    const daysLeftBadge = (diffDays === null) ? (d.liveBadge || "Live") : ((isPast || vac.category === 'results' || isResultCategory(vac.category)) ? d.closedBadge : d.daysLeftText.replace('{d}', Math.max(1, diffDays)));
 
     // Live Eligibility Status
     const evalResult = evaluateVacancy(vac);
@@ -3731,13 +3742,14 @@ function evaluateVacancy(vac) {
   }
 
   const dob = new Date(profile.dob);
-  const cutoff = new Date(vac.cutoffDate);
+  const cutoff = (vac.cutoffDate && !isNaN(new Date(vac.cutoffDate))) ? new Date(vac.cutoffDate) : new Date();
   const isCentral = vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
   const isUserHomeState = profile.state && vac.state && (profile.state.toUpperCase() === vac.state.toUpperCase());
   const effectiveCat = (isCentral || isUserHomeState) ? profile.category : "GENERAL";
   const g = (profile.gender === "FEMALE" || profile.gender === "TRANSGENDER") ? "FEMALE" : "MALE";
   const key = `${effectiveCat}_${g}`;
-  const maxAllowed = vac.maxAge[key] || vac.maxAge["GENERAL_MALE"] || 35;
+  const maxAgeObj = vac.maxAge || { "GENERAL_MALE": 35 };
+  const maxAllowed = maxAgeObj[key] || maxAgeObj["GENERAL_MALE"] || 35;
 
   const age = calculateDetailedAge(dob, cutoff);
 
