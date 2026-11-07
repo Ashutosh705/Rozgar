@@ -1801,6 +1801,362 @@
         to { opacity: 1; transform: scale(1) translateY(0); }
       }
     }
+  
+    /* ====================================================
+       HIGH-DENSITY COMPACT JOB CARDS & MODAL ARCHITECTURE
+    ==================================================== */
+    .vacancies-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    @media (min-width: 860px) {
+      .vacancies-feed {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+
+    /* Compact Sleek Card */
+    .vacancy-card.compact {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      transition: all 0.16s ease;
+      cursor: pointer;
+      position: relative;
+    }
+    .vacancy-card.compact:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.1);
+      transform: translateY(-1px);
+    }
+    .vc-compact-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .vc-compact-icon {
+      font-size: 16px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-card-subtle);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .vc-compact-heading {
+      flex: 1;
+      min-width: 0;
+    }
+    .vc-compact-title-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .vc-compact-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .vc-compact-org {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-dim);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 1px;
+    }
+    .vc-compact-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+    }
+    .vc-compact-meta .vc-chip {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: var(--radius-sm);
+    }
+    .vc-compact-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 5px;
+      border-top: 1px dashed var(--border-color);
+      gap: 6px;
+    }
+    .vc-compact-edu {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 60%;
+    }
+    .btn-view-details-compact {
+      background: var(--bg-card-subtle);
+      border: 1px solid rgba(30, 58, 138, 0.25);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: var(--radius-md);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-view-details-compact:hover {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    /* Modern Job Details Modal */
+    .job-modal-sheet {
+      max-width: 680px;
+      max-height: 88vh;
+      padding: 0 !important;
+      border-radius: var(--radius-2xl) !important;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-card);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--border-color);
+    }
+    .job-modal-header {
+      padding: 14px 18px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .job-modal-header-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .job-modal-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 4px 0 2px 0;
+      line-height: 1.3;
+    }
+    .job-modal-org {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+    }
+    .job-modal-body {
+      padding: 16px 18px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .jm-highlights-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      background: var(--bg-card-subtle);
+      padding: 10px 12px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+    }
+    .jm-hl-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .jm-hl-label {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .jm-hl-val {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .jm-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .jm-section-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .jm-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    @media (min-width: 520px) {
+      .jm-grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .jm-card-sub {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .jm-sub-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .jm-sub-val {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .jm-date-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-main);
+    }
+    .jm-date-row strong {
+      font-weight: 800;
+    }
+    .jm-category-box {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 10px 12px;
+      font-size: 11.5px;
+      line-height: 1.5;
+      color: var(--text-main);
+    }
+    .jm-actions-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+    }
+    .jm-actions-primary {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    @media (min-width: 500px) {
+      .jm-actions-primary {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .btn-primary-action {
+      padding: 10px 14px;
+      border-radius: var(--radius-lg);
+      font-size: 12.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      transition: all 0.15s ease;
+    }
+    .btn-primary-action.btn-apply {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-primary-action.btn-apply:hover {
+      filter: brightness(1.1);
+    }
+    .btn-primary-action.btn-studio {
+      background: #16a34a;
+      color: #ffffff;
+    }
+    .btn-primary-action.btn-studio:hover {
+      filter: brightness(1.1);
+    }
+    .jm-actions-secondary {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .btn-sec-action {
+      flex: 1;
+      min-width: 120px;
+      padding: 8px 10px;
+      border-radius: var(--radius-md);
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all 0.15s;
+    }
+    .btn-sec-action:hover {
+      background: var(--bg-card);
+      border-color: var(--primary);
+    }
+
+    /* Quiz Option Highlight Classes */
+    .quiz-opt-btn.is-correct, .quiz-opt-btn.correct {
+      background: #dcfce7 !important;
+      border-color: #22c55e !important;
+      color: #15803d !important;
+      font-weight: 800;
+    }
+    .quiz-opt-btn.is-wrong, .quiz-opt-btn.wrong {
+      background: #fee2e2 !important;
+      border-color: #ef4444 !important;
+      color: #b91c1c !important;
+      font-weight: 800;
+    }
+    .quiz-opt-btn:disabled {
+      cursor: default !important;
+    }
+
   </style>
 </head>
 <body>
@@ -2357,6 +2713,115 @@
 </div>
 
 <!-- ==================== MODALS ==================== -->
+
+<!-- JOB DETAILS FLOATING MODAL WINDOW -->
+<div class="modal-overlay" id="job-details-modal" onclick="closeModalIfBackdrop(event, 'job-details-modal')">
+  <div class="modal-sheet job-modal-sheet" onclick="event.stopPropagation()">
+    <!-- Sticky Modal Header -->
+    <div class="job-modal-header">
+      <div class="job-modal-header-info">
+        <span class="vc-chip" id="jm-scope">🏛️ Central</span>
+        <h2 class="job-modal-title" id="jm-title">Post Title</h2>
+        <div class="job-modal-org" id="jm-org">Organization Name</div>
+      </div>
+      <button class="modal-close" onclick="closeJobDetailsModal()" aria-label="Close" style="width:32px;height:32px;font-size:16px;">✕</button>
+    </div>
+
+    <!-- Scrollable Modal Body -->
+    <div class="job-modal-body">
+      <!-- Highlights Bar -->
+      <div class="jm-highlights-bar">
+        <div class="jm-hl-item">
+          <span class="jm-hl-label">👥 कुल पद (Vacancies)</span>
+          <span class="jm-hl-val" id="jm-vacancies">Loading...</span>
+        </div>
+        <div class="jm-hl-item">
+          <span class="jm-hl-label">⏳ आवेदन स्थिति</span>
+          <span class="jm-hl-val" id="jm-status">Active</span>
+        </div>
+        <div class="jm-hl-item">
+          <span class="jm-hl-label">🎯 पात्रता स्थिति</span>
+          <span class="jm-hl-val" id="jm-eligibility">Check</span>
+        </div>
+      </div>
+
+      <!-- 5-Stage Application Lifecycle Stepper -->
+      <div class="jm-section">
+        <h4 class="jm-section-title">📍 5-चरणीय भर्ती चक्र (Application Lifecycle)</h4>
+        <div class="lifecycle-stepper" id="jm-stepper" style="margin-top:2px;">
+          <!-- Dynamically populated stages -->
+        </div>
+      </div>
+
+      <!-- Eligibility & Age Criteria -->
+      <div class="jm-section">
+        <h4 class="jm-section-title">🎓 पात्रता एवं आयु सीमा (Eligibility Criteria)</h4>
+        <div class="jm-grid-2">
+          <div class="jm-card-sub">
+            <span class="jm-sub-label">📚 शैक्षणिक योग्यता (Qualification)</span>
+            <span class="jm-sub-val" id="jm-qualification">Graduation</span>
+          </div>
+          <div class="jm-card-sub">
+            <span class="jm-sub-label">🎂 आयु सीमा एवं कट-ऑफ (Age Limit)</span>
+            <span class="jm-sub-val" id="jm-age-limit">18 - 36 Years</span>
+          </div>
+        </div>
+        <!-- Category Reservation Relaxation Details -->
+        <div class="jm-category-box" id="jm-category-box">
+          <!-- Dynamic Category relaxations -->
+        </div>
+      </div>
+
+      <!-- Important Dates & Application Fee -->
+      <div class="jm-section">
+        <h4 class="jm-section-title">📅 महत्वपूर्ण तिथियाँ एवं परीक्षा शुल्क (Dates & Fees)</h4>
+        <div class="jm-grid-2">
+          <div class="jm-card-sub">
+            <div class="jm-date-row"><span>आवेदन प्रारंभ (Start):</span> <strong id="jm-start-date">--</strong></div>
+            <div class="jm-date-row" style="margin-top:4px;"><span>अंतिम तिथि (Last Date):</span> <strong id="jm-last-date" style="color:var(--red-600);">--</strong></div>
+            <div class="jm-date-row" style="margin-top:4px;"><span>परीक्षा तिथि (Exam):</span> <strong id="jm-exam-date">See Notice</strong></div>
+          </div>
+          <div class="jm-card-sub">
+            <span class="jm-sub-label">💳 आवेदन शुल्क (Application Fee)</span>
+            <span class="jm-sub-val" id="jm-fee" style="margin-top:4px;">--</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Required Documents Checklist -->
+      <div class="jm-section">
+        <h4 class="jm-section-title">📑 आवश्यक दस्तावेज़ (Required Documents)</h4>
+        <div class="rd-list" id="jm-docs-list">
+          <!-- Dynamic document list -->
+        </div>
+      </div>
+
+      <!-- Direct Action Buttons -->
+      <div class="jm-actions-section">
+        <div class="jm-actions-primary">
+          <a class="btn-primary-action btn-apply" id="jm-btn-apply" href="#" target="_blank" rel="noopener">
+            🌐 <span>आधिकारिक पोर्टल पर आवेदन करें</span>
+          </a>
+          <button class="btn-primary-action btn-studio" id="jm-btn-studio" onclick="handleJobModalStudio()">
+            📸 <span>फ़ोटो व हस्ताक्षर तैयार करें</span>
+          </button>
+        </div>
+        <div class="jm-actions-secondary">
+          <button class="btn-sec-action" id="jm-btn-reminder" onclick="handleJobModalReminder()">
+            ⏰ <span>रिमाइंडर सेट करें</span>
+          </button>
+          <button class="btn-sec-action" id="jm-btn-share" onclick="handleJobModalShare()">
+            📲 <span>व्हाट्सएप पर शेयर करें</span>
+          </button>
+          <button class="btn-sec-action" id="jm-btn-pin" onclick="handleJobModalPin()">
+            ⭐ <span id="jm-txt-pin">ट्रैक करें</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- 1. STUDENT PROFILE MODAL -->
 <div class="modal-overlay" id="profile-modal" onclick="closeModalIfBackdrop(event, 'profile-modal')">
@@ -3612,80 +4077,120 @@ const QUIZ_QUESTIONS = [
     exam: "BSSC Inter Level PYQ",
     question: "बिहार के किस जिले में प्राचीन 'विक्रमशिला विश्वविद्यालय' के अवशेष स्थित हैं?",
     options: ["नालंदा", "भागलपुर", "गया", "वैशाली"],
+    correct_option: "B",
+    answerIndex: 1,
     explain: "विक्रमशिला विश्वविद्यालय की स्थापना पाल वंश के शासक धर्मपाल ने भागलपुर जिले के अंतीचक में की थी।",
-
     question_en: "In which district of Bihar are the ruins of the ancient 'Vikramshila University' situated?",
     options_en: ["Nalanda", "Bhagalpur", "Gaya", "Vaishali"],
     explain_en: "Vikramshila University was established by the Pala King Dharampala at Antichak in Bhagalpur district.",
-
     question_hinglish: "Bihar ke kis district mein ancient 'Vikramshila University' ke ruins situated hain?",
     options_hinglish: ["Nalanda", "Bhagalpur", "Gaya", "Vaishali"],
-    explain_hinglish: "Vikramshila University ko Pala dynasty ke King Dharampala ne Bhagalpur ke Antichak mein establish kiya tha.",
-    answerIndex: 1
+    explain_hinglish: "Vikramshila University ko Pala dynasty ke King Dharampala ne Bhagalpur ke Antichak mein establish kiya tha."
   },
   {
     id: 2,
-    exam: "Railway RRB NTPC PYQ",
-    question: "भारतीय रेलवे की प्रथम यात्री ट्रेन 1853 में किन दो स्टेशनों के बीच चली थी?",
-    options: ["हावड़ा से हुगली", "बॉम्बे (बोरीबंदर) से ठाणे", "मद्रास से अर्कोट", "दिल्ली से आगरा"],
-    explain: "16 अप्रैल 1853 को 34 किलोमीटर की दूरी पर बॉम्बे (बोरीबंदर) से ठाणे के बीच भारत की पहली रेल चली थी।",
-
-    question_en: "Between which two stations did India's first passenger train run in 1853?",
-    options_en: ["Howrah to Hooghly", "Bombay (Bori Bunder) to Thane", "Madras to Arcot", "Delhi to Agra"],
-    explain_en: "India's first passenger train ran on 16 April 1853 covering 34 km between Bombay (Bori Bunder) and Thane.",
-
-    question_hinglish: "Indian Railways ki first passenger train 1853 mein kin do stations ke beech chali thi?",
-    options_hinglish: ["Howrah se Hooghly", "Bombay (Bori Bunder) se Thane", "Madras se Arcot", "Delhi se Agra"],
-    explain_hinglish: "16 April 1853 ko 34 km ki distance par Bombay (Bori Bunder) se Thane ke beech India ki first train chali thi.",
-    answerIndex: 1
+    exam: "SSC CGL General Awareness",
+    question: "भारतीय संविधान की कौन-सी अनुसूची 'संघ, राज्य और समवर्ती सूची' से संबंधित है?",
+    options: ["सातवीं अनुसूची", "आठवीं अनुसूची", "छठी अनुसूची", "ग्यारहवीं अनुसूची"],
+    correct_option: "A",
+    answerIndex: 0,
+    explain: "संविधान की 7वीं अनुसूची में संघ सूची (100 विषय), राज्य सूची (61 विषय) और समवर्ती सूची (52 विषय) शामिल हैं।",
+    question_en: "Which Schedule of the Indian Constitution deals with the Union, State, and Concurrent Lists?",
+    options_en: ["7th Schedule", "8th Schedule", "6th Schedule", "11th Schedule"],
+    explain_en: "The 7th Schedule of the Indian Constitution defines the allocation of powers through Union, State, and Concurrent Lists.",
+    question_hinglish: "Indian Constitution ki kaunsi Schedule Union, State aur Concurrent Lists se related hai?",
+    options_hinglish: ["7th Schedule", "8th Schedule", "6th Schedule", "11th Schedule"],
+    explain_hinglish: "7th Schedule mein 3 lists (Union, State aur Concurrent List) ka distribution diya gaya hai."
   },
   {
     id: 3,
-    exam: "BPSC 69th CCE PYQ",
-    question: "भारतीय संविधान के किस अनुच्छेद के अंतर्गत 'राज्य लोक सेवा आयोग' (BPSC) का गठन होता है?",
-    options: ["अनुच्छेद 280", "अनुच्छेद 315", "अनुच्छेद 324", "अनुच्छेद 356"],
-    explain: "अनुच्छेद 315 संघ और राज्यों के लिए लोक सेवा आयोगों के गठन का प्रावधान करता है।",
-
-    question_en: "Under which Article of the Indian Constitution is the 'State Public Service Commission' (BPSC) established?",
-    options_en: ["Article 280", "Article 315", "Article 324", "Article 356"],
-    explain_en: "Article 315 of the Constitution provides for the establishment of Public Service Commissions for the Union and States.",
-
-    question_hinglish: "Indian Constitution ke kis Article ke under 'State Public Service Commission' (BPSC) establish hota hai?",
-    options_hinglish: ["Article 280", "Article 315", "Article 324", "Article 356"],
-    explain_hinglish: "Article 315 Union aur States ke liye Public Service Commissions ke establishment ka provision deta hai.",
-    answerIndex: 1
+    exam: "Railway RRB NTPC General Science",
+    question: "विटामिन 'सी' (Vitamin C) का रासायनिक नाम क्या है?",
+    options: ["थायमिन", "राइबोफ्लेविन", "एस्कॉर्बिक एसिड", "कैल्सीफेरोल"],
+    correct_option: "C",
+    answerIndex: 2,
+    explain: "विटामिन सी का रासायनिक नाम एस्कॉर्बिक एसिड (Ascorbic Acid) है। इसकी कमी से स्कर्वी (Scurvy) रोग होता है।",
+    question_en: "What is the chemical name of Vitamin C?",
+    options_en: ["Thiamine", "Riboflavin", "Ascorbic Acid", "Calciferol"],
+    explain_en: "The chemical name of Vitamin C is Ascorbic Acid. Its deficiency causes Scurvy.",
+    question_hinglish: "Vitamin C ka chemical name kya hota hai?",
+    options_hinglish: ["Thiamine", "Riboflavin", "Ascorbic Acid", "Calciferol"],
+    explain_hinglish: "Vitamin C ka chemical name Ascorbic Acid hai aur iski kami se Scurvy rog hota hai."
   },
   {
     id: 4,
-    exam: "SSC GD Science PYQ",
-    question: "मानव रक्त का सामान्य pH मान (pH Value) लगभग कितना होता है?",
-    options: ["6.2", "7.4", "8.5", "5.0"],
-    explain: "मानव रक्त थोड़ा क्षारीय (mildly alkaline) होता है और इसका सामान्य pH मान लगभग 7.35 से 7.45 होता है।",
-
-    question_en: "What is the normal pH value of human blood approximately?",
-    options_en: ["6.2", "7.4", "8.5", "5.0"],
-    explain_en: "Human blood is slightly alkaline with a normal physiological pH range of approximately 7.35 to 7.45 (around 7.4).",
-
-    question_hinglish: "Human blood ka normal pH value approximately kitna hota hai?",
-    options_hinglish: ["6.2", "7.4", "8.5", "5.0"],
-    explain_hinglish: "Human blood slightly alkaline hota hai aur iska normal pH value approximately 7.35 se 7.45 hota hai.",
-    answerIndex: 1
+    exam: "UPSC Civil Services Prelims",
+    question: "भारत में 'संसद के संयुक्त अधिवेशन' (Joint Sitting) की अध्यक्षता कौन करता है?",
+    options: ["भारत का राष्ट्रपति", "भारत का उपराष्ट्रपति", "लोकसभा अध्यक्ष (Speaker)", "राज्यसभा का उपसभापति"],
+    correct_option: "C",
+    answerIndex: 2,
+    explain: "अनुच्छेद 108 के तहत राष्ट्रपति संयुक्त अधिवेशन बुलाते हैं, लेकिन अनुच्छेद 118(4) के अनुसार इसकी अध्यक्षता लोकसभा अध्यक्ष (Speaker) करते हैं।",
+    question_en: "Who presides over the Joint Sitting of both Houses of Parliament in India?",
+    options_en: ["President of India", "Vice-President of India", "Speaker of Lok Sabha", "Deputy Chairman of Rajya Sabha"],
+    explain_en: "Under Article 108, the President summons the Joint Sitting, but Article 118(4) mandates that the Speaker of Lok Sabha presides over it.",
+    question_hinglish: "India mein Parliament ki Joint Sitting ki presidence kaun karta hai?",
+    options_hinglish: ["President of India", "Vice-President of India", "Lok Sabha Speaker", "Rajya Sabha Deputy Chairman"],
+    explain_hinglish: "Article 108 ke tehat President Joint Sitting bulate hain, aur Speaker of Lok Sabha preside karte hain."
   },
   {
     id: 5,
-    exam: "Bihar Police Constable PYQ",
+    exam: "Bihar Police Constable GK",
     question: "बिहार में 1857 की क्रांति का नेतृत्व जगदीशपुर से किसने किया था?",
     options: ["पीर अली", "बाबू कुंवर सिंह", "अमर सिंह", "हरे कृष्ण सिंह"],
-    explain: "बाबू वीर कुंवर सिंह ने 80 वर्ष की उम्र में जगदीशपुर (भोजपुर) से 1857 के संग्राम का अमर नेतृत्व किया था।",
-
+    correct_option: "B",
+    answerIndex: 1,
+    explain: "बाबू वीर कुंवर सिंह ने 80 वर्ष की उम्र में जगदीशपुर (भोजपुर) से 1857 के प्रथम स्वतंत्रता संग्राम का नेतृत्व किया था।",
     question_en: "Who led the Revolt of 1857 in Bihar from Jagdishpur?",
     options_en: ["Peer Ali", "Babu Kunwar Singh", "Amar Singh", "Hare Krishna Singh"],
-    explain_en: "Babu Veer Kunwar Singh heroically led the Indian Rebellion of 1857 from Jagdishpur (Bhojpur) at the age of nearly 80.",
-
+    explain_en: "Babu Veer Kunwar Singh heroically led the Indian Rebellion of 1857 from Jagdishpur (Bhojpur) at the age of 80.",
     question_hinglish: "Bihar mein 1857 Revolt ka leadership Jagdishpur se kisne kiya tha?",
     options_hinglish: ["Peer Ali", "Babu Kunwar Singh", "Amar Singh", "Hare Krishna Singh"],
-    explain_hinglish: "Babu Veer Kunwar Singh ne 80 saal ki age mein Jagdishpur (Bhojpur) se 1857 ke movement ko lead kiya tha.",
-    answerIndex: 1
+    explain_hinglish: "Babu Veer Kunwar Singh ne 80 saal ki age mein Jagdishpur (Bhojpur) se 1857 ke sangram ka netritva kiya tha."
+  },
+  {
+    id: 6,
+    exam: "Railway RRB ALP / Technician",
+    question: "कार्य (Work) और ऊर्जा (Energy) का SI मात्रक (Unit) क्या है?",
+    options: ["वाट (Watt)", "न्यूटन (Newton)", "पास्कल (Pascal)", "जूल (Joule)"],
+    correct_option: "D",
+    answerIndex: 3,
+    explain: "कार्य और ऊर्जा दोनों का SI मात्रक जूल (Joule) होता है। शक्ति (Power) का मात्रक वाट होता है।",
+    question_en: "What is the SI unit of Work and Energy?",
+    options_en: ["Watt", "Newton", "Pascal", "Joule"],
+    explain_en: "The SI unit of both Work and Energy is Joule. Power is measured in Watts.",
+    question_hinglish: "Work aur Energy ka SI unit kya hota hai?",
+    options_hinglish: ["Watt", "Newton", "Pascal", "Joule"],
+    explain_hinglish: "Work aur Energy dono ka SI unit Joule (J) hota hai. Power ka unit Watt hota hai."
+  },
+  {
+    id: 7,
+    exam: "BPSC 70th CCE Special",
+    question: "चंपारण सत्याग्रह (1917) के दौरान गांधीजी को चंपारण आने का निमंत्रण किसने दिया था?",
+    options: ["राजकुमार शुक्ल", "डॉ. राजेंद्र प्रसाद", "ब्रजकिशोर प्रसाद", "मजहरुल हक"],
+    correct_option: "A",
+    answerIndex: 0,
+    explain: "1916 के लखनऊ कांग्रेस अधिवेशन में किसान नेता राजकुमार शुक्ल ने महात्मा गांधी को चंपारण के नील किसानों की व्यथा देखने का निमंत्रण दिया था।",
+    question_en: "Who invited Mahatma Gandhi to Champaran during the Champaran Satyagraha (1917)?",
+    options_en: ["Rajkumar Shukla", "Dr. Rajendra Prasad", "Brajkishore Prasad", "Mazharul Haque"],
+    explain_en: "Farmer leader Rajkumar Shukla met Mahatma Gandhi at the 1916 Lucknow Congress Session and invited him to Champaran.",
+    question_hinglish: "Champaran Satyagraha (1917) ke dauran Gandhiji ko Champaran aane ka invitation kisne diya tha?",
+    options_hinglish: ["Rajkumar Shukla", "Dr. Rajendra Prasad", "Brajkishore Prasad", "Mazharul Haque"],
+    explain_hinglish: "1916 ke Lucknow Congress session mein Rajkumar Shukla ne Gandhiji ko Champaran aane ka invite kiya tha."
+  },
+  {
+    id: 8,
+    exam: "SSC CHSL / MTS",
+    question: "भारत में 'राष्ट्रीय मतदाता दिवस' (National Voters' Day) प्रत्येक वर्ष कब मनाया जाता है?",
+    options: ["15 जनवरी", "24 जनवरी", "25 जनवरी", "28 फरवरी"],
+    correct_option: "C",
+    answerIndex: 2,
+    explain: "भारत निर्वाचन आयोग की स्थापना (25 जनवरी 1950) की स्मृति में प्रत्येक वर्ष 25 जनवरी को राष्ट्रीय मतदाता दिवस मनाया जाता है।",
+    question_en: "When is 'National Voters' Day' observed every year in India?",
+    options_en: ["15 January", "24 January", "25 January", "28 February"],
+    explain_en: "National Voters' Day is celebrated on 25 January annually to mark the foundation day of the Election Commission of India (1950).",
+    question_hinglish: "India mein har saal 'National Voters Day' kab manaya jata hai?",
+    options_hinglish: ["15 January", "24 January", "25 January", "28 February"],
+    explain_hinglish: "Election Commission of India ki establishment date (25 Jan 1950) ki yaad mein 25 January ko manaya jata hai."
   }
 ];
 let currentQuizIndex = 0;
@@ -4432,7 +4937,7 @@ function toggleCardAccordion(jobId) {
 function renderVacanciesFeed() {
   const container = document.getElementById('vacancies-feed');
   if (!container) return;
-  const d = I18N[currentLang];
+  const d = I18N[currentLang] || I18N.hi;
   let html = '';
   const now = new Date();
 
@@ -4445,281 +4950,137 @@ function renderVacanciesFeed() {
     return true;
   });
 
-  // 2. Filter by User Domicile / Scope (Central is always visible; State matches user domicile unless ALL)
-  list = list.filter(vac => {
-    const isCentral = vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
-    if (isCentral) return true;
-    if (!profile.state || profile.state === 'ALL') return true;
-    if (vac.state && vac.state.toUpperCase() === profile.state.toUpperCase()) return true;
-    if (currentVacancyFilter === 'STATE') return true; // user explicitly clicked State filter
-    return false;
-  });
+  // 2. Filter by Chip Filter
+  if (currentVacancyFilter === 'TRACKED') {
+    list = list.filter(v => trackedJobs.includes(v.id));
+  } else if (currentVacancyFilter === '10TH') {
+    list = list.filter(v => (v.minEducation === '10TH' || (v.qualification && v.qualification.includes('10th')) || (v.categoryTag && v.categoryTag.includes('10th'))));
+  } else if (currentVacancyFilter === '12TH') {
+    list = list.filter(v => (v.minEducation === '12TH' || (v.qualification && v.qualification.includes('12th')) || (v.categoryTag && v.categoryTag.includes('12th'))));
+  } else if (currentVacancyFilter === 'GRADUATE') {
+    list = list.filter(v => (v.minEducation === 'GRADUATE' || (v.qualification && v.qualification.toLowerCase().includes('grad')) || (v.categoryTag && v.categoryTag.includes('graduate'))));
+  } else if (currentVacancyFilter === 'RAILWAY') {
+    list = list.filter(v => (v.org && v.org.toLowerCase().includes('railway')) || (v.title && v.title.toLowerCase().includes('rrb')));
+  } else if (currentVacancyFilter === 'CENTRAL') {
+    list = list.filter(v => v.isCentral || v.scope === 'Central' || v.state === 'All-India');
+  } else if (currentVacancyFilter === 'STATE') {
+    list = list.filter(v => !v.isCentral && v.scope !== 'Central' && v.state !== 'All-India');
+  }
 
-  // 3. Filter by Sub-filter buttons
-  list = list.filter(vac => {
-    if (currentVacancyFilter === 'ALL') return true;
-    if (currentVacancyFilter === 'TRACKED') return trackedJobs.includes(vac.id);
-    if (currentVacancyFilter === 'CENTRAL') return vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
-    if (currentVacancyFilter === 'STATE') return !vac.isCentral || vac.scope === 'State';
-    if (currentVacancyFilter === '10TH') return vac.minEducation === '10TH' || (vac.categoryTag && vac.categoryTag.includes('10th'));
-    if (currentVacancyFilter === '12TH') return vac.minEducation === '12TH' || (vac.categoryTag && vac.categoryTag.includes('12th'));
-    if (currentVacancyFilter === 'GRADUATE') return vac.minEducation === 'GRADUATE' || (vac.categoryTag && vac.categoryTag.includes('graduate'));
-    if (currentVacancyFilter === 'RAILWAY') return (vac.id && vac.id.includes('RRB')) || (vac.org && (vac.org.includes('Railway') || (vac.org_hi && vac.org_hi.includes('रेलवे'))));
-    return true;
-  });
+  // 3. Filter by Search Query
+  if (activeSearchQuery && activeSearchQuery.trim() !== '') {
+    const q = activeSearchQuery.toLowerCase().trim();
+    list = list.filter(v => {
+      const t = (v.title || '').toLowerCase();
+      const tHi = (v.title_hi || '').toLowerCase();
+      const o = (v.org || '').toLowerCase();
+      const cat = (v.category || '').toLowerCase();
+      return t.includes(q) || tHi.includes(q) || o.includes(q) || cat.includes(q);
+    });
+  }
 
-  // 4. Filter by Dropdown State Filter
+  // 4. Filter by State Selector
   if (activeStateFilter && activeStateFilter !== 'ALL') {
-    list = list.filter(vac => {
-      if (activeStateFilter === 'Central') return vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
-      const st = (vac.state || "").toUpperCase();
-      const org = (vac.org || vac.title || "").toUpperCase();
-      const q = activeStateFilter.toUpperCase();
-      return st.includes(q) || org.includes(q);
+    list = list.filter(v => {
+      if (v.isCentral || v.scope === 'Central' || v.state === 'All-India') return true;
+      return v.state === activeStateFilter;
     });
   }
 
-  // 5. Filter by Instant Search Query
-  if (activeSearchQuery && activeSearchQuery.trim()) {
-    const q = activeSearchQuery.trim().toLowerCase();
-    list = list.filter(vac => {
-      const title = (vac.title || "").toLowerCase();
-      const titleHi = (vac.title_hi || "").toLowerCase();
-      const org = (vac.org || "").toLowerCase();
-      const orgHi = (vac.org_hi || "").toLowerCase();
-      const cat = (vac.category || "").toLowerCase();
-      const qual = (vac.qualification || vac.minEducation || "").toLowerCase();
-      return title.includes(q) || titleHi.includes(q) || org.includes(q) || orgHi.includes(q) || cat.includes(q) || qual.includes(q);
-    });
-  }
-
+  // Empty State
   if (list.length === 0) {
     container.innerHTML = `
-      <div style="text-align:center;padding:26px 16px;background:var(--bg-card);border:1.5px dashed var(--border-color);border-radius:var(--radius-2xl);color:var(--text-dim);font-weight:700;">
-        🔍 ${d.noJobsMatching}
+      <div style="grid-column: 1 / -1; background: var(--bg-card); border: 1.5px dashed var(--border-color); border-radius: var(--radius-2xl); padding: 36px 16px; text-align: center;">
+        <div style="font-size: 38px; margin-bottom: 8px;">🔍</div>
+        <h4 style="font-size: 15px; font-weight: 800; color: var(--text-main); margin-bottom: 4px;">${d.emptyFilteredHeading || "कोई भर्ती नहीं मिली"}</h4>
+        <p style="font-size: 12px; color: var(--text-dim); margin-bottom: 12px;">${d.emptyFilteredDesc || "कृपया अपने फ़िल्टर या सर्च शब्द बदलकर पुनः प्रयास करें।"}</p>
+        <button onclick="setVacancyFilter('ALL', document.querySelector('.vac-filter-btn[data-filter=ALL]'))" style="background: var(--primary); color: #fff; border: none; padding: 7px 16px; border-radius: var(--radius-md); font-size: 12px; font-weight: 700; cursor: pointer;">
+          ${d.btnClearFilters || "फ़िल्टर हटाएं"}
+        </button>
       </div>
     `;
     return;
   }
 
-  const totalMatching = list.length;
-  const visibleList = list.slice(0, currentVisibleCount);
-
-  visibleList.forEach(vac => {
-    // Multilingual Title, Org, Posts, Edu, Fee
-    const title = currentLang === 'en' ? (vac.title || vac.examNameEn) : (currentLang === 'hi' ? (vac.title_hi || vac.examName) : (vac.title_hinglish || vac.title || vac.examNameEn));
-    const org = currentLang === 'en' ? (vac.org || vac.recruitingBodyEn || vac.organization) : (currentLang === 'hi' ? (vac.org_hi || vac.recruitingBody || vac.organization) : (vac.org_hinglish || vac.org || vac.recruitingBodyEn || vac.organization));
-    const postsStr = currentLang === 'en' ? (vac.vacancies || vac.totalPostsEn || vac.posts || "Various Posts") : (currentLang === 'hi' ? (vac.vacancies_hi || vac.totalPosts || vac.posts || "विभिन्न पद") : (vac.vacancies_hinglish || vac.vacancies || vac.totalPostsEn || vac.posts || "Various Posts"));
-    const eduStr = currentLang === 'en' ? (vac.minEduLabel || vac.minEduLabelEn || vac.qualification || "Educational Qualification") : (currentLang === 'hi' ? (vac.minEduLabel_hi || vac.minEduLabel || vac.qualification || "शैक्षणिक योग्यता") : (vac.minEduLabel_hinglish || vac.minEduLabel || vac.minEduLabelEn || vac.qualification || "Educational Qualification"));
-    const feeStr = currentLang === 'en' ? (vac.fee || vac.feeEn || "As per notification") : (currentLang === 'hi' ? (vac.fee_hi || vac.fee || "अधिसूचना अनुसार") : (vac.fee_hinglish || vac.fee || vac.feeEn || "As per notification"));
-
-    // Dates & Deadline calculation
-    const lastDateStr = vac.lastDate || vac.applicationDeadline || vac.last_date || "";
-    const startDateStr = vac.startDate || vac.start_date || "";
-    const deadline = lastDateStr ? new Date(lastDateStr) : null;
-    const diffDays = (deadline && !isNaN(deadline)) ? Math.ceil((deadline - now) / (1000 * 60 * 60 * 24)) : null;
-    const isPast = diffDays !== null && diffDays < 0;
-    const isUrgent = diffDays !== null && diffDays >= 0 && diffDays <= 7;
-    const daysLeftBadge = (diffDays === null) ? (d.liveBadge || "Live") : ((isPast || vac.category === 'results' || isResultCategory(vac.category)) ? d.closedBadge : d.daysLeftText.replace('{d}', Math.max(1, diffDays)));
-
-    // Live Eligibility Status
+  // Render High-Density Sleek Compact Cards
+  list.forEach(vac => {
+    const title = (currentLang === 'hi' && vac.title_hi) ? vac.title_hi : ((currentLang === 'hinglish' && vac.title_hinglish) ? vac.title_hinglish : (vac.title || vac.examName || 'Government Recruitment'));
+    const org = (currentLang === 'hi' && vac.org_hi) ? vac.org_hi : ((currentLang === 'hinglish' && vac.org_hinglish) ? vac.org_hinglish : (vac.org || vac.recruitingBody || 'Govt Department'));
+    const isPinned = trackedJobs.includes(vac.id);
     const evalResult = evaluateVacancy(vac);
 
-    // Is Tracked & Is Expanded
-    const isPinned = trackedJobs.includes(vac.id);
-    const isExpanded = expandedCardIds.has(vac.id);
+    // Dates & Countdown
+    const lastDateStr = vac.lastDate || vac.last_date || '2026-12-31';
+    const lastDateObj = new Date(lastDateStr);
+    const diffDays = Math.ceil((lastDateObj - now) / (1000 * 60 * 60 * 24));
+    let daysLeftBadge = "";
+    let isUrgent = false;
+    let isPast = false;
 
-    // Dynamic Required Documents Checklist against Vault
-    const reqDocs = vac.requiredDocs || [
-      { key: "m10", name: "10th Marksheet", name_hi: "10वीं अंकतालिका", name_hinglish: "10th Marksheet", mandatory: true },
-      { key: "dom", name: "Domicile Certificate", name_hi: "निवास प्रमाण पत्र", name_hinglish: "Domicile Certificate", mandatory: true },
-      { key: "id", name: "Aadhaar Card", name_hi: "आधार कार्ड", name_hinglish: "Aadhaar Card", mandatory: true }
-    ];
-    let readyCount = 0;
-    const docChecklistItems = reqDocs.map(doc => {
-      let isReady = false;
-      let detail = "";
-      const docLabel = currentLang === 'en' ? (doc.name || doc.nameEn) : (currentLang === 'hi' ? (doc.name_hi || doc.name) : (doc.name_hinglish || doc.name || doc.nameEn));
+    if (diffDays < 0) {
+      daysLeftBadge = d.badgeClosed || "आवेदन समाप्त";
+      isPast = true;
+    } else if (diffDays === 0) {
+      daysLeftBadge = d.badgeToday || "आज अंतिम दिन!";
+      isUrgent = true;
+    } else if (diffDays <= 3) {
+      daysLeftBadge = (d.badgeDaysLeft || "{days} दिन शेष").replace("{days}", diffDays);
+      isUrgent = true;
+    } else {
+      daysLeftBadge = (d.badgeDaysLeft || "{days} दिन शेष").replace("{days}", diffDays);
+    }
 
-      if (doc.key === "m10" && vaultCredentials.m10Roll) { isReady = true; detail = vaultCredentials.m10Roll; }
-      else if (doc.key === "m12" && vaultCredentials.m12Roll) { isReady = true; detail = vaultCredentials.m12Roll; }
-      else if (doc.key === "dom" && vaultCredentials.domCert) { isReady = true; detail = vaultCredentials.domCert; }
-      else if (doc.key === "caste" && vaultCredentials.casteCert) { isReady = true; detail = vaultCredentials.casteCert; }
-      else if (doc.key === "id" && vaultCredentials.aadhLast4) { isReady = true; detail = "..." + vaultCredentials.aadhLast4; }
-      else if (doc.key === "grad" && vaultCredentials.m12Roll) { isReady = true; detail = "Degree"; }
-      else {
-        // check custom docs
-        const custMatch = vaultCustomDocs.find(c => c.title.toLowerCase().includes(docLabel.toLowerCase()) || docLabel.toLowerCase().includes(c.title.toLowerCase()));
-        if (custMatch && custMatch.docNumber) { isReady = true; detail = custMatch.docNumber; }
-      }
-      if (isReady) readyCount++;
-      return `
-        <div class="rd-item">
-          <span class="rd-item-name">${docLabel}</span>
-          <span class="rd-item-status ${isReady ? 'ready' : 'missing'}">
-            ${isReady ? '✅ ' + d.docReady + (detail ? ' (' + detail + ')' : '') : '⚠️ ' + d.docMissing}
-          </span>
-        </div>
-      `;
-    }).join('');
+    const postsStr = (currentLang === 'hi' && vac.vacancies_hi) ? vac.vacancies_hi : ((currentLang === 'hinglish' && vac.vacancies_hinglish) ? vac.vacancies_hinglish : (vac.vacancies || vac.posts || 'As per notice'));
+    const eduStr = (currentLang === 'hi' && vac.minEduLabel_hi) ? vac.minEduLabel_hi : ((currentLang === 'hinglish' && vac.minEduLabel_hinglish) ? vac.minEduLabel_hinglish : (vac.minEduLabel || vac.qualification || 'Govt Notice'));
+    const isCentral = vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
 
-    // 5-Stage Application Lifecycle (strictly: Application Window -> Admit Card -> Exam Date -> Answer Key -> Final Result)
-    const lifecycleList = vac.lifecycle || [
-      { stage: "apply", status: "active", titleEn: "Application Window", titleHi: "आवेदन प्रक्रिया", titleHinglish: "Application Window", dateEn: "Active", dateHi: "जारी है", dateHinglish: "Active" },
-      { stage: "admit", status: "upcoming", titleEn: "Admit Card", titleHi: "प्रवेश पत्र जारी", titleHinglish: "Admit Card", dateEn: "Upcoming", dateHi: "आगामी", dateHinglish: "Upcoming" },
-      { stage: "exam", status: "upcoming", titleEn: "Exam Date", titleHi: "परीक्षा तिथि", titleHinglish: "Exam Date", dateEn: "Upcoming", dateHi: "आगामी", dateHinglish: "Upcoming" },
-      { stage: "anskey", status: "pending", titleEn: "Answer Key", titleHi: "उत्तर कुंजी", titleHinglish: "Answer Key", dateEn: "Pending", dateHi: "प्रतीक्षित", dateHinglish: "Pending" },
-      { stage: "result", status: "pending", titleEn: "Final Result", titleHi: "अंतिम परिणाम", titleHinglish: "Final Result", dateEn: "Pending", dateHi: "प्रतीक्षित", dateHinglish: "Pending" }
-    ];
-
-    const stagesHtml = lifecycleList.map((st, i) => {
-      const stLabel = currentLang === 'en' ? (st.titleEn || st.nameEn) : (currentLang === 'hi' ? (st.titleHi || st.name) : (st.titleHinglish || st.titleEn));
-      const stDate = currentLang === 'en' ? (st.dateEn || st.date) : (currentLang === 'hi' ? (st.dateHi || st.date) : (st.dateHinglish || st.dateEn));
-      let stStatusText = d.stageStatusPending;
-      if (st.status === 'completed') stStatusText = d.stageStatusCompleted;
-      else if (st.status === 'active') stStatusText = d.stageStatusActive;
-      else if (st.status === 'upcoming') stStatusText = d.stageStatusUpcoming;
-
-      return `
-        <div class="lc-step">
-          <div class="lc-dot ${st.status}">${st.status === 'completed' ? '✓' : (i + 1)}</div>
-          <div class="lc-label">${stLabel}</div>
-          <div class="lc-date">${stDate}</div>
-          <div class="lc-status-pill ${st.status}">${stStatusText}</div>
-        </div>
-      `;
-    }).join('');
-
-    const icon = vac.id.includes('RRB') ? '🚆' : vac.id.includes('COAST') ? '⚓' : vac.id.includes('SSC') ? '🏛️' : vac.id.includes('BPSC') || vac.id.includes('BSSC') ? '🏢' : '📋';
+    let icon = "📋";
+    if (isAdmitCardCategory(vac.category)) icon = "🎫";
+    else if (isResultCategory(vac.category)) icon = "🏆";
+    else if ((vac.org && vac.org.toLowerCase().includes('railway')) || (vac.title && vac.title.toLowerCase().includes('rrb'))) icon = "🚆";
+    else if (vac.title && (vac.title.toLowerCase().includes('police') || vac.title.toLowerCase().includes('constable'))) icon = "👮";
+    else if (isCentral) icon = "🏛️";
 
     html += `
-      <div class="vacancy-card ${isExpanded ? 'is-expanded' : ''}" id="card-${vac.id}">
-        <!-- Collapsed View (Default Compact Preview) -->
-        <div class="vc-collapsed-preview" onclick="toggleCardAccordion('${vac.id}')">
-          <div class="vc-top-line">
-            <div class="vc-icon">${icon}</div>
-            <div class="vc-main-info">
-              <div class="vc-title-row">
-                <h3 class="vc-title">${title}</h3>
-                <button class="btn-track-pin ${isPinned ? 'pinned' : ''}" onclick="toggleJobTracking('${vac.id}', event)">
-                  ${isPinned ? d.pinTracked : d.pinTrack}
-                </button>
-              </div>
-              <div class="vc-org">${org}</div>
+      <div class="vacancy-card compact" id="card-${vac.id}" onclick="openJobDetailsModal('${vac.id}')">
+        <!-- Top Line: Icon, Title, Org & Pin -->
+        <div class="vc-compact-header">
+          <div class="vc-compact-icon">${icon}</div>
+          <div class="vc-compact-heading">
+            <div class="vc-compact-title-row">
+              <h3 class="vc-compact-title" title="${title}">${title}</h3>
             </div>
+            <div class="vc-compact-org">${org}</div>
           </div>
-
-          <!-- Essentials Row: Vacancies, Dates, Days Left, Compact Eligibility Chip -->
-          <div class="vc-essentials-row">
-            <span class="vc-chip vac-scope ${ (vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India') ? 'central' : 'state'}">
-              ${ (vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India') ? '🏛️ ' + d.scopeCentral : '📍 ' + (vac.state || d.scopeState) }
-            </span>
-            <span class="vc-chip vac-posts">👥 ${postsStr}</span>
-            <span class="vc-chip vac-dates">📅 ${d.startDateLbl}: ${formatDateDisplay(startDateStr)} | ${d.lastDateLbl}: ${formatDateDisplay(lastDateStr)}</span>
-            <span class="vc-chip vac-days ${isUrgent ? 'urgent' : ''} ${isPast ? 'closed' : ''}">⏳ ${daysLeftBadge}</span>
-            <span class="vc-chip vac-eligibility ${evalResult.statusClass}">
-              ${evalResult.icon} ${evalResult.compactBadge}
-            </span>
-          </div>
-
-          <!-- Accordion Expand Trigger Bar -->
-          <div class="vc-accordion-toggle">
-            <span id="toggle-txt-${vac.id}">${isExpanded ? d.collapseDetails : d.viewDetails}</span>
-            <span class="toggle-icon ${isExpanded ? 'open' : ''}">▾</span>
-          </div>
+          <button class="btn-track-pin ${isPinned ? 'pinned' : ''}" onclick="toggleJobTracking('${vac.id}', event)" title="${isPinned ? d.pinTracked : d.pinTrack}">
+            ${isPinned ? '★' : '☆'}
+          </button>
         </div>
 
-        <!-- Expanded View (Clean Details on Tap) -->
-        <div class="vc-expanded-content ${isExpanded ? 'show' : ''}" id="details-${vac.id}">
-          <!-- Qualification, Age Criteria, Fee Grid -->
-          <div class="vc-details-grid">
-            <div class="vc-detail-item">
-              <span class="vcd-label">📚 ${d.lblQualification}</span>
-              <span class="vcd-value">${eduStr}</span>
-            </div>
-            <div class="vc-detail-item">
-              <span class="vcd-label">🎂 ${d.lblAgeLimit}</span>
-              <span class="vcd-value">18–${vac.maxAge.GENERAL_MALE} ${d.yearsUnit} | ${d.lblCutoff}: ${formatDateDisplay(vac.cutoffDate)}</span>
-            </div>
-            <div class="vc-detail-item">
-              <span class="vcd-label">💳 ${d.lblAppFee}</span>
-              <span class="vcd-value">${feeStr}</span>
-            </div>
-          </div>
+        <!-- Metadata Chips Row -->
+        <div class="vc-compact-meta">
+          <span class="vc-chip vac-scope ${isCentral ? 'central' : 'state'}">
+            ${isCentral ? '🏛️ ' + d.scopeCentral : '📍 ' + (vac.state || d.scopeState)}
+          </span>
+          <span class="vc-chip vac-posts">👥 ${postsStr}</span>
+          <span class="vc-chip vac-dates">📅 ${d.lastDateLbl}: <strong>${formatDateDisplay(lastDateStr)}</strong></span>
+          <span class="vc-chip vac-days ${isUrgent ? 'urgent' : ''} ${isPast ? 'closed' : ''}">⏳ ${daysLeftBadge}</span>
+          <span class="vc-chip vac-eligibility ${evalResult.statusClass}">
+            ${evalResult.icon} ${evalResult.compactBadge}
+          </span>
+        </div>
 
-          <!-- Prominent Eligibility Verdict -->
-          <div class="vc-eligibility-banner ${evalResult.statusClass}">
-            <div class="ve-title">
-              <span>${evalResult.icon}</span>
-              <span>${evalResult.message}</span>
-            </div>
-            <div class="ve-sub">${evalResult.details}</div>
-          </div>
-
-          <!-- 5-Stage Application Lifecycle & Milestone Timeline -->
-          <div class="lifecycle-box">
-            <div class="lc-title">${d.lifecycleTitle}</div>
-            <div class="lc-stepper">
-              ${stagesHtml}
-            </div>
-          </div>
-
-          <!-- Required Documents Checklist linked with Vault -->
-          <div class="req-docs-box">
-            <div class="rd-header">
-              <div class="rd-title">
-                <span>📋</span>
-                <span>${d.reqDocsTitle.replace('{ready}', readyCount).replace('{total}', reqDocs.length)}</span>
-              </div>
-            </div>
-            <div class="rd-list">
-              ${docChecklistItems}
-            </div>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="vc-actions">
-            <button class="btn-apply-prepare" onclick="openResizerWithPreset('${vac.presetKey}')">
-              <span>📸</span>
-              <span>${d.btnApplyAndPrepare}</span>
-            </button>
-            <a class="btn-view-portal" href="${vac.officialApplyUrl || vac.apply_link || vac.notification_pdf || '#'}" target="_blank" rel="noopener">
-              🌐 ${d.btnOfficialPortal} (${org})
-            </a>
-          </div>
-
-          <!-- Utility Bar: WhatsApp Share & Calendar Reminder -->
-          <div style="display:flex;gap:6px;margin-top:8px;">
-            <button onclick="shareVacancyOnWhatsApp('${vac.id}')" style="flex:1;background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.3);color:#15803d;padding:6px 10px;border-radius:var(--radius-md);font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;">
-              <span>📲</span> <span>${currentLang === 'en' ? 'Share on WhatsApp' : (currentLang === 'hi' ? 'व्हाट्सएप पर शेयर करें' : 'WhatsApp par share karein')}</span>
-            </button>
-            <button onclick="addReminderToCalendar('${vac.id}')" style="flex:1;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);color:var(--primary);padding:6px 10px;border-radius:var(--radius-md);font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;">
-              <span>⏰</span> <span>${currentLang === 'en' ? 'Last Date Reminder' : (currentLang === 'hi' ? 'लास्ट डेट रिमाइंडर' : 'Last Date Reminder')}</span>
-            </button>
-          </div>
-
-          <!-- Compact Bottom Collapse Button -->
-          <button class="btn-collapse-bottom" onclick="toggleCardAccordion('${vac.id}')">
-            ▲ ${d.collapseDetails}
+        <!-- Footer Row: Qualification hint & Direct Modal CTA -->
+        <div class="vc-compact-footer">
+          <span class="vc-compact-edu">🎓 ${eduStr}</span>
+          <button class="btn-view-details-compact" onclick="openJobDetailsModal('${vac.id}'); event.stopPropagation();">
+            <span>${d.viewDetails || 'विवरण देखें'}</span>
+            <span style="font-size:12px;">→</span>
           </button>
         </div>
       </div>
     `;
   });
-
-  if (totalMatching > currentVisibleCount) {
-    const remaining = totalMatching - currentVisibleCount;
-    const viewMoreLabel = (I18N[currentLang] && I18N[currentLang].viewMoreBtn) ? I18N[currentLang].viewMoreBtn : "और नौकरियाँ देखें / View More";
-    const remLabel = (I18N[currentLang] && I18N[currentLang].moreRemaining) ? I18N[currentLang].moreRemaining : "शेष";
-    html += `
-      <div style="text-align:center;padding:12px 4px 20px;">
-        <button class="btn-load-more" onclick="loadMoreVacancies()">
-          <span>⏬</span>
-          <span>${viewMoreLabel} (${remaining} ${remLabel})</span>
-        </button>
-      </div>
-    `;
-  }
 
   container.innerHTML = html;
 }
@@ -5768,50 +6129,94 @@ function initQuiz() {
 }
 
 function loadQuizQuestion(index) {
+  currentQuizIndex = index;
   quizAnswered = false;
   const d = I18N[currentLang] || I18N.hi;
   const q = QUIZ_QUESTIONS[index % QUIZ_QUESTIONS.length];
   const qText = (currentLang === 'en' && q.question_en) ? q.question_en : ((currentLang === 'hinglish' && q.question_hinglish) ? q.question_hinglish : q.question);
   const opts = (currentLang === 'en' && q.options_en) ? q.options_en : ((currentLang === 'hinglish' && q.options_hinglish) ? q.options_hinglish : q.options);
 
-  document.getElementById('quiz-exam-tag').textContent = q.exam;
-  document.getElementById('quiz-score-badge').textContent = (d.quizScoreBadge || "Score: {score}/{total}").replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
-  document.getElementById('quiz-q-text').textContent = `Q${index + 1}. ${qText}`;
+  const tagEl = document.getElementById('quiz-exam-tag');
+  if (tagEl) tagEl.textContent = q.exam;
+
+  const scoreEl = document.getElementById('quiz-score-badge');
+  if (scoreEl) {
+    const template = d.quizScoreBadge || "Score: {score}/{total}";
+    scoreEl.textContent = template.replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
+  }
+
+  const qEl = document.getElementById('quiz-q-text');
+  if (qEl) qEl.textContent = `Q${index + 1}. ${qText}`;
 
   const optContainer = document.getElementById('quiz-options');
-  optContainer.innerHTML = opts.map((opt, i) => `
-    <button class="quiz-opt-btn" onclick="handleQuizAnswer(${i}, ${q.answerIndex})">
-      <span>${String.fromCharCode(65 + i)}.</span>
-      <span>${opt}</span>
-    </button>
-  `).join('');
+  if (optContainer) {
+    optContainer.innerHTML = opts.map((opt, i) => `
+      <button class="quiz-opt-btn" onclick="handleQuizAnswer(${i})" id="quiz-opt-${i}">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,0.06);font-size:11px;font-weight:800;margin-right:6px;">${String.fromCharCode(65 + i)}</span>
+        <span>${opt}</span>
+      </button>
+    `).join('');
+  }
 
   const expBox = document.getElementById('quiz-explain-box');
-  expBox.classList.remove('show');
-  expBox.textContent = "";
+  if (expBox) {
+    expBox.classList.remove('show');
+    expBox.innerHTML = "";
+  }
 }
 
-function handleQuizAnswer(selectedIdx, correctIdx) {
+function handleQuizAnswer(selectedIdx) {
   if (quizAnswered) return;
   quizAnswered = true;
   const d = I18N[currentLang] || I18N.hi;
 
-  const btns = document.querySelectorAll('.quiz-opt-btn');
-  btns.forEach((btn, i) => {
-    if (i === correctIdx) btn.classList.add('correct');
-    if (i === selectedIdx && selectedIdx !== correctIdx) btn.classList.add('wrong');
-  });
-
-  if (selectedIdx === correctIdx) {
-    quizScore++;
-    document.getElementById('quiz-score-badge').textContent = (d.quizScoreBadge || "Score: {score}/{total}").replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
+  const q = QUIZ_QUESTIONS[currentQuizIndex % QUIZ_QUESTIONS.length];
+  let correctIdx = q.answerIndex;
+  if (typeof correctIdx !== 'number' && q.correct_option) {
+    correctIdx = q.correct_option.charCodeAt(0) - 65;
   }
 
-  const q = QUIZ_QUESTIONS[currentQuizIndex % QUIZ_QUESTIONS.length];
+  const isCorrect = (selectedIdx === correctIdx);
+  const btns = document.querySelectorAll('.quiz-opt-btn');
+
+  btns.forEach((btn, i) => {
+    btn.disabled = true;
+    btn.style.cursor = 'default';
+    if (i === correctIdx) {
+      btn.classList.add('is-correct', 'correct');
+    }
+    if (i === selectedIdx && !isCorrect) {
+      btn.classList.add('is-wrong', 'wrong');
+    }
+  });
+
+  if (isCorrect) {
+    quizScore++;
+  }
+
+  const scoreEl = document.getElementById('quiz-score-badge');
+  if (scoreEl) {
+    const template = d.quizScoreBadge || "Score: {score}/{total}";
+    scoreEl.textContent = template.replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
+  }
+
   const exp = (currentLang === 'en' && q.explain_en) ? q.explain_en : ((currentLang === 'hinglish' && q.explain_hinglish) ? q.explain_hinglish : q.explain);
   const expBox = document.getElementById('quiz-explain-box');
-  expBox.innerHTML = `<strong>${d.quizExplainTitle || "💡 Explanation:"}</strong> ${exp}`;
-  expBox.classList.add('show');
+  if (expBox) {
+    const icon = isCorrect ? '✅' : '❌';
+    const statusTxt = isCorrect ? (d.quizCorrect || 'सही उत्तर!') : (d.quizWrong || 'गलत उत्तर!');
+    expBox.innerHTML = `
+      <div style="font-weight:800;margin-bottom:6px;font-size:13px;color:${isCorrect ? '#15803d' : '#b91c1c'};display:flex;align-items:center;gap:6px;">
+        <span>${icon}</span>
+        <span>${statusTxt}</span>
+        <span style="font-weight:600;font-size:11.5px;color:var(--text-muted);margin-left:auto;">(Correct: <strong>${String.fromCharCode(65 + correctIdx)}</strong>)</span>
+      </div>
+      <div style="font-size:12px;line-height:1.45;color:var(--text-main);">
+        <strong>${d.quizExplainTitle || "💡 Explanation:"}</strong> ${exp}
+      </div>
+    `;
+    expBox.classList.add('show');
+  }
 }
 
 function nextQuizQuestion() {
@@ -6068,6 +6473,205 @@ function closeModalIfBackdrop(e, modalId) {
     document.getElementById(modalId).classList.remove('show');
   }
 }
+
+
+/* ============================================================
+   JOB DETAILS FLOATING MODAL CONTROLLER
+============================================================ */
+let activeModalJobId = null;
+
+function openJobDetailsModal(jobId) {
+  const vac = VACANCIES_DATA.find(v => String(v.id) === String(jobId));
+  if (!vac) return;
+
+  activeModalJobId = jobId;
+  const d = I18N[currentLang] || I18N.hi;
+
+  // Title, Org & Scope
+  const title = (currentLang === 'hi' && vac.title_hi) ? vac.title_hi : ((currentLang === 'hinglish' && vac.title_hinglish) ? vac.title_hinglish : (vac.title || vac.examName || 'Government Recruitment'));
+  const org = (currentLang === 'hi' && vac.org_hi) ? vac.org_hi : ((currentLang === 'hinglish' && vac.org_hinglish) ? vac.org_hinglish : (vac.org || vac.recruitingBody || 'Department of Central/State Govt'));
+  const isCentral = vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
+
+  const titleEl = document.getElementById('jm-title');
+  if (titleEl) titleEl.textContent = title;
+  const orgEl = document.getElementById('jm-org');
+  if (orgEl) orgEl.textContent = org;
+
+  const scopeEl = document.getElementById('jm-scope');
+  if (scopeEl) {
+    scopeEl.className = 'vc-chip ' + (isCentral ? 'vac-scope central' : 'vac-scope state');
+    scopeEl.textContent = isCentral ? '🏛️ ' + d.scopeCentral : '📍 ' + (vac.state || d.scopeState);
+  }
+
+  // Vacancies Count & Status
+  const postsStr = (currentLang === 'hi' && vac.vacancies_hi) ? vac.vacancies_hi : ((currentLang === 'hinglish' && vac.vacancies_hinglish) ? vac.vacancies_hinglish : (vac.vacancies || vac.posts || 'As per notification'));
+  const vacEl = document.getElementById('jm-vacancies');
+  if (vacEl) vacEl.textContent = postsStr;
+
+  const statusEl = document.getElementById('jm-status');
+  if (statusEl) statusEl.textContent = vac.status || 'Active';
+
+  // Evaluate Eligibility
+  const evalResult = evaluateVacancy(vac);
+  const eligEl = document.getElementById('jm-eligibility');
+  if (eligEl) {
+    eligEl.textContent = `${evalResult.icon} ${evalResult.compactBadge}`;
+    eligEl.style.color = evalResult.statusClass === 'eligible' ? '#15803d' : (evalResult.statusClass === 'ineligible' ? '#b91c1c' : '#b45309');
+  }
+
+  // Lifecycle Stepper
+  const stepperEl = document.getElementById('jm-stepper');
+  if (stepperEl) {
+    const stages = vac.lifecycle || vac.stages || [];
+    if (stages.length > 0) {
+      stepperEl.innerHTML = stages.map(s => {
+        const sTitle = (currentLang === 'en' && s.titleEn) ? s.titleEn : ((currentLang === 'hinglish' && s.titleHinglish) ? s.titleHinglish : (s.titleHi || s.name || s.title || s.stage));
+        const sDate = (currentLang === 'en' && s.dateEn) ? s.dateEn : ((currentLang === 'hinglish' && s.dateHinglish) ? s.dateHinglish : (s.dateHi || s.date || 'Check Notice'));
+        const isCompleted = s.status === 'completed';
+        const isActive = s.status === 'active';
+        return `
+          <div class="stepper-step ${isCompleted ? 'completed' : ''} ${isActive ? 'active' : ''}">
+            <div class="step-dot">${isCompleted ? '✓' : (isActive ? '●' : '○')}</div>
+            <div class="step-label">${sTitle}</div>
+            <div class="step-date">${sDate}</div>
+          </div>
+        `;
+      }).join('');
+    } else {
+      stepperEl.innerHTML = `<div style="font-size:11px;color:var(--text-dim);padding:8px 0;">भर्ती चक्र आधिकारिक सूचना के अनुसार सक्रिय है।</div>`;
+    }
+  }
+
+  // Qualification & Age Limit
+  const eduStr = (currentLang === 'hi' && vac.minEduLabel_hi) ? vac.minEduLabel_hi : ((currentLang === 'hinglish' && vac.minEduLabel_hinglish) ? vac.minEduLabel_hinglish : (vac.minEduLabel || vac.qualification || 'As per notification'));
+  const qualEl = document.getElementById('jm-qualification');
+  if (qualEl) qualEl.textContent = eduStr;
+
+  const minAge = vac.minAge || vac.min_age || 18;
+  let maxAgeDisplay = "35-40";
+  if (vac.maxAge && typeof vac.maxAge === 'object') {
+    maxAgeDisplay = `${vac.maxAge.GENERAL_MALE || 35} (UR) / ${vac.maxAge.BC_OBC2_MALE || 38} (OBC) / ${vac.maxAge.SC_MALE || 40} (SC/ST)`;
+  } else if (vac.max_age && typeof vac.max_age === 'object') {
+    maxAgeDisplay = `${vac.max_age.GENERAL_MALE || 35} (UR) / ${vac.max_age.BC_OBC2_MALE || 38} (OBC) / ${vac.max_age.SC_MALE || 40} (SC/ST)`;
+  }
+  const cutoffDateStr = vac.cutoffDate || vac.cutoff_date || '01/07/2026';
+  const ageEl = document.getElementById('jm-age-limit');
+  if (ageEl) ageEl.textContent = `${minAge} - ${maxAgeDisplay} वर्ष (कट-ऑफ: ${formatDateDisplay(cutoffDateStr)})`;
+
+  // Category Relaxation Box
+  const catBox = document.getElementById('jm-category-box');
+  if (catBox) {
+    catBox.innerHTML = `
+      <div style="font-weight:700;margin-bottom:4px;color:var(--primary);">🎯 श्रेणीवार अधिकतम आयु छूट (Category Relaxations):</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:6px;">
+        <div>General/UR: <strong>${(vac.maxAge && vac.maxAge.GENERAL_MALE) || 35} वर्ष</strong></div>
+        <div>OBC/EBC: <strong>${(vac.maxAge && vac.maxAge.BC_OBC2_MALE) || 38} वर्ष (+3 छूट)</strong></div>
+        <div>SC/ST: <strong>${(vac.maxAge && vac.maxAge.SC_MALE) || 40} वर्ष (+5 छूट)</strong></div>
+        <div>महिला (UR/BC): <strong>${(vac.maxAge && vac.maxAge.GENERAL_FEMALE) || 38} वर्ष</strong></div>
+      </div>
+    `;
+  }
+
+  // Important Dates & Fees
+  const startDateStr = vac.startDate || vac.start_date || 'Announced';
+  const lastDateStr = vac.lastDate || vac.last_date || 'Check Notice';
+  const feeStr = (currentLang === 'hi' && vac.fee_hi) ? vac.fee_hi : ((currentLang === 'hinglish' && vac.fee_hinglish) ? vac.fee_hinglish : (vac.fee || '₹100 - ₹500 (अधिसूचना अनुसार)'));
+
+  const sDateEl = document.getElementById('jm-start-date');
+  if (sDateEl) sDateEl.textContent = formatDateDisplay(startDateStr);
+  const lDateEl = document.getElementById('jm-last-date');
+  if (lDateEl) lDateEl.textContent = formatDateDisplay(lastDateStr);
+  const feeEl = document.getElementById('jm-fee');
+  if (feeEl) feeEl.textContent = feeStr;
+
+  // Required Documents List
+  const docsListEl = document.getElementById('jm-docs-list');
+  if (docsListEl) {
+    const reqDocs = vac.requiredDocs || vac.required_docs || [];
+    if (reqDocs.length > 0) {
+      docsListEl.innerHTML = reqDocs.map(doc => {
+        const dName = (currentLang === 'hi' && doc.name_hi) ? doc.name_hi : ((currentLang === 'hinglish' && doc.name_hinglish) ? doc.name_hinglish : (doc.name || doc.key));
+        return `
+          <div class="rd-item">
+            <span class="rd-check">✓</span>
+            <span class="rd-name">${dName}</span>
+            <span class="rd-badge">${doc.mandatory ? d.badgeMandatory : d.badgeOptional}</span>
+          </div>
+        `;
+      }).join('');
+    } else {
+      docsListEl.innerHTML = `
+        <div class="rd-item"><span class="rd-check">✓</span><span class="rd-name">10वीं अंकतालिका व प्रमाण पत्र (10th Marksheet)</span></div>
+        <div class="rd-item"><span class="rd-check">✓</span><span class="rd-name">आधार कार्ड / वैध पहचान पत्र (Photo ID)</span></div>
+        <div class="rd-item"><span class="rd-check">✓</span><span class="rd-name">जाति / श्रेणी प्रमाण पत्र (Caste Certificate)</span></div>
+        <div class="rd-item"><span class="rd-check">✓</span><span class="rd-name">पासपोर्ट साइज नवीनतम फोटो एवं हस्ताक्षर (Photo/Sign)</span></div>
+      `;
+    }
+  }
+
+  // Apply Button Link
+  const applyLink = vac.officialApplyUrl || vac.apply_link || vac.notification_pdf || '#';
+  const applyBtn = document.getElementById('jm-btn-apply');
+  if (applyBtn) {
+    applyBtn.href = applyLink;
+    applyBtn.target = '_blank';
+    applyBtn.rel = 'noopener';
+  }
+
+  // Pin Button Text
+  const isPinned = trackedJobs.includes(jobId);
+  const pinTxtEl = document.getElementById('jm-txt-pin');
+  if (pinTxtEl) pinTxtEl.textContent = isPinned ? d.pinTracked : d.pinTrack;
+
+  // Open Modal with Smooth Animation and Lock Background Scroll
+  const modal = document.getElementById('job-details-modal');
+  if (modal) {
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeJobDetailsModal() {
+  const modal = document.getElementById('job-details-modal');
+  if (modal) {
+    modal.classList.remove('show');
+  }
+  document.body.style.overflow = '';
+  activeModalJobId = null;
+}
+
+function handleJobModalStudio() {
+  if (!activeModalJobId) return;
+  const vac = VACANCIES_DATA.find(v => String(v.id) === String(activeModalJobId));
+  const presetKey = vac ? (vac.presetKey || vac.preset_key || 'GEN_PHOTO') : 'GEN_PHOTO';
+  closeJobDetailsModal();
+  openResizerWithPreset(presetKey);
+}
+
+function handleJobModalReminder() {
+  if (activeModalJobId) addReminderToCalendar(activeModalJobId);
+}
+
+function handleJobModalShare() {
+  if (activeModalJobId) shareVacancyOnWhatsApp(activeModalJobId);
+}
+
+function handleJobModalPin() {
+  if (!activeModalJobId) return;
+  toggleJobTracking(activeModalJobId);
+  const isPinned = trackedJobs.includes(activeModalJobId);
+  const d = I18N[currentLang] || I18N.hi;
+  const pinTxtEl = document.getElementById('jm-txt-pin');
+  if (pinTxtEl) pinTxtEl.textContent = isPinned ? d.pinTracked : d.pinTrack;
+}
+
+// Global 'Esc' key listener to close modals smoothly
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' || e.key === 'Esc') {
+    closeJobDetailsModal();
+  }
+});
+
 
 /* ============================================================
    13. UTILITIES
