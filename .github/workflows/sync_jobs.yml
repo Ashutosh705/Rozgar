@@ -45,5 +45,6 @@ jobs:
           else
             echo "Fresh vacancies detected! Committing and pushing to main branch..."
             git commit -m "Auto-sync live vacancies [skip ci]"
+            git pull --rebase origin main || true
             git push origin main
           fi
