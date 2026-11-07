@@ -2157,6 +2157,536 @@
       cursor: default !important;
     }
 
+  
+    /* ====================================================
+       UNIFORM JOB CARDS & VIEW DETAILS MODAL OVERHAUL
+    ==================================================== */
+    .vacancies-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media (min-width: 860px) {
+      .vacancies-feed {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+    }
+
+    /* Uniform Height & Aligned Bottom Row Card */
+    .vacancy-card.compact {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 10px 12px;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      min-height: 115px;
+      height: 100%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      transition: all 0.16s ease;
+      cursor: pointer;
+      position: relative;
+      box-sizing: border-box;
+    }
+    .vacancy-card.compact:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.1);
+      transform: translateY(-1px);
+    }
+    .vc-top-block {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .vc-compact-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .vc-compact-icon {
+      font-size: 16px;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-card-subtle);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .vc-compact-heading {
+      flex: 1;
+      min-width: 0;
+    }
+    .vc-compact-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .vc-compact-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .vc-compact-org {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-dim);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 1px;
+    }
+    .vc-compact-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+    }
+    .vc-compact-meta .vc-chip {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+    }
+
+    /* Fixed Bottom Action Row */
+    .vc-bottom-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 6px;
+      margin-top: 6px;
+      border-top: 1px dashed var(--border-color);
+      gap: 6px;
+    }
+    .vc-compact-edu {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 58%;
+    }
+    .vc-card-actions-group {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: auto;
+    }
+    .btn-view-details-compact {
+      background: var(--bg-card-subtle);
+      border: 1px solid rgba(30, 58, 138, 0.25);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: var(--radius-md);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-view-details-compact:hover {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    /* ====================================================
+       DOCUMENT VAULT THUMBNAIL PREVIEW & COMPACT CARDS
+    ==================================================== */
+    .vault-card-compact {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      transition: all 0.16s ease;
+    }
+    .vault-card-compact:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.08);
+    }
+    .vdc-top-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .vdc-content {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .vdc-title-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .vdc-icon {
+      font-size: 16px;
+      line-height: 1;
+    }
+    .vdc-name {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .vdc-fields-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .vdc-field-item {
+      font-size: 11px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .vdc-field-item strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+    .vdc-field-copyable {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--bg-card-subtle);
+      padding: 1px 5px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      font-family: monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .vdc-field-copyable:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    /* Right-side Mini Thumbnail Preview Box */
+    .vdc-thumbnail-box {
+      width: 58px;
+      height: 58px;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card-subtle);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      position: relative;
+      transition: all 0.15s ease;
+    }
+    .vdc-thumbnail-box:hover {
+      border-color: var(--primary);
+      transform: scale(1.02);
+    }
+    .vdc-thumbnail-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .vdc-thumbnail-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      color: var(--text-muted);
+      font-size: 10px;
+      font-weight: 700;
+      text-align: center;
+      padding: 2px;
+    }
+    .vdc-thumbnail-placeholder span {
+      font-size: 14px;
+    }
+    .vdc-bottom-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      padding-top: 5px;
+      border-top: 1px dashed var(--border-color);
+    }
+    .btn-vdc-action {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 3px 8px;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.12s;
+    }
+    .btn-vdc-action:hover {
+      background: var(--bg-card);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* Document Full Image Viewer Modal */
+    .doc-viewer-sheet {
+      max-width: 500px;
+      padding: 16px;
+      border-radius: var(--radius-2xl);
+      text-align: center;
+      background: var(--bg-card);
+    }
+    .doc-viewer-img {
+      max-width: 100%;
+      max-height: 65vh;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      margin: 10px 0;
+    }
+
+    /* ====================================================
+       PRACTICE SECTION: CATEGORY SETS & INTERACTIVE QUIZ MODAL
+    ==================================================== */
+    .practice-cat-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      scrollbar-width: none;
+    }
+    .practice-cat-tabs::-webkit-scrollbar { display: none; }
+    .p-cat-btn {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-muted);
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+    .p-cat-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    /* Practice Sets Grid */
+    .practice-sets-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    @media (min-width: 680px) {
+      .practice-sets-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .practice-set-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      transition: all 0.16s ease;
+    }
+    .practice-set-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.08);
+      transform: translateY(-1px);
+    }
+    .pset-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .pset-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 0;
+    }
+    .pset-desc {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin: 2px 0 0;
+      line-height: 1.35;
+    }
+    .pset-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .pset-badge-tag {
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .btn-start-pset {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 6px 12px;
+      font-size: 11.5px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      align-self: flex-end;
+      transition: all 0.15s ease;
+    }
+    .btn-start-pset:hover {
+      filter: brightness(1.1);
+    }
+
+    /* Interactive Quiz Modal */
+    .quiz-modal-sheet {
+      max-width: 600px;
+      max-height: 90vh;
+      border-radius: var(--radius-2xl) !important;
+      padding: 0 !important;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-card);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    }
+    .quiz-modal-header {
+      padding: 12px 16px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .quiz-modal-ticker {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .quiz-modal-body {
+      padding: 16px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Score Summary View inside Modal */
+    .quiz-scorecard-view {
+      text-align: center;
+      padding: 16px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .scorecard-badge-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 8px 24px rgba(30, 58, 138, 0.3);
+    }
+    .scorecard-badge-circle span {
+      font-size: 10px;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+    .scorecard-eval-tag {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .scorecard-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      width: 100%;
+      max-width: 420px;
+      background: var(--bg-card-subtle);
+      padding: 10px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+    }
+    .sc-stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .sc-stat-val {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .sc-stat-lbl {
+      font-size: 10.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
   </style>
 </head>
 <body>
@@ -2171,15 +2701,7 @@
 <div class="toast" id="toast"></div>
 
 <!-- Fullscreen Document Photo Viewer Modal -->
-<div class="doc-viewer-modal" id="doc-viewer-modal" onclick="closeDocViewer(event)">
-  <div class="doc-viewer-content">
-    <div style="display:flex;justify-content:space-between;align-items:center;">
-      <div style="font-weight:800;font-size:13.5px;" id="doc-viewer-title">प्रमाणपत्र</div>
-      <button class="modal-close" onclick="closeDocViewerForce()">✕</button>
-    </div>
-    <img id="doc-viewer-img" class="doc-viewer-img" src="" alt="Certificate" />
-  </div>
-</div>
+
 
 <!-- ==================== APP CONTAINER ==================== -->
 <div class="app-wrapper">
@@ -2625,38 +3147,27 @@
         <div>
           <div class="section-title">
             <span>💡</span>
-            <span id="txt-practice-title">डेली क्विज़ व पिछले वर्षों के प्रश्न (PYQs)</span>
+            <span id="txt-practice-title">परीक्षा अनुसार मॉक टेस्ट व प्रश्न बैंक (Exam Sets & PYQs)</span>
           </div>
           <div class="section-sub" id="txt-practice-sub">
-            BSSC, Railway, SSC GD व BPSC के महत्वपूर्ण प्रश्न अभ्यास
+            Railway, BPSC, UPSC, SSC CGL/CHSL व GD के विषयवार परीक्षा सेट अभ्यास
           </div>
         </div>
 
-        <div class="card quiz-card">
-        <div class="quiz-meta-row">
-          <span class="quiz-exam-tag" id="quiz-exam-tag">BSSC / Railway GK</span>
-          <span class="quiz-score-badge" id="quiz-score-badge">स्कोर: 0/5</span>
+        <!-- Practice Category Tabs -->
+        <div class="practice-cat-tabs" id="practice-cat-tabs">
+          <button class="p-cat-btn active" onclick="filterPracticeSets('ALL', this)">🌐 सभी सेट्स (All Sets)</button>
+          <button class="p-cat-btn" onclick="filterPracticeSets('RAILWAY', this)">🚆 Railway (NTPC/Group D/ALP)</button>
+          <button class="p-cat-btn" onclick="filterPracticeSets('BPSC', this)">🏛️ BPSC (CCE/Teacher)</button>
+          <button class="p-cat-btn" onclick="filterPracticeSets('UPSC', this)">🇮🇳 UPSC Civil Services</button>
+          <button class="p-cat-btn" onclick="filterPracticeSets('SSC_CGL', this)">📋 SSC CGL / CHSL</button>
+          <button class="p-cat-btn" onclick="filterPracticeSets('SSC_GD', this)">👮 SSC GD / Police</button>
         </div>
 
-        <div class="quiz-q-text" id="quiz-q-text">
-          प्रश्न लोड हो रहा है...
-        </div>
-
-        <div class="quiz-options" id="quiz-options">
+        <!-- Practice Sets Grid -->
+        <div class="practice-sets-grid" id="practice-sets-grid">
           <!-- Rendered dynamically -->
         </div>
-
-        <div class="quiz-explain-box" id="quiz-explain-box"></div>
-
-        <div style="display:flex;gap:8px;margin-top:4px;">
-          <button class="btn-apply-prepare" style="flex:1;padding:10px;" onclick="nextQuizQuestion()">
-            <span id="txt-btn-next-q">अगला प्रश्न →</span>
-          </button>
-          <button class="btn-view-portal" style="width:auto;padding:10px 14px;" onclick="resetQuiz()">
-            <span id="txt-btn-reset-quiz">🔄 रीसेट</span>
-          </button>
-        </div>
-      </div>
       </div>
     </div>
 
@@ -2712,7 +3223,107 @@
 
 </div>
 
+
 <!-- ==================== MODALS ==================== -->
+
+<!-- DOCUMENT FULL IMAGE VIEWER MODAL -->
+<div class="modal-overlay" id="doc-viewer-modal" onclick="closeModalIfBackdrop(event, 'doc-viewer-modal')">
+  <div class="modal-sheet doc-viewer-sheet" onclick="event.stopPropagation()">
+    <div class="modal-header" style="margin-bottom:8px;">
+      <div class="modal-title" id="txt-doc-viewer-title">प्रमाणपत्र पूर्वावलोकन (Document Preview)</div>
+      <button class="modal-close" onclick="closeDocViewerModal()">✕</button>
+    </div>
+    <div id="doc-viewer-body">
+      <img id="doc-viewer-img" src="" class="doc-viewer-img" alt="Document" style="display:none;" />
+      <div id="doc-viewer-no-img" style="display:block;padding:30px 10px;color:var(--text-dim);font-size:13px;">
+        📷 कोई फ़ोटो अपलोड नहीं है। नीचे दिए बटन से नया फ़ोटो जोड़ें।
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:8px;">
+      <button onclick="document.getElementById('doc-viewer-file-input').click()" class="btn-primary-action btn-studio" style="flex:1;">
+        📤 नया फ़ोटो अपलोड करें
+      </button>
+      <button onclick="deleteCurrentDocPhoto()" class="btn-sec-action" style="color:var(--red-600);border-color:var(--red-border);">
+        🗑️ हटाएं
+      </button>
+    </div>
+    <input type="file" id="doc-viewer-file-input" accept="image/*,application/pdf" onchange="handleDocViewerUpload(event)" style="display:none;" />
+  </div>
+</div>
+
+<!-- PRACTICE INTERACTIVE QUIZ MODAL -->
+<div class="modal-overlay" id="practice-quiz-modal" onclick="closeModalIfBackdrop(event, 'practice-quiz-modal')">
+  <div class="modal-sheet quiz-modal-sheet" onclick="event.stopPropagation()">
+    <!-- Top Bar with Ticker & Timer -->
+    <div class="quiz-modal-header">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--primary);" id="qm-set-tag">BSSC / Railway Set #01</div>
+        <div style="font-size:13.5px;font-weight:800;color:var(--text-main);" id="qm-set-title">General Awareness Practice</div>
+      </div>
+      <div class="quiz-modal-ticker">
+        <span class="quiz-exam-tag" id="qm-q-counter">Q 1/10</span>
+        <span class="quiz-score-badge" id="qm-score-badge">Score: 0</span>
+        <button class="modal-close" onclick="closeQuizModal()" style="width:28px;height:28px;font-size:14px;margin-left:4px;">✕</button>
+      </div>
+    </div>
+
+    <!-- Active Question Body -->
+    <div class="quiz-modal-body" id="qm-active-body">
+      <div class="quiz-q-text" id="qm-q-text" style="font-size:14px;line-height:1.45;font-weight:700;">
+        प्रश्न लोड हो रहा है...
+      </div>
+
+      <div class="quiz-options" id="qm-options">
+        <!-- Option buttons dynamically generated -->
+      </div>
+
+      <div class="quiz-explain-box" id="qm-explain-box"></div>
+
+      <div style="display:flex;gap:8px;margin-top:6px;">
+        <button class="btn-primary-action btn-apply" id="qm-btn-next" onclick="nextQuizModalQuestion()" style="flex:1;">
+          <span>अगला प्रश्न → (Next Question)</span>
+        </button>
+        <button class="btn-sec-action" onclick="closeQuizModal()" style="width:auto;">
+          <span>छोड़ें (Quit)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Score Summary View (Hidden until set finished) -->
+    <div class="quiz-scorecard-view" id="qm-scorecard-view" style="display:none;">
+      <div class="scorecard-badge-circle">
+        <span id="sc-circle-score">8/10</span>
+        <span>SCORE</span>
+      </div>
+      <div class="scorecard-eval-tag" id="sc-eval-badge">🌟 Exam Ready! (शानदार तैयारी)</div>
+      
+      <div class="scorecard-stats-grid">
+        <div class="sc-stat-item">
+          <span class="sc-stat-val" id="sc-total-q">10</span>
+          <span class="sc-stat-lbl">Total Questions</span>
+        </div>
+        <div class="sc-stat-item">
+          <span class="sc-stat-val" id="sc-correct-q" style="color:#16a34a;">8</span>
+          <span class="sc-stat-lbl">Correct</span>
+        </div>
+        <div class="sc-stat-item">
+          <span class="sc-stat-val" id="sc-accuracy">80%</span>
+          <span class="sc-stat-lbl">Accuracy</span>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:8px;width:100%;max-width:420px;margin-top:8px;">
+        <button class="btn-primary-action btn-apply" onclick="retakeCurrentQuizSet()" style="flex:1;">
+          🔄 <span>पुनः टेस्ट दें (Retake)</span>
+        </button>
+        <button class="btn-sec-action" onclick="closeQuizModal()" style="flex:1;">
+          📚 <span>अन्य सेट चुनें (Back)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- JOB DETAILS FLOATING MODAL WINDOW -->
 <div class="modal-overlay" id="job-details-modal" onclick="closeModalIfBackdrop(event, 'job-details-modal')">
@@ -2904,14 +3515,17 @@
     <div class="form-group">
       <label class="form-label" id="txt-lbl-cd-name">दस्तावेज़ का नाम</label>
       <select id="cd-preset-select" class="form-input" onchange="onCustomDocPresetChange(this.value)">
-        <option value="PAN Card">PAN कार्ड</option>
-        <option value="Driving License">ड्राइविंग लाइसेंस</option>
-        <option value="Graduation Degree">स्नातक प्रमाण पत्र</option>
-        <option value="Computer Diploma">कंप्यूटर प्रमाण पत्र</option>
-        <option value="EWS Certificate">ईडब्ल्यूएस प्रमाण पत्र</option>
-        <option value="OBC-NCL Certificate">ओबीसी क्रीमीलेयर रहित प्रमाण पत्र</option>
-        <option value="PwD Certificate">दिव्यांगता प्रमाण पत्र</option>
-        <option value="Other">अन्य (कस्टम नाम)</option>
+        <option value="Birth Certificate">जन्म प्रमाण पत्र (Birth Certificate)</option>
+        <option value="Residential Certificate">निवास प्रमाण पत्र (Domicile / Residential)</option>
+        <option value="OBC-NCL Certificate">ओबीसी नॉन-क्रीमीलेयर (OBC-NCL)</option>
+        <option value="EWS Certificate">ईडब्ल्यूएस प्रमाण पत्र (EWS Certificate)</option>
+        <option value="Technical Qualification">आईटीआई / डिप्लोमा (ITI / Diploma)</option>
+        <option value="PAN Card">PAN कार्ड (PAN Card)</option>
+        <option value="Driving License">ड्राइविंग लाइसेंस (Driving License)</option>
+        <option value="Graduation Degree">स्नातक उपाधि (Graduation Degree)</option>
+        <option value="Computer Diploma">कंप्यूटर डिप्लोमा (DCA / ADCA)</option>
+        <option value="PwD Certificate">दिव्यांगता प्रमाण पत्र (PwD Certificate)</option>
+        <option value="Other">अन्य (कस्टम नाम दर्ज करें)</option>
       </select>
       <input type="text" id="cd-custom-title" class="form-input" placeholder="दस्तावेज़ का नाम दर्ज करें" style="display:none;margin-top:6px;" />
     </div>
@@ -4213,6 +4827,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyLanguage(savedLang);
   loadVacanciesFromSource(false);
   initQuiz();
+  initPracticeSets();
   renderCommunityPosts();
   if (typeof checkVaultLockState === 'function') checkVaultLockState();
 
@@ -5002,7 +5617,7 @@ function renderVacanciesFeed() {
     return;
   }
 
-  // Render High-Density Sleek Compact Cards
+  // Render Uniform High-Density Sleek Compact Cards
   list.forEach(vac => {
     const title = (currentLang === 'hi' && vac.title_hi) ? vac.title_hi : ((currentLang === 'hinglish' && vac.title_hinglish) ? vac.title_hinglish : (vac.title || vac.examName || 'Government Recruitment'));
     const org = (currentLang === 'hi' && vac.org_hi) ? vac.org_hi : ((currentLang === 'hinglish' && vac.org_hinglish) ? vac.org_hinglish : (vac.org || vac.recruitingBody || 'Govt Department'));
@@ -5043,40 +5658,44 @@ function renderVacanciesFeed() {
 
     html += `
       <div class="vacancy-card compact" id="card-${vac.id}" onclick="openJobDetailsModal('${vac.id}')">
-        <!-- Top Line: Icon, Title, Org & Pin -->
-        <div class="vc-compact-header">
-          <div class="vc-compact-icon">${icon}</div>
-          <div class="vc-compact-heading">
-            <div class="vc-compact-title-row">
-              <h3 class="vc-compact-title" title="${title}">${title}</h3>
+        <!-- Top Block: Info & Metadata -->
+        <div class="vc-top-block">
+          <div class="vc-compact-header">
+            <div class="vc-compact-icon">${icon}</div>
+            <div class="vc-compact-heading">
+              <div class="vc-compact-title-row">
+                <h3 class="vc-compact-title" title="${title}">${title}</h3>
+                <button class="btn-track-pin ${isPinned ? 'pinned' : ''}" onclick="toggleJobTracking('${vac.id}', event)" title="${isPinned ? d.pinTracked : d.pinTrack}">
+                  ${isPinned ? '★' : '☆'}
+                </button>
+              </div>
+              <div class="vc-compact-org">${org}</div>
             </div>
-            <div class="vc-compact-org">${org}</div>
           </div>
-          <button class="btn-track-pin ${isPinned ? 'pinned' : ''}" onclick="toggleJobTracking('${vac.id}', event)" title="${isPinned ? d.pinTracked : d.pinTrack}">
-            ${isPinned ? '★' : '☆'}
-          </button>
+
+          <!-- Single-line neat badges row -->
+          <div class="vc-compact-meta">
+            <span class="vc-chip vac-scope ${isCentral ? 'central' : 'state'}">
+              ${isCentral ? '🏛️ ' + d.scopeCentral : '📍 ' + (vac.state || d.scopeState)}
+            </span>
+            <span class="vc-chip vac-posts">👥 ${postsStr}</span>
+            <span class="vc-chip vac-dates">📅 ${d.lastDateLbl}: <strong>${formatDateDisplay(lastDateStr)}</strong></span>
+            <span class="vc-chip vac-days ${isUrgent ? 'urgent' : ''} ${isPast ? 'closed' : ''}">⏳ ${daysLeftBadge}</span>
+            <span class="vc-chip vac-eligibility ${evalResult.statusClass}">
+              ${evalResult.icon} ${evalResult.compactBadge}
+            </span>
+          </div>
         </div>
 
-        <!-- Metadata Chips Row -->
-        <div class="vc-compact-meta">
-          <span class="vc-chip vac-scope ${isCentral ? 'central' : 'state'}">
-            ${isCentral ? '🏛️ ' + d.scopeCentral : '📍 ' + (vac.state || d.scopeState)}
-          </span>
-          <span class="vc-chip vac-posts">👥 ${postsStr}</span>
-          <span class="vc-chip vac-dates">📅 ${d.lastDateLbl}: <strong>${formatDateDisplay(lastDateStr)}</strong></span>
-          <span class="vc-chip vac-days ${isUrgent ? 'urgent' : ''} ${isPast ? 'closed' : ''}">⏳ ${daysLeftBadge}</span>
-          <span class="vc-chip vac-eligibility ${evalResult.statusClass}">
-            ${evalResult.icon} ${evalResult.compactBadge}
-          </span>
-        </div>
-
-        <!-- Footer Row: Qualification hint & Direct Modal CTA -->
-        <div class="vc-compact-footer">
+        <!-- Uniform Bottom Block: Aligned across all cards -->
+        <div class="vc-bottom-block">
           <span class="vc-compact-edu">🎓 ${eduStr}</span>
-          <button class="btn-view-details-compact" onclick="openJobDetailsModal('${vac.id}'); event.stopPropagation();">
-            <span>${d.viewDetails || 'विवरण देखें'}</span>
-            <span style="font-size:12px;">→</span>
-          </button>
+          <div class="vc-card-actions-group">
+            <button class="btn-view-details-compact" onclick="openJobDetailsModal('${vac.id}'); event.stopPropagation();">
+              <span>${d.viewDetails || 'विवरण देखें'}</span>
+              <span style="font-size:12px;">→</span>
+            </button>
+          </div>
         </div>
       </div>
     `;
@@ -5810,24 +6429,67 @@ function importVaultBackup(event) {
   reader.readAsText(file);
 }
 
+let currentViewerDocKey = null;
+
 function renderVaultCards() {
   checkVaultLockState();
   if (!isVaultUnlocked) return;
 
   const d = I18N[currentLang];
   const container = document.getElementById('vault-grid');
+  if (!container) return;
   const isEn = currentLang === 'en';
   const isHinglish = currentLang === 'hinglish';
 
-  // Standard Documents (Tri-lingual)
+  // Standard Government Documents (Expanded with Birth, Domicile, EWS/OBC-NCL, ITI/Diploma)
   const standardCards = [
+    {
+      key: "birth",
+      name: isEn ? "Birth Certificate" : (isHinglish ? "Birth Certificate (Janam Praman Patra)" : "जन्म प्रमाण पत्र (Birth Certificate)"),
+      icon: "👶",
+      fields: [
+        { lbl: isEn ? "Registration No" : "पंजीकरण संख्या", val: vaultCredentials.birthReg || "BTH/2024/902148", copyable: true },
+        { lbl: isEn ? "Issuing Authority" : "जारीकर्ता प्राधिकरण", val: vaultCredentials.birthAuth || "Nagar Nigam / Gram Panchayat" },
+        { lbl: isEn ? "Issue Date" : "जारी तिथि", val: formatDateDisplay(vaultCredentials.birthDate) || "12/03/2023" }
+      ]
+    },
+    {
+      key: "dom",
+      name: isEn ? "Residential / Domicile Certificate" : (isHinglish ? "Niwas Praman Patra (Domicile)" : "निवास प्रमाण पत्र (Domicile)"),
+      icon: "🏠",
+      fields: [
+        { lbl: isEn ? "Certificate Number" : "प्रमाण पत्र संख्या", val: vaultCredentials.domCert || "BRCO/2024/849201", copyable: true },
+        { lbl: isEn ? "Issuing Level" : "निर्गत स्तर", val: vaultCredentials.domLevel || "CO / SDO Level" },
+        { lbl: isEn ? "Issue Date" : "जारी तिथि", val: formatDateDisplay(vaultCredentials.domDate) || "14/08/2023" }
+      ]
+    },
+    {
+      key: "caste",
+      name: isEn ? "OBC-NCL / EWS Certificate" : (isHinglish ? "OBC-NCL / EWS Certificate" : "ओबीसी नॉन-क्रीमीलेयर / EWS"),
+      icon: "📑",
+      fields: [
+        { lbl: isEn ? "Certificate Number" : "प्रमाण पत्र संख्या", val: vaultCredentials.casteCert || "BICC/2024/129481", copyable: true },
+        { lbl: isEn ? "Financial Year" : "वित्तीय वर्ष", val: vaultCredentials.casteFY || "2024-2025" },
+        { lbl: isEn ? "Issuing Authority" : "प्राधिकरण", val: vaultCredentials.casteAuth || "SDO / DM Office" }
+      ]
+    },
+    {
+      key: "tech",
+      name: isEn ? "Technical Qualification (Diploma / ITI)" : (isHinglish ? "Technical Diploma / ITI" : "तकनीकी योग्यता (Diploma / ITI)"),
+      icon: "🛠️",
+      fields: [
+        { lbl: isEn ? "Trade / Stream" : "ट्रेड / संकाय", val: vaultCredentials.techTrade || "Electrician / Civil Engg" },
+        { lbl: isEn ? "Roll / Reg Number" : "रोल / पंजीकरण संख्या", val: vaultCredentials.techRoll || "ITI/2022/4819", copyable: true },
+        { lbl: isEn ? "Percentage / CGPA" : "प्राप्तांक प्रतिशत", val: vaultCredentials.techPct || "81.4%" }
+      ]
+    },
     {
       key: "m10",
       name: isEn ? "Class 10th (Matriculation)" : (isHinglish ? "10th Class (Matriculation)" : "10वीं कक्षा (Matriculation)"),
       icon: "📜",
       fields: [
         { lbl: d.docBoard || "Board", val: vaultCredentials.m10Board || "BSEB Patna" },
-        { lbl: d.docRollAndNo || "Roll Code & Number", val: vaultCredentials.m10Roll || "31045 - 20010294" },
+        { lbl: d.docRollAndNo || "Roll Code & Number", val: vaultCredentials.m10Roll || "31045 - 20010294", copyable: true },
         { lbl: d.docTotalPct || "Total Marks %", val: vaultCredentials.m10Pct || "74.6%" }
       ]
     },
@@ -5836,25 +6498,8 @@ function renderVaultCards() {
       name: isEn ? "Class 12th (Intermediate)" : (isHinglish ? "12th Class (Intermediate)" : "12वीं कक्षा (Intermediate)"),
       icon: "🎓",
       fields: [
-        { lbl: d.docRollAndNo || "Roll Code & Number", val: vaultCredentials.m12Roll || "31045 - 22010812" },
+        { lbl: d.docRollAndNo || "Roll Code & Number", val: vaultCredentials.m12Roll || "31045 - 22010812", copyable: true },
         { lbl: d.docTotalPct || "Total Marks %", val: vaultCredentials.m12Pct || "78.2%" }
-      ]
-    },
-    {
-      key: "dom",
-      name: isEn ? "Domicile Certificate" : (isHinglish ? "Domicile Certificate (Niwas)" : "निवास प्रमाण पत्र (Domicile)"),
-      icon: "🏠",
-      fields: [
-        { lbl: d.docCertNo || "Certificate Number", val: vaultCredentials.domCert || "BRCO/2023/849201" },
-        { lbl: d.docIssueDate || "Issue Date", val: formatDateDisplay(vaultCredentials.domDate) || "14/08/2023" }
-      ]
-    },
-    {
-      key: "caste",
-      name: isEn ? "Caste / Non-Creamy Layer (NCL)" : (isHinglish ? "Jaati / Non-Creamy Layer (NCL)" : "जाति / क्रीमीलेयर रहित (NCL)"),
-      icon: "📑",
-      fields: [
-        { lbl: d.docCertNo || "Certificate Number", val: vaultCredentials.casteCert || "BICC/2023/129481" }
       ]
     },
     {
@@ -5862,322 +6507,634 @@ function renderVaultCards() {
       name: isEn ? "Identity Card (Aadhaar Card)" : (isHinglish ? "Identity Card (Aadhaar Card)" : "पहचान पत्र (आधार कार्ड)"),
       icon: "🆔",
       fields: [
-        { lbl: d.docAadhaarLast4 || "Aadhaar Last 4 Digits", val: `XXXX-XXXX-${vaultCredentials.aadhLast4 || '9842'}` }
+        { lbl: d.docAadhaarLast4 || "Aadhaar Last 4 Digits", val: `XXXX-XXXX-${vaultCredentials.aadhLast4 || '9842'}`, copyable: true }
       ]
     }
   ];
 
   let html = '';
 
-  // Render Standard
-  standardCards.forEach(c => {
-    const hasPhoto = !!vaultDocPhotos[c.key];
+  standardCards.forEach(doc => {
+    const hasPhoto = !!vaultDocPhotos[doc.key];
+    const thumbHtml = hasPhoto
+      ? `<img src="${vaultDocPhotos[doc.key]}" class="vdc-thumbnail-img" alt="${doc.name}" />`
+      : `<div class="vdc-thumbnail-placeholder"><span>📷</span><span>+ फ़ोटो</span></div>`;
+
+    const fieldsHtml = doc.fields.map(f => {
+      if (f.copyable) {
+        return `
+          <div class="vdc-field-item">
+            <span>${f.lbl}:</span>
+            <span class="vdc-field-copyable" onclick="copyToClipboard('${f.val}', '${doc.name}')" title="Click to copy">
+              ${f.val} 📋
+            </span>
+          </div>
+        `;
+      }
+      return `
+        <div class="vdc-field-item">
+          <span>${f.lbl}:</span>
+          <strong>${f.val}</strong>
+        </div>
+      `;
+    }).join('');
+
     html += `
-      <div class="vault-card">
-        <div class="vc-top-row">
-          <div class="vc-doc-name">
-            <span>${c.icon}</span>
-            <span>${c.name}</span>
+      <div class="vault-card-compact" id="vcard-${doc.key}">
+        <div class="vdc-top-row">
+          <div class="vdc-content">
+            <div class="vdc-title-row">
+              <span class="vdc-icon">${doc.icon}</span>
+              <span class="vdc-name">${doc.name}</span>
+            </div>
+            <div class="vdc-fields-list">
+              ${fieldsHtml}
+            </div>
+          </div>
+          <!-- Right-side Mini Thumbnail Preview Box -->
+          <div class="vdc-thumbnail-box" onclick="viewFullDocumentImage('${doc.key}', '${doc.name}')" title="पूर्वावलोकन देखें या फ़ोटो अपलोड करें">
+            ${thumbHtml}
           </div>
         </div>
 
-        <div class="vc-meta-grid">
-          ${c.fields.map(f => `
-            <div class="vc-meta-item">
-              <div class="vc-meta-lbl">${f.lbl}</div>
-              <div class="vc-meta-val">${f.val}</div>
-              <button class="vc-copy-btn" onclick="copyToClipboard('${f.val.replace(/'/g, "\\'")}')">${d.btnCopy || "Copy"}</button>
-            </div>
-          `).join('')}
-        </div>
-
-        <div class="vc-photo-strip">
-          ${hasPhoto ? `
-            <button class="vc-photo-btn" onclick="viewDocPhoto('${c.key}', '${c.name.replace(/'/g, "\\'")}')">
-              ${d.btnViewPhoto || "📄 View Photo"}
-            </button>
-            <button class="vc-photo-btn" style="background:transparent;border-color:var(--border-color);color:var(--text-dim);" onclick="triggerVaultDocUpload('${c.key}')">
-              ${d.btnChangePhoto || "🔄 Change"}
-            </button>
-          ` : `
-            <button class="vc-photo-btn" onclick="triggerVaultDocUpload('${c.key}')">
-              ${d.btnAddPhoto || "📷 Add Photo"}
-            </button>
-          `}
+        <div class="vdc-bottom-actions">
+          <button class="btn-vdc-action" onclick="viewFullDocumentImage('${doc.key}', '${doc.name}')">
+            <span>🔍 पूर्वावलोकन</span>
+          </button>
+          <button class="btn-vdc-action" onclick="openVaultEditModal('${doc.key}')">
+            <span>✏️ अपडेट करें</span>
+          </button>
         </div>
       </div>
     `;
   });
 
-  // Render Custom Documents
-  if (vaultCustomDocs.length > 0) {
-    html += `<div style="font-size:12px;font-weight:800;color:var(--text-dim);margin-top:6px;">${d.customDocsHeading || "Custom Documents"}</div>`;
-    vaultCustomDocs.forEach(cd => {
-      const hasPhoto = !!vaultDocPhotos[cd.id];
-      html += `
-        <div class="vault-card" style="border-left:4px solid var(--primary);">
-          <div class="vc-top-row">
-            <div class="vc-doc-name">
-              <span>📌</span>
-              <span>${cd.title}</span>
-            </div>
-            <button style="background:transparent;border:none;color:var(--red-600);font-size:13px;cursor:pointer;" onclick="deleteCustomDoc('${cd.id}')" title="Delete">
-              🗑️
-            </button>
-          </div>
+  // Custom User Documents
+  vaultCustomDocs.forEach((cd, idx) => {
+    const hasPhoto = !!cd.photo;
+    const thumbHtml = hasPhoto
+      ? `<img src="${cd.photo}" class="vdc-thumbnail-img" alt="${cd.title}" />`
+      : `<div class="vdc-thumbnail-placeholder"><span>📷</span><span>+ फ़ोटो</span></div>`;
 
-          <div class="vc-meta-grid">
-            <div class="vc-meta-item" style="grid-column: span 2;">
-              <div class="vc-meta-lbl">${d.docCertNo || "Certificate / ID Number"}</div>
-              <div class="vc-meta-val">${cd.docNumber}</div>
-              <button class="vc-copy-btn" onclick="copyToClipboard('${cd.docNumber.replace(/'/g, "\\'")}')">${d.btnCopy || "Copy"}</button>
+    html += `
+      <div class="vault-card-compact" id="vcard-custom-${idx}">
+        <div class="vdc-top-row">
+          <div class="vdc-content">
+            <div class="vdc-title-row">
+              <span class="vdc-icon">📁</span>
+              <span class="vdc-name">${cd.title || 'कस्टम दस्तावेज़'}</span>
             </div>
-            ${cd.extra ? `
-              <div class="vc-meta-item" style="grid-column: span 2;">
-                <div class="vc-meta-lbl">${d.docDetailsLbl || "Details"}</div>
-                <div class="vc-meta-val" style="font-size:11.5px;">${cd.extra}</div>
+            <div class="vdc-fields-list">
+              <div class="vdc-field-item">
+                <span>संख्या / ID:</span>
+                <span class="vdc-field-copyable" onclick="copyToClipboard('${cd.number}', '${cd.title}')" title="Click to copy">
+                  ${cd.number || '--'} 📋
+                </span>
               </div>
-            ` : ''}
+              ${cd.notes ? `<div class="vdc-field-item"><span>विवरण:</span> <strong>${cd.notes}</strong></div>` : ''}
+            </div>
           </div>
-
-          <div class="vc-photo-strip">
-            ${hasPhoto ? `
-              <button class="vc-photo-btn" onclick="viewDocPhoto('${cd.id}', '${cd.title.replace(/'/g, "\\'")}')">
-                ${d.btnViewPhoto || "📄 View Photo"}
-              </button>
-              <button class="vc-photo-btn" style="background:transparent;border-color:var(--border-color);color:var(--text-dim);" onclick="triggerVaultDocUpload('${cd.id}')">
-                ${d.btnChangePhoto || "🔄 Change"}
-              </button>
-            ` : `
-              <button class="vc-photo-btn" onclick="triggerVaultDocUpload('${cd.id}')">
-                ${d.btnAddPhoto || "📷 Add Photo"}
-              </button>
-            `}
+          <div class="vdc-thumbnail-box" onclick="viewFullCustomDocImage(${idx})" title="पूर्वावलोकन देखें">
+            ${thumbHtml}
           </div>
         </div>
-      `;
-    });
-  }
+
+        <div class="vdc-bottom-actions">
+          <button class="btn-vdc-action" onclick="deleteCustomDoc(${idx})" style="color:var(--red-600);">
+            <span>🗑️ हटाएं</span>
+          </button>
+        </div>
+      </div>
+    `;
+  });
 
   container.innerHTML = html;
 }
 
-function openAddCustomDocModal() {
-  tempCustomDocPhoto = null;
-  document.getElementById('cd-custom-title').value = "";
-  document.getElementById('cd-number').value = "";
-  document.getElementById('cd-extra').value = "";
-  document.getElementById('cd-preset-select').value = "PAN Card";
-  document.getElementById('cd-custom-title').style.display = "none";
-  document.getElementById('cd-photo-status').style.display = "none";
-  document.getElementById('custom-doc-modal').classList.add('show');
-}
+function viewFullDocumentImage(docKey, docName) {
+  currentViewerDocKey = docKey;
+  const photo = vaultDocPhotos[docKey];
+  const titleEl = document.getElementById('txt-doc-viewer-title');
+  if (titleEl) titleEl.textContent = (docName || 'दस्तावेज़') + ' पूर्वावलोकन';
 
-function closeAddCustomDocModal() {
-  document.getElementById('custom-doc-modal').classList.remove('show');
-}
+  const imgEl = document.getElementById('doc-viewer-img');
+  const noImgEl = document.getElementById('doc-viewer-no-img');
 
-function onCustomDocPresetChange(val) {
-  document.getElementById('cd-custom-title').style.display = val === 'Other' ? 'block' : 'none';
-}
-
-function triggerCustomDocUpload() {
-  document.getElementById('custom-doc-picker').click();
-}
-
-function handleCustomDocUpload(evt) {
-  const file = evt.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = function(e) {
-    const img = new Image();
-    img.onload = function() {
-      const canvas = document.createElement('canvas');
-      const maxDim = 800;
-      let w = img.width, h = img.height;
-      if (w > maxDim || h > maxDim) {
-        if (w > h) { h = Math.round(h * maxDim / w); w = maxDim; }
-        else { w = Math.round(w * maxDim / h); h = maxDim; }
-      }
-      canvas.width = w; canvas.height = h;
-      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-      tempCustomDocPhoto = canvas.toDataURL('image/jpeg', 0.75);
-      document.getElementById('cd-photo-status').style.display = 'block';
-    };
-    img.src = e.target.result;
-  };
-  reader.readAsDataURL(file);
-}
-
-function saveCustomDocument() {
-  const d = I18N[currentLang];
-  const selectVal = document.getElementById('cd-preset-select').value;
-  let title = selectVal;
-  if (selectVal === 'Other') {
-    title = document.getElementById('cd-custom-title').value.trim() || (currentLang === 'en' ? "Other Document" : (currentLang === 'hi' ? "अन्य दस्तावेज़" : "Other Document"));
-  }
-  const docNumber = document.getElementById('cd-number').value.trim();
-  const extra = document.getElementById('cd-extra').value.trim();
-
-  if (!docNumber) {
-    showToast(d.toastEnterDocNumber || "Please enter document or ID number");
-    return;
-  }
-
-  const newDocId = "cust_" + Date.now();
-  const newDoc = { id: newDocId, title, docNumber, extra };
-
-  vaultCustomDocs.push(newDoc);
-  localStorage.setItem(CUSTOM_DOCS_KEY, JSON.stringify(vaultCustomDocs));
-
-  if (tempCustomDocPhoto) {
-    vaultDocPhotos[newDocId] = tempCustomDocPhoto;
-    localStorage.setItem(VAULT_DOCS_KEY, JSON.stringify(vaultDocPhotos));
-  }
-
-  closeAddCustomDocModal();
-  renderVaultCards();
-  renderVacanciesFeed(); // update checklist in vacancies
-  showToast(d.toastVaultDocSaved || "Document saved to vault!");
-}
-
-function deleteCustomDoc(docId) {
-  const d = I18N[currentLang];
-  if (confirm(d.confirmDeleteDoc || "Are you sure you want to remove this document?")) {
-    vaultCustomDocs = vaultCustomDocs.filter(d => d.id !== docId);
-    delete vaultDocPhotos[docId];
-    localStorage.setItem(CUSTOM_DOCS_KEY, JSON.stringify(vaultCustomDocs));
-    localStorage.setItem(VAULT_DOCS_KEY, JSON.stringify(vaultDocPhotos));
-    renderVaultCards();
-    renderVacanciesFeed();
-    showToast(d.toastVaultDocDeleted || "Document removed");
-  }
-}
-
-function copyToClipboard(text) {
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(text);
+  if (photo) {
+    if (imgEl) { imgEl.src = photo; imgEl.style.display = 'block'; }
+    if (noImgEl) { noImgEl.style.display = 'none'; }
   } else {
-    const el = document.createElement('textarea');
-    el.value = text;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
+    if (imgEl) { imgEl.style.display = 'none'; }
+    if (noImgEl) { noImgEl.style.display = 'block'; }
   }
-  showToast(I18N[currentLang].copiedToast || "Copied!");
+
+  isDocViewerModalOpen = true;
+  history.pushState({ modalOpen: 'docViewer' }, '');
+  const m = document.getElementById('doc-viewer-modal');
+  if (m) m.classList.add('show');
+  document.body.style.overflow = 'hidden';
 }
 
-function triggerVaultDocUpload(docKey) {
-  targetDocKeyForUpload = docKey;
-  document.getElementById('vault-doc-picker').click();
+function viewFullCustomDocImage(idx) {
+  const cd = vaultCustomDocs[idx];
+  if (!cd) return;
+  viewFullDocumentImage('custom_' + idx, cd.title);
 }
 
-function handleVaultDocUpload(evt) {
-  const d = I18N[currentLang];
-  const file = evt.target.files[0];
-  if (!file || !targetDocKeyForUpload) return;
+function closeDocViewerModal() {
+  if (isDocViewerModalOpen) {
+    isDocViewerModalOpen = false;
+    history.back();
+  } else {
+    closeDocViewerModalSilently();
+  }
+}
+
+function closeDocViewerModalSilently() {
+  isDocViewerModalOpen = false;
+  const m = document.getElementById('doc-viewer-modal');
+  if (m) m.classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+function handleDocViewerUpload(event) {
+  const file = event.target.files[0];
+  if (!file || !currentViewerDocKey) return;
 
   const reader = new FileReader();
   reader.onload = function(e) {
-    const img = new Image();
-    img.onload = function() {
-      const canvas = document.createElement('canvas');
-      const maxDim = 800;
-      let w = img.width, h = img.height;
-      if (w > maxDim || h > maxDim) {
-        if (w > h) { h = Math.round(h * maxDim / w); w = maxDim; }
-        else { w = Math.round(w * maxDim / h); h = maxDim; }
+    const base64 = e.target.result;
+    if (currentViewerDocKey.startsWith('custom_')) {
+      const idx = parseInt(currentViewerDocKey.replace('custom_', ''), 10);
+      if (vaultCustomDocs[idx]) {
+        vaultCustomDocs[idx].photo = base64;
+        localStorage.setItem(CUSTOM_DOCS_KEY, JSON.stringify(vaultCustomDocs));
       }
-      canvas.width = w; canvas.height = h;
-      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-      vaultDocPhotos[targetDocKeyForUpload] = canvas.toDataURL('image/jpeg', 0.75);
+    } else {
+      vaultDocPhotos[currentViewerDocKey] = base64;
       localStorage.setItem(VAULT_DOCS_KEY, JSON.stringify(vaultDocPhotos));
-      renderVaultCards();
-      showToast(d.toastVaultPhotoSaved || "Certificate photo saved!");
-    };
-    img.src = e.target.result;
+    }
+    renderVaultCards();
+    viewFullDocumentImage(currentViewerDocKey, 'अपडेटेड दस्तावेज़');
+    showToast("दस्तावेज़ फ़ोटो सफलतापूर्वक सेव हो गया!");
   };
   reader.readAsDataURL(file);
 }
 
-function viewDocPhoto(docKey, docName) {
-  const dataUrl = vaultDocPhotos[docKey];
-  if (!dataUrl) return;
-  document.getElementById('doc-viewer-title').textContent = docName;
-  document.getElementById('doc-viewer-img').src = dataUrl;
-  document.getElementById('doc-viewer-modal').classList.add('show');
-}
-
-function closeDocViewer(e) {
-  if (e.target.id === 'doc-viewer-modal') {
-    document.getElementById('doc-viewer-modal').classList.remove('show');
+function deleteCurrentDocPhoto() {
+  if (!currentViewerDocKey) return;
+  if (currentViewerDocKey.startsWith('custom_')) {
+    const idx = parseInt(currentViewerDocKey.replace('custom_', ''), 10);
+    if (vaultCustomDocs[idx]) {
+      delete vaultCustomDocs[idx].photo;
+      localStorage.setItem(CUSTOM_DOCS_KEY, JSON.stringify(vaultCustomDocs));
+    }
+  } else {
+    delete vaultDocPhotos[currentViewerDocKey];
+    localStorage.setItem(VAULT_DOCS_KEY, JSON.stringify(vaultDocPhotos));
   }
-}
-
-function closeDocViewerForce() {
-  document.getElementById('doc-viewer-modal').classList.remove('show');
+  renderVaultCards();
+  closeDocViewerModal();
+  showToast("दस्तावेज़ फ़ोटो हटा दिया गया");
 }
 
 /* ============================================================
-   10. PRACTICE HUB & DAILY QUIZ
+   10. PRACTICE HUB: CATEGORY-WISE SETS & INTERACTIVE QUIZ MODAL
 ============================================================ */
-function initQuiz() {
-  currentQuizIndex = 0;
-  quizScore = 0;
-  loadQuizQuestion(0);
+
+const PRACTICE_SETS = [
+  {
+    id: "rrb-01",
+    category: "RAILWAY",
+    examTag: "Railway RRB NTPC / Group D",
+    title: "General Awareness & Science - Set #01",
+    desc: "भारतीय रेल, सामान्य विज्ञान, इतिहास और भूगोल के 10 महत्वपूर्ण PYQs",
+    totalQ: 10,
+    timeMins: 10,
+    questions: [
+      {
+        question: "भारतीय रेलवे की प्रथम यात्री ट्रेन 1853 में किन दो स्टेशनों के बीच चली थी?",
+        question_en: "Between which two stations did India's first passenger train run in 1853?",
+        options: ["हावड़ा से हुगली", "बॉम्बे (बोरीबंदर) से ठाणे", "मद्रास से अर्कोट", "दिल्ली से आगरा"],
+        options_en: ["Howrah to Hooghly", "Bombay (Bori Bunder) to Thane", "Madras to Arcot", "Delhi to Agra"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "16 अप्रैल 1853 को 34 किलोमीटर की दूरी पर बॉम्बे (बोरीबंदर) से ठाणे के बीच भारत की पहली रेल चली थी।",
+        explain_en: "India's first passenger train ran on 16 April 1853 covering 34 km between Bombay and Thane."
+      },
+      {
+        question: "विटामिन 'सी' (Vitamin C) का रासायनिक नाम क्या है?",
+        question_en: "What is the chemical name of Vitamin C?",
+        options: ["थायमिन", "राइबोफ्लेविन", "एस्कॉर्बिक एसिड", "कैल्सीफेरोल"],
+        options_en: ["Thiamine", "Riboflavin", "Ascorbic Acid", "Calciferol"],
+        correct_option: "C",
+        answerIndex: 2,
+        explain: "विटामिन सी का रासायनिक नाम एस्कॉर्बिक एसिड है। इसकी कमी से स्कर्वी रोग होता है।",
+        explain_en: "The chemical name of Vitamin C is Ascorbic Acid. Its deficiency causes Scurvy."
+      },
+      {
+        question: "कार्य (Work) और ऊर्जा (Energy) का SI मात्रक क्या है?",
+        question_en: "What is the SI unit of Work and Energy?",
+        options: ["वाट (Watt)", "न्यूटन (Newton)", "पास्कल (Pascal)", "जूल (Joule)"],
+        options_en: ["Watt", "Newton", "Pascal", "Joule"],
+        correct_option: "D",
+        answerIndex: 3,
+        explain: "कार्य और ऊर्जा का SI मात्रक जूल (Joule) होता है। शक्ति का मात्रक वाट होता है।",
+        explain_en: "The SI unit of both Work and Energy is Joule."
+      },
+      {
+        question: "ध्वनि की गति (Speed of Sound) अधिकतम किस माध्यम में होती है?",
+        question_en: "In which medium is the speed of sound maximum?",
+        options: ["ठोस (इस्पात)", "जल", "वायु", "निर्वात"],
+        options_en: ["Solid (Steel)", "Water", "Air", "Vacuum"],
+        correct_option: "A",
+        answerIndex: 0,
+        explain: "ध्वनि की चाल ठोस में सबसे अधिक (लगभग 5000 m/s इस्पात में) और निर्वात में शून्य होती है।",
+        explain_en: "Speed of sound is highest in solids (~5000 m/s in steel) and zero in vacuum."
+      },
+      {
+        question: "रेलवे बोर्ड के प्रथम मुख्य कार्यकारी अधिकारी (CEO) कौन बने थे?",
+        question_en: "Who became the first CEO of Railway Board in India?",
+        options: ["अश्विनी वैष्णव", "विनोद कुमार यादव", "सुनीत शर्मा", "अनिल कुमार लाहोटी"],
+        options_en: ["Ashwini Vaishnaw", "V. K. Yadav", "Suneet Sharma", "A. K. Lahoti"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "विनोद कुमार यादव 2020 में रेलवे बोर्ड के पहले चेयरमैन एवं सीईओ नियुक्त हुए थे।",
+        explain_en: "V.K. Yadav was appointed the first-ever CEO and Chairman of the Railway Board in 2020."
+      }
+    ]
+  },
+  {
+    id: "bpsc-01",
+    category: "BPSC",
+    examTag: "BPSC 69th & 70th CCE",
+    title: "Bihar Special, History & Polity - Set #01",
+    desc: "बिहार का इतिहास, 1857 क्रांति, चंपारण सत्याग्रह और संविधान के उच्च स्तरीय प्रश्न",
+    totalQ: 5,
+    timeMins: 8,
+    questions: [
+      {
+        question: "बिहार के किस जिले में प्राचीन 'विक्रमशिला विश्वविद्यालय' के अवशेष स्थित हैं?",
+        question_en: "In which district of Bihar are the ruins of Vikramshila University situated?",
+        options: ["नालंदा", "भागलपुर", "गया", "वैशाली"],
+        options_en: ["Nalanda", "Bhagalpur", "Gaya", "Vaishali"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "विक्रमशिला विश्वविद्यालय की स्थापना पाल वंश के शासक धर्मपाल ने भागलपुर के अंतीचक में की थी।",
+        explain_en: "Vikramshila University was founded by Pala Emperor Dharampala in Bhagalpur."
+      },
+      {
+        question: "बिहार में 1857 की क्रांति का नेतृत्व जगदीशपुर से किसने किया था?",
+        question_en: "Who led the Revolt of 1857 in Bihar from Jagdishpur?",
+        options: ["पीर अली", "बाबू कुंवर सिंह", "अमर सिंह", "हरे कृष्ण सिंह"],
+        options_en: ["Peer Ali", "Babu Kunwar Singh", "Amar Singh", "Hare Krishna Singh"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "बाबू वीर कुंवर सिंह ने 80 वर्ष की उम्र में जगदीशपुर (भोजपुर) से 1857 के संग्राम का नेतृत्व किया था।",
+        explain_en: "Babu Veer Kunwar Singh led the rebellion from Jagdishpur at age 80."
+      },
+      {
+        question: "चंपारण सत्याग्रह (1917) के दौरान गांधीजी को चंपारण आने का निमंत्रण किसने दिया था?",
+        question_en: "Who invited Mahatma Gandhi to Champaran during the Champaran Satyagraha (1917)?",
+        options: ["राजकुमार शुक्ल", "डॉ. राजेंद्र प्रसाद", "ब्रजकिशोर प्रसाद", "मजहरुल हक"],
+        options_en: ["Rajkumar Shukla", "Dr. Rajendra Prasad", "Brajkishore Prasad", "Mazharul Haque"],
+        correct_option: "A",
+        answerIndex: 0,
+        explain: "1916 के लखनऊ कांग्रेस अधिवेशन में किसान नेता राजकुमार शुक्ल ने गांधीजी को निमंत्रण दिया था।",
+        explain_en: "Rajkumar Shukla met Gandhiji in 1916 at Lucknow Congress and invited him to Champaran."
+      },
+      {
+        question: "बिहार राज्य लोक सेवा आयोग (BPSC) का मुख्यालय कहाँ स्थित है?",
+        question_en: "Where is the headquarters of Bihar Public Service Commission (BPSC) located?",
+        options: ["गया", "पटना (बेली रोड)", "मुजफ्फरपुर", "दरभंगा"],
+        options_en: ["Gaya", "Patna (Bailey Road)", "Muzaffarpur", "Darbhanga"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "BPSC का मुख्यालय 15, जवाहरलाल नेहरू मार्ग (बेली रोड), पटना में स्थित है।",
+        explain_en: "BPSC headquarters is situated on Bailey Road, Patna."
+      },
+      {
+        question: "बिहार का शोक (Sorrow of Bihar) किस नदी को कहा जाता है?",
+        question_en: "Which river is known as the 'Sorrow of Bihar'?",
+        options: ["गंगा", "गंडक", "कोसी", "सोन"],
+        options_en: ["Ganga", "Gandak", "Kosi", "Son"],
+        correct_option: "C",
+        answerIndex: 2,
+        explain: "कोसी नदी अपने मार्ग परिवर्तन और विनाशकारी बाढ़ के कारण 'बिहार का शोक' कहलाती है।",
+        explain_en: "Kosi river is called Sorrow of Bihar due to frequent path shifting and floods."
+      }
+    ]
+  },
+  {
+    id: "upsc-01",
+    category: "UPSC",
+    examTag: "UPSC Civil Services Prelims",
+    title: "Indian Polity & Governance - Set #01",
+    desc: "संसद, संयुक्त अधिवेशन, अनुसूचियां और संविधान संशोधन पर आधारित प्रश्न",
+    totalQ: 5,
+    timeMins: 8,
+    questions: [
+      {
+        question: "भारत में 'संसद के संयुक्त अधिवेशन' (Joint Sitting) की अध्यक्षता कौन करता है?",
+        question_en: "Who presides over the Joint Sitting of Parliament in India?",
+        options: ["राष्ट्रपति", "उपराष्ट्रपति", "लोकसभा अध्यक्ष (Speaker)", "प्रधान न्यायाधीश"],
+        options_en: ["President", "Vice President", "Speaker of Lok Sabha", "Chief Justice"],
+        correct_option: "C",
+        answerIndex: 2,
+        explain: "अनुच्छेद 108 के तहत राष्ट्रपति संयुक्त बैठक बुलाते हैं, लेकिन अध्यक्षता लोकसभा अध्यक्ष करते हैं (अनुच्छेद 118)।",
+        explain_en: "President summons under Art 108, but Speaker of Lok Sabha presides under Art 118."
+      },
+      {
+        question: "संविधान की किस अनुसूची में 'दल-बदल विरोधी कानून' (Anti-Defection Law) का प्रावधान है?",
+        question_en: "Which Schedule contains the Anti-Defection Law in Indian Constitution?",
+        options: ["आठवीं अनुसूची", "दसवीं अनुसूची", "ग्यारहवीं अनुसूची", "बारहवीं अनुसूची"],
+        options_en: ["8th Schedule", "10th Schedule", "11th Schedule", "12th Schedule"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "52वें संविधान संशोधन 1985 द्वारा दसवीं अनुसूची जोड़ी गई जिसमें दल-बदल विरोधी कानून है।",
+        explain_en: "The 10th Schedule was added by the 52nd Amendment Act in 1985."
+      },
+      {
+        question: "भारतीय संविधान का 'मैग्ना कार्टा' (Magna Carta) किस भाग को कहा जाता है?",
+        question_en: "Which part of the Indian Constitution is termed as its Magna Carta?",
+        options: ["भाग I", "भाग III (मौलिक अधिकार)", "भाग IV (DPSP)", "भाग IV-A (मौलिक कर्तव्य)"],
+        options_en: ["Part I", "Part III (Fundamental Rights)", "Part IV", "Part IV-A"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "भाग III (अनुच्छेद 12-35) मौलिक अधिकारों को भारतीय संविधान का मैग्ना कार्टा कहा जाता है।",
+        explain_en: "Part III dealing with Fundamental Rights is known as Magna Carta of India."
+      },
+      {
+        question: "वित्त आयोग (Finance Commission) का गठन किस अनुच्छेद के तहत होता है?",
+        question_en: "Under which Article is the Finance Commission of India constituted?",
+        options: ["अनुच्छेद 280", "अनुच्छेद 312", "अनुच्छेद 324", "अनुच्छेद 356"],
+        options_en: ["Article 280", "Article 312", "Article 324", "Article 356"],
+        correct_option: "A",
+        answerIndex: 0,
+        explain: "अनुच्छेद 280 के तहत राष्ट्रपति प्रत्येक पांच वर्ष में वित्त आयोग का गठन करते हैं।",
+        explain_en: "Article 280 mandates President of India to constitute Finance Commission every 5 years."
+      },
+      {
+        question: "भारत के संविधान का रक्षक (Guardian of Constitution) किसे माना जाता है?",
+        question_en: "Who is regarded as the Guardian of the Constitution of India?",
+        options: ["भारत का राष्ट्रपति", "भारत का प्रधानमंत्री", "भारत का सर्वोच्च न्यायालय (Supreme Court)", "संसद"],
+        options_en: ["President", "Prime Minister", "Supreme Court of India", "Parliament"],
+        correct_option: "C",
+        answerIndex: 2,
+        explain: "सर्वोच्च न्यायालय को न्यायिक समीक्षा (Judicial Review) के तहत संविधान का संरक्षक बनाया गया है।",
+        explain_en: "The Supreme Court of India is the custodian and guardian of the Constitution."
+      }
+    ]
+  },
+  {
+    id: "ssc-cgl-01",
+    category: "SSC_CGL",
+    examTag: "SSC CGL / CHSL Tier-1",
+    title: "General Intelligence & Awareness - Set #01",
+    desc: "संविधान की सूचियां, राष्ट्रीय दिवस और सामान्य विज्ञान पर केंद्रित प्रश्न",
+    totalQ: 5,
+    timeMins: 8,
+    questions: [
+      {
+        question: "संविधान की कौन-सी अनुसूची संघ, राज्य और समवर्ती सूची से संबंधित है?",
+        question_en: "Which Schedule deals with Union, State and Concurrent Lists?",
+        options: ["सातवीं अनुसूची", "आठवीं अनुसूची", "छठी अनुसूची", "ग्यारहवीं अनुसूची"],
+        options_en: ["7th Schedule", "8th Schedule", "6th Schedule", "11th Schedule"],
+        correct_option: "A",
+        answerIndex: 0,
+        explain: "सातवीं अनुसूची में संघ, राज्य और समवर्ती सूची के विषय निर्धारित हैं।",
+        explain_en: "7th Schedule defines division of powers between Union and States."
+      },
+      {
+        question: "राष्ट्रीय मतदाता दिवस (National Voters' Day) कब मनाया जाता है?",
+        question_en: "When is National Voters' Day celebrated in India?",
+        options: ["15 जनवरी", "24 जनवरी", "25 जनवरी", "28 फरवरी"],
+        options_en: ["15 January", "24 January", "25 January", "28 February"],
+        correct_option: "C",
+        answerIndex: 2,
+        explain: "25 जनवरी 1950 को निर्वाचन आयोग की स्थापना की याद में राष्ट्रीय मतदाता दिवस मनाते हैं।",
+        explain_en: "Celebrated on 25 January to mark the foundation day of Election Commission."
+      },
+      {
+        question: "हर्षचरित के लेखक कौन थे?",
+        question_en: "Who was the author of Harshacharita?",
+        options: ["बाणभट्ट", "कालिदास", "हरिषेण", "अश्वघोष"],
+        options_en: ["Banabhatta", "Kalidasa", "Harishena", "Ashvaghosha"],
+        correct_option: "A",
+        answerIndex: 0,
+        explain: "राजा हर्षवर्धन के दरबारी कवि बाणभट्ट ने 'हर्षचरित' और 'कादंबरी' की रचना की थी।",
+        explain_en: "Banabhatta, court poet of King Harsha, wrote Harshacharita."
+      },
+      {
+        question: "मानव शरीर में रक्त का थक्का (Blood Clotting) बनाने में कौन-सा विटामिन सहायक है?",
+        question_en: "Which vitamin helps in blood clotting in the human body?",
+        options: ["विटामिन A", "विटामिन C", "विटामिन K", "विटामिन D"],
+        options_en: ["Vitamin A", "Vitamin C", "Vitamin K", "Vitamin D"],
+        correct_option: "C",
+        answerIndex: 2,
+        explain: "विटामिन K (Phylloquinone) प्रोथ्रोम्बिन निर्माण में सहायता करके रक्त का थक्का बनाता है।",
+        explain_en: "Vitamin K is essential for blood clotting and synthesis of prothrombin."
+      },
+      {
+        question: "विश्व स्वास्थ्य संगठन (WHO) का मुख्यालय कहाँ स्थित है?",
+        question_en: "Where is the headquarters of World Health Organization (WHO) situated?",
+        options: ["न्यूयॉर्क", "जिनेवा (स्विट्जरलैंड)", "पेरिस", "विएना"],
+        options_en: ["New York", "Geneva (Switzerland)", "Paris", "Vienna"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "WHO का मुख्यालय जिनेवा, स्विट्जरलैंड में 7 अप्रैल 1948 से कार्यरत है।",
+        explain_en: "Headquarters of WHO is located in Geneva, Switzerland."
+      }
+    ]
+  },
+  {
+    id: "ssc-gd-01",
+    category: "SSC_GD",
+    examTag: "SSC GD Constable / Police",
+    title: "General Knowledge & Static GK - Set #01",
+    desc: "भारत की नदियां, राष्ट्रीय उद्यान, सीमाएं और महत्वपूर्ण ऐतिहासिक तथ्य",
+    totalQ: 5,
+    timeMins: 8,
+    questions: [
+      {
+        question: "भारत की सबसे लम्बी सीमा किस पड़ोसी देश के साथ लगती है?",
+        question_en: "With which neighboring country does India share its longest border?",
+        options: ["चीन", "पाकिस्तान", "बांग्लादेश (4,096.7 km)", "नेपाल"],
+        options_en: ["China", "Pakistan", "Bangladesh (4,096.7 km)", "Nepal"],
+        correct_option: "C",
+        answerIndex: 2,
+        explain: "भारत बांग्लादेश के साथ 4,096.7 किमी लम्बी अंतर्राष्ट्रीय सीमा साझा करता है।",
+        explain_en: "India shares its longest border (4,096.7 km) with Bangladesh."
+      },
+      {
+        question: "जिम कॉर्बेट राष्ट्रीय उद्यान (वर्तमान में रामगंगा) किस राज्य में स्थित है?",
+        question_en: "Jim Corbett National Park is situated in which Indian state?",
+        options: ["उत्तराखंड", "असम", "मध्य प्रदेश", "राजस्थान"],
+        options_en: ["Uttarakhand", "Assam", "Madhya Pradesh", "Rajasthan"],
+        correct_option: "A",
+        answerIndex: 0,
+        explain: "1936 में स्थापित भारत का पहला राष्ट्रीय उद्यान जिम कॉर्बेट उत्तराखंड में स्थित है।",
+        explain_en: "Established in 1936, Jim Corbett is India's first national park in Uttarakhand."
+      },
+      {
+        question: "भाखड़ा नांगल बांध किस नदी पर निर्मित है?",
+        question_en: "Bhakra Nangal Dam is built across which river?",
+        options: ["व्यास", "सतलुज", "रावी", "झेलम"],
+        options_en: ["Beas", "Sutlej", "Ravi", "Jhelum"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "भाखड़ा नांगल बांध हिमाचल प्रदेश और पंजाब सीमा पर सतलुज नदी पर स्थित है।",
+        explain_en: "Bhakra Nangal Dam is built on Sutlej River."
+      },
+      {
+        question: "भारत का 'सिलिकॉन वैली' (Silicon Valley) किस शहर को कहा जाता है?",
+        question_en: "Which city is known as the Silicon Valley of India?",
+        options: ["हैदराबाद", "बेंगलुरु", "पुणे", "गुरुग्राम"],
+        options_en: ["Hyderabad", "Bengaluru", "Pune", "Gurugram"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "बेंगलुरु को भारत की आईटी राजधानी और सिलिकॉन वैली कहा जाता है।",
+        explain_en: "Bengaluru is popularly referred to as the Silicon Valley of India."
+      },
+      {
+        question: "मौलिक कर्तव्यों (Fundamental Duties) को किस देश के संविधान से लिया गया है?",
+        question_en: "From which country's constitution were Fundamental Duties borrowed in India?",
+        options: ["संयुक्त राज्य अमेरिका", "पूर्व सोवियत संघ (USSR)", "ब्रिटेन", "आयरलैंड"],
+        options_en: ["USA", "Former USSR (Russia)", "UK", "Ireland"],
+        correct_option: "B",
+        answerIndex: 1,
+        explain: "42वें संविधान संशोधन 1976 द्वारा सोवियत संघ (USSR) से प्रेरित होकर मौलिक कर्तव्य जोड़े गए।",
+        explain_en: "Fundamental Duties were incorporated from the USSR Constitution via 42nd Amendment."
+      }
+    ]
+  }
+];
+
+let activePracticeCategory = 'ALL';
+let currentActiveSet = null;
+let currentSetQIndex = 0;
+let currentSetScore = 0;
+let currentSetAnswered = false;
+
+function initPracticeSets() {
+  renderPracticeSetsGrid();
 }
 
-function loadQuizQuestion(index) {
-  currentQuizIndex = index;
-  quizAnswered = false;
-  const d = I18N[currentLang] || I18N.hi;
-  const q = QUIZ_QUESTIONS[index % QUIZ_QUESTIONS.length];
-  const qText = (currentLang === 'en' && q.question_en) ? q.question_en : ((currentLang === 'hinglish' && q.question_hinglish) ? q.question_hinglish : q.question);
-  const opts = (currentLang === 'en' && q.options_en) ? q.options_en : ((currentLang === 'hinglish' && q.options_hinglish) ? q.options_hinglish : q.options);
+function filterPracticeSets(cat, btnEl) {
+  activePracticeCategory = cat;
+  document.querySelectorAll('.p-cat-btn').forEach(b => b.classList.remove('active'));
+  if (btnEl) btnEl.classList.add('active');
+  renderPracticeSetsGrid();
+}
 
-  const tagEl = document.getElementById('quiz-exam-tag');
-  if (tagEl) tagEl.textContent = q.exam;
+function renderPracticeSetsGrid() {
+  const container = document.getElementById('practice-sets-grid');
+  if (!container) return;
 
-  const scoreEl = document.getElementById('quiz-score-badge');
-  if (scoreEl) {
-    const template = d.quizScoreBadge || "Score: {score}/{total}";
-    scoreEl.textContent = template.replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
+  let sets = PRACTICE_SETS;
+  if (activePracticeCategory !== 'ALL') {
+    sets = sets.filter(s => s.category === activePracticeCategory);
   }
 
-  const qEl = document.getElementById('quiz-q-text');
-  if (qEl) qEl.textContent = `Q${index + 1}. ${qText}`;
+  container.innerHTML = sets.map(s => `
+    <div class="practice-set-card" onclick="startPracticeSet('${s.id}')">
+      <div>
+        <div class="pset-header">
+          <span class="pset-badge-tag">${s.examTag}</span>
+          <span style="font-size:11px;font-weight:700;color:var(--text-dim);">⏱️ ${s.timeMins} मिनट</span>
+        </div>
+        <h4 class="pset-title" style="margin-top:6px;">${s.title}</h4>
+        <p class="pset-desc">${s.desc}</p>
+      </div>
 
-  const optContainer = document.getElementById('quiz-options');
-  if (optContainer) {
-    optContainer.innerHTML = opts.map((opt, i) => `
-      <button class="quiz-opt-btn" onclick="handleQuizAnswer(${i})" id="quiz-opt-${i}">
-        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,0.06);font-size:11px;font-weight:800;margin-right:6px;">${String.fromCharCode(65 + i)}</span>
-        <span>${opt}</span>
-      </button>
-    `).join('');
+      <div class="pset-meta-row" style="margin-top:8px;">
+        <span>📝 ${s.questions.length} प्रश्न (Questions)</span>
+        <button class="btn-start-pset" onclick="startPracticeSet('${s.id}'); event.stopPropagation();">
+          <span>शुरू करें →</span>
+        </button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function startPracticeSet(setId) {
+  const pset = PRACTICE_SETS.find(s => s.id === setId);
+  if (!pset) return;
+
+  currentActiveSet = pset;
+  currentSetQIndex = 0;
+  currentSetScore = 0;
+  currentSetAnswered = false;
+
+  const setTagEl = document.getElementById('qm-set-tag');
+  if (setTagEl) setTagEl.textContent = pset.examTag;
+  const setTitleEl = document.getElementById('qm-set-title');
+  if (setTitleEl) setTitleEl.textContent = pset.title;
+
+  const actBody = document.getElementById('qm-active-body');
+  if (actBody) actBody.style.display = 'flex';
+  const scView = document.getElementById('qm-scorecard-view');
+  if (scView) scView.style.display = 'none';
+
+  loadQuizModalQuestion(0);
+
+  // Push history state for back button navigation
+  if (!isQuizModalOpen) {
+    isQuizModalOpen = true;
+    history.pushState({ modalOpen: 'quiz' }, '');
   }
 
-  const expBox = document.getElementById('quiz-explain-box');
-  if (expBox) {
-    expBox.classList.remove('show');
-    expBox.innerHTML = "";
+  const qModal = document.getElementById('practice-quiz-modal');
+  if (qModal) qModal.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function loadQuizModalQuestion(qIdx) {
+  currentSetQIndex = qIdx;
+  currentSetAnswered = false;
+
+  const q = currentActiveSet.questions[qIdx];
+  const total = currentActiveSet.questions.length;
+
+  document.getElementById('qm-q-counter').textContent = `Q ${qIdx + 1}/${total}`;
+  document.getElementById('qm-score-badge').textContent = `Score: ${currentSetScore}`;
+
+  const isEn = currentLang === 'en';
+  const qText = isEn && q.question_en ? q.question_en : q.question;
+  const opts = isEn && q.options_en ? q.options_en : q.options;
+
+  document.getElementById('qm-q-text').textContent = `Q${qIdx + 1}. ${qText}`;
+
+  const optsContainer = document.getElementById('qm-options');
+  optsContainer.innerHTML = opts.map((opt, i) => `
+    <button class="quiz-opt-btn" onclick="handleQuizModalAnswer(${i})" id="qm-opt-${i}">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,0.06);font-size:11px;font-weight:800;margin-right:6px;">${String.fromCharCode(65 + i)}</span>
+      <span>${opt}</span>
+    </button>
+  `).join('');
+
+  const expBox = document.getElementById('qm-explain-box');
+  expBox.classList.remove('show');
+  expBox.innerHTML = "";
+
+  const btnNext = document.getElementById('qm-btn-next');
+  if (btnNext) {
+    btnNext.textContent = (qIdx + 1 === total) ? "परिणाम देखें (View Scorecard) 🏆" : "अगला प्रश्न → (Next Question)";
   }
 }
 
-function handleQuizAnswer(selectedIdx) {
-  if (quizAnswered) return;
-  quizAnswered = true;
-  const d = I18N[currentLang] || I18N.hi;
+function handleQuizModalAnswer(selectedIdx) {
+  if (currentSetAnswered) return;
+  currentSetAnswered = true;
 
-  const q = QUIZ_QUESTIONS[currentQuizIndex % QUIZ_QUESTIONS.length];
+  const q = currentActiveSet.questions[currentSetQIndex];
   let correctIdx = q.answerIndex;
   if (typeof correctIdx !== 'number' && q.correct_option) {
     correctIdx = q.correct_option.charCodeAt(0) - 65;
   }
 
   const isCorrect = (selectedIdx === correctIdx);
-  const btns = document.querySelectorAll('.quiz-opt-btn');
+  const btns = document.querySelectorAll('#qm-options .quiz-opt-btn');
 
   btns.forEach((btn, i) => {
     btn.disabled = true;
@@ -6191,43 +7148,88 @@ function handleQuizAnswer(selectedIdx) {
   });
 
   if (isCorrect) {
-    quizScore++;
+    currentSetScore++;
+    document.getElementById('qm-score-badge').textContent = `Score: ${currentSetScore}`;
   }
 
-  const scoreEl = document.getElementById('quiz-score-badge');
-  if (scoreEl) {
-    const template = d.quizScoreBadge || "Score: {score}/{total}";
-    scoreEl.textContent = template.replace("{score}", quizScore).replace("{total}", QUIZ_QUESTIONS.length);
-  }
-
-  const exp = (currentLang === 'en' && q.explain_en) ? q.explain_en : ((currentLang === 'hinglish' && q.explain_hinglish) ? q.explain_hinglish : q.explain);
-  const expBox = document.getElementById('quiz-explain-box');
+  const exp = (currentLang === 'en' && q.explain_en) ? q.explain_en : q.explain;
+  const expBox = document.getElementById('qm-explain-box');
   if (expBox) {
     const icon = isCorrect ? '✅' : '❌';
-    const statusTxt = isCorrect ? (d.quizCorrect || 'सही उत्तर!') : (d.quizWrong || 'गलत उत्तर!');
+    const statusTxt = isCorrect ? 'सही उत्तर!' : 'गलत उत्तर!';
     expBox.innerHTML = `
-      <div style="font-weight:800;margin-bottom:6px;font-size:13px;color:${isCorrect ? '#15803d' : '#b91c1c'};display:flex;align-items:center;gap:6px;">
+      <div style="font-weight:800;margin-bottom:4px;font-size:13px;color:${isCorrect ? '#15803d' : '#b91c1c'};display:flex;align-items:center;gap:6px;">
         <span>${icon}</span>
         <span>${statusTxt}</span>
-        <span style="font-weight:600;font-size:11.5px;color:var(--text-muted);margin-left:auto;">(Correct: <strong>${String.fromCharCode(65 + correctIdx)}</strong>)</span>
+        <span style="font-weight:600;font-size:11.5px;color:var(--text-muted);margin-left:auto;">(Correct Option: <strong>${String.fromCharCode(65 + correctIdx)}</strong>)</span>
       </div>
       <div style="font-size:12px;line-height:1.45;color:var(--text-main);">
-        <strong>${d.quizExplainTitle || "💡 Explanation:"}</strong> ${exp}
+        <strong>💡 स्पष्टीकरण:</strong> ${exp}
       </div>
     `;
     expBox.classList.add('show');
   }
 }
 
-function nextQuizQuestion() {
-  currentQuizIndex++;
-  loadQuizQuestion(currentQuizIndex);
+function nextQuizModalQuestion() {
+  if (!currentActiveSet) return;
+  const total = currentActiveSet.questions.length;
+
+  if (currentSetQIndex + 1 < total) {
+    loadQuizModalQuestion(currentSetQIndex + 1);
+  } else {
+    showQuizScoreSummary();
+  }
 }
 
-function resetQuiz() {
-  initQuiz();
-  showToast(I18N[currentLang].toastQuizReset || "Quiz reset!");
+function showQuizScoreSummary() {
+  const total = currentActiveSet.questions.length;
+  const correct = currentSetScore;
+  const pct = Math.round((correct / total) * 100);
+
+  document.getElementById('qm-active-body').style.display = 'none';
+  const scView = document.getElementById('qm-scorecard-view');
+  scView.style.display = 'flex';
+
+  document.getElementById('sc-circle-score').textContent = `${correct}/${total}`;
+  document.getElementById('sc-total-q').textContent = total;
+  document.getElementById('sc-correct-q').textContent = correct;
+  document.getElementById('sc-accuracy').textContent = `${pct}%`;
+
+  const evalEl = document.getElementById('sc-eval-badge');
+  if (pct >= 80) {
+    evalEl.textContent = "🌟 Exam Ready! (शानदार तैयारी - परीक्षा हेतु तैयार)";
+    evalEl.style.color = "#15803d";
+  } else if (pct >= 50) {
+    evalEl.textContent = "👍 Good Effort! (अच्छा प्रयास - थोड़े और अभ्यास की आवश्यकता)";
+    evalEl.style.color = "#2563eb";
+  } else {
+    evalEl.textContent = "📖 Needs Improvement (कम अंक - पुनः अभ्यास करें)";
+    evalEl.style.color = "#b91c1c";
+  }
 }
+
+function retakeCurrentQuizSet() {
+  if (!currentActiveSet) return;
+  startPracticeSet(currentActiveSet.id);
+}
+
+function closeQuizModal() {
+  if (isQuizModalOpen) {
+    isQuizModalOpen = false;
+    history.back();
+  } else {
+    closeQuizModalSilently();
+  }
+}
+
+function closeQuizModalSilently() {
+  isQuizModalOpen = false;
+  const m = document.getElementById('practice-quiz-modal');
+  if (m) m.classList.remove('show');
+  document.body.style.overflow = '';
+}
+
 
 /* ============================================================
    11. ASPIRANT COMMUNITY HUB
@@ -6476,9 +7478,25 @@ function closeModalIfBackdrop(e, modalId) {
 
 
 /* ============================================================
-   JOB DETAILS FLOATING MODAL CONTROLLER
+   JOB DETAILS FLOATING MODAL CONTROLLER (WITH HISTORY API)
 ============================================================ */
 let activeModalJobId = null;
+let isJobModalOpen = false;
+let isQuizModalOpen = false;
+let isDocViewerModalOpen = false;
+
+// Global Window Popstate Listener for Seamless Mobile Back Button Support
+window.addEventListener('popstate', (e) => {
+  if (isJobModalOpen) {
+    closeJobDetailsModalSilently();
+  }
+  if (isQuizModalOpen) {
+    closeQuizModalSilently();
+  }
+  if (isDocViewerModalOpen) {
+    closeDocViewerModalSilently();
+  }
+});
 
 function openJobDetailsModal(jobId) {
   const vac = VACANCIES_DATA.find(v => String(v.id) === String(jobId));
@@ -6487,9 +7505,13 @@ function openJobDetailsModal(jobId) {
   activeModalJobId = jobId;
   const d = I18N[currentLang] || I18N.hi;
 
-  // Title, Org & Scope
+  // Reset Scroll Position so modal always opens at the very top
+  const modalBody = document.querySelector('.job-modal-body');
+  if (modalBody) modalBody.scrollTop = 0;
+
+  // Title, Org & Scope with strict fallbacks
   const title = (currentLang === 'hi' && vac.title_hi) ? vac.title_hi : ((currentLang === 'hinglish' && vac.title_hinglish) ? vac.title_hinglish : (vac.title || vac.examName || 'Government Recruitment'));
-  const org = (currentLang === 'hi' && vac.org_hi) ? vac.org_hi : ((currentLang === 'hinglish' && vac.org_hinglish) ? vac.org_hinglish : (vac.org || vac.recruitingBody || 'Department of Central/State Govt'));
+  const org = (currentLang === 'hi' && vac.org_hi) ? vac.org_hi : ((currentLang === 'hinglish' && vac.org_hinglish) ? vac.org_hinglish : (vac.org || vac.recruitingBody || 'Govt Department'));
   const isCentral = vac.isCentral || vac.scope === 'Central' || vac.state === 'All-India';
 
   const titleEl = document.getElementById('jm-title');
@@ -6623,6 +7645,12 @@ function openJobDetailsModal(jobId) {
   const pinTxtEl = document.getElementById('jm-txt-pin');
   if (pinTxtEl) pinTxtEl.textContent = isPinned ? d.pinTracked : d.pinTrack;
 
+  // Push History State for Mobile Back Button
+  if (!isJobModalOpen) {
+    isJobModalOpen = true;
+    history.pushState({ modalOpen: 'jobDetails' }, '');
+  }
+
   // Open Modal with Smooth Animation and Lock Background Scroll
   const modal = document.getElementById('job-details-modal');
   if (modal) {
@@ -6632,6 +7660,16 @@ function openJobDetailsModal(jobId) {
 }
 
 function closeJobDetailsModal() {
+  if (isJobModalOpen) {
+    isJobModalOpen = false;
+    history.back();
+  } else {
+    closeJobDetailsModalSilently();
+  }
+}
+
+function closeJobDetailsModalSilently() {
+  isJobModalOpen = false;
   const modal = document.getElementById('job-details-modal');
   if (modal) {
     modal.classList.remove('show');
@@ -6665,13 +7703,14 @@ function handleJobModalPin() {
   if (pinTxtEl) pinTxtEl.textContent = isPinned ? d.pinTracked : d.pinTrack;
 }
 
-// Global 'Esc' key listener to close modals smoothly
+// Global 'Esc' key listener
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' || e.key === 'Esc') {
-    closeJobDetailsModal();
+    if (isJobModalOpen) closeJobDetailsModal();
+    if (isQuizModalOpen) closeQuizModal();
+    if (isDocViewerModalOpen) closeDocViewerModal();
   }
 });
-
 
 /* ============================================================
    13. UTILITIES
