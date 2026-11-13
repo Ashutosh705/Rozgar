@@ -158547,7 +158547,7 @@
     "posts": "Various Posts",
     "last_date": "2026-11-05",
     "apply_link": "https://www.resultbharat.com/CWC-AM-Jr-Executive-2026.html",
-    "source": "ResultBharat",
+    "source": "ResultBharat, RojgarResult",
     "org": "CWC Assistant Recruitment",
     "org_hi": "CWC Assistant Recruitment",
     "org_hinglish": "CWC Assistant Recruitment",
@@ -275656,7 +275656,7 @@
     "posts": "Various Posts",
     "last_date": "2026-11-25",
     "apply_link": "https://rojgarresult.com/upsc-civil-services-ias-ifs-2026/",
-    "source": "RojgarResult, SarkariExam",
+    "source": "RojgarResult, SarkariExam, FreeJobAlert",
     "org": "Union Public Service Commission (UPSC)",
     "org_hi": "Union Public Service Commission (UPSC)",
     "org_hinglish": "Union Public Service Commission (UPSC)",
@@ -306236,7 +306236,7 @@
     "posts": "Various Posts",
     "last_date": "2026-12-02",
     "apply_link": "https://www.jagranjosh.com/articles/bteup-odd-semester-admit-card-2026-out-at-bteup-ac-in-direct-link-to-download-special-back-paper-hall-ticket-pdf-1800019036-1",
-    "source": "JagranJosh",
+    "source": "JagranJosh, FreeJobAlert",
     "org": "BTEUP Odd Recruitment",
     "org_hi": "BTEUP Odd Recruitment",
     "org_hinglish": "BTEUP Odd Recruitment",
@@ -310370,6 +310370,5552 @@
       {
         "key": "dom",
         "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "UPPSC_UP_RECRUITMENT_UPPSC_13_DEC2026RESULT_O_2026",
+    "title": "UPPSC 13 Dec2026RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/118",
+    "title_hi": "UPPSC 13 Dec2026RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/118",
+    "title_hinglish": "UPPSC 13 Dec2026RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/118",
+    "organization": "UPPSC UP Recruitment",
+    "org": "UPPSC UP Recruitment",
+    "org_hi": "UPPSC UP Recruitment",
+    "org_hinglish": "UPPSC UP Recruitment",
+    "category": "results",
+    "scope": "State",
+    "state": "UP",
+    "isCentral": false,
+    "qualification": "GRADUATE",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Bachelor's Degree in Any Stream",
+    "minEduLabel_hi": "किसी भी विषय में स्नातक डिग्री उत्तीर्ण",
+    "minEduLabel_hinglish": "Bachelor's Degree in Any Stream",
+    "categoryTag": "graduate",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "विभिन्न पद",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-06",
+    "startDate": "2026-11-06",
+    "last_date": "2026-12-04",
+    "lastDate": "2026-12-04",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "apply_link": "https://uppsc.up.nic.in/",
+    "officialApplyUrl": "https://uppsc.up.nic.in/",
+    "notification_pdf": "",
+    "admit_card_link": "",
+    "result_link": "",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per rules)",
+    "fee_hi": "₹100–₹500 (नियमानुसार)",
+    "fee_hinglish": "₹100–₹500 (Rules ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "Check Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "Check Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Result / Cutoff",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "UPPSC_UP_RECRUITMENT_UPPSC_13_DEC2027RESULT_O_2026",
+    "title": "UPPSC 13 Dec2027RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR EMERGENCY MEDICINE, S-08/43",
+    "title_hi": "UPPSC 13 Dec2027RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR EMERGENCY MEDICINE, S-08/43",
+    "title_hinglish": "UPPSC 13 Dec2027RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR EMERGENCY MEDICINE, S-08/43",
+    "organization": "UPPSC UP Recruitment",
+    "org": "UPPSC UP Recruitment",
+    "org_hi": "UPPSC UP Recruitment",
+    "org_hinglish": "UPPSC UP Recruitment",
+    "category": "results",
+    "scope": "State",
+    "state": "UP",
+    "isCentral": false,
+    "qualification": "GRADUATE",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Bachelor's Degree in Any Stream",
+    "minEduLabel_hi": "किसी भी विषय में स्नातक डिग्री उत्तीर्ण",
+    "minEduLabel_hinglish": "Bachelor's Degree in Any Stream",
+    "categoryTag": "graduate",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "विभिन्न पद",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-06",
+    "startDate": "2026-11-06",
+    "last_date": "2026-12-04",
+    "lastDate": "2026-12-04",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "apply_link": "https://uppsc.up.nic.in/",
+    "officialApplyUrl": "https://uppsc.up.nic.in/",
+    "notification_pdf": "",
+    "admit_card_link": "",
+    "result_link": "",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per rules)",
+    "fee_hi": "₹100–₹500 (नियमानुसार)",
+    "fee_hinglish": "₹100–₹500 (Rules ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Exam Date",
+        "titleHi": "परीक्षा तिथि",
+        "titleHinglish": "Exam Date",
+        "dateEn": "Check Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "Check Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Result / Cutoff",
+        "titleHi": "अंतिम परिणाम",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "ALLAHABAD_HIGH_RECRUITMENT_ALLAHABAD_HIGH_COU_2026",
+    "title": "Allahabad High Court Private Secretary Admit Card 2026",
+    "organization": "Allahabad High Recruitment",
+    "category": "Admit Cards",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.sarkariexam.com/allahabad-high-court-private-secretary-grade-1-2026/",
+    "source": "SarkariExam, FreeJobAlert, JagranJosh, RojgarResult",
+    "org": "Allahabad High Recruitment",
+    "org_hi": "Allahabad High Recruitment",
+    "org_hinglish": "Allahabad High Recruitment",
+    "title_hi": "Allahabad High Court Private Secretary Admit Card 2026",
+    "title_hinglish": "Allahabad High Court Private Secretary Admit Card 2026",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.sarkariexam.com/allahabad-high-court-private-secretary-grade-1-2026/",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "POWERGRID_TRAINEE_RECRUITMENT_POWERGRID_TRAIN_2026",
+    "title": "POWERGRID Trainee Engineer (33 Vacancy)",
+    "organization": "POWERGRID Trainee Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "33 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/powergrid-trainee-engineer-electronics-recruitment-2026-3080902",
+    "source": "FreeJobAlert",
+    "org": "POWERGRID Trainee Recruitment",
+    "org_hi": "POWERGRID Trainee Recruitment",
+    "org_hinglish": "POWERGRID Trainee Recruitment",
+    "title_hi": "POWERGRID Trainee Engineer (33 Vacancy)",
+    "title_hinglish": "POWERGRID Trainee Engineer (33 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "33 Posts",
+    "vacancies": "33 Posts",
+    "vacancies_hi": "33 Posts",
+    "vacancies_hinglish": "33 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/powergrid-trainee-engineer-electronics-recruitment-2026-3080902",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "C_DAC_RECRUITMENT_C_DAC_PROJECT_ENGINEER_AND__2026",
+    "title": "C DAC Project Engineer and Project Associate Admit Card 2026",
+    "organization": "C DAC Recruitment",
+    "category": "Admit Cards",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/c-dac-project-engineer-and-project-associate-admit-card-2026-3081063",
+    "source": "FreeJobAlert",
+    "org": "C DAC Recruitment",
+    "org_hi": "C DAC Recruitment",
+    "org_hinglish": "C DAC Recruitment",
+    "title_hi": "C DAC Project Engineer and Project Associate Admit Card 2026",
+    "title_hinglish": "C DAC Project Engineer and Project Associate Admit Card 2026",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/c-dac-project-engineer-and-project-associate-admit-card-2026-3081063",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "ASSAM_POLICE_RECRUITMENT_ASSAM_POLICE_ASI_ADM_2026",
+    "title": "Assam Police ASI Admit Card 2026",
+    "organization": "Assam Police Recruitment",
+    "category": "Admit Cards",
+    "qualification": "Graduate",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/assam-police-asi-admit-card-2026-3080955",
+    "source": "FreeJobAlert, JagranJosh",
+    "org": "Assam Police Recruitment",
+    "org_hi": "Assam Police Recruitment",
+    "org_hinglish": "Assam Police Recruitment",
+    "title_hi": "Assam Police ASI Admit Card 2026",
+    "title_hinglish": "Assam Police ASI Admit Card 2026",
+    "categoryTag": "graduate",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Graduate from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Graduate",
+    "minEduLabel_hinglish": "Graduate pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/assam-police-asi-admit-card-2026-3080955",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "BSF_TRADESMAN_RECRUITMENT_BSF_TRADESMAN_ADMIT_2026",
+    "title": "BSF Tradesman Admit Card 2026 Soon",
+    "organization": "BSF Tradesman Recruitment",
+    "category": "Admit Cards",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/bsf-tradesman-admit-card-2026-3080853",
+    "source": "FreeJobAlert",
+    "org": "BSF Tradesman Recruitment",
+    "org_hi": "BSF Tradesman Recruitment",
+    "org_hinglish": "BSF Tradesman Recruitment",
+    "title_hi": "BSF Tradesman Admit Card 2026 Soon",
+    "title_hinglish": "BSF Tradesman Admit Card 2026 Soon",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/bsf-tradesman-admit-card-2026-3080853",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "UTET_RESULT_RECRUITMENT_UTET_RESULT_2026_2026",
+    "title": "UTET Result 2026",
+    "organization": "UTET Result Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/utet-result-2026-3081018",
+    "source": "FreeJobAlert",
+    "org": "UTET Result Recruitment",
+    "org_hi": "UTET Result Recruitment",
+    "org_hinglish": "UTET Result Recruitment",
+    "title_hi": "UTET Result 2026",
+    "title_hinglish": "UTET Result 2026",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/utet-result-2026-3081018",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "APSC_VETERINARY_RECRUITMENT_APSC_VETERINARY_O_2026",
+    "title": "APSC Veterinary Officer Result 2026",
+    "organization": "APSC Veterinary Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Graduate",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/apsc-veterinary-officer-result-2026-3080985",
+    "source": "FreeJobAlert",
+    "org": "APSC Veterinary Recruitment",
+    "org_hi": "APSC Veterinary Recruitment",
+    "org_hinglish": "APSC Veterinary Recruitment",
+    "title_hi": "APSC Veterinary Officer Result 2026",
+    "title_hinglish": "APSC Veterinary Officer Result 2026",
+    "categoryTag": "graduate",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Graduate from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Graduate",
+    "minEduLabel_hinglish": "Graduate pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/apsc-veterinary-officer-result-2026-3080985",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "JIND_COURT_RECRUITMENT_JIND_COURT_STENOGRAPHE_2026",
+    "title": "Jind Court Stenographer Result 2026",
+    "organization": "Jind Court Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/jind-court-stenographer-result-2026-3080869",
+    "source": "FreeJobAlert",
+    "org": "Jind Court Recruitment",
+    "org_hi": "Jind Court Recruitment",
+    "org_hinglish": "Jind Court Recruitment",
+    "title_hi": "Jind Court Stenographer Result 2026",
+    "title_hinglish": "Jind Court Stenographer Result 2026",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/jind-court-stenographer-result-2026-3080869",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "JANPAD_PANCHAYAT_RECRUITMENT_JANPAD_PANCHAYAT_2026",
+    "title": "Janpad Panchayat Usoor Gram Rozgar Sahayak Offline Form 2026 (23 Vacancy)",
+    "organization": "Janpad Panchayat Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "23 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/janpad-panchayat-usoor-gram-rozgar-sahayak-recruitment-2026-3081067",
+    "source": "FreeJobAlert",
+    "org": "Janpad Panchayat Recruitment",
+    "org_hi": "Janpad Panchayat Recruitment",
+    "org_hinglish": "Janpad Panchayat Recruitment",
+    "title_hi": "Janpad Panchayat Usoor Gram Rozgar Sahayak Offline Form 2026 (23 Vacancy)",
+    "title_hinglish": "Janpad Panchayat Usoor Gram Rozgar Sahayak Offline Form 2026 (23 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "23 Posts",
+    "vacancies": "23 Posts",
+    "vacancies_hi": "23 Posts",
+    "vacancies_hinglish": "23 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/janpad-panchayat-usoor-gram-rozgar-sahayak-recruitment-2026-3081067",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "HPPWD_VARIOUS_RECRUITMENT_HPPWD_VARIOUS_POSTS_2026",
+    "title": "HPPWD Various Posts Offline Form 2026 (22 Vacancy)",
+    "organization": "HPPWD Various Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "22 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/hppwd-recruitment-2026-junior-office-assistant-3081050",
+    "source": "FreeJobAlert",
+    "org": "HPPWD Various Recruitment",
+    "org_hi": "HPPWD Various Recruitment",
+    "org_hinglish": "HPPWD Various Recruitment",
+    "title_hi": "HPPWD Various Posts Offline Form 2026 (22 Vacancy)",
+    "title_hinglish": "HPPWD Various Posts Offline Form 2026 (22 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "22 Posts",
+    "vacancies": "22 Posts",
+    "vacancies_hi": "22 Posts",
+    "vacancies_hinglish": "22 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/hppwd-recruitment-2026-junior-office-assistant-3081050",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "AIIMS_MADURAI_RECRUITMENT_AIIMS_MADURAI_JUNIO_2026",
+    "title": "AIIMS Madurai Junior Resident (Non-Academic) (36 Vacancy)",
+    "organization": "AIIMS Madurai Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "36 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/aiims-madurai-junior-resident-non-academic-recruitment-2026-3080933",
+    "source": "FreeJobAlert",
+    "org": "AIIMS Madurai Recruitment",
+    "org_hi": "AIIMS Madurai Recruitment",
+    "org_hinglish": "AIIMS Madurai Recruitment",
+    "title_hi": "AIIMS Madurai Junior Resident (Non-Academic) (36 Vacancy)",
+    "title_hinglish": "AIIMS Madurai Junior Resident (Non-Academic) (36 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "36 Posts",
+    "vacancies": "36 Posts",
+    "vacancies_hi": "36 Posts",
+    "vacancies_hinglish": "36 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/aiims-madurai-junior-resident-non-academic-recruitment-2026-3080933",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "AIIMS_MADURAI_RECRUITMENT_AIIMS_MADURAI_VARIO_2026",
+    "title": "AIIMS Madurai Various Posts (46 Vacancy)",
+    "organization": "AIIMS Madurai Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "46 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/aiims-madurai-recruitment-2026-senior-resident-non-academic-3080929",
+    "source": "FreeJobAlert",
+    "org": "AIIMS Madurai Recruitment",
+    "org_hi": "AIIMS Madurai Recruitment",
+    "org_hinglish": "AIIMS Madurai Recruitment",
+    "title_hi": "AIIMS Madurai Various Posts (46 Vacancy)",
+    "title_hinglish": "AIIMS Madurai Various Posts (46 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "46 Posts",
+    "vacancies": "46 Posts",
+    "vacancies_hi": "46 Posts",
+    "vacancies_hinglish": "46 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/aiims-madurai-recruitment-2026-senior-resident-non-academic-3080929",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "MANIT_BHOPAL_RECRUITMENT_MANIT_BHOPAL_NON_TEA_2026",
+    "title": "MANIT Bhopal Non Teaching",
+    "organization": "MANIT Bhopal Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/manit-bhopal-non-teaching-recruitment-2026-3080459",
+    "source": "FreeJobAlert",
+    "org": "MANIT Bhopal Recruitment",
+    "org_hi": "MANIT Bhopal Recruitment",
+    "org_hinglish": "MANIT Bhopal Recruitment",
+    "title_hi": "MANIT Bhopal Non Teaching",
+    "title_hinglish": "MANIT Bhopal Non Teaching",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/manit-bhopal-non-teaching-recruitment-2026-3080459",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "UP_ANGANWADI_RECRUITMENT_UP_ANGANWADI_PILIBHI_2026",
+    "title": "UP Anganwadi Pilibhit AWW, AWH Posts (283 Vacancy)",
+    "organization": "UP Anganwadi Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "283 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/up-anganwadi-pilibhit-recruitment-2026-anganwadi-helper-3080845",
+    "source": "FreeJobAlert",
+    "org": "UP Anganwadi Recruitment",
+    "org_hi": "UP Anganwadi Recruitment",
+    "org_hinglish": "UP Anganwadi Recruitment",
+    "title_hi": "UP Anganwadi Pilibhit AWW, AWH Posts (283 Vacancy)",
+    "title_hinglish": "UP Anganwadi Pilibhit AWW, AWH Posts (283 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "283 Posts",
+    "vacancies": "283 Posts",
+    "vacancies_hi": "283 Posts",
+    "vacancies_hinglish": "283 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/up-anganwadi-pilibhit-recruitment-2026-anganwadi-helper-3080845",
+    "scope": "State",
+    "state": "UP",
+    "isCentral": false,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "UP_ANGANWADI_RECRUITMENT_UP_ANGANWADI_LUCKNOW_2026",
+    "title": "UP Anganwadi Lucknow AWW, AWH Posts (428 Vacancy)",
+    "organization": "UP Anganwadi Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "428 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/up-anganwadi-lucknow-recruitment-2026-apply-online-for-428-anganwadi-helper-anganwadi-worker-posts-3080843",
+    "source": "FreeJobAlert",
+    "org": "UP Anganwadi Recruitment",
+    "org_hi": "UP Anganwadi Recruitment",
+    "org_hinglish": "UP Anganwadi Recruitment",
+    "title_hi": "UP Anganwadi Lucknow AWW, AWH Posts (428 Vacancy)",
+    "title_hinglish": "UP Anganwadi Lucknow AWW, AWH Posts (428 Vacancy)",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "428 Posts",
+    "vacancies": "428 Posts",
+    "vacancies_hi": "428 Posts",
+    "vacancies_hinglish": "428 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/up-anganwadi-lucknow-recruitment-2026-apply-online-for-428-anganwadi-helper-anganwadi-worker-posts-3080843",
+    "scope": "State",
+    "state": "UP",
+    "isCentral": false,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "KERALA_PSC_RECRUITMENT_KERALA_PSC_ASSISTANT_J_2026",
+    "title": "Kerala PSC Assistant Jailor and Other Post Answer Key 2026",
+    "organization": "Kerala PSC Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/kerala-psc-assistant-jailor-and-other-post-answer-key-2026-3081064",
+    "source": "FreeJobAlert",
+    "org": "Kerala PSC Recruitment",
+    "org_hi": "Kerala PSC Recruitment",
+    "org_hinglish": "Kerala PSC Recruitment",
+    "title_hi": "Kerala PSC Assistant Jailor and Other Post Answer Key 2026",
+    "title_hinglish": "Kerala PSC Assistant Jailor and Other Post Answer Key 2026",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/kerala-psc-assistant-jailor-and-other-post-answer-key-2026-3081064",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "BSEB_CLASS_RECRUITMENT_BSEB_CLASS_10_12_DUMMY_2026",
+    "title": "BSEB Class 10, 12 Dummy Admit Card 2027 Out",
+    "organization": "BSEB Class Recruitment",
+    "category": "Admit Cards",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/bseb-class-10-12-dummy-admit-card-2027-out-download-online-3081065",
+    "source": "FreeJobAlert",
+    "org": "BSEB Class Recruitment",
+    "org_hi": "BSEB Class Recruitment",
+    "org_hinglish": "BSEB Class Recruitment",
+    "title_hi": "BSEB Class 10, 12 Dummy Admit Card 2027 Out",
+    "title_hinglish": "BSEB Class 10, 12 Dummy Admit Card 2027 Out",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/bseb-class-10-12-dummy-admit-card-2027-out-download-online-3081065",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "UTTARAKHAND_D_EL_ED_RECRUITMENT_UTTARAKHAND_D_2026",
+    "title": "Uttarakhand D.El.Ed Admit Card 2026 Out",
+    "organization": "Uttarakhand D.El.Ed Recruitment",
+    "category": "Admit Cards",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/uttarakhand-deled-admit-card-2026-out-download-online-3080948",
+    "source": "FreeJobAlert",
+    "org": "Uttarakhand D.El.Ed Recruitment",
+    "org_hi": "Uttarakhand D.El.Ed Recruitment",
+    "org_hinglish": "Uttarakhand D.El.Ed Recruitment",
+    "title_hi": "Uttarakhand D.El.Ed Admit Card 2026 Out",
+    "title_hinglish": "Uttarakhand D.El.Ed Admit Card 2026 Out",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/uttarakhand-deled-admit-card-2026-out-download-online-3080948",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "KEA_M_SC_RECRUITMENT_KEA_M_SC_NURSING_SEAT_AL_2026",
+    "title": "KEA M.Sc Nursing Seat Allotment Result 2026 Out",
+    "organization": "KEA M.Sc Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.freejobalert.com/articles/kea-msc-nursing-seat-allotment-result-2026-out-check-result-online-3080870",
+    "source": "FreeJobAlert",
+    "org": "KEA M.Sc Recruitment",
+    "org_hi": "KEA M.Sc Recruitment",
+    "org_hinglish": "KEA M.Sc Recruitment",
+    "title_hi": "KEA M.Sc Nursing Seat Allotment Result 2026 Out",
+    "title_hinglish": "KEA M.Sc Nursing Seat Allotment Result 2026 Out",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.freejobalert.com/articles/kea-msc-nursing-seat-allotment-result-2026-out-check-result-online-3080870",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "UTET_RESULT_RECRUITMENT_UTET_RESULT_2026_OUT__2026",
+    "title": "UTET Result 2026 (OUT): Download Uttarakhand TET Paper 1 & 2 Score Card PDF at ukutet.com",
+    "organization": "UTET Result Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.jagranjosh.com/articles/ubse-utet-result-2026-declared-for-paper-1-and-2-at-ukutet-com-check-download-link-and-scorecard-1800019087-1",
+    "source": "JagranJosh",
+    "org": "UTET Result Recruitment",
+    "org_hi": "UTET Result Recruitment",
+    "org_hinglish": "UTET Result Recruitment",
+    "title_hi": "UTET Result 2026 (OUT): Download Uttarakhand TET Paper 1 & 2 Score Card PDF at ukutet.com",
+    "title_hinglish": "UTET Result 2026 (OUT): Download Uttarakhand TET Paper 1 & 2 Score Card PDF at ukutet.com",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.jagranjosh.com/articles/ubse-utet-result-2026-declared-for-paper-1-and-2-at-ukutet-com-check-download-link-and-scorecard-1800019087-1",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "NLC_INDIA_RECRUITMENT_NLC_INDIA_LIMITED_RECRU_2026",
+    "title": "NLC India Limited Recruitment 2026: Apply Online Begins for 145 GET Posts; Check Eligibility & Direct Link Here",
+    "organization": "NLC India Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.jagranjosh.com/articles/nlc-india-limited-recruitment-2026-apply-online-begins-for-graduate-executive-trainee-posts-check-eligibility-and-direct-link-here-1800019077-1",
+    "source": "JagranJosh",
+    "org": "NLC India Recruitment",
+    "org_hi": "NLC India Recruitment",
+    "org_hinglish": "NLC India Recruitment",
+    "title_hi": "NLC India Limited Recruitment 2026: Apply Online Begins for 145 GET Posts; Check Eligibility & Direct Link Here",
+    "title_hinglish": "NLC India Limited Recruitment 2026: Apply Online Begins for 145 GET Posts; Check Eligibility & Direct Link Here",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.jagranjosh.com/articles/nlc-india-limited-recruitment-2026-apply-online-begins-for-graduate-executive-trainee-posts-check-eligibility-and-direct-link-here-1800019077-1",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "IOCL_ER_RECRUITMENT_IOCL_ER_APPRENTICE_RECRUI_2026",
+    "title": "IOCL ER Apprentice Recruitment 2026 Notification OUT: Apply Online Begins for 409 Vacancies, Check Eligibility & Direct Link Here",
+    "organization": "IOCL ER Recruitment",
+    "category": "Latest Jobs",
+    "qualification": "ITI",
+    "posts": "409 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.jagranjosh.com/articles/iocl-er-apprentice-recruitment-2026-notification-out-apply-online-begins-for-409-vacancies-check-eligibility-and-direct-link-here-1800019063-1",
+    "source": "JagranJosh",
+    "org": "IOCL ER Recruitment",
+    "org_hi": "IOCL ER Recruitment",
+    "org_hinglish": "IOCL ER Recruitment",
+    "title_hi": "IOCL ER Apprentice Recruitment 2026 Notification OUT: Apply Online Begins for 409 Vacancies, Check Eligibility & Direct Link Here",
+    "title_hinglish": "IOCL ER Apprentice Recruitment 2026 Notification OUT: Apply Online Begins for 409 Vacancies, Check Eligibility & Direct Link Here",
+    "categoryTag": "iti",
+    "minEducation": "ITI",
+    "minEduLabel": "ITI from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से ITI",
+    "minEduLabel_hinglish": "ITI pass",
+    "posts_count": "409 Posts",
+    "vacancies": "409 Posts",
+    "vacancies_hi": "409 Posts",
+    "vacancies_hinglish": "409 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.jagranjosh.com/articles/iocl-er-apprentice-recruitment-2026-notification-out-apply-online-begins-for-409-vacancies-check-eligibility-and-direct-link-here-1800019063-1",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "BANKING_IBPS_INDIA_EXIM_BANK_RECRUITMENT_2026_2026",
+    "title": "India Exim Bank Recruitment 2026 Notification OUT for 120 MT & Manager Posts; Check Eligibility and Other Details Here",
+    "organization": "Banking / IBPS",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.jagranjosh.com/articles/india-exim-bank-recruitment-2026-notification-out-for-mt-and-manager-posts-check-eligibility-and-other-details-1800019056-1",
+    "source": "JagranJosh",
+    "org": "Banking / IBPS",
+    "org_hi": "Banking / IBPS",
+    "org_hinglish": "Banking / IBPS",
+    "title_hi": "India Exim Bank Recruitment 2026 Notification OUT for 120 MT & Manager Posts; Check Eligibility and Other Details Here",
+    "title_hinglish": "India Exim Bank Recruitment 2026 Notification OUT for 120 MT & Manager Posts; Check Eligibility and Other Details Here",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.jagranjosh.com/articles/india-exim-bank-recruitment-2026-notification-out-for-mt-and-manager-posts-check-eligibility-and-other-details-1800019056-1",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "BANKING_IBPS_EXIM_BANK_VACANCY_2026_120_27_2026",
+    "title": "EXIM Bank Vacancy 2026: मैनेजमेंट ट्रेनी, मैनेजर सहित कुल 120 पदों पर नोटिफिकेशन जारी, 27 नवंबर से अप्लाई करें",
+    "organization": "Banking / IBPS",
+    "category": "Latest Jobs",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.jagranjosh.com/articles/exim-bank-vacancy-2026-notification-released-check-eligibility-criteria-registration-date-and-more-1800019061-2",
+    "source": "JagranJosh",
+    "org": "Banking / IBPS",
+    "org_hi": "Banking / IBPS",
+    "org_hinglish": "Banking / IBPS",
+    "title_hi": "EXIM Bank Vacancy 2026: मैनेजमेंट ट्रेनी, मैनेजर सहित कुल 120 पदों पर नोटिफिकेशन जारी, 27 नवंबर से अप्लाई करें",
+    "title_hinglish": "EXIM Bank Vacancy 2026: मैनेजमेंट ट्रेनी, मैनेजर सहित कुल 120 पदों पर नोटिफिकेशन जारी, 27 नवंबर से अप्लाई करें",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.jagranjosh.com/articles/exim-bank-vacancy-2026-notification-released-check-eligibility-criteria-registration-date-and-more-1800019061-2",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Active",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "active",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Active",
+        "dateHi": "सक्रिय",
+        "dateHinglish": "Active"
+      },
+      {
+        "stage": "admit",
+        "status": "upcoming",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "BANKING_IBPS_SBI_CLERK_RESULT_2026_2026",
+    "title": "SBI Clerk Result 2026",
+    "organization": "Banking / IBPS",
+    "category": "Results & Keys",
+    "qualification": "Graduate",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.jagranjosh.com/articles/sbi-clerk-prelims-result-2026-live-updates-download-scorecard-pdf-at-sbi-bank-in-lb-206826",
+    "source": "JagranJosh",
+    "org": "Banking / IBPS",
+    "org_hi": "Banking / IBPS",
+    "org_hinglish": "Banking / IBPS",
+    "title_hi": "SBI Clerk Result 2026",
+    "title_hinglish": "SBI Clerk Result 2026",
+    "categoryTag": "graduate",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Graduate from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Graduate",
+    "minEduLabel_hinglish": "Graduate pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.jagranjosh.com/articles/sbi-clerk-prelims-result-2026-live-updates-download-scorecard-pdf-at-sbi-bank-in-lb-206826",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "BANKING_IBPS_EXIM_BANK_MANAGEMENT_TRAINEE_MAN_2026",
+    "title": "Exim Bank Management Trainee, Manager",
+    "organization": "Banking / IBPS",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.resultbharat.com/EXIM-Bank-MT-Manager-2026.html",
+    "source": "ResultBharat",
+    "org": "Banking / IBPS",
+    "org_hi": "Banking / IBPS",
+    "org_hinglish": "Banking / IBPS",
+    "title_hi": "Exim Bank Management Trainee, Manager",
+    "title_hinglish": "Exim Bank Management Trainee, Manager",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.resultbharat.com/EXIM-Bank-MT-Manager-2026.html",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "UKPSC_LOWER_RECRUITMENT_UKPSC_LOWER_PCS_2026",
+    "title": "UKPSC Lower PCS",
+    "organization": "UKPSC Lower Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://www.resultbharat.com/UKPSC-Lower-PCS-2026.html",
+    "source": "ResultBharat",
+    "org": "UKPSC Lower Recruitment",
+    "org_hi": "UKPSC Lower Recruitment",
+    "org_hinglish": "UKPSC Lower Recruitment",
+    "title_hi": "UKPSC Lower PCS",
+    "title_hinglish": "UKPSC Lower PCS",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://www.resultbharat.com/UKPSC-Lower-PCS-2026.html",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "UTET_RESULT_RECRUITMENT_UTET_RESULT_2026_UTTA_2026",
+    "title": "UTET Result 2026 | Uttarakhand Teacher Eligibility Test",
+    "organization": "UTET Result Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://rojgarresult.com/utet-2026/",
+    "source": "RojgarResult",
+    "org": "UTET Result Recruitment",
+    "org_hi": "UTET Result Recruitment",
+    "org_hinglish": "UTET Result Recruitment",
+    "title_hi": "UTET Result 2026 | Uttarakhand Teacher Eligibility Test",
+    "title_hinglish": "UTET Result 2026 | Uttarakhand Teacher Eligibility Test",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://rojgarresult.com/utet-2026/",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "completed",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Upcoming",
+        "dateHi": "आगामी",
+        "dateHinglish": "Upcoming"
+      },
+      {
+        "stage": "exam",
+        "status": "completed",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "completed",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "active",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Declared",
+        "dateHi": "घोषित",
+        "dateHinglish": "Declared"
+      }
+    ]
+  },
+  {
+    "id": "UNION_PUBLIC_SERVICE_COMMISSION_UPSC_UPSC_FOR_2026",
+    "title": "UPSC Forest Services IFS Mains Admit Card 2026",
+    "organization": "Union Public Service Commission (UPSC)",
+    "category": "Admit Cards",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://rojgarresult.com/upsc-civil-services-ias-ifs-2026/",
+    "source": "RojgarResult",
+    "org": "Union Public Service Commission (UPSC)",
+    "org_hi": "Union Public Service Commission (UPSC)",
+    "org_hinglish": "Union Public Service Commission (UPSC)",
+    "title_hi": "UPSC Forest Services IFS Mains Admit Card 2026",
+    "title_hinglish": "UPSC Forest Services IFS Mains Admit Card 2026",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://rojgarresult.com/upsc-civil-services-ias-ifs-2026/",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "UKPSC_UPPER_RECRUITMENT_UKPSC_UPPER_PCS_PRE_A_2026",
+    "title": "UKPSC Upper PCS Pre Admit Card 2026",
+    "organization": "UKPSC Upper Recruitment",
+    "category": "Admit Cards",
+    "qualification": "Other",
+    "posts": "Various Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://rojgarresult.com/ukpsc-upper-pcs-2026/",
+    "source": "RojgarResult",
+    "org": "UKPSC Upper Recruitment",
+    "org_hi": "UKPSC Upper Recruitment",
+    "org_hinglish": "UKPSC Upper Recruitment",
+    "title_hi": "UKPSC Upper PCS Pre Admit Card 2026",
+    "title_hinglish": "UKPSC Upper PCS Pre Admit Card 2026",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "Various Posts",
+    "vacancies": "Various Posts",
+    "vacancies_hi": "Various Posts",
+    "vacancies_hinglish": "Various Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://rojgarresult.com/ukpsc-upper-pcs-2026/",
+    "scope": "Central",
+    "state": "All-India",
+    "isCentral": true,
+    "preset_key": "GEN_PHOTO",
+    "presetKey": "GEN_PHOTO",
+    "status": "Available",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "Domicile Certificate",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "lifecycle": [
+      {
+        "stage": "apply",
+        "status": "completed",
+        "titleEn": "Application Window",
+        "titleHi": "आवेदन प्रक्रिया",
+        "titleHinglish": "Application Window",
+        "dateEn": "Closed",
+        "dateHi": "सम्पन्न",
+        "dateHinglish": "Closed"
+      },
+      {
+        "stage": "admit",
+        "status": "active",
+        "titleEn": "Admit Card",
+        "titleHi": "प्रवेश पत्र जारी",
+        "titleHinglish": "Admit Card",
+        "dateEn": "Live Now",
+        "dateHi": "जारी हो चुका",
+        "dateHinglish": "Live Now"
+      },
+      {
+        "stage": "exam",
+        "status": "upcoming",
+        "titleEn": "Written Examination",
+        "titleHi": "लिखित परीक्षा",
+        "titleHinglish": "Written Exam",
+        "dateEn": "See Notice",
+        "dateHi": "विज्ञप्ति देखें",
+        "dateHinglish": "See Notice"
+      },
+      {
+        "stage": "anskey",
+        "status": "pending",
+        "titleEn": "Answer Key",
+        "titleHi": "उत्तर कुंजी",
+        "titleHinglish": "Answer Key",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      },
+      {
+        "stage": "result",
+        "status": "pending",
+        "titleEn": "Final Result & Cutoff",
+        "titleHi": "अंतिम परिणाम व कट-ऑफ",
+        "titleHinglish": "Final Result",
+        "dateEn": "Pending",
+        "dateHi": "प्रतीक्षित",
+        "dateHinglish": "Pending"
+      }
+    ]
+  },
+  {
+    "id": "UPESSC_UP_RECRUITMENT_UPESSC_UP_TGT_FOR_17735_2026",
+    "title": "UPESSC UP TGT for 17735 Post",
+    "organization": "UPESSC UP Recruitment",
+    "category": "Results & Keys",
+    "qualification": "Other",
+    "posts": "17735 Posts",
+    "last_date": "2026-12-03",
+    "apply_link": "https://rojgarresult.com/upessc-up-tgt-2026/",
+    "source": "RojgarResult",
+    "org": "UPESSC UP Recruitment",
+    "org_hi": "UPESSC UP Recruitment",
+    "org_hinglish": "UPESSC UP Recruitment",
+    "title_hi": "UPESSC UP TGT for 17735 Post",
+    "title_hinglish": "UPESSC UP TGT for 17735 Post",
+    "categoryTag": "other",
+    "minEducation": "GRADUATE",
+    "minEduLabel": "Other from recognized board/university",
+    "minEduLabel_hi": "मान्यता प्राप्त संस्थान से Other",
+    "minEduLabel_hinglish": "Other pass",
+    "posts_count": "17735 Posts",
+    "vacancies": "17735 Posts",
+    "vacancies_hi": "17735 Posts",
+    "vacancies_hinglish": "17735 Posts",
+    "start_date": "2026-11-03",
+    "startDate": "2026-11-03",
+    "lastDate": "2026-12-03",
+    "cutoff_date": "2026-07-01",
+    "cutoffDate": "2026-07-01",
+    "officialApplyUrl": "https://rojgarresult.com/upessc-up-tgt-2026/",
+    "scope": "State",
+    "state": "UP",
+    "isCentral": false,
+    "preset_key": "SSC_PHOTO",
+    "presetKey": "SSC_PHOTO",
+    "status": "Declared",
+    "fee": "₹100–₹500 (As per notification)",
+    "fee_hi": "₹100–₹500 (विज्ञप्ति अनुसार)",
+    "fee_hinglish": "₹100–₹500 (Notice ke hisaab se)",
+    "min_age": 18,
+    "minAge": 18,
+    "max_age": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "maxAge": {
+      "GENERAL_MALE": 35,
+      "GENERAL_FEMALE": 35,
+      "EWS_MALE": 35,
+      "EWS_FEMALE": 35,
+      "BC_OBC2_MALE": 38,
+      "BC_OBC2_FEMALE": 38,
+      "EBC_OBC1_MALE": 38,
+      "EBC_OBC1_FEMALE": 38,
+      "SC_MALE": 40,
+      "SC_FEMALE": 40,
+      "ST_MALE": 40,
+      "ST_FEMALE": 40
+    },
+    "required_docs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
+        "name_hi": "निवास प्रमाण पत्र",
+        "name_hinglish": "Domicile",
+        "mandatory": true
+      }
+    ],
+    "requiredDocs": [
+      {
+        "key": "m10",
+        "name": "10th Marksheet",
+        "name_hi": "10वीं अंकतालिका",
+        "name_hinglish": "10th Marksheet",
+        "mandatory": true
+      },
+      {
+        "key": "id",
+        "name": "Aadhaar Card",
+        "name_hi": "आधार कार्ड",
+        "name_hinglish": "Aadhaar Card",
+        "mandatory": true
+      },
+      {
+        "key": "dom",
+        "name": "UP Domicile",
         "name_hi": "निवास प्रमाण पत्र",
         "name_hinglish": "Domicile",
         "mandatory": true
